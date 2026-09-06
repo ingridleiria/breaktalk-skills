@@ -1,6 +1,6 @@
 # Chief of Staff track
 
-Thirty skills for the operating layer of a company: the memo, the model, the deck, the cadence, and the commercial document. Written for whoever holds the work between the executive and the function, which in a small firm is one person and in a larger one is a team.
+Thirty-three skills for the operating layer of a company: the memo, the model, the deck, the plan, the cadence, and the commercial document. Written for whoever holds the work between the executive and the function, which in a small firm is one person and in a larger one is a team.
 
 The through line is that quality here depends on discipline rather than inspiration. A market analysis is good because every number has a source. A programme status is good because it names one owner and a dated event rather than a percentage. That kind of quality is exactly what written instructions can enforce, so these skills enforce it.
 
@@ -9,13 +9,13 @@ The through line is that quality here depends on discipline rather than inspirat
 Research feeds decisions, decisions feed documents, documents feed the operating rhythm.
 
 - **Think and structure**: consultant-toolkit, market-research, external-insights, competitive-battlecard, customer-interview-synthesis
-- **Decide and plan**: ideation-deck, okr-planning, operating-cadence-design, partnership-assessment, vendor-evaluation
+- **Decide and plan**: ideation-deck, strategic-plan-and-action-plan, okr-planning, operating-cadence-design, partnership-assessment, vendor-evaluation
 - **Model the money**: financial-model-builder, pricing-and-resourcing-model, revenue-forecast, pipeline-deep-dive
-- **Win and paper the work**: outreach-email, tailored-client-deck, proposal-writer, sow-and-scope
+- **Win and paper the work**: outreach-email, tailored-client-deck, pitch-deck, proposal-writer, sow-and-scope
 - **Run the company**: program-management, weekly-status-update, meeting-to-decisions, process-documentation-sop, hiring-scorecard-and-interview-kit, onboarding-plan, event-and-offsite-planning
-- **Communicate upward and outward**: executive-briefing, board-deck, investor-update, ceo-communications, crisis-and-incident-comms
+- **Communicate upward and outward**: executive-briefing, board-deck, investor-update, ceo-communications, crisis-and-incident-comms, principal-simulator
 
-Several of them hand off directly. The forecast reads the pipeline deep dive. Pricing uses the structure the financial model builder produces. The statement of work inherits the deliverables the proposal promised, and says so.
+Several of them hand off directly. The forecast reads the pipeline deep dive. Pricing uses the structure the financial model builder produces. The statement of work inherits the deliverables the proposal promised, and says so. The strategic plan hands its objectives to okr-planning and its rhythm to operating-cadence-design, and anything going upward can be run past principal-simulator before it is sent.
 
 ## The skills
 
@@ -51,5 +51,8 @@ Several of them hand off directly. The forecast reads the pipeline deep dive. Pr
 | 28 | [event-and-offsite-planning](event-and-offsite-planning/SKILL.md) | Agendas, logistics, outcomes, and follow-up for events and leadership offsites |
 | 29 | [ceo-communications](ceo-communications/SKILL.md) | Talking points, all-hands scripts, and internal announcements in the CEO's voice |
 | 30 | [crisis-and-incident-comms](crisis-and-incident-comms/SKILL.md) | Stakeholder communication under pressure: what to say, to whom, when |
+| 31 | [pitch-deck](pitch-deck/SKILL.md) | The argument for a commitment: why now, the insight, a bottom-up market, a specific ask |
+| 32 | [strategic-plan-and-action-plan](strategic-plan-and-action-plan/SKILL.md) | One destination, a few falsifiable bets, what will not be done, dated owners |
+| 33 | [principal-simulator](principal-simulator/SKILL.md) | Playing the executive you support, so the objection arrives before the meeting does |
 
 See also the [commercial and data track](../commercial-and-data/README.md), which extends this one with sixteen more: revenue and client analytics, content quality, account re-engagement, sales coaching, and commercial paperwork.

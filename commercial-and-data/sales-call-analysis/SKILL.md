@@ -1,67 +1,62 @@
 ---
 name: sales-call-analysis
-description: Scores a sales call transcript against eight deal-health dimensions with a red, amber, green rubric, cites the evidence for every score, and returns a coaching plan that says what to ask on the next call to move each dimension up one level. Covers the deal target, the insight that reframed the buyer's thinking, the pain and its cost, the business case, the buyer-side coach, the decision process, the competitive position, and the next step. Use this skill whenever a call recording, transcript, or set of notes needs to be analysed, a deal needs a health check, a rep asks how a call went, or a manager asks whether an opportunity is real.
+description: Reads a sales call transcript and separates what was actually established from what the seller believes, then turns the difference into the questions for the next call. Distinguishes buyer-confirmed facts from seller assertions, names what is still unknown that decides the outcome, tests whether the agreed next step is real, and writes the coaching in language the seller can reuse. Use this skill whenever a call recording, transcript, or set of notes needs to be reviewed, a deal needs an honest health check, a rep asks how a call went, or a manager asks whether an opportunity is real.
 ---
 
 # Sales Call Analysis
 
-Deal reviews fail because they run on assertion. The rep says the champion is strong, the manager has no way to check, and the deal slips a quarter later for a reason that was audible on a call in week two. This skill scores the call against evidence, quotes the evidence, and refuses to award a green on anything the buyer did not actually say.
+Deal reviews run on assertion. The seller says the sponsor is strong, nobody can check, and the deal slips two quarters later for a reason that was audible on a call in week two. The purpose of this analysis is narrow and unglamorous: separate what the buyer actually said from what the seller concluded, and make the gap visible.
 
-## The eight dimensions
+Everything here is scored against the supplied material only. No web research, no other meetings, no inference dressed as evidence.
 
-1. **Deal target.** One sentence: close [named opportunity] for [specific amount] by [specific date]. All three parts, buyer-aligned.
-2. **Insight.** A peer-matched narrative that produced a moment of recognition, where the buyer said in some form "that is us". Not a case study read aloud, not a capability list.
-3. **Pain and its cost.** The problem stated in the buyer's words, with what it costs them quantified by them rather than by the seller.
-4. **Business case.** The financial justification, owned by the buyer: the cost of inaction, the expected return, and the fact that the buyer has run the numbers themselves.
-5. **Coach.** A buyer-side person who wants this to happen, will act rather than only talk, and gives access and information. Never someone on the selling side.
-6. **Decision process.** Who approves, in what order, against what criteria, on what timeline, including procurement, legal, and security where relevant.
-7. **Competition and alternatives.** Who else is being considered, including the status quo and building it internally, and on what basis the choice will be made.
-8. **Next step.** A specific, dated, mutual action with both sides doing something.
+## The one rule everything rests on
 
-## The rubric
+A thing counts as established only if the buyer said it, or confirmed it when the seller said it. A seller assertion the buyer did not engage with is not established, however reasonable it sounds and however often it has been repeated in the pipeline review.
 
-Apply the same three levels to every dimension.
+Most of the disagreement this analysis produces comes from that rule, and the disagreement is the point.
 
-- **Green.** All required components present and confirmed by the buyer in this call, or carried forward as confirmed from a documented prior call. Evidence quotable.
-- **Amber.** Partly present, or present only as a seller assertion the buyer has not engaged with. Say which component is missing.
-- **Red.** Not addressed, or addressed and left undefined. Say so plainly.
+## Read the call four times
 
-**The alignment rule.** Anything the seller asserted and the buyer did not confirm is amber at best. This single rule is what separates a deal review from a hopeful story, and it is the one people will push back on.
+**First pass: what was established.** List only what the buyer stated or confirmed, each with a quotation. Facts about their situation, numbers they own, names and roles they gave, constraints they described, and anything they explicitly agreed to. This list is usually shorter than anyone expects, and its shortness is the finding.
 
-## Evidence rules
+**Second pass: what was asserted but not established.** Everything the seller stated that the buyer did not take up: the problem as the seller framed it, the urgency the seller supplied, the value the seller calculated, the stakeholder the seller assumed matters. Quote each one and note what the buyer did instead, which is usually a polite non-answer or a change of subject.
 
-The transcript is primary and mandatory. A customer system of record shows what was entered, which is not the same as what the buyer agreed; where the two conflict, downgrade one level and state the conflict. Prior calls compound: a component the buyer confirmed earlier and that was recorded carries forward as confirmed, and is re-confirmed if scope, value, or date later changes.
+Politeness is not agreement. A buyer saying "that makes sense" to a seller's cost-of-inaction figure has not adopted that figure, and the analysis says so.
 
-Never invent a source. If no system record or prior call was supplied, write "not provided" and score on the transcript alone. Use no evidence beyond what was supplied: no web research, no other meetings.
+**Third pass: what is unknown and decides the outcome.** Not everything unknown, only what would change the forecast. Typically some of: what the buyer is actually trying to fix and why now, what it costs them today in their own numbers, who else has to agree and in what order, what happens if they do nothing, what alternatives are live including doing it in-house, and what the money and the timing really are. Rank these by how much the answer would move the deal.
 
-Every score cell carries a quotation or a close paraphrase with enough context to locate it. A score without evidence is an opinion.
+**Fourth pass: the next step.** A real next step has a date, a named person on each side, and something the buyer does. "They will get back to us" and "we will send more information" are not next steps, and recording them as progress is how a pipeline fills with deals nobody is working.
 
-## Writing the red cells
+## Read the seller too
 
-Write them as a senior coach would speak to the rep after listening, not as a form. Say what is known, say what is missing, say why the gap matters for this deal now, and say what to do about it. Avoid bracketed labels and scoring jargon.
+Three things, each with a quotation and a specific alternative.
 
-## Stage-appropriate expectations
+- **The best moment.** The question or the silence that produced the most information. Name it so it gets repeated.
+- **The costly moment.** Where the seller filled a silence, answered a question the buyer had not asked, supplied urgency the buyer had not expressed, or moved to solution before the problem was understood. Say what to have done instead, in words.
+- **The pattern.** What happened more than once. A single mistake is an event, a repeated one is the coaching.
 
-Not every dimension should be green early, and marking a deal down for that teaches the wrong lesson. The deal target is drafted first and confirmed by the end of discovery. Pain and insight belong to discovery. The coach should be identified by the end of discovery and tested before any proposal. Business case, decision process, and competition mature through evaluation and must be green before a proposal is issued. The next step is scored on every call, always.
+## Sources
 
-State the stage at the top of the analysis and read the scores against it.
+The transcript is primary. A record in a customer system shows what somebody typed, not what a buyer agreed, and where the two disagree the transcript wins and the difference is flagged as a hygiene action. Facts a buyer confirmed on an earlier documented call carry forward, and are re-confirmed if scope, money, or timing has since changed. If a source was not supplied, write that it was not supplied. Never infer its contents.
 
-## Common traps
+## Stage matters
 
-Scoring a target green because a figure sits in the system of record. Treating an engaged, friendly contact as a coach when they have never acted. Accepting the seller's cost of inaction as the buyer's business case. Mistaking a list of stakeholders for a decision process, which needs the sequence and the criteria as well as the names. Recording "they will get back to us" as a next step. Marking competition green because the buyer said there is no one else, when the status quo is always a competitor.
-
-## Path to green
-
-For each dimension below green, give the questions that move it up one level, in the buyer's language and ready to use. Two sets: red to amber, then amber to green. Order the whole list by which dimension is most likely to sink the deal, not by dimension number.
+Judge the call against where the deal actually is. A first conversation that establishes the problem and earns a second meeting is a good call even though almost nothing else is settled. A proposal-stage call where the buyer still has not said who signs is a bad call regardless of tone. State the stage at the top and read everything against it.
 
 ## Output
 
-A table with dimension, score, evidence quotation, and the gap; then the three coaching priorities in order; then the question bank for the next call; then the one sentence a manager needs, which is whether this opportunity is real and what would prove it either way.
+1. **Established**, as a short list with quotations.
+2. **Asserted, not established**, with what the buyer did instead.
+3. **Unknown and decisive**, ranked, with the question that would resolve each one written out ready to ask.
+4. **Next step**, quoted, and whether it is real.
+5. **Seller coaching**: best moment, costly moment, pattern.
+6. **The manager's sentence**: is this opportunity real, and what would prove it either way.
 
 ## Quality bar
 
-- Every score carries a quotation from the supplied material.
-- Nothing scores green on a seller assertion the buyer did not confirm.
-- Sources that were not supplied are marked as not provided, never inferred.
-- Scores are read against the stated deal stage.
-- The output ends in questions the rep can ask on the next call, not in adjectives.
+- Every item in the first two sections carries a quotation from the supplied material.
+- Nothing appears as established on the strength of a seller assertion.
+- Unknowns are ranked by effect on the outcome, not listed exhaustively.
+- The questions are written out in usable words, not described.
+- Sources that were not supplied are named as missing rather than inferred.
+- The verdict is stated plainly, including when the honest answer is that the deal is not real yet.

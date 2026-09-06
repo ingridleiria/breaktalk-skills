@@ -4,7 +4,7 @@
 
 I work two jobs that look unrelated and are not. I am Chief of Staff at a US B2B consulting firm, and I am a PhD candidate in Economics at Korea University. Both jobs are the same discipline applied to different material: take something complicated and messy, structure it, attach evidence to every claim, and hand someone a document they can act on.
 
-Over the past two years I built Claude skills to enforce that discipline in my own work, first for the consulting side, then for the research pipeline. This repository is the public, generalized version of that library: 76 skills across four tracks. Nothing here contains employer or client material; these are the methods, rebuilt from scratch to be usable by anyone.
+Over the past two years I built Claude skills to enforce that discipline in my own work, first for the consulting side, then for the research pipeline. This repository is the public, generalized version of that library: 83 skills across four tracks. Nothing here contains employer or client material; these are the methods, rebuilt from scratch to be usable by anyone.
 
 I write about how this works in practice at [BreakTalk](https://breaktalk.substack.com).
 
@@ -26,9 +26,9 @@ Each skill is self-contained. Install only the ones that match your work.
 
 The library is built for two kinds of reader, and it is worth starting from the one you are.
 
-**If you run the operating layer of a company**, start with the [Chief of Staff track](chief-of-staff/README.md). Thirty skills for the memo, the model, the deck, the cadence, and the commercial document, extended by the [commercial and data track](commercial-and-data/README.md) into revenue and client analytics, content quality, account re-engagement, sales coaching, and commercial paperwork. Forty-six skills in total.
+**If you run the operating layer of a company**, start with the [Chief of Staff track](chief-of-staff/README.md). Thirty-three skills for the memo, the model, the deck, the plan, the cadence, and the commercial document, extended by the [commercial and data track](commercial-and-data/README.md) into revenue and client analytics, content quality, account re-engagement, sales coaching, and commercial paperwork. Forty-nine skills in total.
 
-**If you are doing empirical research**, start with the [PhD research track](phd-research/README.md). Twenty-four skills covering the pipeline from a vague topic to a replication package, with the standard a referee applies built into each stage.
+**If you are doing empirical research**, start with the [PhD research track](phd-research/README.md). Twenty-eight skills covering the pipeline from a vague topic to a replication package and beyond it into refereeing, with the standard a referee applies built into each stage.
 
 **Either way**, the [brand and writing track](brand-and-writing/README.md) applies. A board memo and a discussion section fail in the same ways, and the six skills there address both, including the one that teaches you to write your own.
 
@@ -36,7 +36,7 @@ I use both halves in the same week, which is the reason they sit in one reposito
 
 ## Start here
 
-Reading seventy-six files is not the way in. Take one, run it on work you are already doing this week, and see whether the output is better than what you would have got without it.
+Reading eighty-three files is not the way in. Take one, run it on work you are already doing this week, and see whether the output is better than what you would have got without it.
 
 | If you are | Start with | Because |
 | --- | --- | --- |
@@ -45,13 +45,15 @@ Reading seventy-six files is not the way in. Take one, run it on work you are al
 | A doctoral student starting a paper | [research-design](phd-research/research-design/SKILL.md) | It forces the one-page design, with hypotheses mapped to exhibits and a kill criterion, before any estimation |
 | Writing up results you already have | [results-writing](phd-research/results-writing/SKILL.md) | Findings first, magnitudes translated, causal language calibrated to what the design supports |
 | Handed a spreadsheet you did not build | [spreadsheet-analysis-workbook](commercial-and-data/spreadsheet-analysis-workbook/SKILL.md) | It is the sequence that stops you answering confidently from a column you have misunderstood |
+| Deep in a doctoral thesis | [thesis-advisor](phd-research/thesis-advisor/SKILL.md) | It takes a supervisor's position on what to do next and what to cut, against the time that actually remains |
+| Asking a leadership team for something | [principal-simulator](chief-of-staff/principal-simulator/SKILL.md) | It plays the executive you are writing to, so the objection arrives before the meeting does |
 | Wanting to write your own | [skill-builder](brand-and-writing/skill-builder/SKILL.md) | It is the method behind every file here, including how to phrase a description so the skill actually loads |
 
 ## The catalog
 
-All 76 skills are built. Each row links to the skill.
+All 83 skills are built. Each row links to the skill.
 
-### [Chief of Staff track (30)](chief-of-staff/README.md)
+### [Chief of Staff track (33)](chief-of-staff/README.md)
 
 | # | Skill | What it enforces | Status |
 | --- | --- | --- | --- |
@@ -85,67 +87,74 @@ All 76 skills are built. Each row links to the skill.
 | 28 | [event-and-offsite-planning](chief-of-staff/event-and-offsite-planning/SKILL.md) | Agendas, logistics, outcomes, and follow-up for events and leadership offsites | built |
 | 29 | [ceo-communications](chief-of-staff/ceo-communications/SKILL.md) | Talking points, all-hands scripts, and internal announcements in the CEO's voice | built |
 | 30 | [crisis-and-incident-comms](chief-of-staff/crisis-and-incident-comms/SKILL.md) | Stakeholder communication under pressure: what to say, to whom, when | built |
+| 31 | [pitch-deck](chief-of-staff/pitch-deck/SKILL.md) | The argument for a commitment: why now, the insight, a bottom-up market, a specific ask | built |
+| 32 | [strategic-plan-and-action-plan](chief-of-staff/strategic-plan-and-action-plan/SKILL.md) | One destination, a few falsifiable bets, what will not be done, dated owners | built |
+| 33 | [principal-simulator](chief-of-staff/principal-simulator/SKILL.md) | Playing the executive you support, so the objection arrives before the meeting does | built |
 
-### [PhD research track (24)](phd-research/README.md)
+### [PhD research track (28)](phd-research/README.md)
 
 | # | Skill | What it enforces | Status |
 | --- | --- | --- | --- |
-| 31 | [research-design](phd-research/research-design/SKILL.md) | A written one-page design before estimation: question, hypotheses, identification, kill criteria | built |
-| 32 | [literature-verification](phd-research/literature-verification/SKILL.md) | No citation enters a draft until verified; reviews built from an evidence matrix | built |
-| 33 | [results-writing](phd-research/results-writing/SKILL.md) | Findings first, magnitudes translated, causal language calibrated, honest nulls | built |
-| 34 | [theoretical-framework-review](phd-research/theoretical-framework-review/SKILL.md) | Referencial teórico built or diagnosed mechanism by mechanism, Consensus-grounded when connected | built |
-| 35 | [research-question-ideation](phd-research/research-question-ideation/SKILL.md) | From topic to candidate questions with novelty check and feasibility triage | built |
-| 36 | [data-profiling-and-cleaning](phd-research/data-profiling-and-cleaning/SKILL.md) | Profiling a research dataset: missingness, outliers, codebook checks, panel coherence | built |
-| 37 | [stata-project-scaffold](phd-research/stata-project-scaffold/SKILL.md) | Numbered do-file skeleton from setup to first regressions | built |
-| 38 | [econometric-model-writer](phd-research/econometric-model-writer/SKILL.md) | The empirical strategy section: equation, terms, assumptions, threats, clustering | built |
-| 39 | [identification-defense](phd-research/identification-defense/SKILL.md) | Defending DiD, IV, RDD, and matching designs to a committee or referee | built |
-| 40 | [descriptive-statistics-tables](phd-research/descriptive-statistics-tables/SKILL.md) | Table 1 and balance tables that are honest and journal-ready | built |
-| 41 | [academic-figures-monochrome](phd-research/academic-figures-monochrome/SKILL.md) | Print-safe figures with series separated by pattern and marker, legend outside the plot | built |
-| 42 | [academic-tables-booktabs](phd-research/academic-tables-booktabs/SKILL.md) | Regression and summary tables with three rules and no vertical lines | built |
-| 43 | [abstract-and-title](phd-research/abstract-and-title/SKILL.md) | Abstracts traceable to results, titles that state the finding, keywords and JEL codes | built |
-| 44 | [introduction-writer](phd-research/introduction-writer/SKILL.md) | The five moves: problem, gap, what the paper does, what it finds, contribution | built |
-| 45 | [data-section-writer](phd-research/data-section-writer/SKILL.md) | Sources, sample construction with counts, variable definitions, availability statement | built |
-| 46 | [discussion-and-conclusion](phd-research/discussion-and-conclusion/SKILL.md) | Restating at the level of the question, mechanisms, limitations, sized implications | built |
-| 47 | [references-and-bibliography](phd-research/references-and-bibliography/SKILL.md) | Style conversion (APA, Chicago, ABNT, house styles), BibTeX hygiene, DOI checks | built |
-| 48 | [journal-targeting](phd-research/journal-targeting/SKILL.md) | Scope fit, indexing checks, predatory screening, a ranked submission ladder | built |
-| 49 | [peer-review-simulator](phd-research/peer-review-simulator/SKILL.md) | Adversarial pre-submission review from methodologist, field expert, and editor | built |
-| 50 | [response-to-reviewers](phd-research/response-to-reviewers/SKILL.md) | Point-by-point responses and revision plans for a revise-and-resubmit | built |
-| 51 | [conference-presentation-deck](phd-research/conference-presentation-deck/SKILL.md) | Research talks that lead with the finding and survive a hostile Q&A | built |
-| 52 | [thesis-defense-prep](phd-research/thesis-defense-prep/SKILL.md) | Committee questions, identification challenges, and answer rehearsal | built |
-| 53 | [research-proposal-and-grant](phd-research/research-proposal-and-grant/SKILL.md) | Proposals with a question, hypotheses, design, timeline, and budget | built |
-| 54 | [replication-package](phd-research/replication-package/SKILL.md) | Code, data, and documentation organized so a stranger can reproduce every table | built |
+| 34 | [research-design](phd-research/research-design/SKILL.md) | A written one-page design before estimation: question, hypotheses, identification, kill criteria | built |
+| 35 | [literature-verification](phd-research/literature-verification/SKILL.md) | No citation enters a draft until verified; reviews built from an evidence matrix | built |
+| 36 | [results-writing](phd-research/results-writing/SKILL.md) | Findings first, magnitudes translated, causal language calibrated, honest nulls | built |
+| 37 | [theoretical-framework-review](phd-research/theoretical-framework-review/SKILL.md) | Referencial teórico built or diagnosed mechanism by mechanism, Consensus-grounded when connected | built |
+| 38 | [research-question-ideation](phd-research/research-question-ideation/SKILL.md) | From topic to candidate questions with novelty check and feasibility triage | built |
+| 39 | [data-profiling-and-cleaning](phd-research/data-profiling-and-cleaning/SKILL.md) | Profiling a research dataset: missingness, outliers, codebook checks, panel coherence | built |
+| 40 | [stata-project-scaffold](phd-research/stata-project-scaffold/SKILL.md) | Numbered do-file skeleton from setup to first regressions | built |
+| 41 | [econometric-model-writer](phd-research/econometric-model-writer/SKILL.md) | The empirical strategy section: equation, terms, assumptions, threats, clustering | built |
+| 42 | [identification-defense](phd-research/identification-defense/SKILL.md) | Defending DiD, IV, RDD, and matching designs to a committee or referee | built |
+| 43 | [descriptive-statistics-tables](phd-research/descriptive-statistics-tables/SKILL.md) | Table 1 and balance tables that are honest and journal-ready | built |
+| 44 | [academic-figures-monochrome](phd-research/academic-figures-monochrome/SKILL.md) | Print-safe figures with series separated by pattern and marker, legend outside the plot | built |
+| 45 | [academic-tables-booktabs](phd-research/academic-tables-booktabs/SKILL.md) | Regression and summary tables with three rules and no vertical lines | built |
+| 46 | [abstract-and-title](phd-research/abstract-and-title/SKILL.md) | Abstracts traceable to results, titles that state the finding, keywords and JEL codes | built |
+| 47 | [introduction-writer](phd-research/introduction-writer/SKILL.md) | The five moves: problem, gap, what the paper does, what it finds, contribution | built |
+| 48 | [data-section-writer](phd-research/data-section-writer/SKILL.md) | Sources, sample construction with counts, variable definitions, availability statement | built |
+| 49 | [discussion-and-conclusion](phd-research/discussion-and-conclusion/SKILL.md) | Restating at the level of the question, mechanisms, limitations, sized implications | built |
+| 50 | [references-and-bibliography](phd-research/references-and-bibliography/SKILL.md) | Style conversion (APA, Chicago, ABNT, house styles), BibTeX hygiene, DOI checks | built |
+| 51 | [journal-targeting](phd-research/journal-targeting/SKILL.md) | Scope fit, indexing checks, predatory screening, a ranked submission ladder | built |
+| 52 | [peer-review-simulator](phd-research/peer-review-simulator/SKILL.md) | Adversarial pre-submission review from methodologist, field expert, and editor | built |
+| 53 | [response-to-reviewers](phd-research/response-to-reviewers/SKILL.md) | Point-by-point responses and revision plans for a revise-and-resubmit | built |
+| 54 | [conference-presentation-deck](phd-research/conference-presentation-deck/SKILL.md) | Research talks that lead with the finding and survive a hostile Q&A | built |
+| 55 | [thesis-defense-prep](phd-research/thesis-defense-prep/SKILL.md) | Committee questions, identification challenges, and answer rehearsal | built |
+| 56 | [research-proposal-and-grant](phd-research/research-proposal-and-grant/SKILL.md) | Proposals with a question, hypotheses, design, timeline, and budget | built |
+| 57 | [replication-package](phd-research/replication-package/SKILL.md) | Code, data, and documentation organized so a stranger can reproduce every table | built |
+| 58 | [thesis-chapter-review](phd-research/thesis-chapter-review/SKILL.md) | An examiner's reading, with the fatal separated from the fixable and the optional | built |
+| 59 | [thesis-advisor](phd-research/thesis-advisor/SKILL.md) | A supervisor's position on what to do next, what to cut, and when to start writing | built |
+| 60 | [refereeing-for-a-journal](phd-research/refereeing-for-a-journal/SKILL.md) | Writing the referee report when you are the reviewer, with scope creep resisted | built |
+| 61 | [full-manuscript-build](phd-research/full-manuscript-build/SKILL.md) | The whole paper written in the right order, then ten checks on the seams | built |
 
 ### [Brand and writing track (6)](brand-and-writing/README.md)
 
 | # | Skill | What it enforces | Status |
 | --- | --- | --- | --- |
-| 55 | [breaktalk-brand](brand-and-writing/breaktalk-brand/SKILL.md) | The BreakTalk identity: logo rules, monochrome palette with navy and wine, typography, layout, voice | built |
-| 56 | [newsletter-post-writer](brand-and-writing/newsletter-post-writer/SKILL.md) | Long-form posts that open on a scene, argue with evidence, and end on the point | built |
-| 57 | [linkedin-post-writer](brand-and-writing/linkedin-post-writer/SKILL.md) | 150 to 300 word posts with one idea and no engagement bait | built |
-| 58 | [human-voice-editor](brand-and-writing/human-voice-editor/SKILL.md) | Removing the punctuation, vocabulary, and rhythm tells of generated prose | built |
-| 59 | [skill-builder](brand-and-writing/skill-builder/SKILL.md) | How to write a skill that triggers reliably and enforces a standard | built |
-| 60 | [weekly-review-and-planning](brand-and-writing/weekly-review-and-planning/SKILL.md) | A personal operating rhythm for people running two jobs | built |
+| 62 | [breaktalk-brand](brand-and-writing/breaktalk-brand/SKILL.md) | The BreakTalk identity: logo rules, monochrome palette with navy and wine, typography, layout, voice | built |
+| 63 | [newsletter-post-writer](brand-and-writing/newsletter-post-writer/SKILL.md) | Long-form posts that open on a scene, argue with evidence, and end on the point | built |
+| 64 | [linkedin-post-writer](brand-and-writing/linkedin-post-writer/SKILL.md) | 150 to 300 word posts with one idea and no engagement bait | built |
+| 65 | [human-voice-editor](brand-and-writing/human-voice-editor/SKILL.md) | Removing the punctuation, vocabulary, and rhythm tells of generated prose | built |
+| 66 | [skill-builder](brand-and-writing/skill-builder/SKILL.md) | How to write a skill that triggers reliably and enforces a standard | built |
+| 67 | [weekly-review-and-planning](brand-and-writing/weekly-review-and-planning/SKILL.md) | A personal operating rhythm for people running two jobs | built |
 
 ### [Commercial and data track (16)](commercial-and-data/README.md)
 
 | # | Skill | What it enforces | Status |
 | --- | --- | --- | --- |
-| 61 | [content-quality-gate](commercial-and-data/content-quality-gate/SKILL.md) | Nine checks every piece of buyer-facing content clears before it ships | built |
-| 62 | [account-reengagement-plan](commercial-and-data/account-reengagement-plan/SKILL.md) | Restarting a paused account: diagnosis before proposal, objection playbook, rehearsal personas | built |
-| 63 | [client-economics-analysis](commercial-and-data/client-economics-analysis/SKILL.md) | Lifetime value, health scoring, cost of loss, whitespace, net revenue retention, per client | built |
-| 64 | [economics-report-from-data](commercial-and-data/economics-report-from-data/SKILL.md) | Four levels of analysis, seven economic frameworks, traceable and falsifiable claims | built |
-| 65 | [contractor-msa-and-task-order](commercial-and-data/contractor-msa-and-task-order/SKILL.md) | The two contractor documents, in the right order, with full clause anatomy | built |
-| 66 | [sales-roleplay](commercial-and-data/sales-roleplay/SKILL.md) | A buyer who does not volunteer pain, and coaching that hands over exact language | built |
-| 67 | [image-to-spreadsheet](commercial-and-data/image-to-spreadsheet/SKILL.md) | Transcription with nothing invented, and chart estimates labelled as estimates | built |
-| 68 | [spreadsheet-analysis-workbook](commercial-and-data/spreadsheet-analysis-workbook/SKILL.md) | Reading someone else's workbook before trusting it, and building tabs that reconcile | built |
-| 69 | [revenue-analysis-workbook](commercial-and-data/revenue-analysis-workbook/SKILL.md) | The seven standard tabs, every figure a live formula, a verification tab that proves it | built |
-| 70 | [revenue-concentration-risk](commercial-and-data/revenue-concentration-risk/SKILL.md) | Share weighted by how hard it is to leave, and what losing each account really costs | built |
-| 71 | [expected-revenue-estimation](commercial-and-data/expected-revenue-estimation/SKILL.md) | Five methods ranked by reliability, three scenarios, sensitivity, and an update trigger | built |
-| 72 | [discovery-to-proposal-deck](commercial-and-data/discovery-to-proposal-deck/SKILL.md) | Discovery played back in the client's words before any solution is proposed | built |
-| 73 | [business-agreements-drafting](commercial-and-data/business-agreements-drafting/SKILL.md) | Equity, employment, NDA, partnership, and vendor agreements with the risk flags surfaced | built |
-| 74 | [sales-call-analysis](commercial-and-data/sales-call-analysis/SKILL.md) | Eight deal dimensions scored on quoted evidence, never on a seller assertion | built |
-| 75 | [demo-call-transcript-generator](commercial-and-data/demo-call-transcript-generator/SKILL.md) | Synthetic call histories where partial evidence is correct rather than a gap | built |
-| 76 | [sales-team-competency-assessment](commercial-and-data/sales-team-competency-assessment/SKILL.md) | Self and leadership scores blended, with the perception gap as the coaching signal | built |
+| 68 | [content-quality-gate](commercial-and-data/content-quality-gate/SKILL.md) | Nine checks every piece of buyer-facing content clears before it ships | built |
+| 69 | [account-reengagement-plan](commercial-and-data/account-reengagement-plan/SKILL.md) | Restarting a paused account: diagnosis before proposal, objection playbook, rehearsal personas | built |
+| 70 | [client-economics-analysis](commercial-and-data/client-economics-analysis/SKILL.md) | Lifetime value, health scoring, cost of loss, whitespace, net revenue retention, per client | built |
+| 71 | [economics-report-from-data](commercial-and-data/economics-report-from-data/SKILL.md) | Four levels of analysis, seven economic frameworks, traceable and falsifiable claims | built |
+| 72 | [contractor-msa-and-task-order](commercial-and-data/contractor-msa-and-task-order/SKILL.md) | The two contractor documents, in the right order, with full clause anatomy | built |
+| 73 | [sales-roleplay](commercial-and-data/sales-roleplay/SKILL.md) | A buyer who does not volunteer pain, and coaching that hands over exact language | built |
+| 74 | [image-to-spreadsheet](commercial-and-data/image-to-spreadsheet/SKILL.md) | Transcription with nothing invented, and chart estimates labelled as estimates | built |
+| 75 | [spreadsheet-analysis-workbook](commercial-and-data/spreadsheet-analysis-workbook/SKILL.md) | Reading someone else's workbook before trusting it, and building tabs that reconcile | built |
+| 76 | [revenue-analysis-workbook](commercial-and-data/revenue-analysis-workbook/SKILL.md) | The seven standard tabs, every figure a live formula, a verification tab that proves it | built |
+| 77 | [revenue-concentration-risk](commercial-and-data/revenue-concentration-risk/SKILL.md) | Share weighted by how hard it is to leave, and what losing each account really costs | built |
+| 78 | [expected-revenue-estimation](commercial-and-data/expected-revenue-estimation/SKILL.md) | Five methods ranked by reliability, three scenarios, sensitivity, and an update trigger | built |
+| 79 | [discovery-to-proposal-deck](commercial-and-data/discovery-to-proposal-deck/SKILL.md) | Discovery played back in the client's words before any solution is proposed | built |
+| 80 | [business-agreements-drafting](commercial-and-data/business-agreements-drafting/SKILL.md) | Equity, employment, NDA, partnership, and vendor agreements with the risk flags surfaced | built |
+| 81 | [sales-call-analysis](commercial-and-data/sales-call-analysis/SKILL.md) | Eight deal dimensions scored on quoted evidence, never on a seller assertion | built |
+| 82 | [demo-call-transcript-generator](commercial-and-data/demo-call-transcript-generator/SKILL.md) | Synthetic call histories where partial evidence is correct rather than a gap | built |
+| 83 | [sales-team-competency-assessment](commercial-and-data/sales-team-competency-assessment/SKILL.md) | Self and leadership scores blended, with the perception gap as the coaching signal | built |
 
 ## Adapting a skill
 
@@ -166,7 +175,7 @@ There is nothing here for taste, judgment, or relationships. I do not believe in
 
 Nothing in this repository contains employer or client material. Where I had built a private version against a specific firm's frameworks, clients, and approved claims, the public skill is the method rewritten from scratch with those removed. That test, whether the value sits in the method or in the material, is worth running on your own library before you publish any of it.
 
-## Why these seventy-six
+## Why these eighty-three
 
 They are the tasks I repeat most, and the tasks where quality depends on discipline rather than inspiration: a market analysis is good because every number has a source, a results section is good because the causal language matches the design. That kind of quality is exactly what instructions can enforce. Skills for taste, judgment, or relationships are not in this library because I do not believe they work.
 

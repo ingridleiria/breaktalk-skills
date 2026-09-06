@@ -6,12 +6,12 @@ Six skills for the writing itself, and for the identity the writing carries. The
 
 | # | Skill | What it enforces |
 | --- | --- | --- |
-| 55 | [breaktalk-brand](breaktalk-brand/SKILL.md) | The BreakTalk identity: logo rules, monochrome palette with navy and wine, typography, layout, voice |
-| 56 | [newsletter-post-writer](newsletter-post-writer/SKILL.md) | Long-form posts that open on a scene, argue with evidence, and end on the point |
-| 57 | [linkedin-post-writer](linkedin-post-writer/SKILL.md) | 150 to 300 word posts with one idea and no engagement bait |
-| 58 | [human-voice-editor](human-voice-editor/SKILL.md) | Removing the punctuation, vocabulary, and rhythm tells of generated prose |
-| 59 | [skill-builder](skill-builder/SKILL.md) | How to write a skill that triggers reliably and enforces a standard |
-| 60 | [weekly-review-and-planning](weekly-review-and-planning/SKILL.md) | A personal operating rhythm for people running two jobs |
+| 62 | [breaktalk-brand](breaktalk-brand/SKILL.md) | The BreakTalk identity: logo rules, monochrome palette with navy and wine, typography, layout, voice |
+| 63 | [newsletter-post-writer](newsletter-post-writer/SKILL.md) | Long-form posts that open on a scene, argue with evidence, and end on the point |
+| 64 | [linkedin-post-writer](linkedin-post-writer/SKILL.md) | 150 to 300 word posts with one idea and no engagement bait |
+| 65 | [human-voice-editor](human-voice-editor/SKILL.md) | Removing the punctuation, vocabulary, and rhythm tells of generated prose |
+| 66 | [skill-builder](skill-builder/SKILL.md) | How to write a skill that triggers reliably and enforces a standard |
+| 67 | [weekly-review-and-planning](weekly-review-and-planning/SKILL.md) | A personal operating rhythm for people running two jobs |
 
 ## Using them together
 
