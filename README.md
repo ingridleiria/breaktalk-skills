@@ -53,7 +53,7 @@ Reading eighty-nine files is not the way in. Take one, run it on work you are al
 | If you are | Start with | Because |
 | --- | --- | --- |
 | A Chief of Staff or operator | [chief-of-staff-by-stage](chief-of-staff/chief-of-staff-by-stage/SKILL.md) | The role is four different jobs depending on company stage, and most of the unhappiness in it comes from doing the previous stage's version well |
-| New in the role, or scoping it | [consultant-toolkit](chief-of-staff/consultant-toolkit/SKILL.md) | It is the thinking layer the rest of the track sits on: decision-shaped questions, answer-first memos, every claim quantified |
+| New in the role, or scoping it | [consultant-toolkit](chief-of-staff/consultant-toolkit/SKILL.md) | The thinking layer everything else sits on: find the decision, structure before gathering, commit to an answer early, then synthesise rather than summarise |
 | Running a sales or revenue function | [pipeline-deep-dive](chief-of-staff/pipeline-deep-dive/SKILL.md) | It turns a CRM export into coverage, conversion, velocity, concentration, and an action list with owners |
 | A doctoral student starting a paper | [research-design](phd-research/research-design/SKILL.md) | It forces the one-page design, with hypotheses mapped to exhibits and a kill criterion, before any estimation |
 | Writing up results you already have | [results-writing](phd-research/results-writing/SKILL.md) | Findings first, magnitudes translated, causal language calibrated to what the design supports |
@@ -71,7 +71,7 @@ All 89 skills are built. Each row links to the skill.
 | # | Skill | What it enforces | Status |
 | --- | --- | --- | --- |
 | 1 | [chief-of-staff-by-stage](chief-of-staff/chief-of-staff-by-stage/SKILL.md) | What the role actually is at seed, Series A, B, C and beyond, and what to stop doing | built |
-| 2 | [consultant-toolkit](chief-of-staff/consultant-toolkit/SKILL.md) | Decision-shaped questions, structured problems, answer-first memos, quantified claims | built |
+| 2 | [consultant-toolkit](chief-of-staff/consultant-toolkit/SKILL.md) | Structured problem solving: the decision, a MECE tree, a day-one hypothesis, synthesis, answer first | built |
 | 3 | [program-management](chief-of-staff/program-management/SKILL.md) | Single owners, dated milestones, honest status, decision logs, recovery of slipping programs | built |
 | 4 | [market-research](chief-of-staff/market-research/SKILL.md) | Two-method market sizing, sourced competitor tables, research framed by the decision it feeds | built |
 | 5 | [ideation-deck](chief-of-staff/ideation-deck/SKILL.md) | Raw idea to decision-ready concept deck: options, evidence, pilot metric, kill criterion, ask | built |

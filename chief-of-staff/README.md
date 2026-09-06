@@ -9,7 +9,7 @@ The through line is that quality here depends on discipline rather than inspirat
 Research feeds decisions, decisions feed documents, documents feed the operating rhythm.
 
 - **Know what the job is**: chief-of-staff-by-stage, which is worth reading before the rest, because the role is four different jobs and most of them are being done at the wrong time
-- **Think and structure**: consultant-toolkit, market-research, external-insights, competitive-battlecard, customer-interview-synthesis
+- **Think and structure**: consultant-toolkit, which is the method the rest of the track assumes, then market-research, external-insights, competitive-battlecard, customer-interview-synthesis
 - **Decide and plan**: decision-memo, ideation-deck, strategic-plan-and-action-plan, okr-planning, annual-planning-and-headcount, operating-cadence-design, partnership-assessment, vendor-evaluation
 - **Model the money**: financial-model-builder, pricing-and-resourcing-model, revenue-forecast, pipeline-deep-dive
 - **Raise and govern**: fundraise-readiness, pitch-deck, board-and-investor-management, board-deck, investor-update
@@ -25,7 +25,7 @@ Several of them hand off directly. The forecast reads the pipeline deep dive. Pr
 | # | Skill | What it enforces |
 | --- | --- | --- |
 | 1 | [chief-of-staff-by-stage](chief-of-staff-by-stage/SKILL.md) | What the role actually is at seed, Series A, B, C and beyond, and what to stop doing |
-| 2 | [consultant-toolkit](consultant-toolkit/SKILL.md) | Decision-shaped questions, structured problems, answer-first memos, quantified claims |
+| 2 | [consultant-toolkit](consultant-toolkit/SKILL.md) | Structured problem solving: the decision, a MECE tree, a day-one hypothesis, synthesis, answer first |
 | 3 | [program-management](program-management/SKILL.md) | Single owners, dated milestones, honest status, decision logs, recovery of slipping programs |
 | 4 | [market-research](market-research/SKILL.md) | Two-method market sizing, sourced competitor tables, research framed by the decision it feeds |
 | 5 | [ideation-deck](ideation-deck/SKILL.md) | Raw idea to decision-ready concept deck: options, evidence, pilot metric, kill criterion, ask |
