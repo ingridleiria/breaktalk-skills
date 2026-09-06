@@ -21,7 +21,7 @@ This track came out of an audit rather than a plan. Going back through the skill
 | 101 | [expected-revenue-estimation](expected-revenue-estimation/SKILL.md) | Five methods ranked by reliability, three scenarios, sensitivity, and an update trigger |
 | 102 | [discovery-to-proposal-deck](discovery-to-proposal-deck/SKILL.md) | Discovery played back in the client's words before any solution is proposed |
 | 103 | [business-agreements-drafting](business-agreements-drafting/SKILL.md) | Equity, employment, NDA, partnership, and vendor agreements with the risk flags surfaced |
-| 104 | [sales-call-analysis](sales-call-analysis/SKILL.md) | Eight deal dimensions scored on quoted evidence, never on a seller assertion |
+| 104 | [sales-call-analysis](sales-call-analysis/SKILL.md) | Four passes over the transcript, and nothing established on a seller assertion |
 | 105 | [demo-call-transcript-generator](demo-call-transcript-generator/SKILL.md) | Synthetic call histories where partial evidence is correct rather than a gap |
 | 106 | [sales-team-competency-assessment](sales-team-competency-assessment/SKILL.md) | Self and leadership scores blended, with the perception gap as the coaching signal |
 
@@ -47,4 +47,4 @@ Six of these skills share one non-negotiable standard. Raw data lives in the wor
 
 ## The commercial chain
 
-`sales-roleplay` rehearses the conversation, `sales-call-analysis` scores the real one, `demo-call-transcript-generator` produces the material to test that scoring against, and `sales-team-competency-assessment` looks at the team behind it. `discovery-to-proposal-deck` picks up where discovery ends, and hands to `proposal-writer` and `sow-and-scope` in the Chief of Staff track. `business-agreements-drafting` covers the agreements those two do not.
+`sales-roleplay` rehearses the conversation, `sales-call-analysis` reads the real one, `demo-call-transcript-generator` produces the material to test that scoring against, and `sales-team-competency-assessment` looks at the team behind it. `discovery-to-proposal-deck` picks up where discovery ends, and hands to `proposal-writer` and `sow-and-scope` in the Chief of Staff track. `business-agreements-drafting` covers the agreements those two do not.

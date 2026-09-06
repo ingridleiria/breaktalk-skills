@@ -192,7 +192,7 @@ All 110 skills are built. Each row links to the skill.
 | 101 | [expected-revenue-estimation](commercial-and-data/expected-revenue-estimation/SKILL.md) | Five methods ranked by reliability, three scenarios, sensitivity, and an update trigger | built |
 | 102 | [discovery-to-proposal-deck](commercial-and-data/discovery-to-proposal-deck/SKILL.md) | Discovery played back in the client's words before any solution is proposed | built |
 | 103 | [business-agreements-drafting](commercial-and-data/business-agreements-drafting/SKILL.md) | Equity, employment, NDA, partnership, and vendor agreements with the risk flags surfaced | built |
-| 104 | [sales-call-analysis](commercial-and-data/sales-call-analysis/SKILL.md) | Eight deal dimensions scored on quoted evidence, never on a seller assertion | built |
+| 104 | [sales-call-analysis](commercial-and-data/sales-call-analysis/SKILL.md) | Four passes over the transcript, and nothing established on a seller assertion | built |
 | 105 | [demo-call-transcript-generator](commercial-and-data/demo-call-transcript-generator/SKILL.md) | Synthetic call histories where partial evidence is correct rather than a gap | built |
 | 106 | [sales-team-competency-assessment](commercial-and-data/sales-team-competency-assessment/SKILL.md) | Self and leadership scores blended, with the perception gap as the coaching signal | built |
 
@@ -204,6 +204,12 @@ All 110 skills are built. Each row links to the skill.
 | 108 | [interactive-results-explorer](web-and-presentation/interactive-results-explorer/SKILL.md) | The rows shipped with the page, uncertainty on every estimate, and axes that stay honest | built |
 | 109 | [academic-personal-site](web-and-presentation/academic-personal-site/SKILL.md) | What a committee, an editor and a collaborator each came for, and nothing else | built |
 | 110 | [metrics-dashboard-page](web-and-presentation/metrics-dashboard-page/SKILL.md) | Five to nine measures a decision depends on, each with a definition, an owner and a comparison | built |
+
+## How a skill is written
+
+Every file follows one structure, set out in [SKILL_TEMPLATE.md](SKILL_TEMPLATE.md): when to use it and when not to, the inputs it needs with a rule for what to do when one is missing, the method with its decision rules stated rather than implied, at least one worked example in situation, task, action, result form with real numbers and a wrong turn that was abandoned, a second scenario where the method behaves differently, the output shape close enough to copy, the failure modes with how to recognise each one, the edge cases, a quality bar you can check by reading the output, and the related skills.
+
+The worked example is the part that makes a skill useful rather than merely correct. Abstract instructions produce abstract output. A scenario with a number in it, a constraint, and a decision that turned out wrong shows the judgement the numbered steps cannot carry.
 
 ## Adapting a skill
 
