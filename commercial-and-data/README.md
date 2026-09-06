@@ -8,22 +8,22 @@ This track came out of an audit rather than a plan. Going back through the skill
 
 | # | Skill | What it enforces |
 | --- | --- | --- |
-| 74 | [content-quality-gate](content-quality-gate/SKILL.md) | Nine checks every piece of buyer-facing content clears before it ships |
-| 75 | [account-reengagement-plan](account-reengagement-plan/SKILL.md) | Restarting a paused account: diagnosis before proposal, objection playbook, rehearsal personas |
-| 76 | [client-economics-analysis](client-economics-analysis/SKILL.md) | Lifetime value, health scoring, cost of loss, whitespace, net revenue retention, per client |
-| 77 | [economics-report-from-data](economics-report-from-data/SKILL.md) | Four levels of analysis, seven economic frameworks, traceable and falsifiable claims |
-| 78 | [contractor-msa-and-task-order](contractor-msa-and-task-order/SKILL.md) | The two contractor documents, in the right order, with full clause anatomy |
-| 79 | [sales-roleplay](sales-roleplay/SKILL.md) | A buyer who does not volunteer pain, and coaching that hands over exact language |
-| 80 | [image-to-spreadsheet](image-to-spreadsheet/SKILL.md) | Transcription with nothing invented, and chart estimates labelled as estimates |
-| 81 | [spreadsheet-analysis-workbook](spreadsheet-analysis-workbook/SKILL.md) | Reading someone else's workbook before trusting it, and building tabs that reconcile |
-| 82 | [revenue-analysis-workbook](revenue-analysis-workbook/SKILL.md) | The seven standard tabs, every figure a live formula, a verification tab that proves it |
-| 83 | [revenue-concentration-risk](revenue-concentration-risk/SKILL.md) | Share weighted by how hard it is to leave, and what losing each account really costs |
-| 84 | [expected-revenue-estimation](expected-revenue-estimation/SKILL.md) | Five methods ranked by reliability, three scenarios, sensitivity, and an update trigger |
-| 85 | [discovery-to-proposal-deck](discovery-to-proposal-deck/SKILL.md) | Discovery played back in the client's words before any solution is proposed |
-| 86 | [business-agreements-drafting](business-agreements-drafting/SKILL.md) | Equity, employment, NDA, partnership, and vendor agreements with the risk flags surfaced |
-| 87 | [sales-call-analysis](sales-call-analysis/SKILL.md) | Eight deal dimensions scored on quoted evidence, never on a seller assertion |
-| 88 | [demo-call-transcript-generator](demo-call-transcript-generator/SKILL.md) | Synthetic call histories where partial evidence is correct rather than a gap |
-| 89 | [sales-team-competency-assessment](sales-team-competency-assessment/SKILL.md) | Self and leadership scores blended, with the perception gap as the coaching signal |
+| 85 | [content-quality-gate](content-quality-gate/SKILL.md) | Nine checks every piece of buyer-facing content clears before it ships |
+| 86 | [account-reengagement-plan](account-reengagement-plan/SKILL.md) | Restarting a paused account: diagnosis before proposal, objection playbook, rehearsal personas |
+| 87 | [client-economics-analysis](client-economics-analysis/SKILL.md) | Lifetime value, health scoring, cost of loss, whitespace, net revenue retention, per client |
+| 88 | [economics-report-from-data](economics-report-from-data/SKILL.md) | Four levels of analysis, seven economic frameworks, traceable and falsifiable claims |
+| 89 | [contractor-msa-and-task-order](contractor-msa-and-task-order/SKILL.md) | The two contractor documents, in the right order, with full clause anatomy |
+| 90 | [sales-roleplay](sales-roleplay/SKILL.md) | A buyer who does not volunteer pain, and coaching that hands over exact language |
+| 91 | [image-to-spreadsheet](image-to-spreadsheet/SKILL.md) | Transcription with nothing invented, and chart estimates labelled as estimates |
+| 92 | [spreadsheet-analysis-workbook](spreadsheet-analysis-workbook/SKILL.md) | Reading someone else's workbook before trusting it, and building tabs that reconcile |
+| 93 | [revenue-analysis-workbook](revenue-analysis-workbook/SKILL.md) | The seven standard tabs, every figure a live formula, a verification tab that proves it |
+| 94 | [revenue-concentration-risk](revenue-concentration-risk/SKILL.md) | Share weighted by how hard it is to leave, and what losing each account really costs |
+| 95 | [expected-revenue-estimation](expected-revenue-estimation/SKILL.md) | Five methods ranked by reliability, three scenarios, sensitivity, and an update trigger |
+| 96 | [discovery-to-proposal-deck](discovery-to-proposal-deck/SKILL.md) | Discovery played back in the client's words before any solution is proposed |
+| 97 | [business-agreements-drafting](business-agreements-drafting/SKILL.md) | Equity, employment, NDA, partnership, and vendor agreements with the risk flags surfaced |
+| 98 | [sales-call-analysis](sales-call-analysis/SKILL.md) | Eight deal dimensions scored on quoted evidence, never on a seller assertion |
+| 99 | [demo-call-transcript-generator](demo-call-transcript-generator/SKILL.md) | Synthetic call histories where partial evidence is correct rather than a gap |
+| 100 | [sales-team-competency-assessment](sales-team-competency-assessment/SKILL.md) | Self and leadership scores blended, with the perception gap as the coaching signal |
 
 ## Local configuration
 
