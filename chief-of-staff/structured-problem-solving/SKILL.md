@@ -1,9 +1,9 @@
 ---
-name: consultant-toolkit
-description: The structured problem solving method of strategy consulting, applied to any messy business question: define the decision, state the problem as one question, break it into a mutually exclusive and collectively exhaustive tree, write the day-one answer as a hypothesis and then try to disprove it, prioritise the branches that would actually change the answer, ghost the exhibits before doing the analysis, then synthesise rather than summarise and write answer first. Use this skill whenever someone asks to think through a problem, structure an argument, compare options, build a recommendation or a business case, size something, or says their CEO asked them to look into something. Trigger on any vague business question, which is exactly what it exists to structure.
+name: structured-problem-solving
+description: The structured problem solving method taught in strategy firms, applied to any messy business question: define the decision, state the problem as one question, break it into a mutually exclusive and collectively exhaustive tree, write the day-one answer as a hypothesis and then try to disprove it, prioritise the branches that would actually change the answer, ghost the exhibits before doing the analysis, then synthesise rather than summarise and write answer first. Use this skill whenever someone asks to think through a problem, structure an argument, compare options, build a recommendation or a business case, size something, or says their CEO asked them to look into something. Trigger on any vague business question, which is exactly what it exists to structure.
 ---
 
-# Consultant Toolkit
+# Structured Problem Solving
 
 This is the thinking layer the rest of the operating work sits on. The craft is not the frameworks, it is the sequence: find the real decision, structure the problem before touching data, commit to an answer early so the work has something to attack, and then spend the effort only where the result would change what you recommend.
 
@@ -37,7 +37,7 @@ Break the question into parts before looking at any data. Three kinds of tree, c
 
 Whichever you use, the branches must be mutually exclusive so that work is not duplicated and effects are not double counted, and collectively exhaustive so that the answer cannot be hiding in a gap. Both matter, but exhaustive matters more: overlapping branches waste effort, missing ones produce a wrong answer.
 
-Two warnings. A structure that is neat but does not correspond to how the business actually works is decoration, and it is recognisable because every branch has three sub-branches. And a borrowed framework is not a structure. Reaching for a named framework before understanding the problem is the most common substitute for thinking in this trade.
+Two warnings. A structure that is neat but does not correspond to how the business actually works is decoration, and it is recognisable because every branch has three sub-branches. And a borrowed framework is not a structure. Reaching for a named framework before understanding the problem is the most common substitute for thinking in this discipline.
 
 ## Step 4: Write the day-one answer
 
@@ -99,7 +99,7 @@ The elevator test: the whole answer in thirty seconds, out loud, without notes. 
 
 Write the strongest objection a sceptical executive would raise, in their words, and answer it inside the document. If the objection survives the answer, change the recommendation rather than the wording.
 
-Then check for the failures this trade is prone to: analysis that could not have changed the recommendation; a framework applied instead of thinking; branches that are neat rather than true; false precision; a recommendation that is not a decision anyone can take; a single option presented as a choice; risks described as "execution risk" rather than as specific things that could happen; and vocabulary doing the work of evidence. Alignment, synergies, holistic, best in class, unlock, and drive impact are all banned unless attached to a number or a mechanism.
+Then check for the failures this way of working is prone to: analysis that could not have changed the recommendation; a framework applied instead of thinking; branches that are neat rather than true; false precision; a recommendation that is not a decision anyone can take; a single option presented as a choice; risks described as "execution risk" rather than as specific things that could happen; and vocabulary doing the work of evidence. Alignment, synergies, holistic, best in class, unlock, and drive impact are all banned unless attached to a number or a mechanism.
 
 ## Output formats
 

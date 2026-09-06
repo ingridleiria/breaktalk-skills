@@ -7,7 +7,7 @@ description: Writes the one-page memo that gets a decision made rather than disc
 
 Most decisions that drift are not hard, they are unowned and unwritten. The same question returns to the same meeting three times because nobody wrote down what was being asked, what the options cost, and who was actually deciding. A decision memo is one page whose only job is to end that loop.
 
-`consultant-toolkit` covers memo structure generally and `meeting-to-decisions` captures decisions made in conversation. This is for the decision that has to be prepared before the conversation.
+`structured-problem-solving` covers memo structure generally and `meeting-to-decisions` captures decisions made in conversation. This is for the decision that has to be prepared before the conversation.
 
 ## The shape
 

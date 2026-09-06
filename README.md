@@ -53,7 +53,7 @@ Reading a hundred and four files is not the way in. Take one, run it on work you
 | If you are | Start with | Because |
 | --- | --- | --- |
 | A Chief of Staff or operator | [chief-of-staff-by-stage](chief-of-staff/chief-of-staff-by-stage/SKILL.md) | The role is four different jobs depending on company stage, and most of the unhappiness in it comes from doing the previous stage's version well. Then take the playbook for your stage, from [seed](chief-of-staff/cos-at-seed/SKILL.md) to [Series D](chief-of-staff/cos-at-series-d/SKILL.md) |
-| New in the role, or scoping it | [consultant-toolkit](chief-of-staff/consultant-toolkit/SKILL.md) | The thinking layer everything else sits on: find the decision, structure before gathering, commit to an answer early, then synthesise rather than summarise |
+| New in the role, or scoping it | [structured-problem-solving](chief-of-staff/structured-problem-solving/SKILL.md) | The thinking layer everything else sits on: find the decision, structure before gathering, commit to an answer early, then synthesise rather than summarise |
 | Running a sales or revenue function | [pipeline-deep-dive](chief-of-staff/pipeline-deep-dive/SKILL.md) | It turns a CRM export into coverage, conversion, velocity, concentration, and an action list with owners |
 | A doctoral student starting a paper | [research-design](phd-research/research-design/SKILL.md) | It forces the one-page design, with hypotheses mapped to exhibits and a kill criterion, before any estimation |
 | Writing up results you already have | [results-writing](phd-research/results-writing/SKILL.md) | Findings first, magnitudes translated, causal language calibrated to what the design supports |
@@ -78,7 +78,7 @@ All 104 skills are built. Each row links to the skill.
 | 4 | [cos-at-series-b](chief-of-staff/cos-at-series-b/SKILL.md) | A hundred to three hundred, no functions owned, synthesis across a leadership team that now exists | built |
 | 5 | [cos-at-series-c](chief-of-staff/cos-at-series-c/SKILL.md) | A written mandate, governance becoming real, and professionalising without killing the speed | built |
 | 6 | [cos-at-series-d](chief-of-staff/cos-at-series-d/SKILL.md) | Acting in place of the chief executive inside an authority that is written down and reviewed | built |
-| 7 | [consultant-toolkit](chief-of-staff/consultant-toolkit/SKILL.md) | Structured problem solving: the decision, a MECE tree, a day-one hypothesis, synthesis, answer first | built |
+| 7 | [structured-problem-solving](chief-of-staff/structured-problem-solving/SKILL.md) | Find the decision, a MECE tree, a day-one hypothesis attacked not defended, synthesis, answer first | built |
 | 8 | [program-management](chief-of-staff/program-management/SKILL.md) | Single owners, dated milestones, honest status, decision logs, recovery of slipping programs | built |
 | 9 | [market-research](chief-of-staff/market-research/SKILL.md) | Two-method market sizing, sourced competitor tables, research framed by the decision it feeds | built |
 | 10 | [ideation-deck](chief-of-staff/ideation-deck/SKILL.md) | Raw idea to decision-ready concept deck: options, evidence, pilot metric, kill criterion, ask | built |

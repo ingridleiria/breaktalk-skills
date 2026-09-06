@@ -1,6 +1,6 @@
 ---
 name: contractor-msa-and-task-order
-description: Drafts the two documents that put an independent contractor, fractional executive, or associate consultant onto a client engagement: the master services agreement signed once with the individual, and the task order or Exhibit A statement of work issued per engagement underneath it. Enforces the qualification gate and the signing order, sets out the full clause anatomy of both documents, and produces ready-for-review drafts with bracketed placeholders where commercial terms are unknown. Use this skill whenever the user asks for a contractor agreement, associate MSA, task order, Exhibit A, fractional leader contract, or asks how to paper a subcontractor onto a client project.
+description: Drafts the two documents that put an independent contractor, fractional executive, or associate onto a client engagement: the master services agreement signed once with the individual, and the task order or Exhibit A statement of work issued per engagement underneath it. Enforces the qualification gate and the signing order, sets out the full clause anatomy of both documents, and produces ready-for-review drafts with bracketed placeholders where commercial terms are unknown. Use this skill whenever the user asks for a contractor agreement, associate MSA, task order, Exhibit A, fractional leader contract, or asks how to paper a subcontractor onto a client project.
 ---
 
 # Contractor MSA and Task Order

@@ -31,7 +31,7 @@ For each candidate (three to five is the practical range):
 
 - A weighted scoring table with evidence notes per cell, must-have pass/fail shown first, and the TCO row beneath. Sensitivity: if the top two are close, show whether any reasonable change in weights flips the result.
 - A risk register per option: the top three risks, likelihood, impact, mitigation.
-- A recommendation memo (consultant-toolkit format): the decision, the recommended option and why, what it costs over the term, the risks accepted, the negotiation points, the implementation plan outline, and the decision requested with a date.
+- A recommendation memo (structured-problem-solving format): the decision, the recommended option and why, what it costs over the term, the risks accepted, the negotiation points, the implementation plan outline, and the decision requested with a date.
 
 ## Negotiation points
 

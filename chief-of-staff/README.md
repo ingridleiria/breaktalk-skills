@@ -9,7 +9,7 @@ The through line is that quality here depends on discipline rather than inspirat
 Research feeds decisions, decisions feed documents, documents feed the operating rhythm.
 
 - **Know what the job is**: chief-of-staff-by-stage first, then the playbook for where your company actually is, cos-at-seed, cos-at-series-a, cos-at-series-b, cos-at-series-c, or cos-at-series-d. Each one acts as the role at that stage: the first ninety days, what to build, what to decide alone, what breaks at that size, and the signals that the stage has ended
-- **Think and structure**: consultant-toolkit, which is the method the rest of the track assumes, then market-research, external-insights, competitive-battlecard, customer-interview-synthesis
+- **Think and structure**: structured-problem-solving, which is the method the rest of the track assumes, then market-research, external-insights, competitive-battlecard, customer-interview-synthesis
 - **Decide and plan**: decision-memo, ideation-deck, strategic-plan-and-action-plan, okr-planning, annual-planning-and-headcount, operating-cadence-design, partnership-assessment, vendor-evaluation
 - **Model the money**: financial-model-builder, pricing-and-resourcing-model, revenue-forecast, pipeline-deep-dive
 - **Raise and govern**: fundraise-readiness, pitch-deck, board-and-investor-management, board-deck, investor-update
@@ -30,7 +30,7 @@ Several of them hand off directly. The forecast reads the pipeline deep dive. Pr
 | 4 | [cos-at-series-b](cos-at-series-b/SKILL.md) | A hundred to three hundred, no functions owned, synthesis across a leadership team that now exists |
 | 5 | [cos-at-series-c](cos-at-series-c/SKILL.md) | A written mandate, governance becoming real, and professionalising without killing the speed |
 | 6 | [cos-at-series-d](cos-at-series-d/SKILL.md) | Acting in place of the chief executive inside an authority that is written down and reviewed |
-| 7 | [consultant-toolkit](consultant-toolkit/SKILL.md) | Structured problem solving: the decision, a MECE tree, a day-one hypothesis, synthesis, answer first |
+| 7 | [structured-problem-solving](structured-problem-solving/SKILL.md) | Find the decision, a MECE tree, a day-one hypothesis attacked not defended, synthesis, answer first |
 | 8 | [program-management](program-management/SKILL.md) | Single owners, dated milestones, honest status, decision logs, recovery of slipping programs |
 | 9 | [market-research](market-research/SKILL.md) | Two-method market sizing, sourced competitor tables, research framed by the decision it feeds |
 | 10 | [ideation-deck](ideation-deck/SKILL.md) | Raw idea to decision-ready concept deck: options, evidence, pilot metric, kill criterion, ask |

@@ -48,7 +48,7 @@ Build the model with the financial-model-builder conventions:
 
 ## Step 6: The recommendation
 
-A memo in the consultant-toolkit format: the objective, the fit verdict, the economics in one table, the operating model in one paragraph, the top risks and mitigations, the recommendation (proceed, proceed with conditions, pilot first, decline), the deal points to negotiate ranked by value, and the decision requested with a date. Where a pilot is recommended, define its scope, duration, success metric, and the decision at its end.
+A memo in the structured-problem-solving format: the objective, the fit verdict, the economics in one table, the operating model in one paragraph, the top risks and mitigations, the recommendation (proceed, proceed with conditions, pilot first, decline), the deal points to negotiate ranked by value, and the decision requested with a date. Where a pilot is recommended, define its scope, duration, success metric, and the decision at its end.
 
 ## Conduct
 
