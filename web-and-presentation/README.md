@@ -8,10 +8,10 @@ Everything here is built the same way: static files, no build step, accessible b
 
 | # | Skill | What it enforces |
 | --- | --- | --- |
-| 101 | [research-paper-website](research-paper-website/SKILL.md) | The plain-language finding, the figures, the data and the citation, as files that outlive frameworks |
-| 102 | [interactive-results-explorer](interactive-results-explorer/SKILL.md) | The rows shipped with the page, uncertainty on every estimate, and axes that stay honest |
-| 103 | [academic-personal-site](academic-personal-site/SKILL.md) | What a committee, an editor and a collaborator each came for, and nothing else |
-| 104 | [metrics-dashboard-page](metrics-dashboard-page/SKILL.md) | Five to nine measures a decision depends on, each with a definition, an owner and a comparison |
+| 107 | [research-paper-website](research-paper-website/SKILL.md) | The plain-language finding, the figures, the data and the citation, as files that outlive frameworks |
+| 108 | [interactive-results-explorer](interactive-results-explorer/SKILL.md) | The rows shipped with the page, uncertainty on every estimate, and axes that stay honest |
+| 109 | [academic-personal-site](academic-personal-site/SKILL.md) | What a committee, an editor and a collaborator each came for, and nothing else |
+| 110 | [metrics-dashboard-page](metrics-dashboard-page/SKILL.md) | Five to nine measures a decision depends on, each with a definition, an owner and a comparison |
 
 ## Choosing between them
 
