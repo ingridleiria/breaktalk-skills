@@ -12,7 +12,8 @@ Open a pull request against the `SKILL.md`. Small and specific beats large and g
 
 What gets merged:
 
-- A clearer trigger phrase in the `description`, because that field is what decides whether the skill loads at all.
+- A clearer trigger phrase in the `description`, because that field is what decides whether the skill loads at all where loading is automatic.
+- A fix for something that behaves differently on another assistant. These are written to be model-agnostic, and a report that a skill works in one and not another is useful even without a proposed fix.
 - A tighter quality bar. If a criterion cannot be checked by reading the output, it is decoration and should be replaced by one that can.
 - A step that closes a real failure you hit.
 - A correction. Wrong is wrong, and I would rather hear it from you than from a reader.
@@ -28,6 +29,7 @@ What does not get merged:
 Say in the pull request description what task it enforces a standard for, and why an existing skill does not cover it. New skills follow the house shape:
 
 - Frontmatter with `name` matching the folder, and a `description` that lists the phrases people actually say, not a summary of the contents.
+- Plain Markdown that reads as a method, with nothing specific to one assistant, one tool, or one vendor's feature.
 - A short opening paragraph stating the failure the skill exists to prevent.
 - The method, in the order it is actually done.
 - A quality bar at the end, every line checkable by reading the output.

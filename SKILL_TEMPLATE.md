@@ -2,6 +2,8 @@
 
 Copy this into `<track>/<skill-name>/SKILL.md` and replace everything. The folder name and the `name` field must match.
 
+Write it so it works anywhere. The body should read as a method a competent person could follow, with nothing that depends on one assistant, one tool, or one vendor's feature. Where a tool would help, say what it is for and what to do when it is unavailable.
+
 ```markdown
 ---
 name: skill-name-in-kebab-case
@@ -31,7 +33,7 @@ The shape of the deliverable. A table, a document structure, a block of fields. 
 
 ## Notes
 
-The `description` is the load-bearing field. A perfect skill that never triggers is worth nothing, and the most common reason a skill does not trigger is that its description describes the contents rather than the request.
+The `description` is the load-bearing field wherever the assistant loads skills automatically. A perfect skill that never triggers is worth nothing, and the most common reason a skill does not trigger is that its description describes the contents rather than the request. Where you paste the file in by hand, the description is just a summary and the body does all the work.
 
 The quality bar is the second most important part. It is what turns a document into a standard, and it is the section to write first if you are stuck.
 

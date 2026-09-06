@@ -29,33 +29,33 @@ The exhibit skills assume print. Figures are monochrome by default, with series 
 
 | # | Skill | What it enforces |
 | --- | --- | --- |
-| 34 | [research-design](research-design/SKILL.md) | A written one-page design before estimation: question, hypotheses, identification, kill criteria |
-| 35 | [literature-verification](literature-verification/SKILL.md) | No citation enters a draft until verified; reviews built from an evidence matrix |
-| 36 | [results-writing](results-writing/SKILL.md) | Findings first, magnitudes translated, causal language calibrated, honest nulls |
-| 37 | [theoretical-framework-review](theoretical-framework-review/SKILL.md) | Referencial teórico built or diagnosed mechanism by mechanism, Consensus-grounded when connected |
-| 38 | [research-question-ideation](research-question-ideation/SKILL.md) | From topic to candidate questions with novelty check and feasibility triage |
-| 39 | [data-profiling-and-cleaning](data-profiling-and-cleaning/SKILL.md) | Profiling a research dataset: missingness, outliers, codebook checks, panel coherence |
-| 40 | [stata-project-scaffold](stata-project-scaffold/SKILL.md) | Numbered do-file skeleton from setup to first regressions |
-| 41 | [econometric-model-writer](econometric-model-writer/SKILL.md) | The empirical strategy section: equation, terms, assumptions, threats, clustering |
-| 42 | [identification-defense](identification-defense/SKILL.md) | Defending DiD, IV, RDD, and matching designs to a committee or referee |
-| 43 | [descriptive-statistics-tables](descriptive-statistics-tables/SKILL.md) | Table 1 and balance tables that are honest and journal-ready |
-| 44 | [academic-figures-monochrome](academic-figures-monochrome/SKILL.md) | Print-safe figures with series separated by pattern and marker, legend outside the plot |
-| 45 | [academic-tables-booktabs](academic-tables-booktabs/SKILL.md) | Regression and summary tables with three rules and no vertical lines |
-| 46 | [abstract-and-title](abstract-and-title/SKILL.md) | Abstracts traceable to results, titles that state the finding, keywords and JEL codes |
-| 47 | [introduction-writer](introduction-writer/SKILL.md) | The five moves: problem, gap, what the paper does, what it finds, contribution |
-| 48 | [data-section-writer](data-section-writer/SKILL.md) | Sources, sample construction with counts, variable definitions, availability statement |
-| 49 | [discussion-and-conclusion](discussion-and-conclusion/SKILL.md) | Restating at the level of the question, mechanisms, limitations, sized implications |
-| 50 | [references-and-bibliography](references-and-bibliography/SKILL.md) | Style conversion (APA, Chicago, ABNT, house styles), BibTeX hygiene, DOI checks |
-| 51 | [journal-targeting](journal-targeting/SKILL.md) | Scope fit, indexing checks, predatory screening, a ranked submission ladder |
-| 52 | [peer-review-simulator](peer-review-simulator/SKILL.md) | Adversarial pre-submission review from methodologist, field expert, and editor |
-| 53 | [response-to-reviewers](response-to-reviewers/SKILL.md) | Point-by-point responses and revision plans for a revise-and-resubmit |
-| 54 | [conference-presentation-deck](conference-presentation-deck/SKILL.md) | Research talks that lead with the finding and survive a hostile Q&A |
-| 55 | [thesis-defense-prep](thesis-defense-prep/SKILL.md) | Committee questions, identification challenges, and answer rehearsal |
-| 56 | [research-proposal-and-grant](research-proposal-and-grant/SKILL.md) | Proposals with a question, hypotheses, design, timeline, and budget |
-| 57 | [replication-package](replication-package/SKILL.md) | Code, data, and documentation organized so a stranger can reproduce every table |
-| 58 | [thesis-chapter-review](thesis-chapter-review/SKILL.md) | An examiner's reading, with the fatal separated from the fixable and the optional |
-| 59 | [thesis-advisor](thesis-advisor/SKILL.md) | A supervisor's position on what to do next, what to cut, and when to start writing |
-| 60 | [refereeing-for-a-journal](refereeing-for-a-journal/SKILL.md) | Writing the referee report when you are the reviewer, with scope creep resisted |
-| 61 | [full-manuscript-build](full-manuscript-build/SKILL.md) | The whole paper written in the right order, then ten checks on the seams |
+| 40 | [research-design](research-design/SKILL.md) | A written one-page design before estimation: question, hypotheses, identification, kill criteria |
+| 41 | [literature-verification](literature-verification/SKILL.md) | No citation enters a draft until verified; reviews built from an evidence matrix |
+| 42 | [results-writing](results-writing/SKILL.md) | Findings first, magnitudes translated, causal language calibrated, honest nulls |
+| 43 | [theoretical-framework-review](theoretical-framework-review/SKILL.md) | Referencial teórico built or diagnosed mechanism by mechanism, Consensus-grounded when connected |
+| 44 | [research-question-ideation](research-question-ideation/SKILL.md) | From topic to candidate questions with novelty check and feasibility triage |
+| 45 | [data-profiling-and-cleaning](data-profiling-and-cleaning/SKILL.md) | Profiling a research dataset: missingness, outliers, codebook checks, panel coherence |
+| 46 | [stata-project-scaffold](stata-project-scaffold/SKILL.md) | Numbered do-file skeleton from setup to first regressions |
+| 47 | [econometric-model-writer](econometric-model-writer/SKILL.md) | The empirical strategy section: equation, terms, assumptions, threats, clustering |
+| 48 | [identification-defense](identification-defense/SKILL.md) | Defending DiD, IV, RDD, and matching designs to a committee or referee |
+| 49 | [descriptive-statistics-tables](descriptive-statistics-tables/SKILL.md) | Table 1 and balance tables that are honest and journal-ready |
+| 50 | [academic-figures-monochrome](academic-figures-monochrome/SKILL.md) | Print-safe figures with series separated by pattern and marker, legend outside the plot |
+| 51 | [academic-tables-booktabs](academic-tables-booktabs/SKILL.md) | Regression and summary tables with three rules and no vertical lines |
+| 52 | [abstract-and-title](abstract-and-title/SKILL.md) | Abstracts traceable to results, titles that state the finding, keywords and JEL codes |
+| 53 | [introduction-writer](introduction-writer/SKILL.md) | The five moves: problem, gap, what the paper does, what it finds, contribution |
+| 54 | [data-section-writer](data-section-writer/SKILL.md) | Sources, sample construction with counts, variable definitions, availability statement |
+| 55 | [discussion-and-conclusion](discussion-and-conclusion/SKILL.md) | Restating at the level of the question, mechanisms, limitations, sized implications |
+| 56 | [references-and-bibliography](references-and-bibliography/SKILL.md) | Style conversion (APA, Chicago, ABNT, house styles), BibTeX hygiene, DOI checks |
+| 57 | [journal-targeting](journal-targeting/SKILL.md) | Scope fit, indexing checks, predatory screening, a ranked submission ladder |
+| 58 | [peer-review-simulator](peer-review-simulator/SKILL.md) | Adversarial pre-submission review from methodologist, field expert, and editor |
+| 59 | [response-to-reviewers](response-to-reviewers/SKILL.md) | Point-by-point responses and revision plans for a revise-and-resubmit |
+| 60 | [conference-presentation-deck](conference-presentation-deck/SKILL.md) | Research talks that lead with the finding and survive a hostile Q&A |
+| 61 | [thesis-defense-prep](thesis-defense-prep/SKILL.md) | Committee questions, identification challenges, and answer rehearsal |
+| 62 | [research-proposal-and-grant](research-proposal-and-grant/SKILL.md) | Proposals with a question, hypotheses, design, timeline, and budget |
+| 63 | [replication-package](replication-package/SKILL.md) | Code, data, and documentation organized so a stranger can reproduce every table |
+| 64 | [thesis-chapter-review](thesis-chapter-review/SKILL.md) | An examiner's reading, with the fatal separated from the fixable and the optional |
+| 65 | [thesis-advisor](thesis-advisor/SKILL.md) | A supervisor's position on what to do next, what to cut, and when to start writing |
+| 66 | [refereeing-for-a-journal](refereeing-for-a-journal/SKILL.md) | Writing the referee report when you are the reviewer, with scope creep resisted |
+| 67 | [full-manuscript-build](full-manuscript-build/SKILL.md) | The whole paper written in the right order, then ten checks on the seams |
 
 Several of these use the Consensus connector for academic search when it is available, and fall back to open sources such as Crossref and OpenAlex when it is not. None of them require a paid connector.
