@@ -34,6 +34,19 @@ The library is built for two kinds of reader, and it is worth starting from the 
 
 I use both halves in the same week, which is the reason they sit in one repository. The discipline is identical: structure the mess, attach evidence to every claim, hand someone a document they can act on.
 
+## Start here
+
+Reading seventy-six files is not the way in. Take one, run it on work you are already doing this week, and see whether the output is better than what you would have got without it.
+
+| If you are | Start with | Because |
+| --- | --- | --- |
+| A Chief of Staff or operator | [consultant-toolkit](chief-of-staff/consultant-toolkit/SKILL.md) | It is the thinking layer the rest of the track sits on: decision-shaped questions, answer-first memos, every claim quantified |
+| Running a sales or revenue function | [pipeline-deep-dive](chief-of-staff/pipeline-deep-dive/SKILL.md) | It turns a CRM export into coverage, conversion, velocity, concentration, and an action list with owners |
+| A doctoral student starting a paper | [research-design](phd-research/research-design/SKILL.md) | It forces the one-page design, with hypotheses mapped to exhibits and a kill criterion, before any estimation |
+| Writing up results you already have | [results-writing](phd-research/results-writing/SKILL.md) | Findings first, magnitudes translated, causal language calibrated to what the design supports |
+| Handed a spreadsheet you did not build | [spreadsheet-analysis-workbook](commercial-and-data/spreadsheet-analysis-workbook/SKILL.md) | It is the sequence that stops you answering confidently from a column you have misunderstood |
+| Wanting to write your own | [skill-builder](brand-and-writing/skill-builder/SKILL.md) | It is the method behind every file here, including how to phrase a description so the skill actually loads |
+
 ## The catalog
 
 All 76 skills are built. Each row links to the skill.
@@ -134,15 +147,36 @@ All 76 skills are built. Each row links to the skill.
 | 75 | [demo-call-transcript-generator](commercial-and-data/demo-call-transcript-generator/SKILL.md) | Synthetic call histories where partial evidence is correct rather than a gap | built |
 | 76 | [sales-team-competency-assessment](commercial-and-data/sales-team-competency-assessment/SKILL.md) | Self and leadership scores blended, with the perception gap as the coaching signal | built |
 
+## Adapting a skill
+
+These encode my standards. Yours will differ, and the version you edit is worth more to you than the version you install.
+
+1. Install one and use it as written for a week, so you can see what it changes.
+2. Open the `SKILL.md`. It is plain markdown with a short frontmatter block, nothing else. The `description` field is what decides when Claude loads it, so it lists the phrases people actually say rather than a summary of the contents.
+3. Edit the quality bar at the bottom first. That section is the skill's actual argument: it says what "done" means. Change it to your definition and the rest of the file follows.
+4. Where a skill expects a local file, such as `standard.md` or `framework.json`, write yours. Those exist so the method can be public while the specifics stay yours.
+
+[SKILL_TEMPLATE.md](SKILL_TEMPLATE.md) is the empty shape if you would rather start from scratch.
+
+## What these are not
+
+They are not prompts, and they are not a personality. A skill does not make Claude know more. It makes Claude work to a standard, in a repeatable way, so the tenth market analysis follows the same method as the first.
+
+There is nothing here for taste, judgment, or relationships. I do not believe instructions enforce those, and a skill that claims to would be teaching you to trust something that has not earned it.
+
+Nothing in this repository contains employer or client material. Where I had built a private version against a specific firm's frameworks, clients, and approved claims, the public skill is the method rewritten from scratch with those removed. That test, whether the value sits in the method or in the material, is worth running on your own library before you publish any of it.
+
 ## Why these seventy-six
 
 They are the tasks I repeat most, and the tasks where quality depends on discipline rather than inspiration: a market analysis is good because every number has a source, a results section is good because the causal language matches the design. That kind of quality is exactly what instructions can enforce. Skills for taste, judgment, or relationships are not in this library because I do not believe they work.
 
 Nothing in the commercial and data track is an employer artefact. Where I had built a private version against a specific firm's frameworks, clients, and approved claims, the public skill is the method rewritten from scratch with the organisation's specifics moved into a local file the user supplies.
 
-## Releases
+## Releases and contributions
 
-New skills and revisions are announced on BreakTalk. Each release attaches the skills zipped individually for Claude.ai upload.
+New skills and revisions are announced on [BreakTalk](https://breaktalk.substack.com). Each release attaches the skills zipped individually for upload.
+
+If you improve one, [CONTRIBUTING.md](CONTRIBUTING.md) says how to send it back. Issues are open for anything that is wrong, unclear, or missing.
 
 ## License
 
