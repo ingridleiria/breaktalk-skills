@@ -1,0 +1,6 @@
+.DS_Store
+__MACOSX/
+*.zip
+.venv/
+__pycache__/
+.git-unusable/
