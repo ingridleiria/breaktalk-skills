@@ -3,7 +3,6 @@
 # BreakTalk Skills: an open library of AI working instructions for Chief of Staff work, empirical PhD research, and writing
 
 <p align="center">
-<a href="https://github.com/ingridleiria/breaktalk-skills/actions/workflows/validate.yml"><img src="https://github.com/ingridleiria/breaktalk-skills/actions/workflows/validate.yml/badge.svg" alt="validate"></a>
 <img src="https://img.shields.io/badge/skills-110-1F3864" alt="110 skills">
 <img src="https://img.shields.io/badge/tracks-5-1F3864" alt="5 tracks">
 <a href="https://github.com/ingridleiria/breaktalk-skills/releases/latest"><img src="https://img.shields.io/github/v/release/ingridleiria/breaktalk-skills?color=7B1E28" alt="latest release"></a>
@@ -278,8 +277,6 @@ python3 scripts/validate_skills.py
 checked 110 skills across 5 tracks
 all skills pass the house standard
 ```
-
-That same check runs on every push through [GitHub Actions](.github/workflows/validate.yml), so the badge at the top of this page reports the state of the library now rather than the state it had on the day someone last remembered to run the script.
 
 ## Releases and contributions
 
