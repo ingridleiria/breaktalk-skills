@@ -1,0 +1,895 @@
+{
+  "library": "BreakTalk Skills",
+  "license": "MIT",
+  "repository": "https://github.com/ingridleiria/breaktalk-skills",
+  "count": 110,
+  "tracks": {
+    "chief-of-staff": 44,
+    "phd-research": 40,
+    "brand-and-writing": 6,
+    "commercial-and-data": 16,
+    "web-and-presentation": 4
+  },
+  "skills": [
+    {
+      "name": "ai-adoption-program",
+      "track": "chief-of-staff",
+      "path": "chief-of-staff/ai-adoption-program",
+      "file": "chief-of-staff/ai-adoption-program/SKILL.md",
+      "description": "Runs the adoption of AI inside an organisation as a sequenced programme rather than a scatter of tool purchases. Produces a capability audit of where the work and the time actually sit, a shortlist of two or three pilots each with a baseline measured before anything starts and a stop threshold agreed in advance, a one-page usage policy naming the data categories and the decisions that must stay human, a procurement test run against real tasks with known answers, a fluency programme measured by task rather than by licences, and a quarterly report that carries the failures as prominently as the wins. Use this skill when someone asks which AI tools to buy, wants an AI policy or an acceptable use rule, has been asked by a board or an investor what the AI strategy is, is evaluating an AI vendor, wants to know why last year's tool purchase changed nothing, says the team is already using these tools and nobody knows what data is going into them, or asks how to measure whether any of this is working.",
+      "bytes": 24981
+    },
+    {
+      "name": "annual-planning-and-headcount",
+      "track": "chief-of-staff",
+      "path": "chief-of-staff/annual-planning-and-headcount",
+      "file": "chief-of-staff/annual-planning-and-headcount/SKILL.md",
+      "description": "Runs the annual or quarterly planning cycle together with the people plan that pays for it, as one reconciled document: a dated calendar with a named owner per step, a top-down envelope meeting a bottom-up build with the gap closed by revisiting the bets rather than cutting proportionally, headcount sequenced by the month each hire produces output rather than the month a manager wants them, fully loaded cost and ramp per role, a monthly cost curve, runway under a downside, and a hiring pause trigger written before it is needed. Use this skill for annual planning, an operating plan, a budget, a hiring or workforce plan, a quarterly re-plan, a board-facing plan, or when someone asks how many people the company can afford, in what order, or what happens to runway if the plan slips.",
+      "bytes": 19855
+    },
+    {
+      "name": "board-and-investor-management",
+      "track": "chief-of-staff",
+      "path": "chief-of-staff/board-and-investor-management",
+      "file": "chief-of-staff/board-and-investor-management/SKILL.md",
+      "description": "Runs the board and investor relationship rather than the document: the annual calendar and material deadlines, the pre-read that arrives early enough to be read, pre-wiring every significant item one to one before the meeting, an agenda that protects the decisions, minutes and written consents filed within a week, committee work, and the contact between meetings that stops a director ever being surprised. Enforces the rule that bad news is delivered by call and individually, never first in the room. Use this skill for board management, board meeting preparation, investor relations after a round, pre-wiring a decision, writing minutes or consents, onboarding a new director, managing directors between meetings, or when someone says \"we have to tell the board\", \"the board meeting went badly\", or \"how do I handle this director\".",
+      "bytes": 17857
+    },
+    {
+      "name": "board-deck",
+      "track": "chief-of-staff",
+      "path": "chief-of-staff/board-deck",
+      "file": "chief-of-staff/board-deck/SKILL.md",
+      "description": "Builds the board pack and the live board deck: a CEO letter that states the condition of the company in prose, a dashboard whose metrics and definitions never move, financials tied to one set of numbers, decisions framed with resolution language ready to be minuted, and a status against every request the board made last time. Enforces titles that state findings, misses declared by management before a director finds them, and an appendix that holds the detail so the meeting can spend its time deciding. Use this skill when preparing a board meeting, a board pack, a quarterly board deck, advisory board materials or a governance review, and when someone says \"board meeting next week\", \"prepare the board deck\", \"what goes in the board pack\", or \"we need to take this to the board\".",
+      "bytes": 18103
+    },
+    {
+      "name": "ceo-communications",
+      "track": "chief-of-staff",
+      "path": "chief-of-staff/ceo-communications",
+      "file": "chief-of-staff/ceo-communications/SKILL.md",
+      "description": "Drafts communications delivered under a senior leader's name so that they sound like the leader and answer the audience's real question rather than the sender's. Produces a reusable voice note built from samples of how the leader actually writes and speaks, a message decision recorded before any drafting, the draft itself, a question and answer sheet covering what the leader hopes nobody asks, and a sequencing plan for who hears what when. Use this skill when someone asks to draft an all-hands script, a company announcement, an internal memo on strategy or change, a note to the team after a win or a setback, talking points for an interview or a panel, or a thought-leadership piece; when they say the CEO needs to communicate something, needs talking points, needs to explain a reorganisation, or wants this ghostwritten in their voice; and for any message that will go out under a leader's name rather than the author's.",
+      "bytes": 24415
+    },
+    {
+      "name": "chief-of-staff-by-stage",
+      "track": "chief-of-staff",
+      "path": "chief-of-staff/chief-of-staff-by-stage",
+      "file": "chief-of-staff/chief-of-staff-by-stage/SKILL.md",
+      "description": "Diagnoses which operating stage a company is actually at, then routes the Chief of Staff role to the right playbook and writes the charter that scopes it. Produces a diagnosis from five observable signals rather than from the last round raised, a named archetype, a charter covering what the role owns, decides alone, escalates, stops and transfers, and a plain statement of any mismatch between the role being offered and the company that exists. Use this skill when scoping or hiring a Chief of Staff, when someone is starting in the role, when a round or a merger has changed the company's size, when a Chief of Staff cannot say what they own, when a founder asks what to use theirs for, or when someone says the role is not working and nobody can say why.",
+      "bytes": 18918
+    },
+    {
+      "name": "competitive-battlecard",
+      "track": "chief-of-staff",
+      "path": "chief-of-staff/competitive-battlecard",
+      "file": "chief-of-staff/competitive-battlecard/SKILL.md",
+      "description": "Builds a one-page, evidence-based battlecard a salesperson can use during a live call: who the competitor is, how they position themselves in their own words, where they genuinely beat us, where they are weak with the source and date for each claim, the deal patterns we lose and why, the objections they plant and the factual answers, the discovery questions that surface their limits without naming them, their pricing and packaging, and their recent moves. Every claim carries a dated source, and the card carries an owner and a review date. Use this skill when someone asks for a battlecard or competitive positioning, asks how we compete against a named company, asks what to say when a prospect mentions a rival, wants win and loss patterns turned into sales material, wants a comparison against a specific competitor, or says we keep losing to them and nobody knows why.",
+      "bytes": 22633
+    },
+    {
+      "name": "cos-at-seed",
+      "track": "chief-of-staff",
+      "path": "chief-of-staff/cos-at-seed",
+      "file": "chief-of-staff/cos-at-seed/SKILL.md",
+      "description": "Runs the Chief of Staff role at a seed-stage company of roughly five to thirty people, where almost nothing exists and the founder is personally the routing table for every decision. Produces a ninety-day plan, a founder time ledger showing what was taken back, six crude artefacts built in a fixed order, and a transfer register naming who will own each one later. Enforces speed over elegance and refuses the frameworks the company is too small to carry. Use this skill when operating, scoping or advising the role at seed or pre-Series A, when a founder asks what their first operations or business hire should actually do, when someone has just started as the first non-technical hire at a very small company, or when a founder says everything runs through them and they cannot get to the important work.",
+      "bytes": 19165
+    },
+    {
+      "name": "cos-at-series-a",
+      "track": "chief-of-staff",
+      "path": "chief-of-staff/cos-at-series-a",
+      "file": "chief-of-staff/cos-at-series-a/SKILL.md",
+      "description": "Runs the Chief of Staff role at a Series A company of roughly thirty to a hundred people, where the systems built at twenty are quietly failing and the first functional leaders have arrived to own work the role currently holds. Produces an ownership inventory sorted into transfer, keep and stop with dates, a handover register, a dependency ledger naming who owes what to whom, a rebuilt operating cadence, and the company's first properly reconciled planning cycle. Use this skill when operating or advising the role after a Series A, when a company has just crossed thirty or sixty people, when work keeps dying between two teams, when the previous way of working has visibly stopped fitting, or when a Chief of Staff is holding work that a newly hired leader should own.",
+      "bytes": 20059
+    },
+    {
+      "name": "cos-at-series-b",
+      "track": "chief-of-staff",
+      "path": "chief-of-staff/cos-at-series-b",
+      "file": "chief-of-staff/cos-at-series-b/SKILL.md",
+      "description": "Runs the Chief of Staff role at a Series B company of roughly a hundred to three hundred people, where a functional leadership team exists and the role stops owning functions and starts producing the view none of them can produce alone. Produces a monthly one-page synthesis that reconciles the functional reports against each other and against the plan, names the contradictions with the person who can resolve each one, and tracks them to closure. Also covers the second management layer, the quarterly cull of legacy process, and the planning cycle at this scale. Use this skill when operating or advising the role at Series B, when a company has crossed a hundred and fifty people, when the chief executive is receiving reports that do not add up, or when the role has become a very senior project manager and needs to become something else.",
+      "bytes": 20625
+    },
+    {
+      "name": "cos-at-series-c",
+      "track": "chief-of-staff",
+      "path": "chief-of-staff/cos-at-series-c",
+      "file": "chief-of-staff/cos-at-series-c/SKILL.md",
+      "description": "Runs the Chief of Staff role at a Series C company of roughly three hundred to a thousand people, where the role carries one or two named mandates and the company is professionalising fast enough to lose the speed that got it here. Produces a written mandate with a twelve-month test, a programme spine with milestones and a steering rhythm, an admission test every new process must pass before adoption, a governance calendar built backwards from statutory dates, and a defended list of decisions that stay fast. Use this skill when operating or advising the role at Series C or equivalent scale, when a company is professionalising, when the role is being scoped around a transformation, an integration or a market entry, or when approvals have multiplied and nobody can say what a decision now costs in weeks.",
+      "bytes": 21678
+    },
+    {
+      "name": "cos-at-series-d",
+      "track": "chief-of-staff",
+      "path": "chief-of-staff/cos-at-series-d",
+      "file": "chief-of-staff/cos-at-series-d/SKILL.md",
+      "description": "Runs the Chief of Staff role at a late-stage company, Series D and beyond including listing or transaction readiness, where the role decides in the chief executive's name inside written limits. Produces a delegated authority instrument with thresholds and an escalation path, a log of every decision taken in that name, a readiness register that treats listing or sale preparation as a continuous state rather than a project, common metric definitions that reconcile across business units, a succession picture the board can be shown, and a planned ending for the role itself. Use this skill when operating or advising the role at a large late-stage private company, during preparation for a listing or a sale, when the role has become a proxy rather than an adviser, or when a Chief of Staff is making decisions nobody has written down that they can make.",
+      "bytes": 22908
+    },
+    {
+      "name": "crisis-and-incident-comms",
+      "track": "chief-of-staff",
+      "path": "chief-of-staff/crisis-and-incident-comms",
+      "file": "chief-of-staff/crisis-and-incident-comms/SKILL.md",
+      "description": "Runs stakeholder communication during and after a crisis or incident so that every audience hears one version of the facts, in the right order, on a promised rhythm. Produces a timestamped facts sheet separating confirmed from suspected, a named role list with a single spokesperson, a stakeholder sequence justified by harm and obligation, holding statements that promise a time rather than a resolution, an update cadence that is kept, a communications log that serves as the audit trail, and the resolution message and post-incident review. Use this skill the moment something has gone wrong and people have to be told: an outage, a security breach, data loss, a product failure, a safety issue, a sudden senior departure, a negative story, legal action, or a financial shock. Trigger on phrases such as we have an incident, what do we tell customers, the story is out, we are down, customers are asking, how do we handle this, and also for preparedness work before anything has happened.",
+      "bytes": 24620
+    },
+    {
+      "name": "customer-interview-synthesis",
+      "track": "chief-of-staff",
+      "path": "chief-of-staff/customer-interview-synthesis",
+      "file": "chief-of-staff/customer-interview-synthesis/SKILL.md",
+      "description": "Turns a pile of customer, user or stakeholder interviews, call transcripts, survey responses and support tickets into findings that can carry a decision. Produces a coverage statement naming the gaps, a coded corpus where every tag keeps its verbatim, themes reported on both frequency and intensity, the contradictions and the absences rather than an average, five to eight findings each with counts, quotes, segment pattern and a confidence level, and implications tied to the decision the research serves. Use this skill when someone has interview notes and asks what they say, wants research synthesised, needs a findings readout, asks what customers told us, wants calls summarised, wants to move from anecdotes to evidence before a roadmap, pricing or positioning decision, or says everyone has a different view of what the customers want. Trigger for any qualitative input from more than two sources.",
+      "bytes": 24258
+    },
+    {
+      "name": "decision-memo",
+      "track": "chief-of-staff",
+      "path": "chief-of-staff/decision-memo",
+      "file": "chief-of-staff/decision-memo/SKILL.md",
+      "description": "Writes the one-page memo that ends a decision instead of scheduling another meeting about it. Produces a closed question, options including doing nothing, a recommendation stated before the analysis, an explicit reversibility judgement that sets how much analysis the decision deserves, one named decider with a tie-break rule, a date with a default, and a decision log entry. Use this skill when a choice has to go to a leader or a group, when the same question keeps returning to the same meeting, when someone asks for a recommendation or a business case for a choice, when a decision needs recording so it stays decided, or when someone says they need to get sign-off on something.",
+      "bytes": 14718
+    },
+    {
+      "name": "event-and-offsite-planning",
+      "track": "chief-of-staff",
+      "path": "chief-of-staff/event-and-offsite-planning",
+      "file": "chief-of-staff/event-and-offsite-planning/SKILL.md",
+      "description": "Plans leadership offsites, team gatherings, workshops, client events and conference presences backwards from the artefacts they must produce: the named outcomes, the agenda designed session by session from each session's output, the pre-work with owners and deadlines, facilitation and capture, logistics and budget with contingency, risk and fallbacks, and the follow-up that turns decisions into tracked actions. Enforces the standard that every session has a written output and a pre-read owner, and that decisions are circulated within 24 hours and checked at 30 days. Use this skill when someone asks to plan an offsite, a strategy day, a leadership session, a team gathering, a workshop, a client dinner or a conference booth, asks for an agenda for an away day, or says we are getting everyone together and I need to make it worth it.",
+      "bytes": 23998
+    },
+    {
+      "name": "executive-briefing",
+      "track": "chief-of-staff",
+      "path": "chief-of-staff/executive-briefing",
+      "file": "chief-of-staff/executive-briefing/SKILL.md",
+      "description": "Produces the one page an executive carries into a meeting, call, negotiation, or trip: the objective, who is in the room and what they want, what has already been committed and by whom, the positions to take with exact numbers, the questions to ask, the things not to say, and the next step to propose. Enforces the standard that every fact about the other party carries a source or a visible unverified label, that no adjective is used about a person, and that the page can be read in two minutes on a phone. Use this skill whenever someone asks to brief a leader, prepare talking points for a call, write a pre-read, get someone ready for a meeting they are joining cold, or says \"prep me for\", \"what do I need to know before\", \"brief for tomorrow\", \"one-pager for the investor call\", or \"I am walking into this blind\". Trigger for any request to compress a situation into what a busy decision maker needs in two minutes, and always before external meetings, investor calls, and partner negotiations.",
+      "bytes": 21222
+    },
+    {
+      "name": "external-insights",
+      "track": "chief-of-staff",
+      "path": "chief-of-staff/external-insights",
+      "file": "chief-of-staff/external-insights/SKILL.md",
+      "description": "Gathers, verifies, and synthesises outside-in intelligence on a company, person, industry, or trend, and delivers a sourced insight brief rather than a pile of links. Enforces the standard that every fact carries a named source and a date in the same line, that load-bearing numbers are two-sourced or visibly marked as single-sourced, and that what a company says about itself, what a third party reports, and what has been inferred never blur into one another. Use this skill whenever someone asks to research a company, prepare for a meeting with an external party, understand what is happening in an industry, monitor a competitor or a client, find signals before a pitch, build background for a leader before a call, or says \"what is going on with them\", \"brief me on\", \"find out what they are doing\", \"what are people saying about\", or \"have a look at this company before Thursday\". Trigger for any request to bring outside information into an internal decision, and always before outreach, pitches, and partner meetings.",
+      "bytes": 20870
+    },
+    {
+      "name": "financial-model-builder",
+      "track": "chief-of-staff",
+      "path": "chief-of-staff/financial-model-builder",
+      "file": "chief-of-staff/financial-model-builder/SKILL.md",
+      "description": "Builds and audits driver-based financial models in a spreadsheet, covering three-statement, operating, unit-economics, and runway models, with every assumption in a labelled input cell, one scenario switch that moves every output, a visible checks block, and a reconciliation cell that reads zero. Enforces the rule that no number exists anywhere except as a labelled input or a live formula, so any output traces back to its drivers in under two minutes. Use this skill whenever someone wants to build, extend, or check a financial model, budget, cash flow projection, runway model, unit economics, or business case in a spreadsheet, or says model this out, what does the profit and loss look like if, build me a scenario, check my model, how long is our runway, sanity check these numbers, or asks what happens to the plan when one assumption moves. Trigger for any spreadsheet whose purpose is projecting money over time.",
+      "bytes": 19815
+    },
+    {
+      "name": "fundraise-readiness",
+      "track": "chief-of-staff",
+      "path": "chief-of-staff/fundraise-readiness",
+      "file": "chief-of-staff/fundraise-readiness/SKILL.md",
+      "description": "Prepares a company to be diligenced: one metrics pack with written definitions used everywhere, metrics reconciled to the accounts, a data room indexed the way investors read rather than the way documents accumulated, the corporate and legal hygiene that delays more rounds than any commercial issue, the three or four weaknesses named by the company first with prepared answers, and diligence questions rehearsed until the founders answer identically. Use this skill when a company is preparing to raise, is already in diligence, is building a data room or a metrics pack, is facing an acquirer's or a lender's diligence, or when someone asks what has to be true before going out, says \"we are raising in the spring\", or \"they have sent a diligence list\".",
+      "bytes": 18209
+    },
+    {
+      "name": "hiring-scorecard-and-interview-kit",
+      "track": "chief-of-staff",
+      "path": "chief-of-staff/hiring-scorecard-and-interview-kit",
+      "file": "chief-of-staff/hiring-scorecard-and-interview-kit/SKILL.md",
+      "description": "Builds the complete kit for filling a role before anyone is interviewed: the scorecard of mission, measurable twelve-month outcomes and observable competencies; the job advertisement written from it; the stage plan with an owner and a purpose for each stage; structured interview guides with the questions, the probes, and what a strong and a weak answer contain; a work sample that mirrors real work with its rubric written before any candidate sees it; the scoring template; reference questions; and a decision meeting run on written evidence. Enforces the standard that every candidate for a role meets the same stages, the same questions and the same rubric. Use this skill when a role is being opened, when someone asks for a job description, an interview process, interview questions, a scorecard, a hiring rubric, help comparing candidates or structuring a hiring decision, or says we need to hire a, what should we ask them, how do we know if this person is good, or I have three candidates and I cannot decide.",
+      "bytes": 23994
+    },
+    {
+      "name": "ideation-deck",
+      "track": "chief-of-staff",
+      "path": "chief-of-staff/ideation-deck",
+      "file": "chief-of-staff/ideation-deck/SKILL.md",
+      "description": "Turns an idea that nobody has approved into a deck that can be decided on: the idea in one sentence, why now with a dated trigger, evidence separated from belief, a visible version of what it would look like, two or three options at different levels of commitment including doing nothing, a stated recommendation, a success metric with a review date and a kill criterion, and one ask. Enforces titles that carry the argument on their own, every number sourced and dated on the slide, and the audience's first objection answered before slide five. Use this skill when someone wants to pitch an idea internally, prepare a concept for leadership or a partner, turn brainstorm or workshop notes into slides, present a new service line, feature, market entry or initiative, or says \"I have an idea and need to present it\", \"turn these notes into a concept deck\", \"help me pitch this internally\", or \"what if we\". Trigger even when they call it a proposal or a strategy deck, as long as the content is an idea that has not yet been approved.",
+      "bytes": 18489
+    },
+    {
+      "name": "investor-update",
+      "track": "chief-of-staff",
+      "path": "chief-of-staff/investor-update",
+      "file": "chief-of-staff/investor-update/SKILL.md",
+      "description": "Writes the periodic written update to shareholders: a headline that carries the worst fact if there is one, a metric table with fixed definitions that can be assembled into a series across periods, wins with numbers attached, misses with a cause and a dated corrective action, cash and runway stated plainly, and two to four asks specific enough to forward. Enforces a fixed structure, a fixed send date, and the same tone for good news and bad. Use this skill for a monthly or quarterly investor update, a shareholder letter, an LP note, an angel or syndicate update, a fundraising progress note, or when someone says \"the investor update is due\", \"what do I tell our investors\", \"write the monthly\", or \"we have had a bad month, do I still send it\".",
+      "bytes": 15890
+    },
+    {
+      "name": "market-research",
+      "track": "chief-of-staff",
+      "path": "chief-of-staff/market-research",
+      "file": "chief-of-staff/market-research/SKILL.md",
+      "description": "Produces sized, sourced, decision-ready market and competitive analysis rather than a collection of facts. Builds every market size twice, top-down and bottom-up, reconciles the two, separates the total market from the serviceable slice from what could realistically be won, maps competitors on evidence with pricing and dated strategic moves, and enforces the standard that every number carries a source and a year in the same line and that nothing is fabricated. Use this skill whenever someone asks to research a market, size a market, work out the total addressable market, analyse competitors, evaluate a new segment or geography, assess an acquisition or partnership target's market, prepare the market section of a board deck or fundraising material, or says things like \"what does the market look like\", \"who else does this\", \"is this worth entering\", \"how big could this be\", or \"look into this space\". Trigger for any request to gather external business information that will feed a decision, even when the ask is only \"look into X\".",
+      "bytes": 23279
+    },
+    {
+      "name": "meeting-to-decisions",
+      "track": "chief-of-staff",
+      "path": "chief-of-staff/meeting-to-decisions",
+      "file": "chief-of-staff/meeting-to-decisions/SKILL.md",
+      "description": "Converts meeting notes, transcripts, recording summaries or chat threads into a circulated record that holds: numbered decisions separated from things merely discussed, actions with an owner, a verifiable description and a date, open questions with an expected answerer, a parking lot, and a follow-up message ready to send with a confirmation deadline, plus the entry that goes into the decision log. Use this skill whenever someone pastes notes or a transcript and asks for the summary, minutes, action items, next steps or recap; whenever they ask what was decided, who owns what, or ask for the follow-up to be sent; and whenever a meeting has ended with no written record. Trigger for any meeting content, from a two-person call to a leadership offsite.",
+      "bytes": 20073
+    },
+    {
+      "name": "okr-planning",
+      "track": "chief-of-staff",
+      "path": "chief-of-staff/okr-planning",
+      "file": "chief-of-staff/okr-planning/SKILL.md",
+      "description": "Turns an agreed direction into a small set of measured objectives that can be scored without an argument: two to four company objectives per quarter, key results written as a number with a baseline, a target, a date, a named owner and a named measurement source, a cascade where teams write their own objectives rather than inheriting company metrics they cannot move, and a scoring and mid-quarter review rhythm. Use this skill for quarterly or annual goal setting, writing or repairing OKRs, cascading company priorities to teams, scoring last quarter, deciding what carries over, or when someone says the OKRs are a mess, asks for help writing key results, asks what the top priorities should be, or says there are too many goals and nothing is moving. Trigger for any structured goal setting, whether or not the person calls it OKRs.",
+      "bytes": 19003
+    },
+    {
+      "name": "onboarding-plan",
+      "track": "chief-of-staff",
+      "path": "chief-of-staff/onboarding-plan",
+      "file": "chief-of-staff/onboarding-plan/SKILL.md",
+      "description": "Builds the written 30-60-90 day plan for a new hire, an executive, or the user's own new role: the pre-start checklist, the people to meet with a reason and a question for each, the systems and documents to learn, a deliverable in every phase with a real audience, the check-in cadence, and dated reviews at day 30, 60 and 90 assessed against the role's agreed outcomes rather than impressions. Enforces the standard that the plan exists before day one, names people and documents rather than categories, and ends in a written assessment nobody can avoid. Use this skill when someone asks for an onboarding plan, a 30-60-90, a new-hire checklist, a ramp plan, how to get a new person productive, what to do in my first ninety days, how do I start well in this role, or says the new person starts Monday and nothing is ready.",
+      "bytes": 23995
+    },
+    {
+      "name": "operating-cadence-design",
+      "track": "chief-of-staff",
+      "path": "chief-of-staff/operating-cadence-design",
+      "file": "chief-of-staff/operating-cadence-design/SKILL.md",
+      "description": "Designs or repairs the recurring rhythm by which a company runs itself: which meetings exist, at what frequency, with whom, producing which named artefact, and how the weekly, monthly, quarterly and annual cycles connect without repeating each other. Produces a diagnosis of the current calendar with hours consumed, a proposed cadence where every meeting has one owner and one artefact, agenda templates with time allocations, a rollout plan and a review date. Use this skill to set up or fix a meeting cadence, a leadership rhythm, a planning cycle, a management operating system, or how we run the company, and when someone says there are too many meetings, that there is no rhythm, that decisions take too long, that information reaches leadership late, or asks what the leadership meeting or the quarterly planning session should look like.",
+      "bytes": 19317
+    },
+    {
+      "name": "outreach-email",
+      "track": "chief-of-staff",
+      "path": "chief-of-staff/outreach-email",
+      "file": "chief-of-staff/outreach-email/SKILL.md",
+      "description": "Writes one-to-one business outreach that earns a reply, by putting verified research before the writing and the reader's situation before the sender's offer. Produces a five-line research note in which every fact is either verified in this session or labelled as an assumption, a message shaped to its type, an ask small enough to say yes to, and where the situation genuinely has two goals a second labelled variant. The standard it enforces is that no claim about the reader or their organisation goes out unverified, and that the sender must be able to state honestly why this message is relevant now. Use this skill for a cold email, a warm introduction, a follow-up after a call, a re-engagement note after silence, an executive-to-executive message, or a message on a professional network; when someone says reach out to, draft an email to, follow up with, personalise this, or pastes a prospect profile. Trigger for any one-to-one message to an external person, however short.",
+      "bytes": 24373
+    },
+    {
+      "name": "partnership-assessment",
+      "track": "chief-of-staff",
+      "path": "chief-of-staff/partnership-assessment",
+      "file": "chief-of-staff/partnership-assessment/SKILL.md",
+      "description": "Evaluates whether to enter, restructure, or exit a partnership in which two organisations commit resources to a shared outcome: alliances, channel and reseller arrangements, referral deals, joint ventures, co-marketing, white label, and corporate development opportunities. Produces both sides' objectives evidenced independently of the partner's pitch, a fit verdict, economics under base, upside and downside for both parties, an operating model with named owners and hours, risks with early signals, exit terms, and a recommendation with the deal points ranked by value and a walk-away position. Use this skill whenever someone asks whether to partner with a company, evaluate a partnership proposal, structure a channel or referral deal, assess a joint venture, prepare for a partnership negotiation, or says \"they want to partner with us\", \"should we do this deal\", \"what would a partnership with them look like\", or \"this partnership is not producing anything\".",
+      "bytes": 19623
+    },
+    {
+      "name": "pipeline-deep-dive",
+      "track": "chief-of-staff",
+      "path": "chief-of-staff/pipeline-deep-dive",
+      "file": "chief-of-staff/pipeline-deep-dive/SKILL.md",
+      "description": "Analyses a sales pipeline from a CRM export or connected system and produces the diagnostics a leadership team can act on: quantified hygiene problems reported before any conclusion, raw and weighted coverage, measured stage conversion and slippage from closed history, velocity and ageing, win rate by segment, concentration, a forecast built three ways and reconciled, deal cards for the opportunities that carry the number, and an action list with owners and dates. Enforces the standard that every metric is reproducible from the data supplied and that CRM default probabilities are never used as conversion rates. Use this skill whenever someone shares pipeline or opportunity data, asks about coverage, win rates, stage conversion, deal velocity, stale deals, slippage or quota attainment, or says analyse our pipeline, are we going to hit the number, why is the forecast off, prepare the pipeline review, which deals should we focus on, what is really in there.",
+      "bytes": 21311
+    },
+    {
+      "name": "pitch-deck",
+      "track": "chief-of-staff",
+      "path": "chief-of-staff/pitch-deck",
+      "file": "chief-of-staff/pitch-deck/SKILL.md",
+      "description": "Builds the deck that asks for a commitment: the problem as someone specific experiences it, why now, the insight, what you do, evidence it works, a market sized from the bottom up with both inputs sourced, the model, competition including doing nothing, the team, and the ask with what it buys. Enforces titles that carry the argument on their own, one idea per slide, every number sourced and every projection showing its assumptions, and an appendix that holds the detail so the main deck stays under fifteen slides. Use this skill for a fundraising deck, an investor pitch, a partner or corporate pitch, a business case for a new venture, or when someone says \"we need a deck for investors\", \"I am pitching them on Thursday\", or \"can you look at our deck\".",
+      "bytes": 17175
+    },
+    {
+      "name": "pricing-and-resourcing-model",
+      "track": "chief-of-staff",
+      "path": "chief-of-staff/pricing-and-resourcing-model",
+      "file": "chief-of-staff/pricing-and-resourcing-model/SKILL.md",
+      "description": "Prices a single client engagement and staffs it in one model: a bottom-up effort build by role and phase, fully loaded cost, realistic utilisation and ramp, the fee under each commercial structure being considered, gross margin under base and two downside scenarios, and a named-people capacity view against the calendar. Enforces the standard that the price is traceable to the effort build, that margin is shown under downside as well as base, and that the walk-away point is set before negotiation begins. Use this skill whenever someone needs to price a proposal, size the team an engagement requires, check whether a deal is profitable, build a staffing plan, model a retainer or a build-operate-transfer arrangement, compare fee structures, or says how much should we charge, what team do we need for this, is this deal worth doing, can we afford to discount, price this engagement.",
+      "bytes": 21836
+    },
+    {
+      "name": "principal-simulator",
+      "track": "chief-of-staff",
+      "path": "chief-of-staff/principal-simulator",
+      "file": "chief-of-staff/principal-simulator/SKILL.md",
+      "description": "Pressure-tests a memo, recommendation, board narrative, or difficult conversation by playing the specific executive it is going to, before the real meeting happens. Produces a behavioural prediction rather than a critique: where their attention goes and stops, the three questions they will ask in their own words, the decision they would actually reach including the conditional yes, and a rehearsal of the conversation. Enforces the standard that no approval is simulated that the document has not earned, and that gaps in the profile are named rather than filled with a generic executive. Use this skill when someone asks how their boss or the chief executive will react, whether a document is ready to send upward, what questions leadership will ask, how to handle a difficult conversation with an executive, how to prepare for a board member, or says the meeting is tomorrow and they want to run it past someone first.",
+      "bytes": 23992
+    },
+    {
+      "name": "process-documentation-sop",
+      "track": "chief-of-staff",
+      "path": "chief-of-staff/process-documentation-sop",
+      "file": "chief-of-staff/process-documentation-sop/SKILL.md",
+      "description": "Turns a process that lives in one person's head into a standard operating procedure someone new can follow without asking: the current-state map built by observation, then the document with purpose, trigger, owner, roles, numbered steps naming the exact system and the expected result, decision rules, exceptions and escalation, quality checks, timings, and a change log. Enforces the standard that the document is not finished until a person who has never done the work completed it from the text while the author watched in silence. Use this skill when someone asks to document a process, write an SOP, a runbook or a checklist, capture what a leaver knows, standardise a task across several people, hand a process to a new hire or an outsourced team, or says only one person knows how to do this and they are on holiday next week.",
+      "bytes": 23981
+    },
+    {
+      "name": "program-management",
+      "track": "chief-of-staff",
+      "path": "chief-of-staff/program-management",
+      "file": "chief-of-staff/program-management/SKILL.md",
+      "description": "Turns an initiative into owned, dated, trackable workstreams and keeps it moving when priorities shift. Produces the four artefacts every program runs on, a one-pager with a written definition of done, a workstream plan with one named owner per stream, a tracker small enough to update in five minutes, and a decision log, plus the weekly cadence and the escalation rules that make them stay true. Enforces the standard that every milestone is a verifiable event with a date and a single accountable name, and that status is written before it is discussed. Use this skill whenever someone wants to plan a project or program, set up a tracker, define milestones, run a kickoff, write a status update, prepare a steering committee or leadership review, manage cross-functional workstreams, recover a slipping project, or says things like \"we keep dropping the ball\", \"who owns this\", \"set up a cadence\", \"this keeps slipping\", or \"turn this meeting into next steps\". Trigger for any request involving multiple people delivering something over time, even when the words program and project are never used.",
+      "bytes": 23274
+    },
+    {
+      "name": "proposal-writer",
+      "track": "chief-of-staff",
+      "path": "chief-of-staff/proposal-writer",
+      "file": "chief-of-staff/proposal-writer/SKILL.md",
+      "description": "Writes the document that asks a named client to buy a named engagement at a named price: their situation in their own words, two to four measurable outcomes, an approach described by what each phase produces, deliverables precise enough to settle a later dispute, a timeline naming the client-side inputs that hold it, the investment under its own heading, and one next step with a date and an owner. Enforces the standard that the price and the next step are findable in under a minute, that no claim about the firm appears without a number or a case, and that the opening section could not have been written for any other client. Use this skill whenever someone asks to write, review, or tighten a proposal, a scope of services, a services pitch, or an RFP or tender response, or says \"put something together for them after the call\", \"they asked for a proposal by Friday\", or pastes discovery notes and asks what to do with them. Trigger for any document whose job is to get a client to say yes to paid work.",
+      "bytes": 17573
+    },
+    {
+      "name": "revenue-forecast",
+      "track": "chief-of-staff",
+      "path": "chief-of-staff/revenue-forecast",
+      "file": "chief-of-staff/revenue-forecast/SKILL.md",
+      "description": "Builds and maintains the revenue number for the current year and quarter, assembled in four layers of decreasing certainty from contracted revenue through renewals, pipeline conversion, and unidentified run-rate, checked against delivery capacity, presented as a range with named assumptions, and carrying a bridge that explains every change since the last version. Enforces the standard that no figure enters the forecast without a contract, a measured rate, or a labelled assumption behind it, and that the forecast is reconciled to plan and to actuals on a fixed cadence. Use this skill whenever someone asks to build or update the revenue forecast, reforecast the year, reconcile bookings to plan, explain a forecast miss, prepare the forecast page for a board or leadership meeting, or says where will we land this year, update the number, how confident are we, what changed since last month, are we going to make plan.",
+      "bytes": 20013
+    },
+    {
+      "name": "sow-and-scope",
+      "track": "chief-of-staff",
+      "path": "chief-of-staff/sow-and-scope",
+      "file": "chief-of-staff/sow-and-scope/SKILL.md",
+      "description": "Drafts and reviews the document that defines the contractual boundary of a client engagement: deliverables each with a format and an acceptance criterion, exclusions written from what the delivery team fears being asked for, assumptions each carrying the consequence if it fails, client responsibilities with turnarounds in business days, deemed acceptance, payment tied to milestones, and change control with a template attached. Enforces the standard that a scope question can be settled from the document alone and that nothing in it contradicts the proposal it came from. Use this skill whenever someone asks to write or review a statement of work, an SOW, an engagement letter, a scope document or Exhibit A, define deliverables or acceptance criteria, draft a change order, or says \"they keep asking for extra\", \"we are doing work we never agreed\", or \"the proposal is signed, what now\". Trigger for any document that draws the line between what is included and what is not.",
+      "bytes": 18449
+    },
+    {
+      "name": "strategic-plan-and-action-plan",
+      "track": "chief-of-staff",
+      "path": "chief-of-staff/strategic-plan-and-action-plan",
+      "file": "chief-of-staff/strategic-plan-and-action-plan/SKILL.md",
+      "description": "Produces a strategy and the plan that executes it as one document: an honest baseline a sceptical insider would accept, one destination with a number and a date, three to five bets written as claims that could be false, an explicit list of what will not be done including things currently resourced, and one workstream per bet with a named owner, dated event milestones, a first step inside two weeks, and written kill criteria. Use this skill when someone asks for a strategy, a strategic plan, an annual or three-year plan, a roadmap, a growth plan, a turnaround plan, a north star, or says they have a goal and do not know what to actually do about it, that the leadership team keeps disagreeing about direction, or that last year's plan was written and never opened again.",
+      "bytes": 18684
+    },
+    {
+      "name": "structured-problem-solving",
+      "track": "chief-of-staff",
+      "path": "chief-of-staff/structured-problem-solving",
+      "file": "chief-of-staff/structured-problem-solving/SKILL.md",
+      "description": "The structured problem solving method used in strategy work, applied to any messy business question. Produces a closed problem statement, a mutually exclusive and collectively exhaustive tree, a day-one hypothesis written to be attacked, a workplan where every analysis is one that could change the recommendation, ghosted exhibits before the analysis is built, and a synthesis written answer first with titles that carry the argument. Enforces the standard that no claim reaches the page without a number, a source, or a visible label saying it is an assumption. Use this skill whenever someone asks to think through a problem, structure an argument, compare options, build a recommendation or a business case, size something, work out why a metric moved, or says their chief executive asked them to look into something, to have a view by Friday, or to work out what is going on with a number. Trigger on any vague business question, which is exactly what it exists to structure.",
+      "bytes": 30011
+    },
+    {
+      "name": "tailored-client-deck",
+      "track": "chief-of-staff",
+      "path": "chief-of-staff/tailored-client-deck",
+      "file": "chief-of-staff/tailored-client-deck/SKILL.md",
+      "description": "Rebuilds an existing standard deck around one named account so the client recognises their own situation before slide four: a confirmed client context sheet, every inherited slide judged rewrite, keep, or cut, the client's vocabulary throughout, evidence chosen for their sector, a first step sized to their constraints, and correct handling of their logo and any co-branding. Enforces the slide-by-slide test that no more than three slides could be sent to a different client unchanged, that every client fact carries its source in the speaker notes, and that logos are used at correct aspect ratio, resolution and clear space. Use this skill whenever someone asks to prepare or personalise a deck for a named company, add a client's logo to a presentation, build a pitch, kickoff, quarterly review or renewal deck for a named account, or says \"make this deck for them\", \"customise our pitch for this client\", \"co-branded deck\", or \"we are seeing them Thursday\". Trigger whenever a presentation is destined for a named external audience, even when branding is never mentioned.",
+      "bytes": 18379
+    },
+    {
+      "name": "vendor-evaluation",
+      "track": "chief-of-staff",
+      "path": "chief-of-staff/vendor-evaluation",
+      "file": "chief-of-staff/vendor-evaluation/SKILL.md",
+      "description": "Evaluates and compares vendors, tools, and service providers for a purchase, renewal, or replacement, producing weighted requirements fixed before any scoring, an evidence-backed comparison where every score names its source, total cost of ownership over the full term including internal effort and exit costs, verified security and viability checks, reference calls including one the vendor did not supply, a risk register, negotiation points with a walk-away, and a recommendation memo someone else can audit. Enforces the standard that requirements and weights are frozen before options are scored and that no score rests on a vendor-run demo alone. Use this skill whenever someone asks to compare vendors or software, evaluate a supplier proposal, decide whether to renew or switch, build a total cost comparison, prepare for a vendor negotiation, or says which tool should we buy, is this vendor any good, are we getting value from this contract, should we renew, review this before we sign.",
+      "bytes": 22479
+    },
+    {
+      "name": "weekly-status-update",
+      "track": "chief-of-staff",
+      "path": "chief-of-staff/weekly-status-update",
+      "file": "chief-of-staff/weekly-status-update/SKILL.md",
+      "description": "Produces recurring written status that reports exceptions rather than activity: a three-line update per workstream stating done as outcomes, next as checkable commitments, and blocked with the person who can unblock it, consolidated into a leadership rollup whose first two sections tell the reader exactly where to intervene, with an honest status word, metrics from a named source in a fixed order, and the same shape every week. Use this skill for a weekly or fortnightly update, a team status, a project status report, a Friday summary, a leadership rollup, or when someone pastes several people's raw updates and asks for one consolidated version, asks what their update should say, asks for the status for the chief executive, or says nobody reads the weekly.",
+      "bytes": 18398
+    },
+    {
+      "name": "abstract-and-title",
+      "track": "phd-research",
+      "path": "phd-research/abstract-and-title",
+      "file": "phd-research/abstract-and-title/SKILL.md",
+      "description": "Writes and repairs abstracts, titles, keywords, JEL codes and highlights for journal articles, thesis chapters and conference submissions, building the abstract sentence by sentence from the finished results so every claim traces to an exhibit, and generating and ranking title candidates that state the finding rather than the topic. Enforces the research question in the first sentence, the magnitude in the third, verbs no stronger than the results section uses, and no number that is not in a table. Use this skill when someone asks to write or shorten an abstract, says the abstract is weak or over the word limit, asks for a structured abstract, title ideas, \"is this title any good\", keywords, JEL codes, highlights, a resumo or a resumen, or is filling in a submission form that asks for a summary.",
+      "bytes": 25099
+    },
+    {
+      "name": "academic-figures-monochrome",
+      "track": "phd-research",
+      "path": "phd-research/academic-figures-monochrome",
+      "file": "phd-research/academic-figures-monochrome/SKILL.md",
+      "description": "Produces journal-ready, print-safe academic figures in a monochrome house standard where series are separated by marker shape, dash pattern and texture rather than by colour, the legend sits outside the plot area at the top or the bottom and never inside it, and colour, where it is genuinely needed, is restricted to a dark navy and a dark wine red used sparingly. Covers event studies, coefficient plots, group trend plots, distributions, binned scatters for regression discontinuity, hatched bar charts, and grey-ramp maps, with working Stata and matplotlib code, caption and note requirements, and the rule that every figure is regenerated by a script rather than edited by hand. Use this skill whenever someone needs a figure for a paper, thesis, proposal or slide deck, asks for an event-study or coefficient plot, asks to make a chart publication quality, says their figure is too colourful or unreadable in print, or wants an existing chart restyled to a journal standard. Trigger also on vague requests such as \"make this look like a real paper figure\", \"the referee said the figure was hard to read\", or \"can you clean up this graph\".",
+      "bytes": 38196
+    },
+    {
+      "name": "academic-tables-booktabs",
+      "track": "phd-research",
+      "path": "phd-research/academic-tables-booktabs",
+      "file": "phd-research/academic-tables-booktabs/SKILL.md",
+      "description": "Sets the typography and document form of every table in an academic paper, thesis or referee response, in the booktabs convention: three horizontal rules and no vertical lines, decimal-aligned numbers with consistent precision per column, spanning headers with partial rules, panel structure, a caption above the table and a self-contained note beneath it, and floats that behave. Covers the LaTeX implementation with booktabs, siunitx and threeparttable, the equivalent discipline in Word and RTF, Markdown for drafts, and the rule that a table is written to file by a script and never edited by hand. Use this skill whenever a table has to be formatted or fixed for an academic document, when someone asks for a journal-style table, says a table is too wide or will not fit, has tables that look different from each other, needs Stata or R output turned into document form, or asks how to align numbers, where the note goes, or whether to use vertical lines. Trigger also on vague requests such as \"clean up this table\", \"make this look like a real paper\", or \"my table is broken in LaTeX\".",
+      "bytes": 37228
+    },
+    {
+      "name": "analysis-audit",
+      "track": "phd-research",
+      "path": "phd-research/analysis-audit",
+      "file": "phd-research/analysis-audit/SKILL.md",
+      "description": "Audits an empirical analysis, your own before submission or somebody else's, and produces a findings report ranked by whether each finding changes a conclusion. Rebuilds the headline number from raw data by an independent path, traces every table and figure to the code and output file that produced it, checks every number in the text against a stored output, and hunts the specific silent errors that survive peer review: a merge that dropped observations, a filter applied twice, a variable constructed differently in two places, a sample that changes between tables, a figure that does not match its table. Use this skill before submitting a paper or depositing a thesis, when taking over someone else's project, when a data editor or referee has queried a number, when two tables disagree, when a coauthor's result cannot be reproduced, or when a result looks too good. Trigger also on vague requests such as \"check this before I send it\", \"can we trust these numbers\", \"something is off in table 4\", or \"audit my analysis\".",
+      "bytes": 30342
+    },
+    {
+      "name": "conference-presentation-deck",
+      "track": "phd-research",
+      "path": "phd-research/conference-presentation-deck",
+      "file": "phd-research/conference-presentation-deck/SKILL.md",
+      "description": "Builds a research talk that leads with the finding, fits the slot with time left for questions, gives the identification evidence a full slide, and survives a hostile question period, and delivers the deck, the appendix, the timed script and an anticipated-questions sheet with the slide to point to for each answer. Enforces the rule that slide titles are sentences carrying the argument, that the number appears in the first minute and the last, and that figures are readable from the back of a room in monochrome. Use this skill when someone asks to turn a paper into slides, prepare a seminar or conference talk, build a job-market talk, make a poster, present at a lab meeting, or rehearse a presentation, and whenever an existing deck opens with a literature review instead of a result. Trigger also on vague requests such as \"I have twelve minutes\", \"how do I explain this to a general audience\", \"my talk runs long\", or \"what will they ask me\".",
+      "bytes": 25889
+    },
+    {
+      "name": "data-profiling-and-cleaning",
+      "track": "phd-research",
+      "path": "phd-research/data-profiling-and-cleaning",
+      "file": "phd-research/data-profiling-and-cleaning/SKILL.md",
+      "description": "Profiles a dataset before anyone estimates anything on it, then cleans it through code that can be rerun, producing a data quality report, a cleaning log, a sample construction table and an analysis-ready file. Enforces that raw files are never edited, that every variable used is checked against its codebook, that missing codes and sentinel values are found before they become numbers, that merge match rates and panel attrition are reported rather than absorbed, and that every transformation between raw and analysis file is a logged step with a reason and a count. Language agnostic: it decides what must be checked and recorded, not which software does it. Use this skill whenever a dataset arrives or is loaded for the first time, before any estimation on data not yet profiled in this project, when merging or appending files, when harmonising variables across years or waves, when a codebook is in another language, when accents or special characters look wrong, or when somebody says the numbers look odd, the sample is smaller than expected, or a mean has moved for no reason. Trigger also on vaguer requests such as \"check this file\", \"is this data any good\", \"profile this before I start\", or \"something is weird in my data\".",
+      "bytes": 31000
+    },
+    {
+      "name": "data-section-writer",
+      "track": "phd-research",
+      "path": "phd-research/data-section-writer",
+      "file": "phd-research/data-section-writer/SKILL.md",
+      "description": "Writes the data section of an empirical paper, thesis chapter or proposal to a reproducibility standard: sources with producers and access routes, linkage and match rates, the sample construction chain with a count after every restriction, treatment and outcome measurement described precisely enough to judge measurement error, variable definitions with units, missingness and attrition with patterns rather than rates alone, and the data availability statement. Enforces counts that match the exhibits exactly, limitations stated without a reassuring clause, variables tied to the hypotheses they serve, and hyperlinked author-year citations for every dataset, codebook and register. Use this skill when someone asks to write or fix the data section, describe the sample, document variable definitions, explain where the data came from, report attrition or missing data, justify a sample restriction, write a data availability statement, or when a methods section starts estimating before anything has been said about the data.",
+      "bytes": 24353
+    },
+    {
+      "name": "descriptive-statistics-tables",
+      "track": "phd-research",
+      "path": "phd-research/descriptive-statistics-tables",
+      "file": "phd-research/descriptive-statistics-tables/SKILL.md",
+      "description": "Builds the descriptive exhibits that establish a sample before any estimate is shown: the sample construction table tracing every restriction from raw data to analysis sample with counts, the summary statistics table on exactly the estimation sample, the balance table appropriate to the design, and the three to six sentences of prose that report them. Enforces the rule that the descriptive sample and the regression sample are the same sample or the difference is stated, that every variable carries units and a definition, that imbalance is reported rather than hidden, and that every exhibit is generated from code rather than transcribed. Use this skill when someone asks for summary statistics, Table 1, a balance table, a covariate comparison, sample means by group, a sample construction or attrition table, or says describe my sample. Trigger also on vague requests such as \"the referee asked where the sample came from\", \"my Ns do not add up\", \"make a Table 1\", or when a results section begins with no descriptive exhibit at all.",
+      "bytes": 32107
+    },
+    {
+      "name": "discussion-and-conclusion",
+      "track": "phd-research",
+      "path": "phd-research/discussion-and-conclusion",
+      "file": "phd-research/discussion-and-conclusion/SKILL.md",
+      "description": "Writes the discussion and conclusion of a paper or thesis chapter immediately after the results, while the argument is still live: restating the finding at the level of the research question with a comparison a reader can picture, explaining the mechanism in the terms of the framework, comparing with prior estimates by number and by hyperlinked citation, adjudicating every hypothesis, stating limitations with the direction of bias and no reassuring clause, sizing implications to the estimand, and closing on the finding. Handles the conventions of economics, education and management, and the thesis chapter that must also close one chapter and open the next. Use this skill when someone asks to write the discussion, the conclusion, concluding remarks, the limitations section, policy or managerial implications, or says \"my conclusion just repeats the results\", \"am I overclaiming\", \"how do I end this chapter\", \"the reviewer said the contribution is unclear\", \"what do I do with a result that contradicts my hypothesis\".",
+      "bytes": 27547
+    },
+    {
+      "name": "econometric-model-writer",
+      "track": "phd-research",
+      "path": "phd-research/econometric-model-writer",
+      "file": "phd-research/econometric-model-writer/SKILL.md",
+      "description": "Writes the empirical strategy or methods section of a paper, chapter or proposal so that a referee can reproduce the specification from the text alone. Produces the design paragraph in words before any symbol, the numbered estimating equation with every term defined, the parameter of interest named and its estimand stated, the identifying assumption written in plain language and made specific to the setting, the credible threats each paired with a response and the exhibit that carries it, the inference and clustering statement, and estimation code that implements exactly the equation as written. Covers OLS, panel fixed effects, difference-in-differences including staggered adoption, event studies, instrumental variables, regression discontinuity, matching and reweighting, and multilevel models. Use this skill whenever someone asks to write the methods, empirical strategy, estimation or identification section, asks what a coefficient identifies, asks for the equation for their design, needs the model section of a proposal, or has been told their methods section is unclear. Trigger also on vague requests such as \"write up my specification\", \"the referee said the method was not clear\", or \"put this regression into words\".",
+      "bytes": 30409
+    },
+    {
+      "name": "econometrician",
+      "track": "phd-research",
+      "path": "phd-research/econometrician",
+      "file": "phd-research/econometrician/SKILL.md",
+      "description": "Acts as the econometrician on a project rather than the person writing the paper. Chooses the estimator from the question and the data structure rather than from convention, names the assumption each candidate buys and what breaks it, sets the clustering level and handles the small-cluster problem, decides fixed against random effects without leaning on the Hausman test, resolves weighting and functional form, separates the diagnostics that carry a consequence from the ones that are ritual, and attaches a response rule to every diagnostic that can fail. Use this skill when someone asks which estimator to use, what to cluster on, whether to use fixed or random effects, whether to weight, whether to log the outcome, why their standard errors changed, what robustness checks to run, or what to do now that a test has failed. Trigger also on vague requests such as \"is this the right model\", \"does this specification hold up\", \"the referee attacked my standard errors\", or \"check my econometrics\".",
+      "bytes": 33088
+    },
+    {
+      "name": "full-manuscript-build",
+      "track": "phd-research",
+      "path": "phd-research/full-manuscript-build",
+      "file": "phd-research/full-manuscript-build/SKILL.md",
+      "description": "Runs a complete journal article or thesis chapter end to end rather than one section at a time: fixes the target, the claim sentence and the per-section word budget before any drafting, builds the exhibits first, writes the sections in the order that keeps the argument consistent, hands each one to its section skill with the same brief, then runs the cross-section checks that catch the drift a section-by-section process always produces. Enforces one explicit research question carried by hypotheses, numbers that agree everywhere they appear, causal language that does not inflate between the results and the abstract, and hyperlinked author-year citations reconciled with the reference list. Use this skill when someone asks for a whole paper to be written or restructured, says the manuscript does not hang together or reads like several papers, is turning a thesis chapter into an article, is assembling a draft from sections written months apart or by different coauthors, asks what order to write a paper in, or says the paper is nearly done and needs pulling together.",
+      "bytes": 30320
+    },
+    {
+      "name": "identification-defense",
+      "track": "phd-research",
+      "path": "phd-research/identification-defense",
+      "file": "phd-research/identification-defense/SKILL.md",
+      "description": "Attacks an empirical design the way a demanding referee or committee member will, grades every answer as strong, adequate, weak or missing, and then builds the argument, the diagnostic exhibit or the honest concession that answers each attack. Covers difference-in-differences and event studies, instrumental variables, regression discontinuity, matching and selection on observables, synthetic control, and the cross-cutting questions about clustering, attrition, measurement and power that apply to every design. Produces a defense table mapping each objection to its response and the exhibit that carries it, a verdict on whether the design survives at the venue targeted, and short spoken answers for a seminar or viva. Use this skill when someone asks whether their design is identified, asks to defend a difference-in-differences or an instrument, wonders what a committee will ask about identification, is preparing for a defense, seminar or submission, or is choosing between designs. Trigger also on vague requests such as \"attack my design\", \"will reviewers buy this\", \"is parallel trends going to be a problem\", \"my instrument feels weak\", or \"poke holes in this before I send it\".",
+      "bytes": 33754
+    },
+    {
+      "name": "introduction-writer",
+      "track": "phd-research",
+      "path": "phd-research/introduction-writer",
+      "file": "phd-research/introduction-writer/SKILL.md",
+      "description": "Writes and repairs the introduction of a journal article, thesis chapter or proposal, the section where most desk rejections are decided, by building five moves in order (the problem in the world, the gap as a limitation rather than an absence, what the paper does, what it finds with numbers, the contribution) and by diagnosing an existing introduction move by move before rewriting a line of it. Enforces an explicit research question stated in the introduction, hypotheses that carry the story, numbers copied from the finished results rather than recalled, and hyperlinked author-year citations that all appear in the reference list. Use this skill when someone asks to write the introduction, says the intro is weak or too long, asks about the opening paragraph, the motivation, the framing, the gap statement, the contribution paragraph, \"why does this matter\", \"how do I start this chapter\", or when an editor or reviewer said the framing or the positioning was unclear.",
+      "bytes": 27397
+    },
+    {
+      "name": "journal-targeting",
+      "track": "phd-research",
+      "path": "phd-research/journal-targeting",
+      "file": "phd-research/journal-targeting/SKILL.md",
+      "description": "Chooses where a manuscript goes and rebuilds it for that venue, producing an evidence sheet per candidate journal, a ranked submission ladder with a total expected timeline, a predatory-venue screen, and the specific reframing the chosen target requires. Enforces the rule that fit is demonstrated by recent articles the journal actually published, never by reputation, and that every indexing and metric claim carries its source and the date it was checked. Use this skill when someone asks where to submit, which journal fits, whether a journal is indexed or legitimate, what a journal's quartile or impact factor is, how long a decision takes, how to tailor a paper to a target, or what to do after a rejection. Trigger also on vague requests such as \"is this good enough for a decent journal\", \"my supervisor said aim higher\", \"we got desk rejected, now what\", or \"somebody emailed me about a special issue\".",
+      "bytes": 26083
+    },
+    {
+      "name": "literature-verification",
+      "track": "phd-research",
+      "path": "phd-research/literature-verification",
+      "file": "phd-research/literature-verification/SKILL.md",
+      "description": "A zero-fabrication citation and literature workflow for academic writing. Verifies every reference against a live bibliographic record before it enters a draft, checks that the paper actually supports the claim attached to it, builds reviews from an evidence matrix rather than paper by paper, and records screening counts so coverage can be judged. Use this skill whenever someone asks to find papers, build a literature review or related work section, add citations to a draft, check whether references are real, produce a bibliography or BibTeX file, or asks what the literature says about something. Trigger on any academic writing task that will contain citations, even when verification is not mentioned, because unverified generated citations are the failure this exists to prevent.",
+      "bytes": 14687
+    },
+    {
+      "name": "peer-review-simulator",
+      "track": "phd-research",
+      "path": "phd-research/peer-review-simulator",
+      "file": "phd-research/peer-review-simulator/SKILL.md",
+      "description": "Runs an adversarial pre-submission review of your own manuscript, thesis chapter or proposal, in the order an editor actually works: a desk-reject screen read from the abstract and tables alone, three full referee reports from a methodologist, a field expert and a structural reader, an editor's decision with the two or three issues that determined it, and a revision plan ordered by what would sink the paper rather than by section. Enforces the rule that every concern names its consequence for the conclusion and its fix, and that the reports disagree with each other the way real referees do. Use this skill before any submission, before a chapter goes to a supervisor or committee, and whenever someone asks whether a paper is ready, what reviewer 2 will say, whether it will be desk rejected, or asks for a referee report on their own work. Trigger also on vague requests such as \"be brutal with this\", \"tell me what is wrong with it\", \"would you publish this\", or \"I think it is done\".",
+      "bytes": 26999
+    },
+    {
+      "name": "preregistration-and-analysis-plan",
+      "track": "phd-research",
+      "path": "phd-research/preregistration-and-analysis-plan",
+      "file": "phd-research/preregistration-and-analysis-plan/SKILL.md",
+      "description": "Writes a preregistration or pre-analysis plan specific enough to constrain the analysis rather than to decorate it: numbered directional hypotheses, one primary outcome named as primary, the exact estimating specification with its controls and fixed effects and clustering, the sample and the exclusion rules fixed before outcomes are visible, a stated approach to multiple comparisons and named subgroups, a power calculation whose assumed effect size is sourced, an explicit statement of what would count as a null, and a promised deviations table. Enforces the test that two competent analysts reading the plan and handed the same data must produce the same numbers. Use this skill when preregistering a study, writing a pre-analysis plan for a trial or field or survey experiment, preparing a registered report, meeting a funder or ethics requirement for an analysis plan, registering an analysis of existing data, or when someone asks how to avoid p-hacking, specification searching, or the accusation of HARKing.",
+      "bytes": 30791
+    },
+    {
+      "name": "python-for-econometrics",
+      "track": "phd-research",
+      "path": "phd-research/python-for-econometrics",
+      "file": "phd-research/python-for-econometrics/SKILL.md",
+      "description": "Runs an empirical economics project in Python to the same standard a Stata project is held to, and says honestly when Python is the wrong tool. Covers project layout with scripts rather than notebooks, a pinned and lockfiled environment, pandas operations mapped one by one onto their Stata equivalents with the silent traps named, estimation with statsmodels, linearmodels and the fixed effects packages, clustered and robust covariance including the sample alignment trap, seeded generators rather than global random state, testing a data pipeline, and exporting tables and monochrome figures that match the house standard. Use this skill when someone is doing econometrics in Python, converting a project between Stata and Python, asking how to cluster standard errors in Python, how to do a Stata command in pandas, why a merge lost rows, how to make a notebook reproducible, or whether to use Python or Stata for a piece of work. Trigger also on vague requests such as \"should I do this in Python\", \"my notebook gives different numbers now\", or \"translate this do-file\".",
+      "bytes": 31956
+    },
+    {
+      "name": "qualitative-coding-and-analysis",
+      "track": "phd-research",
+      "path": "phd-research/qualitative-coding-and-analysis",
+      "file": "phd-research/qualitative-coding-and-analysis/SKILL.md",
+      "description": "Turns interviews, open-text responses, documents or field notes into analysis that survives scrutiny, by making every step from transcript to claim visible. Enforces a stated approach and level of interpretation, a codebook with definitions and inclusion and exclusion rules and an anchor example, coding of the whole corpus rather than the interesting parts, double coding with an agreement statistic that accounts for chance where prevalence claims are made, themes built from codes and tested against negative cases, quotations selected by a stated rule with no participant carrying an argument alone, prevalence language matched to what the data supports, and an audit trail running from any sentence in the paper back to a coded extract. Use this skill for interview analysis, thematic analysis, framework analysis, coding open-ended survey responses, content or document analysis, the qualitative strand of a mixed methods study, or when a qualitative section has been called impressionistic, anecdotal or cherry-picked. Trigger also on vaguer requests such as \"help me make sense of these interviews\", \"what are the themes here\", \"how do I show this is not just my opinion\", or \"the reviewer says my quotes are cherry-picked\".",
+      "bytes": 30467
+    },
+    {
+      "name": "refereeing-for-a-journal",
+      "track": "phd-research",
+      "path": "phd-research/refereeing-for-a-journal",
+      "file": "phd-research/refereeing-for-a-journal/SKILL.md",
+      "description": "Produces the referee report when a journal has asked you to review somebody else's manuscript: the accept-or-decline decision and the conflict check, the reading order that reaches the recommendation fastest, a report with a summary written in your own words, major and minor points genuinely separated, confidential comments that do not contradict the report, and a recommendation calibrated to the severity of what you found. Enforces the rule that every requested change names what it would change about the paper's conclusion, so that a request which cannot change anything is a suggestion rather than a condition. Use this skill when someone says they have been asked to review a paper, is refereeing for a journal, needs to write or finish a referee report, is deciding whether to accept a review invitation, or asks how to say something difficult to an author. Trigger also on vague requests such as \"I have to review this by Friday\", \"is this a conflict\", \"how harsh should I be\", or \"should I reject this\".",
+      "bytes": 27033
+    },
+    {
+      "name": "references-and-bibliography",
+      "track": "phd-research",
+      "path": "phd-research/references-and-bibliography",
+      "file": "phd-research/references-and-bibliography/SKILL.md",
+      "description": "Produces the reference apparatus of a submission: resolves which style applies and says why, reconciles in-text citations against the list in both directions, formats entries in APA 7, Chicago author-date, ABNT, Harvard or a journal house style, converts between styles from structured records rather than by editing strings, keeps a clean BibTeX file, and confirms every entry resolves to a real record before submission. Enforces the hyperlinked author-year in-text form, Author (Year) carrying the DOI, semicolon-separated when grouped, with every citation present in the list and every list entry cited. Use this skill when someone asks to format references, fix the bibliography, convert citations to another style, reconcile the text with the reference list, produce or clean a BibTeX file, check whether citations are real, prepare references for a specific journal or a university thesis template, or says the reference list is a mess.",
+      "bytes": 26682
+    },
+    {
+      "name": "regression-table-production",
+      "track": "phd-research",
+      "path": "phd-research/regression-table-production",
+      "file": "phd-research/regression-table-production/SKILL.md",
+      "description": "Turns estimation output into a regression table a journal will print, generated from stored estimates rather than retyped. Covers storing and saving estimates, exporting with a table package, one specification per column and one varying dimension per table, indicator rows for fixed effects and control blocks, the sample size row and which R-squared variant belongs where, standard errors in parentheses with the clustering stated in the note, the case for confidence intervals instead of stars, publication coefficient labels, decimal discipline, panel tables for multiple outcomes, and the note that must carry the estimator, the clustering, the sample and the period. Use this skill when someone asks to build or fix a regression table, says their table does not match their code, asks what to report in a table, how many decimals, whether to use stars, what the note should say, or needs Table 2 for a paper, thesis or referee response. Trigger also on vague requests such as \"make this look like a real table\", \"the referee could not tell what column 4 does\", or \"turn this output into a table\".",
+      "bytes": 27638
+    },
+    {
+      "name": "replication-package",
+      "track": "phd-research",
+      "path": "phd-research/replication-package",
+      "file": "phd-research/replication-package/SKILL.md",
+      "description": "Closes a project by assembling and testing the package that lets a stranger regenerate every table and figure in the paper from the raw data with one command: a standard folder structure, a README written for both a data editor and a replicator, a manifest mapping every exhibit to the script that produces it, code cleaned of absolute paths and secrets, a pinned environment, an honest data availability statement with an access route, and a from-scratch test run whose log is included. Enforces the rule that the package is not finished until it has been run in a clean location and every number matched against the submitted manuscript. Use this skill when someone asks to make a project reproducible, prepare code and data for submission or deposit, respond to a journal's data editor, tidy a project before handing it to a coauthor, or archive work at the end of a degree. Trigger also on vague requests such as \"can someone else run this\", \"I need a DOI for my code\", \"the journal is asking for my data\", or \"I am leaving and someone has to take this over\".",
+      "bytes": 29045
+    },
+    {
+      "name": "research-assistant",
+      "track": "phd-research",
+      "path": "phd-research/research-assistant",
+      "file": "phd-research/research-assistant/SKILL.md",
+      "description": "Executes research work to somebody else's brief so the person who set it can use the output without redoing it. Confirms the brief in writing before any work starts, keeps a work log written as the work happens rather than reconstructed, never produces a number or a citation that was not seen in a source, separates what the source says from what was calculated from what was assumed, reports the dead ends alongside the findings, and escalates on a fixed rule rather than on mood. Use this skill when a supervisor, principal investigator or coauthor has assigned a task and it has to be done and reported back, when someone asks for help executing rather than designing research, when a piece of work needs handing over to a colleague, or when someone says they are acting as an assistant on a project. Trigger also on vague requests such as \"can you just pull this together\", \"my supervisor asked for a first cut\", \"I need this checked before I send it on\", or \"help me do the legwork\".",
+      "bytes": 26259
+    },
+    {
+      "name": "research-design",
+      "track": "phd-research",
+      "path": "phd-research/research-design",
+      "file": "phd-research/research-design/SKILL.md",
+      "description": "Produces the written design document that has to exist before any estimation starts: one answerable research question, two to four falsifiable hypotheses each mapped to the exhibit that would test it, an identification strategy chosen to fit the available variation with its key assumption and diagnostic named, the estimating equation with every term defined and the clustering level justified, the data and its three likely problems, the full exhibit list, and the kill criteria. Enforces the rule that the method is chosen after the source of variation is named, never before. Use this skill when starting a new paper, thesis chapter or proposal, when someone asks \"is this identified\", \"what method should I use\", \"should this be DiD or IV\", \"how should I study this\", when a supervisor asks for a design before data work, or when a project has a dataset, an idea, and no written plan.",
+      "bytes": 29455
+    },
+    {
+      "name": "research-ethics-and-data-protection",
+      "track": "phd-research",
+      "path": "phd-research/research-ethics-and-data-protection",
+      "file": "phd-research/research-ethics-and-data-protection/SKILL.md",
+      "description": "Prepares the ethics and data protection side of a study so it clears a committee first time and does not become a problem three years later: which committees have jurisdiction and how long they really take, a specific risk and mitigation assessment, an information sheet and consent process a participant can actually understand, recruitment routes that remove the researcher's power over participants, anonymisation judged by re-identification risk rather than by removing names, a data management plan naming systems and people and dates, consent that permits the sharing a funder will later require, and the disclosure, incidental finding, breach and withdrawal procedures written before fielding. Use this skill when preparing an ethics or institutional review board application, writing a consent form or participant information sheet, writing a data management plan for a funder, working with personal, sensitive or administrative data, planning to link datasets, planning to share or archive a dataset, or when a committee has returned an application and it is not clear why.",
+      "bytes": 35358
+    },
+    {
+      "name": "research-proposal-and-grant",
+      "track": "phd-research",
+      "path": "phd-research/research-proposal-and-grant",
+      "file": "phd-research/research-proposal-and-grant/SKILL.md",
+      "description": "Writes research proposals, grant applications and fellowship statements built outward from the call's own evaluation criteria, so that every scored item is answered where the assessor looks for it: a stated question, falsifiable hypotheses, a design a sceptic would believe can deliver, a data access plan with its status and its fallback, a timeline with milestones, a budget whose every line ties to an activity, and a compliance checklist against the call. Enforces the rule that feasibility is argued with evidence rather than asserted, and that length limits and required sections are treated as pass-fail. Use this skill when someone asks to write a thesis proposal, a grant or fellowship application, a research plan for a job application, a scholarship research statement, or to turn an idea into a proposal, and whenever a call, template or program description is pasted in. Trigger also on vague requests such as \"the deadline is Friday\", \"is this fundable\", \"how do I justify this budget\", or \"they rejected it, what now\".",
+      "bytes": 28599
+    },
+    {
+      "name": "research-question-ideation",
+      "track": "phd-research",
+      "path": "phd-research/research-question-ideation",
+      "file": "phd-research/research-question-ideation/SKILL.md",
+      "description": "Turns a topic, a dataset, or a vague interest into a shortlist of three research questions that could survive a committee, each written as one testable sentence, each checked against the nearest existing paper by verified citation, each with a named source of variation and a rough minimum detectable effect before anyone commits a semester to it. Enforces the rule that a question is killed on identification or feasibility before it is ranked on interest. Use this skill when someone says \"I want to work on X\", \"is this a good paper idea\", \"what can I do with this dataset\", \"help me find a research question\", \"is this novel\", \"I need a third chapter\", \"my supervisor says this is too broad\", or brings enthusiasm and no question. Trigger at the start of a project, before research-design, and whenever an existing idea has stalled and needs to be stress-tested or replaced.",
+      "bytes": 27793
+    },
+    {
+      "name": "response-to-reviewers",
+      "track": "phd-research",
+      "path": "phd-research/response-to-reviewers",
+      "file": "phd-research/response-to-reviewers/SKILL.md",
+      "description": "Builds the point-by-point response letter and the revision it documents, deciding for every referee comment whether to comply, partially comply with a justified alternative, or decline with evidence, and producing a comment ledger in which nothing is unanswered and every claimed change points to a location an editor can check. Enforces the rule that no change is claimed that was not made, that every decline carries evidence rather than an argument, and that the editor's own priorities override the referees' where they conflict. Use this skill when referee reports arrive and someone asks to answer the reviewers, write the response letter, handle an R and R, decide whether to revise or take the paper elsewhere, or draft an appeal. Trigger also on vague requests such as \"we got a major revision\", \"reviewer 2 wants something impossible\", \"how do I say no to a referee\", or \"the editor sent this back\".",
+      "bytes": 24536
+    },
+    {
+      "name": "results-writing",
+      "track": "phd-research",
+      "path": "phd-research/results-writing",
+      "file": "phd-research/results-writing/SKILL.md",
+      "description": "Turns estimation output into the results section of a paper or thesis chapter: written against the finished exhibits, organised by hypothesis rather than by table, with every magnitude translated into interpretable units, causal verbs calibrated to what the design supports, precision reported as intervals rather than stars, and nulls reported as findings with the effect sizes the design can rule out. Enforces that every hypothesis is adjudicated, every number traces to a table cell, and every exhibit is used. Use this skill when someone asks to write up results, interpret a coefficient, describe a regression table, report effect sizes, handle a null or an unexpected result, or says \"my results section is just a list of tables\", \"what does this coefficient mean\", \"is this effect large\", \"am I overclaiming\", \"the reviewer said the results are hard to follow\". Trigger for any task converting estimation output from Stata, R or Python into academic prose.",
+      "bytes": 25642
+    },
+    {
+      "name": "stata-data-management",
+      "track": "phd-research",
+      "path": "phd-research/stata-data-management",
+      "file": "phd-research/stata-data-management/SKILL.md",
+      "description": "Takes raw files to an analysis-ready .dta that can be defended line by line. Covers import from csv, Excel and fixed width, the encode and destring decision, variable and value labels, Stata's numeric date representation, merge with reported match rates and a rule for every _merge value, joinby, append, reshape in both directions, duplicates and isid, missing value codes including extended missing, collapse against egen by group, xtset and panel structure checks including gaps and unbalanced panels, compress and saving with notes, and the rule that a raw file is never overwritten. Use this skill when someone is importing data into Stata, merging files, reshaping a panel, fixing identifiers that will not match, converting strings to numbers, handling missing value codes, building a panel dataset, or says the numbers changed after a merge, the observation count is wrong, or the data will not xtset. Trigger also on vague requests such as \"get this into Stata\", \"my merge is dropping observations\", or \"why is my sample smaller than it should be\".",
+      "bytes": 32269
+    },
+    {
+      "name": "stata-do-file-craft",
+      "track": "phd-research",
+      "path": "phd-research/stata-do-file-craft",
+      "file": "phd-research/stata-do-file-craft/SKILL.md",
+      "description": "Writes Stata do-files that a stranger can run end to end from raw data on a different machine and get the same numbers. Enforces a master do-file calling numbered scripts, one machine-specific line and relative paths everywhere else, a version statement, timestamped logging of every run, locals inside files and globals only for paths, loops over specifications instead of copy-paste, defensive assert and isid checks, capture used only where it cannot hide an error, seeds for anything random, and an absolute ban on editing data interactively. Use this skill when someone asks for help writing or fixing a do-file, says their code will not run on a coauthor's machine, cannot reproduce a number they produced last month, has a single enormous script that has become unmanageable, is preparing code for a journal data editor, or asks how to make a Stata project reproducible. Trigger also on vaguer requests such as \"clean up my Stata code\", \"why did my results change\", or \"how do I organise this\".",
+      "bytes": 26750
+    },
+    {
+      "name": "stata-project-scaffold",
+      "track": "phd-research",
+      "path": "phd-research/stata-project-scaffold",
+      "file": "phd-research/stata-project-scaffold/SKILL.md",
+      "description": "Lays out an empirical Stata project before the first line of analysis is written: the folder tree with a read-only raw directory, the numbered do-file skeleton from setup through to figures, a master do-file that runs the stages in order with a toggle each, a stage contract saying which file owns which decision and what it reads and writes, output naming that maps every table and figure back to one stage, a project-local package directory, and a register of the decisions still open. Enforces the rule that any given decision lives in exactly one stage, so a sample restriction or a variable definition can never exist in two places and diverge. Use this skill when starting a new empirical project, thesis chapter or replication, when somebody asks for a do-file structure or a master do-file, when a project has grown into one enormous script or into several chapter folders that each clean the same data, when two chapters report different sample sizes for the same population, or when a new team member asks where anything is. Trigger also on vaguer requests such as \"how should I organise this project\", \"give me the base do-files\", \"set this up properly\", or \"where should this code go\".",
+      "bytes": 34883
+    },
+    {
+      "name": "survey-and-instrument-design",
+      "track": "phd-research",
+      "path": "phd-research/survey-and-instrument-design",
+      "file": "phd-research/survey-and-instrument-design/SKILL.md",
+      "description": "Designs a survey or measurement instrument that produces data worth analysing, and catches the errors that cannot be repaired after fielding. Enforces constructs defined before any question is written, a blueprint mapping every item to a hypothesis and every hypothesis to items, validated scales preferred over invented ones, wording free of leading, double-barrelled, negated and socially desirable formulations, response scales chosen deliberately and used consistently, order and routing controlled and recorded, translation by back-translation with separate piloting per language, cognitive interviews before a live pilot, and a sampling and non-response plan written before fielding. Use this skill when writing a survey or questionnaire, adapting or shortening an existing instrument, translating one, designing the measures for an experiment, adding a module to an existing panel, reviewing somebody else's draft instrument, or diagnosing why a fielded survey produced data nobody can use. Trigger also on vaguer requests such as \"can you look at my questionnaire\", \"how many points should this scale have\", \"why did so many people drop out at question 12\", or \"we need to ask people about this\".",
+      "bytes": 33250
+    },
+    {
+      "name": "systematic-review-protocol",
+      "track": "phd-research",
+      "path": "phd-research/systematic-review-protocol",
+      "file": "phd-research/systematic-review-protocol/SKILL.md",
+      "description": "Runs a systematic, scoping or rapid review to a standard somebody else could repeat and get the same set of papers. Produces a registered protocol written before searching, an answerable question in a structured frame, eligibility criteria with a reason attached to each, search strings recorded per database with platform and date and validated against a seed set of known papers, screening by two people with agreement reported, a flow of counts that reconciles, extraction to a piloted form, risk of bias assessed with a named tool that actually changes the synthesis, and a pooling decision made on comparability rather than convenience. Use this skill for a systematic review, scoping review, rapid review, evidence map, meta-analysis, a review chapter that has to survive examination, a review section a funder or ministry has commissioned, or when a referee asks how the papers were selected, how many were screened, or why a particular study is not in the table. Trigger also on vaguer requests such as \"review the evidence on this\", \"what does the literature say, properly\", \"make this review defensible\", or \"we need to show our search was not cherry-picked\".",
+      "bytes": 33462
+    },
+    {
+      "name": "theoretical-framework-review",
+      "track": "phd-research",
+      "path": "phd-research/theoretical-framework-review",
+      "file": "phd-research/theoretical-framework-review/SKILL.md",
+      "description": "Builds, reviews or repairs the theoretical framework of a thesis chapter, journal article or proposal so that every hypothesis is the conclusion of a paragraph that argued for it, every mechanism is stated in plain words before any theory is named, contested findings are engaged rather than omitted, and every citation is verified against a live record that says what it is claimed to say. Enforces one test: a reader who has seen only the framework can predict the sign of the main coefficient. Use this skill when someone asks to write or review a theoretical framework, conceptual framework, theory section, background section, literature and hypotheses section, or referencial teorico, when they ask which theory explains a mechanism or how to connect hypotheses to theory, when a reviewer or supervisor says the theoretical grounding is weak or the hypotheses do not follow, or when a paper explains what was found without explaining why it should have happened.",
+      "bytes": 30143
+    },
+    {
+      "name": "thesis-advisor",
+      "track": "phd-research",
+      "path": "phd-research/thesis-advisor",
+      "file": "phd-research/thesis-advisor/SKILL.md",
+      "description": "Takes the supervisor's position rather than the examiner's: states plainly whether the current plan fits the time that remains, triages every remaining piece of work into load-bearing, strengthening and cuttable, names what is being cut and what that costs, sets the order of writing, decides when to stop analysing, and handles supervision and committee dynamics. Enforces the rule that every recommendation names what is dropped to make room for it, and that the verdict on feasibility appears in the first paragraph rather than the last. Use this skill when someone asks what to work on next, whether their scope is achievable, whether to cut a chapter, how to get unstuck, whether to submit now, how to handle a supervisor or a committee, or whether a chapter should become a paper. Trigger also on vague requests such as \"I am behind\", \"I do not know what to do next\", \"is this enough for a thesis\", \"my supervisor has not replied in six weeks\", or \"I have been working on this for months and it is not working\".",
+      "bytes": 27734
+    },
+    {
+      "name": "thesis-chapter-review",
+      "track": "phd-research",
+      "path": "phd-research/thesis-chapter-review",
+      "file": "phd-research/thesis-chapter-review/SKILL.md",
+      "description": "Reads a thesis chapter or a full thesis the way an examiner reads it and reports findings ranked by consequence: what would fail or require major revision, what is a required correction with a bounded fix, and what is only a preference the author may ignore. Checks that the chapter asks a question and answers it, that the design supports the claim, that the contribution survives the literature actually cited, that the chapters agree with each other, and that every exhibit earns its place, then lists the questions the text invites at the viva in an examiner's own words. Enforces the rule that a preference is labelled as a preference, so the candidate does not spend the final month on the wrong things. Use this skill when someone asks for a chapter or thesis to be reviewed, examined, marked, or pressure-tested before submission or before it goes to a supervisor. Trigger also on vague requests such as \"is this good enough\", \"would this pass\", \"read this like an examiner\", or \"what will they attack\".",
+      "bytes": 28080
+    },
+    {
+      "name": "thesis-defense-prep",
+      "track": "phd-research",
+      "path": "phd-research/thesis-defense-prep",
+      "file": "phd-research/thesis-defense-prep/SKILL.md",
+      "description": "Rehearses the viva. Reads the thesis the way a committee reads it, marks the three weakest points in every chapter, builds a question bank of forty to sixty questions in the words examiners actually use, and drills each answer into three parts under sixty seconds with the exhibit to point to, then sizes the defence talk and prepares the room, the concessions and the revision list. Enforces the rule that every answer leads with the direct answer or the concession rather than the defence, and that no answer is rehearsed without knowing where the evidence for it sits. Use this skill when someone mentions a defence, a viva, a proposal hearing, a qualifying exam or a committee meeting, asks what their committee will ask, asks how to answer a particular question, or wants to practise. Trigger also on vague requests such as \"my viva is in three weeks\", \"I am terrified of one of my examiners\", \"what if they ask about the instrument\", or \"how long should my answers be\".",
+      "bytes": 28192
+    },
+    {
+      "name": "breaktalk-brand",
+      "track": "brand-and-writing",
+      "path": "brand-and-writing/breaktalk-brand",
+      "file": "brand-and-writing/breaktalk-brand/SKILL.md",
+      "description": "Applies the BreakTalk identity, which belongs to Ingrid Leiria and her newsletter and public skills library, to any artifact she publishes: newsletter and post images, slide decks, one-pagers, PDFs, social cards, repository READMEs and workshop material. Holds the identity as checkable rules rather than adjectives: logo placement and minimum sizes, an eight-role monochrome palette with two accents, two type families with a line-length limit, numeric margins, monochrome chart discipline, and an editorial voice with banned vocabulary and a fixed sign-off. Use this skill whenever someone asks for anything BreakTalk-branded, mentions BreakTalk, \"my newsletter brand\", \"make it look like BreakTalk\", asks for a Substack header, a post image, a workshop deck, a one-pager or a README under that name, or says only \"brand this\" while working on that material. Read it as a worked example when building a brand skill for a different identity, since the structure transfers and the values do not.",
+      "bytes": 25194
+    },
+    {
+      "name": "human-voice-editor",
+      "track": "brand-and-writing",
+      "path": "brand-and-writing/human-voice-editor",
+      "file": "brand-and-writing/human-voice-editor/SKILL.md",
+      "description": "Edits prose so it reads as written by a person who knows the subject, without lowering the register. Removes the punctuation, vocabulary, rhythm and structural tells of generated text, restores the agents, numbers and examples the draft gestures at, repairs sentence variety against the author's own samples, and returns a change report with counts so the next draft needs less work. Ships a mechanical dash check that reports and refuses to repair. Use this skill whenever someone says a draft sounds like AI, sounds generic, sounds robotic, sounds like a press release, does not sound like them, or asks to humanise, tighten, polish, or make something read naturally; as the final pass on any post, email, memo, report, chapter or paper that will carry a person's name; and when a draft shows the tells even though nobody mentioned voice.",
+      "bytes": 25210
+    },
+    {
+      "name": "linkedin-post-writer",
+      "track": "brand-and-writing",
+      "path": "brand-and-writing/linkedin-post-writer",
+      "file": "brand-and-writing/linkedin-post-writer/SKILL.md",
+      "description": "Writes professional short-form posts of 120 to 300 words carrying one idea and one piece of evidence in the author's own voice, with a first line that is a plain statement rather than a hook, real paragraphs rather than the broken-line format, and a close that states the point once instead of asking for comments. Also adapts a newsletter issue, a paper, a launch or a piece of work into a post that stands alone for readers who will never click. Use this skill whenever someone asks to write a LinkedIn post, announce something publicly, share an article, a paper, a milestone or a new role, \"post about this\", \"put something up about it\", turn an issue or a report into a post, or asks whether a draft post is any good; and for any short professional social writing under a person's own name.",
+      "bytes": 20699
+    },
+    {
+      "name": "newsletter-post-writer",
+      "track": "brand-and-writing",
+      "path": "brand-and-writing/newsletter-post-writer",
+      "file": "brand-and-writing/newsletter-post-writer/SKILL.md",
+      "description": "Writes and rebuilds long-form posts of 1,200 to 3,500 words that open on a concrete scene, argue one claim with named evidence and a stated analytical lens, answer the strongest objection, and end on the point rather than on an uplift line. Enforces one idea per post, a source in the sentence that makes each claim, headers that state claims instead of topics, and a close that returns to the opening. Use this skill whenever someone asks to write, draft, restructure, salvage or edit a newsletter issue, Substack post, blog post, essay or opinion piece; says \"turn these notes into a post\", \"this draft sounds generic\", \"I want to write about X this week\", \"what should this week's issue be\", or pastes research and asks what to do with it; and for any long-form public writing that will carry an individual's name.",
+      "bytes": 21846
+    },
+    {
+      "name": "skill-builder",
+      "track": "brand-and-writing",
+      "path": "brand-and-writing/skill-builder",
+      "file": "brand-and-writing/skill-builder/SKILL.md",
+      "description": "Builds and repairs skills that trigger reliably and enforce a standard rather than describe a topic. Produces a SKILL.md in the required structure of this library: a trigger-shaped description, an opening that names the failure, explicit missing-input rules, a method with decision rules instead of \"choose the right approach\", a worked example in situation, task, action and result form with a wrong turn in it, failure modes, edge cases, and a checkable quality bar. Use this skill whenever someone wants to write a new skill, improve or deepen an existing one, asks why a skill did not fire or fired on the wrong request, wants to turn a repeated workflow, a checklist, or a page of instructions into a skill, asks how skills are structured or what makes a good description, wants to audit or publish a library of them, or says something vague like \"can you make this a skill\", \"this should be reusable\", or \"write me a SKILL.md\".",
+      "bytes": 25735
+    },
+    {
+      "name": "weekly-review-and-planning",
+      "track": "brand-and-writing",
+      "path": "brand-and-writing/weekly-review-and-planning",
+      "file": "brand-and-writing/weekly-review-and-planning/SKILL.md",
+      "description": "Runs a personal weekly review and plans the coming week for someone carrying more than one serious commitment, such as a demanding role plus a doctorate, a job plus a venture, or a leadership role plus caring responsibilities. Closes the week honestly against what was planned, counts the hours actually available, protects one deep-work block per commitment before anything else, merges deadlines across commitments six to eight weeks out, and writes down what will not get done. Produces a one-page plan and a running review log that makes the pattern visible over months. Use this skill whenever someone asks to plan or review their week, says \"I have too much on\", \"I do not know what to focus on\", \"the thesis keeps slipping\", \"help me get on top of things\", wants to balance two commitments, is deciding what to drop, or at the start or end of any week.",
+      "bytes": 23848
+    },
+    {
+      "name": "account-reengagement-plan",
+      "track": "commercial-and-data",
+      "path": "commercial-and-data/account-reengagement-plan",
+      "file": "commercial-and-data/account-reengagement-plan/SKILL.md",
+      "description": "Builds the plan for restarting a paused, stalled or dormant client relationship before anyone sends a proposal. Produces an account dossier with facts and hypotheses separated, a named diagnosis of why the work stopped, a stakeholder map rebuilt for who is there now rather than who was there then, a five-conversation re-entry sequence with the actual questions, an objection playbook written for restart situations rather than for cold sales, two rehearsal personas, and a dated close-the-file rule so dormant accounts stop polluting the forecast. Enforces the standard that a diagnosis exists before any scope is proposed and that the first ask is a conversation, not a phase. Use this skill whenever an engagement is on hold, a phase was scoped but never signed, a champion has left, a renewal went quiet, an invoice was the last thing that happened, or someone asks how to reopen an account, win back a client, restart a project, warm up a lapsed relationship, or approach a new contact who inherited an old one. Trigger also on \"they went dark\", \"we never got phase two\", and \"should we chase this one\".",
+      "bytes": 28678
+    },
+    {
+      "name": "business-agreements-drafting",
+      "track": "commercial-and-data",
+      "path": "commercial-and-data/business-agreements-drafting",
+      "file": "commercial-and-data/business-agreements-drafting/SKILL.md",
+      "description": "Drafts and reviews the agreements a small company needs outside client engagement scope: equity and investment instruments, employment and contractor agreements, mutual and one-way non-disclosure agreements, partnership and referral agreements, and vendor and technology contracts. Produces a first draft in standard clause order with every unknown commercial term left as a visible bracket, a risk flag list above the draft rather than buried in it, a list of decisions the parties still owe each other, a deviation note for anything that differs from the firm's recorded defaults, and a worked numerical example of any conversion, vesting or escalation mechanic. Enforces the standard that no commercial term is ever invented and that a risk is surfaced rather than drafted around. Use this skill whenever someone asks to draft, review or redline a contract or agreement, mentions a convertible note, a SAFE, an NDA, an IP assignment, an advisor, referral or reseller agreement, an offer letter, a software or vendor contract, or asks what is standard for a term, whether a clause is normal, or what they should push back on before signing.",
+      "bytes": 29343
+    },
+    {
+      "name": "client-economics-analysis",
+      "track": "commercial-and-data",
+      "path": "commercial-and-data/client-economics-analysis",
+      "file": "commercial-and-data/client-economics-analysis/SKILL.md",
+      "description": "Analyses the economics of individual client relationships in any business-to-business revenue dataset: a per-client revenue profile, lifetime value computed on three bases with the churn rate taken from the data rather than a benchmark, trajectory and momentum, a five-dimension health score computed by formula, the full cost of losing a client including replacement, expansion and whitespace sizing gated on health, net revenue retention on a true cohort, and a prioritisation matrix that says where retention effort goes. Use it whenever someone asks about LTV, account or client health, churn and retention economics, revenue per client, which accounts are growing or at risk, upsell and expansion potential, or wants a per-client view rather than an aggregate revenue breakdown, including vague versions like \"how are our accounts doing\" or \"where should the account team spend its time\".",
+      "bytes": 23094
+    },
+    {
+      "name": "content-quality-gate",
+      "track": "commercial-and-data",
+      "path": "commercial-and-data/content-quality-gate",
+      "file": "commercial-and-data/content-quality-gate/SKILL.md",
+      "description": "The pass or fail gate that decides whether buyer-facing content ships. Runs nine checks in a fixed order, each with a literal test: a named buyer, the problem before the authority, one core belief, an anchor in the named method, a visible shift, exact terminology, sourced proof, human voice, and a single next step. Produces a filled verdict table that quotes the sentence passing or failing each check, an ordered rewrite list, and one of three verdicts: ship, rewrite, or hold. Enforces the standard that no check is ever answered with an adjective and no number ships without a source someone could open. Use this skill whenever someone asks to draft or review a post, email, newsletter, blog, proposal, deck, landing page, one-pager or case study, and as the final pass after any other skill has produced a draft. Trigger on \"QA this\", \"is this ready\", \"does this pass\", \"brand review\", \"make this sharper\", \"does this sound like us\", \"can I send this\", and on any request to look over something before it goes out.",
+      "bytes": 27692
+    },
+    {
+      "name": "contractor-msa-and-task-order",
+      "track": "commercial-and-data",
+      "path": "commercial-and-data/contractor-msa-and-task-order",
+      "file": "commercial-and-data/contractor-msa-and-task-order/SKILL.md",
+      "description": "Drafts the two documents that put one independent contractor, fractional executive or associate onto a client engagement: the master services agreement signed once with that individual, holding everything that does not change, and the task order or Exhibit A issued per engagement underneath it, holding everything that does. Enforces the qualification gate, the signing order, and a flow-down check against the client contract so that obligations the firm owes its client are carried through to the person doing the work. Produces ready-for-review drafts in a fixed clause order, with every unknown commercial term left as a visible bracket, a flag list for anything that deviates from the firm's standing terms, and the signing order stated in the covering message. Use this skill whenever someone asks for a contractor agreement, an associate or bench MSA, a task order, an Exhibit A, a fractional leader contract, a subcontractor agreement, or asks how to paper someone onto a client project, what to send a new associate before they start, or whether they can just use last time's document.",
+      "bytes": 30550
+    },
+    {
+      "name": "demo-call-transcript-generator",
+      "track": "commercial-and-data",
+      "path": "commercial-and-data/demo-call-transcript-generator",
+      "file": "commercial-and-data/demo-call-transcript-generator/SKILL.md",
+      "description": "Generates realistic synthetic sales call transcripts and multi-call deal histories for demonstrating, training on, or testing a call analysis process. Produces a written specification before any dialogue, a cast fixed in advance, an evidence ledger saying exactly what becomes buyer-established on which call and what stays a seller assertion, a metadata header that makes a deal history readable without opening the dialogue, calls long enough to behave like real ones, and a portfolio with genuine contrast including at least one deal that does not resolve. Use this skill when someone needs demo or test call data, sample transcripts, training material for coaching, synthetic deal histories, or a worked example to show an analysis or scoring tool against.",
+      "bytes": 23126
+    },
+    {
+      "name": "discovery-to-proposal-deck",
+      "track": "commercial-and-data",
+      "path": "commercial-and-data/discovery-to-proposal-deck",
+      "file": "commercial-and-data/discovery-to-proposal-deck/SKILL.md",
+      "description": "Turns discovery notes for one named client into the deck that gets an engagement approved: their situation played back in their own words with every point traceable to something someone said, a solution hypothesis stated as a hypothesis, three to five measurable engagement objectives, the approach and the design principles that govern it, deliverables named as artefacts rather than activities, phases with verifiable milestones and the client dependencies that will actually slip them, a value proposition sized only where the client's own numbers allow, and one next step with an owner and a date. Enforces the standard that nothing about the firm appears before the understanding section and that no figure is invented. Use this skill after a discovery call or a set of interviews, when someone asks for a concept deck, a solution or approach presentation, a scoping deck or a recommendations readout, when they want to turn what they heard into something a client can approve, or when they say \"we had the call, now what do we send them\" or \"put together something for Thursday\".",
+      "bytes": 25241
+    },
+    {
+      "name": "economics-report-from-data",
+      "track": "commercial-and-data",
+      "path": "commercial-and-data/economics-report-from-data",
+      "file": "commercial-and-data/economics-report-from-data/SKILL.md",
+      "description": "Turns a revenue, sales, or operating dataset into an economic argument rather than a description. Enforces four levels of analysis from what happened to what to do, applies only the frameworks the data supports (channel economics, concentration, predictability, growth decomposition, whitespace, cost of delay, seasonality), tests every insight for specificity, consequence, traceability, and falsifiability, and delivers in a fixed template with a language standard that replaces hedging with a magnitude or a mechanism. Use it whenever someone asks what the data means, to explain a trend, to size an opportunity or a risk in words, to write an executive summary, an insight memo or a board narrative, or when a deck of charts needs an argument attached to it.",
+      "bytes": 24476
+    },
+    {
+      "name": "expected-revenue-estimation",
+      "track": "commercial-and-data",
+      "path": "commercial-and-data/expected-revenue-estimation",
+      "file": "commercial-and-data/expected-revenue-estimation/SKILL.md",
+      "description": "Estimates what something will be worth before it has a track record. Selects among five methods ranked by reliability, from a direct historical average through comparable benchmarks, top-down sizing, pipeline conversion, and a bottom-up unit build, then produces three scenario bands with the base case marked, a sensitivity table that names the dominant assumption, a ramp adjustment for anything not yet at steady state, the cost of delay when a launch slips, and an explicit update trigger that gives the estimate a shelf life. Use it whenever someone asks what a new programme, site, client, product, or initiative could be worth, for a run rate or an annualised projection, for an opportunity to be sized, for a scenario model, for a business case number, or for the revenue impact of a delay.",
+      "bytes": 23521
+    },
+    {
+      "name": "image-to-spreadsheet",
+      "track": "commercial-and-data",
+      "path": "commercial-and-data/image-to-spreadsheet",
+      "file": "commercial-and-data/image-to-spreadsheet/SKILL.md",
+      "description": "Converts data trapped in an image into a spreadsheet that states its own reliability: screenshots of tables, photographed invoices, receipts and forms, handwritten notes, and charts whose underlying values have to be reconstructed. Produces a workbook with every value carrying a confidence code, unreadable cells left visibly empty rather than filled, chart-derived figures labelled as estimates with their precision, an arithmetic integrity check against any total the source itself contains, and row and column counts the user can verify against the image in seconds. Enforces the standard that nothing is corrected, reformatted or computed that the source did not contain. Use this skill whenever an image is supplied and the deliverable is a file rather than an answer, including \"digitise this\", \"OCR this into Excel\", \"type this form into a sheet\", \"pull the numbers off this graph\", \"get these receipts into a spreadsheet\", and any request to turn a photo, screenshot or scan into data.",
+      "bytes": 25558
+    },
+    {
+      "name": "revenue-analysis-workbook",
+      "track": "commercial-and-data",
+      "path": "commercial-and-data/revenue-analysis-workbook",
+      "file": "commercial-and-data/revenue-analysis-workbook/SKILL.md",
+      "description": "Builds the standard seven-tab revenue workbook from a raw transaction or invoice extract: a summary of headline figures, a monthly trend with seasonality separated from direction, a per-entity revenue table, a channel or category split, a top-N view with cumulative share, a concentration tab, and a verification tab that proves every number reconciles. Every figure is a live formula reading the raw sheet, and the same build runs the same way every time so the tenth analysis is as trustworthy as the first. Use it whenever someone asks to analyse revenue, break sales down by client or product or channel, build a revenue summary, produce a monthly trend, work out where the money actually comes from, or turn an accounting export into something a leadership team can read.",
+      "bytes": 22843
+    },
+    {
+      "name": "revenue-concentration-risk",
+      "track": "commercial-and-data",
+      "path": "commercial-and-data/revenue-concentration-risk",
+      "file": "commercial-and-data/revenue-concentration-risk/SKILL.md",
+      "description": "Measures how exposed a business is to losing a few relationships and how bad that would actually be. Produces Pareto and Herfindahl measures, top-N ratios read against risk bands, an anchoring score built from data signals rather than impressions, a fragility ranking that weights share by grip, a per-client failure scenario carrying replacement cost and replacement time in months, a portfolio revenue quality score out of one hundred, and a diversification gap expressed as a sales target. Use it whenever someone asks how concentrated their revenue is, what happens if the biggest client leaves, whether the client base is too dependent on a few accounts, how a buyer or investor will see the customer book, or says something vaguer like \"we are too reliant on them\" or \"what is our exposure here\".",
+      "bytes": 23644
+    },
+    {
+      "name": "sales-call-analysis",
+      "track": "commercial-and-data",
+      "path": "commercial-and-data/sales-call-analysis",
+      "file": "commercial-and-data/sales-call-analysis/SKILL.md",
+      "description": "Reads a sales call transcript in four passes and separates what the buyer actually established from what the seller believes, then turns the difference into the questions for the next call. Produces a quoted evidence list, a list of seller assertions the buyer never took up, a ranked set of decisive unknowns with the questions written out ready to ask, a test of whether the agreed next step is real, and coaching in language the seller can reuse. Use this skill when a call recording, transcript or set of notes needs reviewing, when a deal needs an honest health check, when a rep asks how a call went, when a manager asks whether an opportunity is real, when a forecast entry needs evidence behind it, or when someone says a deal feels stuck and cannot say why.",
+      "bytes": 24521
+    },
+    {
+      "name": "sales-roleplay",
+      "track": "commercial-and-data",
+      "path": "commercial-and-data/sales-roleplay",
+      "file": "commercial-and-data/sales-roleplay/SKILL.md",
+      "description": "Runs a rehearsal in two cleanly separated roles: an in-character buyer who is busy, sceptical, withholds the real problem, and opens up only in proportion to the quality of the questions asked, and a coach who steps out of character to name what worked, what was missed, and the exact words to use instead. Produces a scored debrief, a named habit to fix, and the scenario to run next. Covers cold outreach, discovery, demo, proposal walk-through, objection gauntlets, negotiation and closing, at any experience level, without imposing a methodology. Use this skill when someone asks to practise a call, rehearse a conversation, role play a buyer, run an objection drill, prepare for a meeting that matters, get their pitch pressure-tested, or says they keep losing deals at the same point.",
+      "bytes": 25236
+    },
+    {
+      "name": "sales-team-competency-assessment",
+      "track": "commercial-and-data",
+      "path": "commercial-and-data/sales-team-competency-assessment",
+      "file": "commercial-and-data/sales-team-competency-assessment/SKILL.md",
+      "description": "Assesses a sales team against a defined ideal profile by blending two views of each competency, the seller's own self-assessment and their leaders' evaluation, into one score per area and per person, with the gap between the two treated as a finding in its own right. Produces a team dashboard, a perception-gap view, an auditable workbook where every figure is a formula reading the response data, per-person profiles, and coaching plans seeded from the results. Optionally includes a personality component from whatever validated instrument the organisation already licenses. Use this skill when self-assessment and manager-evaluation data exist for a sales team and need scoring, when someone asks for an ideal seller profile assessment, a team capability review, a skills gap analysis, per-rep coaching plans, or wants to know where the team is strong and where it is not.",
+      "bytes": 24207
+    },
+    {
+      "name": "spreadsheet-analysis-workbook",
+      "track": "commercial-and-data",
+      "path": "commercial-and-data/spreadsheet-analysis-workbook",
+      "file": "commercial-and-data/spreadsheet-analysis-workbook/SKILL.md",
+      "description": "The discipline for analysing someone else's spreadsheet without breaking it and without trusting it blindly. Read the structure before touching anything, audit columns and existing formulas, establish one ground truth figure, build every analysis cell as a live formula reading the raw sheet, compute complements by subtraction, close a visible reconciliation cell to zero, and spot-check before delivering. This is the foundation the other workbook skills assume rather than repeat. Use it whenever a workbook, CSV export, accounting extract, or data file arrives and the task is to analyse it, add tabs, check someone else's numbers, rebuild a sheet that broke, or answer a question from it, including vague requests like \"can you just pull the total\", \"does this add up\", or \"have a look at this file\".",
+      "bytes": 24120
+    },
+    {
+      "name": "academic-personal-site",
+      "track": "web-and-presentation",
+      "path": "web-and-presentation/academic-personal-site",
+      "file": "web-and-presentation/academic-personal-site/SKILL.md",
+      "description": "Builds a researcher's own site around the three people who actually visit one: a search committee with ninety seconds, an editor or referee who wants a paper immediately, and a potential collaborator or student deciding whether your interests overlap theirs. Produces a single static page with the work described in plain words above the fold, publications listed so they can be found and cited with resolvable links and labelled versions, working paper statuses that are accurate and dated, teaching and supervision including whether students are being taken, a CV that matches the page, and a maintenance rhythm that stops the whole thing going stale. No build step, accessible, fast on a slow connection, on a domain the author controls. Use this skill when someone wants an academic homepage, a personal research site, a publications page, a page before the job market or a grant round, or says their website is out of date.",
+      "bytes": 22660
+    },
+    {
+      "name": "interactive-results-explorer",
+      "track": "web-and-presentation",
+      "path": "web-and-presentation/interactive-results-explorer",
+      "file": "web-and-presentation/interactive-results-explorer/SKILL.md",
+      "description": "Builds a page where readers can explore results themselves rather than only read the author's chosen cut, without turning the page into a specification-searching machine. Ships the underlying rows with the page, shows uncertainty and the sample count on every estimate, suppresses cells below a stated threshold, keeps axes stable across selections, puts a table view behind every chart, allows download of the exact filtered data, keeps the state in the URL, and carries a dated method note on the page itself. Static files, no build step, readable with scripting disabled. Use this skill for a results explorer, an interactive appendix, a data-driven page for a paper or a report, a subgroup viewer, or when someone asks for a dashboard of findings other people will use.",
+      "bytes": 23677
+    },
+    {
+      "name": "metrics-dashboard-page",
+      "track": "web-and-presentation",
+      "path": "web-and-presentation/metrics-dashboard-page",
+      "file": "web-and-presentation/metrics-dashboard-page/SKILL.md",
+      "description": "Builds a metrics page a team will actually use: five to nine measures chosen because a named decision depends on each one, every metric carrying a written definition visible from the page, a named owner, a source and refresh time, a comparison against target and against the same period last year, a trend shown beside the level, volume shown beside every rate, annotations for launches and definition changes, and an explicit list of what the page deliberately does not show. Static files generated from a data file, no build step, readable with scripting disabled, and charts that follow the house monochrome-first standard rather than a colour rainbow. Use this skill for a metrics page, a team or company dashboard, a weekly numbers page, an investor or board metrics view, or when a leader asks for one place to see how things are going.",
+      "bytes": 23765
+    },
+    {
+      "name": "research-paper-website",
+      "track": "web-and-presentation",
+      "path": "web-and-presentation/research-paper-website",
+      "file": "web-and-presentation/research-paper-website/SKILL.md",
+      "description": "Builds the companion page for a paper or research project as static files that will still open in ten years: the plain-language finding before the abstract, the headline figure with real alternative text, the paper in a version the publisher permits, the data and code with their licences, a copyable citation and BibTeX block, persistent identifiers, and an accurate publication status with a review date. Enforces no build step, no tracking, accessibility as a default, and figures identical to the print versions and following the house monochrome-first standard. Use this skill when someone wants a website for a paper, a project page, a landing page for a study, a place to send people that is not a PDF, or a page for a working paper they are about to circulate.",
+      "bytes": 24598
+    }
+  ]
+}

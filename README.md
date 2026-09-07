@@ -236,9 +236,21 @@ They are the tasks I repeat most, and the tasks where quality depends on discipl
 
 Nothing in the commercial and data track is an employer artefact. Where I had built a private version against a specific firm's frameworks, clients, and approved claims, the public skill is the method rewritten from scratch with the organisation's specifics moved into a local file the user supplies.
 
+## The catalog as data
+
+[`skills.json`](skills.json) and [`skills.csv`](skills.csv) carry every skill with its name, track, path and description, generated from the frontmatter rather than maintained by hand. Use them to build your own index, filter the library down to the tracks you want, or script an install.
+
+[`scripts/validate_skills.py`](scripts/validate_skills.py) checks the library against its own standard: frontmatter present, the name matching the folder, a when to use section, a worked example, a quality bar, a size floor that a stub cannot pass, and no dashes. It runs in a second and exits non zero on failure, so nothing ships below the bar.
+
+```
+python3 scripts/validate_skills.py
+checked 110 skills across 5 tracks
+all skills pass the house standard
+```
+
 ## Releases and contributions
 
-New skills and revisions are announced on [BreakTalk](https://breaktalk.substack.com). Each release attaches the skills zipped individually for upload.
+New skills and revisions are announced on [BreakTalk](https://breaktalk.substack.com). Each release attaches the skills zipped individually for upload, alongside the whole library in one archive.
 
 If you improve one, [CONTRIBUTING.md](CONTRIBUTING.md) says how to send it back. Issues are open for anything that is wrong, unclear, or missing.
 
