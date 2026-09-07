@@ -1,0 +1,29 @@
+cff-version: 1.2.0
+title: "BreakTalk Skills: an open library of AI working instructions for Chief of Staff work, empirical research, and writing"
+message: "If you use this library in work you publish, please cite it."
+type: software
+authors:
+  - family-names: Leiria
+    given-names: Ingrid Rafaele Rodrigues
+    orcid: "https://orcid.org/0000-0002-6215-860X"
+    affiliation: "Korea University, Sejong"
+repository-code: "https://github.com/ingridleiria/breaktalk-skills"
+url: "https://ingridleiria.github.io"
+abstract: >-
+  An open library of written working instructions, in five tracks covering
+  Chief of Staff work, empirical PhD research, brand and writing, commercial and
+  data analysis, and web and presentation work. Each skill states when to use it
+  and when not to, the method with its decision rules, a worked example with real
+  numbers, failure modes, and a checkable quality bar. The instructions are plain
+  Markdown methods rather than model-specific prompts, so they can be used with
+  any assistant that accepts written instructions.
+keywords:
+  - artificial intelligence
+  - research methods
+  - reproducibility
+  - chief of staff
+  - econometrics
+  - academic writing
+license: MIT
+version: "1.0.0"
+date-released: "2026-09-06"
