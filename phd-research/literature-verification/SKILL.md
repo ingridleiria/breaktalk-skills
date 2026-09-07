@@ -64,6 +64,22 @@ Every empirical or theoretical claim carries its citation in the sentence that m
 
 Maintain the reference list in the same session, appending each verified entry as it is used, so the text and the bibliography cannot diverge. Keep the DOI in the entry even when the style does not print it, because the next person to check will need it.
 
+Those are the principles. These are the rules that make them operable, and each one is checkable by someone else:
+
+1. **Never more than one unverified citation in the file at a time.** Verify it or convert it to a visible placeholder before writing the next sentence. The count of placeholders is stated at the end of every session, and a session that ends with placeholders says so in the handover.
+
+2. **One claim, one citation, in the sentence that makes the claim.** Two only where the point is that independent work agrees, and then say so in the sentence. Three or more on a single claim is padding in every case I have seen; cut to the two strongest and move the rest to a footnote or out.
+
+3. **A paragraph may not end with a block of citations.** If more than two references sit at the end of a paragraph with no sentence-level home, redistribute them to the sentences they support or delete them. A reference nobody can attach to a claim is decoration, and in the worked example below decoration was a fifth of the list.
+
+4. **Every quoted number carries its location.** Page, table or figure number recorded in the entry, even when the style does not print it. A number without a location is treated as unverified at the next check.
+
+5. **Budget ten to fifteen minutes per citation for a first verification.** Sixty-four citations is a day and a half of work, not an afternoon. Authors underestimate this by roughly a factor of five, which is why the cleanup pass is always skipped.
+
+6. **Re-verify on a clock.** Anything carried over from notes more than six months old, and every working paper, preprint or forthcoming citation, is rechecked before the manuscript leaves the building. Working papers change titles, samples and headline numbers.
+
+7. **Reconcile the counts at the end of every working session.** Number of distinct keys cited in the text equals number of entries in the bibliography, with no orphans in either direction. This takes under a minute and it is the check that catches a reference deleted from the text and left in the list.
+
 ## Worked example
 
 **Situation.** A doctoral student had a thirty-one page draft chapter with sixty-four citations, due to a supervisor in four days. The chapter had been written over five months, partly with an assistant, and about a third of the references came from an earlier reading list whose provenance was no longer clear. The student's actual question was whether it was ready to send.
@@ -148,6 +164,16 @@ Status is verified, wrong venue, wrong claim, superseded, or not found. Action i
 - Contradicting work found during the search appears in the review.
 - Where verification was impossible, the text carries a visible placeholder and the unsourced claims are listed.
 - The reference list was built during drafting and matches the text exactly.
+
+## Adapting this to your context
+
+This workflow assumes a journal article or thesis chapter, DOI-indexed sources and author-year citation. The zero-fabrication rule is universal; the search and the matrix are not.
+
+- **The databases.** The file says "scholarly databases" without naming any. Use what your field indexes on: PubMed and Embase for health, PsycINFO for psychology, ERIC for education, Web of Science and Scopus across the board, EconLit and RePEc for economics, and Sociological Abstracts for sociology. Coverage differs enough that a search in the wrong one looks like a gap in the literature.
+- **The evidence matrix columns.** Setting, data, method, N, magnitude. For qualitative and theoretical literatures replace magnitude with the claim and its warrant, and N with participants or cases.
+- **The screening counts.** Kept informally here. If the review is meant to be systematic in any degree, use PRISMA counts and the flow diagram instead, and move to `systematic-review-protocol`.
+- **The reference manager.** BibTeX is assumed. Zotero, EndNote and Mendeley export the same fields; keep DOI populated whichever you use, because that is what the next checker resolves.
+- **What not to change.** No citation enters a draft unchecked, and the check is against the claim, not only against the record. Every number attributed to a paper was seen in that paper.
 
 ## Related skills
 

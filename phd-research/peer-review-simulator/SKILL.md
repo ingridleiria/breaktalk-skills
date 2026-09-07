@@ -196,6 +196,16 @@ Tier 1, changes the conclusion. Tier 2, changes the credibility. Tier 3, changes
 - Anything sound is credited in one line rather than passed over, so the criticism is readable.
 - Where the numbers were not independently rebuilt, the report says so and names `analysis-audit`.
 
+## Adapting this to your context
+
+The three referee roles, the desk-reject screen and the editor's weighting are modelled on empirical social science journals with two or three referees and a blind process. The adversarial structure carries; the reviewers you should simulate do not.
+
+- **The three referees.** Methodologist, field expert, handling editor. Swap the methodologist for the reviewer your field fields: a statistician in medicine, a psychometrician where the paper rests on a scale, a qualitative methodologist for interpretive work. Add a patient or practitioner reviewer where the journal uses them, now common in health.
+- **The desk-reject screen.** Built around fit, contribution and identification. In health and psychology, add what triggers a return before review: missing trial registration, no ethics approval number, no reporting checklist, a structured abstract that does not meet the guidelines.
+- **The methodological attack.** Assumes a causal design. For scale-based work the first attacks are common method bias, construct validity, measurement invariance, and whether the model was specified before the data were seen. For qualitative work, expect reflexivity, sampling adequacy and the basis for each theme.
+- **Open review.** The file assumes anonymity. Where review is open or signed, or a preprint is public, tone and specificity matter more: write the report you would sign.
+- **What not to change.** The desk-reject verdict comes first, the referees are written independently and allowed to disagree, and the revision plan is ordered by consequence.
+
 ## Related skills
 
 `identification-defense` supplies the methodologist's attack list and, run first, prevents the most common tier-one finding. `analysis-audit` rebuilds the numbers this skill can only read, and should run in parallel before any submission. `literature-verification` supplies the citation checks the field expert performs. `journal-targeting` runs after this one, using its editor decision as the honest input to the top of the submission ladder. `response-to-reviewers` handles the real reports when they arrive and reuses this skill's ledger discipline. `refereeing-for-a-journal` is the same activity performed on somebody else's manuscript under a journal's invitation, with duties this skill does not have. `thesis-chapter-review` reads a chapter as an examiner rather than as a referee. `thesis-defense-prep` converts these concerns into spoken answers. `full-manuscript-build` performs the restructuring a tier-three finding calls for. `replication-package` closes the project once the paper is accepted.

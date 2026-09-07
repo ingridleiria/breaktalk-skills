@@ -42,10 +42,10 @@ Do not use it when five static figures would answer every reasonable question, w
 3. **Build the data file first, and make it the deliverable.** One row per displayed cell, plain CSV or JSON, human-readable, with the count and the interval alongside the estimate. Suppression is applied when the file is written, not in the browser, so a reader downloading the file cannot recover cells the page declines to show.
 
 ```csv
-region,sector,year,estimate,ci_low,ci_high,n,suppressed
-North,Manufacturing,2024,-4.2,-6.1,-2.3,1840,0
-North,Hospitality,2024,-9.7,-14.8,-4.6,312,0
-North,Mining,2024,,,,41,1
+region,sector,period,estimate,ci_low,ci_high,n,suppressed
+North,Manufacturing,2019-2024,-4.2,-6.1,-2.3,1840,0
+North,Hospitality,2019-2024,-9.7,-14.8,-4.6,312,0
+North,Mining,2019-2024,,,,41,1
 ```
 
 4. **Write the no-script baseline before writing any JavaScript.** The page must carry, in markup: the headline finding, the method note, and a full table of the default view. That is what an archive keeps, what a screen reader reaches first, and what a reader on a failed network still gets. Controls come afterwards and enhance what is already there.
@@ -135,9 +135,9 @@ var Y_DOMAIN_BARS = [Math.min(0, dataMin), Math.max(0, dataMax)];
 
 ```js
 function updateDownload(rows) {
-  var csv = ['region,sector,year,estimate,ci_low,ci_high,n']
+  var csv = ['region,sector,period,estimate,ci_low,ci_high,n']
     .concat(rows.map(function (r) {
-      return [r.region, r.sector, r.year, r.estimate,
+      return [r.region, r.sector, r.period, r.estimate,
               r.ci_low, r.ci_high, r.n].join(',');
     })).join('\n');
   var link = document.getElementById('download-view');
@@ -147,7 +147,7 @@ function updateDownload(rows) {
 }
 ```
 
-12. **Write the method note on the page, not behind a link.** What the data is and where it came from, the period, what one row represents, how the estimates were produced, what the uncertainty means, the suppression threshold, and what the page does not support conclusions about. Version and date it, and put the version in the download filename.
+12. **Write the method note on the page, not behind a link.** What the data is and where it came from, the period, what one row represents, how the estimates were produced, what the uncertainty means, the suppression threshold, and what the page does not support conclusions about. Version and date it, and put the version in the download filename. Where an archived copy of the data exists, cite it by its identifier and link `replication-package` for the deposit, licence and identifier decisions rather than restating them on the page.
 
 13. **Test before publishing, in five ways.** With the data file replaced by one five times larger, because the version that runs on your machine with the small file is not the one your readers get. With scripting disabled, where the finding, the note and the default table must remain. At 320 pixels wide, where the table scrolls inside its own container rather than pushing the page sideways. With the keyboard alone. And by picking the three thinnest cells the controls allow and asking whether a reader would be misled by what they show.
 
@@ -157,15 +157,15 @@ function updateDownload(rows) {
 
 **Task.** A page that answered the lookup question, shipped in a week, that would not produce a wrong number in a newsletter.
 
-**Action.** The justification was written first. Reasonable views numbered 11 times 9, roughly a hundred, which is well past the point where static figures serve, so the explorer earned its place. That count also set the shape: two dimensions, region and sector, with year as a fixed axis rather than a third filter.
+**Action.** The justification was written first. Reasonable views numbered 11 times 9, roughly a hundred, which is well past the point where static figures serve, so the explorer earned its place. That count also set the shape: two displayed dimensions, region and sector, with the six years collapsed into the single 2019 to 2024 change the paper reports rather than becoming a third filter.
 
-The first build ignored the second half of that decision. It offered region, sector, year and age band as four independent filters, because the analysis file had age in it and adding a control took ten minutes. It was tested by giving it to a colleague with the instruction to find something surprising, and they did so in ninety seconds: hospitality, one region, workers under twenty five, 2021, an estimated fall of 31 percent, from 23 observations. The point estimate was real, in the sense that the arithmetic was right, and it was meaningless. That build was abandoned. The age control came out, the year filter became a fixed axis, and the two remaining dimensions gave a minimum cell of 112 observations.
+The first build ignored the second half of that decision. It offered region, sector, year and age band as four independent filters, because the analysis file had age in it and adding a control took ten minutes. It was tested by giving it to a colleague with the instruction to find something surprising, and they did so in ninety seconds: hospitality, one region, workers under twenty five, 2021, an estimated fall of 31 percent, from 23 observations. The point estimate was real, in the sense that the arithmetic was right, and it was meaningless. That build was abandoned. The age control came out, the years were collapsed into one change per cell, and the two remaining dimensions left 11 times 9, or 99 displayed cells, over about 46,000 observations. That is an average of roughly 465 observations a cell.
 
-Suppression was then set at fifty observations, chosen because the survey's own documentation used it, which made the threshold defensible rather than invented. Suppressed cells were drawn with a hatch and labelled "suppressed, fewer than 50 observations" rather than left blank, and the same rule was applied when the CSV was written, so the file could not be used to recover them.
+Suppression was then set at fifty observations, chosen because the survey's own documentation used it, which made the threshold defensible rather than invented. Suppressed cells were drawn with a hatch and labelled "suppressed, fewer than 50 observations" rather than left blank, and the same rule was applied when the CSV was written, so the file could not be used to recover them. Two of the 99 cells fell below it, mining in the two smallest regions, at 41 and 44 observations. Of the 97 that remained, the thinnest carried 112, which is the number quoted below.
 
 Two further problems appeared in testing. The chart's vertical axis had been computed from the visible selection, so filtering to a single small sector produced a chart where a fall of 2 percent filled the frame and looked identical to a fall of 18 percent elsewhere. Fixing the domain to the full data range, from -20 to +5, cost nothing and removed the problem entirely. And the tooltip showed only the point estimate, because that is what tooltips usually show; it was rewritten to show the estimate, the interval and the count on three lines, and the count line is the one readers mentioned afterwards.
 
-The no-script baseline was built last and took forty minutes: the headline sentence, the method note and a 99-row table in the markup. Total page weight was 118 kilobytes including the data file, with no external requests.
+The no-script baseline was built last and took forty minutes: the headline sentence, the method note and the full 99-row table of displayed cells in the markup. Total page weight was 118 kilobytes including the data file, with no external requests.
 
 **Result.** Published in six days. Over the first quarter it was used by three of the four organisations who had asked, and one of them found and reported a genuine defect: two sector labels had been transposed in the data file, which they spotted because they knew their own sector's number. They sent a URL, which located the view exactly, and the fix took twenty minutes and produced a version 1.1 with a dated note.
 
@@ -225,7 +225,7 @@ The page carries these parts in this order.
 
 ## Edge cases
 
-**Data that cannot be published at row level.** Publish the displayed cells with counts and intervals, which is what the page shows anyway, and say in the method note why the microdata is not available and how a researcher could apply for it.
+**Data that cannot be published at row level.** Publish the displayed cells with counts and intervals, which is what the page shows anyway, and say in the method note why the microdata is not available and how a researcher could apply for it. Keep that to one line and a link: the reasoning about licences, restricted-access routes, where the archived copy lives and which identifier cites it belongs to `replication-package`, and repeating it here produces two statements that will disagree within a year.
 
 **A dataset too large to ship with the page.** Above roughly ten megabytes, precompute the cells rather than shipping the rows, which is almost always possible because the page displays aggregates. Where a live query layer is genuinely required, show the query time on the page and keep the static fallback table.
 
@@ -248,6 +248,17 @@ The page carries these parts in this order.
 - The state is in the URL and a shared link reproduces the view.
 - The page is static, has no build step, and works at 320 pixels wide and by keyboard alone.
 - The page carries a version and a date, and the version appears in the download filename.
+
+## Adapting this to your context
+
+The thresholds come from a public survey with a published disclosure rule and frequentist estimates. Both are field choices, and the suppression number is usually not yours to set.
+
+- **The suppression threshold.** Fifty observations, from one survey's documentation. Health and administrative data are often bound to five or ten by a rule you do not choose, and official statistics may require rounding instead. Take the number from the provider.
+- **The uncertainty measure.** A 95 percent confidence interval. Substitute a credible interval, a design-based standard error, or a cluster-robust one, and name which it is on the page.
+- **The view counts.** Five and twenty, where static figures, small multiples and an explorer each win. They come from a two-dimension grid. Recount for yours.
+- **Preregistration.** The file assumes some cuts are confirmatory. Name the registry if there is one: OSF, AsPredicted, PROSPERO, ClinicalTrials.gov, the AEA RCT Registry. Otherwise label every cut exploratory.
+- **The tooling.** Plain HTML and one pinned charting library. R with Shiny, a Python app or an Observable notebook do the same job but need a server, and a page needing a server dies when the grant does.
+- **What not to change.** Interval and sample count wherever a number appears, axes fixed across selections, suppression applied when the file is written rather than in the browser.
 
 ## Related skills
 

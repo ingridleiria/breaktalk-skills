@@ -5,7 +5,7 @@ description: Writes and repairs abstracts, titles, keywords, JEL codes and highl
 
 # Abstract and Title
 
-The abstract is read a hundred times more often than the paper and the title a thousand times more often than the abstract. Almost everyone who ever encounters this research will encounter only those two objects, and most of them will decide on that basis whether it is relevant to them. That includes the handling editor deciding whether to desk reject, the referee deciding whether to accept the invitation, the researcher deciding whether to download it, and the search engine deciding whether to return it at all.
+Most people who ever encounter this research will encounter only the title and the abstract. That is not a claim about a ratio, it is a claim about where the objects live: databases index the title and the abstract, search returns them, alerts deliver them, reference lists carry the title alone, and paywalls stop at the abstract. The full text is behind all of that. So the two shortest pieces of the paper are the ones most people read, and they are what most readers decide on. That includes the handling editor deciding whether to desk reject, the referee deciding whether to accept the invitation, the researcher deciding whether to download it, and the search engine deciding whether to return it at all.
 
 The failures are specific. An abstract written from intentions rather than results, because it was drafted early and never revised, so it promises a question the paper stopped asking. An abstract with no number in it, which forces the reader to open the paper to learn anything and, more often, to move on. An abstract whose verbs are stronger than the results section's, which is the single most common overclaim in academic writing and the one a referee sees first. A title naming the topic instead of the finding, which is invisible to anyone searching for what the paper actually shows. And a title with a clever pun, which ages badly, translates badly, and is skipped by every reader scanning a list of forty.
 
@@ -31,9 +31,9 @@ Do not write an abstract before the results are final. Every rule in this skill 
 
 **The discussion's comparison sentence.** The one that makes the magnitude legible. Missing: write it here and then check it matches the discussion, since the two must agree.
 
-**The target's limits and format.** Word limit, structured or unstructured, whether citations are permitted, keyword count, whether highlights are required and at what character limit, whether JEL codes are needed. Missing: take them from the submission system and from three recent articles, since the guidelines and the practice often differ.
+**The target's limits and format.** Word limit, structured or unstructured, whether citations are permitted, keyword count, whether highlights are required and at what character limit, whether JEL codes or other subject classification terms are needed. Missing: take them from the submission system and from three recent articles, since the guidelines and the practice often differ.
 
-**The keyword and classification lists in force.** The journal's own keyword list where it has one, and the current JEL classification. Missing: use the field's vocabulary from recent articles in the target and mark the JEL codes as needing verification; do not guess a code from memory, since the classification is revised.
+**The keyword and classification lists in force.** The journal's own keyword list where it has one, and whichever subject classification the field uses. Economics uses JEL. Health, medicine and much of public health use MeSH. Psychology uses the APA thesaurus of psychological index terms, which is what PsycINFO indexes on. Education uses ERIC descriptors. Many journals in sociology, management and the qualitative traditions have no controlled vocabulary at all and take free keywords. Missing: use the field's vocabulary from recent articles in the target and mark the codes as needing verification; do not guess a code or a descriptor from memory, since every one of these lists is revised.
 
 **The verbs used in the results section.** Missing: read them. The abstract's calibration is copied from the results, not chosen fresh.
 
@@ -59,7 +59,7 @@ Do not write an abstract before the results are final. Every rule in this skill 
 
 10. **Generate eight to twelve title candidates across formats, then rank them** against the criteria below. Generating fewer than eight produces variations on the first idea, which is nearly always a descriptive title of the topic.
 
-11. **Choose keywords, JEL codes and highlights,** each against the current list, each checked rather than recalled.
+11. **Choose keywords, classification codes and highlights,** each against the current list for the field the target sits in, each checked rather than recalled.
 
 12. **Read the abstract cold, as a stranger.** Does it say what was asked, on what data, with what design, what was found, and how big? If any of the five is missing, it is not finished, whatever the word count says.
 
@@ -106,11 +106,13 @@ Rank the candidates on these criteria, in this order:
 
 Check the shortlist for collisions before committing. A title identical or near-identical to an existing paper causes citation confusion and looks careless.
 
-## Keywords, JEL codes and highlights
+## Keywords, classification codes and highlights
 
 **Keywords**, five to seven, drawn from the field's vocabulary as it appears in recent articles in the target, and covering three dimensions: the topic, the method, and the setting or population. Repeating words already in the title wastes them, since search covers both; use the keyword slots for the synonyms a searcher might use instead of yours. Where the journal supplies a controlled list, use it exactly.
 
 **JEL codes**, two to four for economics venues, verified against the current classification rather than remembered. The first should be the primary field, the others the method and the applied area. Where a connected lookup or the official classification is unavailable, take the codes from three recent articles on the same topic in the same journal and say that is how they were chosen.
+
+**Classification outside economics.** JEL is an economics convention and most other fields use something else, so the slot is filled with the target's own vocabulary rather than left empty or filled with JEL out of habit. Health and public health journals index on MeSH, and choosing the terms deliberately matters because MeSH drives what a PubMed search retrieves; take them from the MeSH browser or from the indexed record of two recent articles on the same topic. Psychology journals use the APA thesaurus of psychological index terms, the vocabulary PsycINFO indexes on, usually three to six terms. Education journals use ERIC descriptors, which are also a controlled thesaurus and also worth checking rather than guessing. Sociology, management and most qualitative venues take free keywords, in which case the keyword rules above carry the whole load and the synonym discipline matters more, not less. Whichever list applies, record which vocabulary was used and how it was verified, exactly as with JEL.
 
 **Highlights**, where required, three to five bullets under the character limit the journal sets, commonly 85 characters. Each is a finding with a number, not a description of the paper. "Fee caps raised maternal employment by 2.1 percentage points" is a highlight; "This paper studies childcare policy" is not. They are extracted from the abstract, not written fresh.
 
@@ -161,8 +163,11 @@ Chosen: [the title]
 KEYWORDS
 [5 to 7, covering topic, method, setting, not repeating title words]
 
-JEL CODES
-[2 to 4, verified against the current classification, with how they were verified]
+CLASSIFICATION CODES
+[The vocabulary the target uses: JEL for economics, MeSH for health, APA thesaurus
+ or PsycINFO terms for psychology, ERIC descriptors for education, free keywords
+ where the venue has none. 2 to 6 terms, verified against the current list, with
+ how they were verified]
 
 HIGHLIGHTS
 [3 to 5, each under the character limit, each a finding with a number]
@@ -191,7 +196,7 @@ Second-language version required:  yes / no, and its status
 
 **Keywords repeating the title.** Recognise it by overlap. Search already covers the title; use the slots for the synonyms someone else would type.
 
-**JEL codes from memory.** Recognise it by codes carried over from a previous paper. Verify against the current classification, and if that is not accessible, take them from recent articles in the target and say so.
+**Classification codes from memory.** Recognise it by JEL codes, MeSH headings or ERIC descriptors carried over from a previous paper, or by JEL codes appearing on a submission to a journal that does not use them. Verify against the current list for the target's field, and if that is not accessible, take them from recent articles in the target and say so.
 
 **Stale after a revision.** Recognise it by any revision that changed a number. The abstract is the last thing rechecked and the first thing read; recheck it immediately before submission every time.
 
@@ -219,8 +224,18 @@ Second-language version required:  yes / no, and its status
 - Every number in the abstract appears in an exhibit at the same rounding, checked against the cell.
 - The verbs are identical in strength to the results section's, checked in a dedicated pass.
 - The title states the finding or the question, names the setting, is under about fifteen words, and does not collide with an existing title.
-- Keywords and JEL codes were checked against current lists, and the method of checking is recorded.
+- Keywords and classification codes were checked against the current list for the target's field, JEL or MeSH or the APA thesaurus or ERIC descriptors as applicable, and the method of checking is recorded.
 - The abstract was rewritten, not patched, after the most recent change to any number in the paper.
+
+## Adapting this to your context
+
+The sentence jobs, word counts and title formats here come from empirical social science articles, mostly economics and adjacent applied fields, at journals taking unstructured abstracts of 150 to 250 words. The shape travels further than the specifics do.
+
+- **The five sentence jobs.** They assume one headline estimate. A structured abstract in health or psychology usually wants Background, Methods, Results, Conclusions, sometimes Objective and Limitations too; map the five jobs onto those headings rather than fighting the form.
+- **"No number, no finding".** That assumes an estimate exists. For qualitative work, replace the magnitude with the claim and its base: how many participants, over what period, and what the central pattern was.
+- **The classification slot.** JEL is economics only. Use MeSH for health, APA thesaurus or PsycINFO terms for psychology, ERIC descriptors for education, free keywords elsewhere. A registered report or systematic review usually also needs its registration number in the abstract.
+- **The 85 character highlight limit and 200 word default.** Both are publisher habits. Take the real limits from the submission form; medical journals often allow 300 words with mandatory subheadings.
+- **What not to change.** The abstract is written last, from the finished results, every number checked against the cell it came from, and the verbs never claim more than the results section claims.
 
 ## Related skills
 

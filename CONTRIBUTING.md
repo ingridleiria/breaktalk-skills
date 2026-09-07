@@ -6,11 +6,13 @@ This library is opinionated on purpose, so the most useful contribution is usual
 
 Open an issue. The useful ones say what you asked for, which skill you expected to run, what came back, and what you wanted instead. If a skill produced confident output that was wrong, that is the highest priority thing in this repository and it should be reported even if you are not sure why.
 
+Before you propose a change, [USING_THESE_SKILLS.md](USING_THESE_SKILLS.md) is worth reading, because most of what looks like a defect is a default that needs to be yours rather than mine, and that page says how to tell the difference.
+
 ## Improving a skill
 
 Open a pull request against the `SKILL.md`. Small and specific beats large and general.
 
-Every skill follows the structure in [SKILL_TEMPLATE.md](SKILL_TEMPLATE.md): when to use and when not to, the inputs and what to do when one is missing, the method with its decision rules, at least one worked scenario in situation, task, action, result form with real numbers, the output shape, failure modes, edge cases, a checkable quality bar, and the related skills. A pull request that adds a section is more likely to be merged than one that adds a paragraph.
+Every skill follows the structure in [SKILL_TEMPLATE.md](SKILL_TEMPLATE.md): when to use and when not to, the inputs and what to do when one is missing, the method with its decision rules, at least one worked scenario in situation, task, action, result form with real numbers, the output shape, failure modes, edge cases, a checkable quality bar, an adaptation section naming the file's own defaults and what must not change, and the related skills. A pull request that adds a section is more likely to be merged than one that adds a paragraph.
 
 What gets merged:
 

@@ -37,7 +37,7 @@ Commercial terms only. Legal structure, competition and antitrust questions, and
 
 2. **State their objective from evidence, not from their pitch.** What do their recent moves, hires, filings and announcements suggest they need? Rule: where your evidenced view of their objective differs from what they have told you, that gap is the most important finding in the assessment. Then test compatibility: objectives can differ and still work, since credibility and distribution can both be satisfied at once, but they cannot both be ownership of the customer relationship.
 
-3. **Assess fit in four dimensions, each with evidence.** Strategic: does this advance a priority you already have, or create a new one, which needs a stronger case. Customer: do their customers overlap with the ones you want, and does this conflict with existing channels or clients. Capability: what does each side bring that the other lacks, and what would it cost to buy or build it instead, stated as a figure. Operating and cultural: decision speed, quality standards, responsiveness, judged from the negotiation itself, which is the first joint project and the only unbiased sample you have.
+3. **Assess fit in four dimensions, each with evidence.** Strategic: does this advance a priority you already have, or create a new one, which needs a stronger case. Customer: do their customers overlap with the ones you want, and does this conflict with existing channels or clients. Capability: what does each side bring that the other lacks, and what would it cost to buy or build it instead, stated as a figure. Operating and cultural: decision speed, quality standards, responsiveness, judged from the negotiation itself, which is the first joint project and the only unbiased sample you have. The test is countable, so count it: working days to answer a direct question, working days to return a document, and how many of their people had to approve each. The threshold: a median response slower than five working days while both sides are still courting each other should be assumed to double once the agreement is signed, and the operating model has to be priced for that slower speed or the deal declined. The disqualifier: a commitment made verbally and then contradicted or quietly dropped in the following document, twice. Once is a misunderstanding, twice is how the partnership will be run.
 
 4. **Model the economics for both sides under base, upside and downside, on incremental volume only.** Subtract accounts already in your pipeline from the partner's claimed reach before counting any of it, and state the point at which the partnership beats the same resources spent on the next best alternative, usually direct selling. Rule: the downside case is the one that decides. If either side is unmotivated when volumes disappoint, the partnership stops being worked long before anyone terminates it, and the effort is lost anyway. Include the cost of the partnership itself: management time, enablement, marketing, and the deals given away.
 
@@ -55,7 +55,7 @@ Commercial terms only. Legal structure, competition and antitrust questions, and
 
 
 
-**Situation.** Brightwell Data, a forty-five person analytics firm, was approached by Kestrel Integration, a mid-size systems integrator, proposing to resell Brightwell's analytics services into its client base at a twenty-five percent margin, with sector exclusivity for twenty-four months. Kestrel's deck claimed roughly forty clients in the sector.
+**Situation.** Brightwell Data, a forty-five person analytics firm, was approached by Kestrel Integration, a mid-size systems integrator, proposing to resell Brightwell's analytics services into its client base at a twenty-five percent margin, with sector exclusivity for twenty-four months. Kestrel's deck claimed roughly forty clients in the sector. All figures in this example are US dollars.
 
 **Task.** A recommendation for Brightwell's leadership within two weeks, with the deal points to negotiate and a walk-away, ahead of a second meeting Kestrel had already scheduled.
 
@@ -65,7 +65,7 @@ Independent evidence on Kestrel narrowed the claimed forty clients to eleven tha
 
 The wrong turn was the first economic model, which treated all channel deals as incremental. A pipeline check found three of the eleven named accounts already in Brightwell's own pipeline, two at proposal stage, where the margin share would have been a pure loss on revenue Brightwell was going to earn anyway. The model was rebuilt around a deal registration rule, which became the second most valuable term in the negotiation.
 
-Base case: six deals in year one at an average of 60,000, so 360,000 of revenue, 270,000 net of the margin share. Against that, the cost of running the partnership was 0.4 of a person at roughly 48,000, plus enablement. Downside case: two deals, 120,000 of revenue, 90,000 net, which does not cover the management cost plus the opportunity cost of the same time spent selling directly. That was the finding: fine if it worked, quietly negative if it half-worked, which is the likeliest outcome for a first channel arrangement.
+Base case: six deals in year one at an average of 60,000 dollars, so 360,000 dollars of revenue, 270,000 dollars net of the margin share. Against that, the cost of running the partnership was 0.4 of a person at roughly 48,000 dollars, plus enablement. Downside case: two deals, 120,000 dollars of revenue, 90,000 dollars net, which does not cover the management cost plus the opportunity cost of the same time spent selling directly. That was the finding: fine if it worked, quietly negative if it half-worked, which is the likeliest outcome for a first channel arrangement.
 
 Exclusivity was refused in its proposed form, because twenty-four months in exchange for an unevidenced volume estimate transfers all the risk to Brightwell. The counter was exclusivity earned rather than granted: none at signature, twelve months once four deals had closed.
 
@@ -156,6 +156,16 @@ Decision requested by [date]
 - Exit terms cover termination, change of control, and what happens to shared customers, data and intellectual property.
 - Deal points are ranked by value with a walk-away position set before negotiation.
 - Where the honest conclusion is that you would be the junior partner absorbing the work, the memo says so plainly.
+
+## Adapting this to your context
+
+This comes from professional services and software firms of twenty to three hundred people evaluating channel, referral and alliance proposals from larger counterparties. The tests hold; the settings need resetting.
+
+- **The five working day responsiveness threshold.** Regulated counterparties, universities, hospital systems and public bodies run on committee calendars and are slower without it meaning anything. Set the threshold from how fast that sector moves when motivated.
+- **Exclusivity earned rather than granted.** The example uses four closed deals in twelve months. Make it roughly one sales cycle's worth of proof, so a nine-month enterprise cycle needs an eighteen-month test rather than a twelve-month one.
+- **The nine-month pilot and four hours a week.** Shorten the pilot to a quarter for a transactional product, and lengthen it past a year where a procurement round is the unit of evidence. A partner much larger than you needs more hours.
+- **The economics test.** Where no money changes hands, as with the trade association, replace revenue with an attention budget in days and a non-financial metric, and keep everything else.
+- **What not to change.** The counterparty's objective is evidenced independently of their pitch, and the downside case decides. If either side stops being motivated when volumes disappoint, the partnership is already over.
 
 ## Related skills
 

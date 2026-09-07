@@ -5,7 +5,7 @@ description: Prices a single client engagement and staffs it in one model: a bot
 
 # Pricing and Resourcing Model
 
-The failure begins with a round number. Somebody says the client will probably pay around 250,000, the proposal is written to that figure, and the team is assembled afterwards from whoever is free. Four months into delivery the engagement is running two people heavier than priced, the lead is working weekends, and the margin is discovered by the finance team in a quarterly review rather than by anyone who could have acted on it.
+The failure begins with a round number. Somebody says the client will probably pay around 250,000 dollars, the proposal is written to that figure, and the team is assembled afterwards from whoever is free. Four months into delivery the engagement is running two people heavier than priced, the lead is working weekends, and the margin is discovered by the finance team in a quarterly review rather than by anyone who could have acted on it.
 
 The direct loss on that engagement is the smaller half of the cost. The larger half is that the number becomes a reference. The client now knows what this kind of work costs from this firm, the account team quotes the same shape next time, and a price set by intuition in one meeting sets the economics of a relationship for years. Worse, the delivery team learns that the numbers in a proposal have nothing to do with the work, which is the point at which they stop giving honest estimates.
 
@@ -31,13 +31,13 @@ Do not use this to write the proposal, which is `proposal-writer`, or to define 
 
 **Fully loaded daily cost by role.** Salary, employer costs, benefits, and the overhead allocation the firm uses. For subcontracted people, the actual contracted rate. Missing: ask finance for the current loaded rate table; if unavailable, use salary multiplied by the firm's standard overhead factor and label the whole cost block as estimated.
 
-**Realistic billable days per person per month.** Usually fifteen to eighteen, not twenty-two. Holidays, internal work, sales support, and sickness are not optional. Missing: use sixteen and state it as an assumption in a labelled cell, because this single number moves the required headcount more than any other.
+**Realistic billable days per person per month.** Fifteen to eighteen is the range in the mid-size project-based services firms this file is written from, not twenty-two. Holidays, internal work, sales support, and sickness are not optional. Missing: use sixteen as a default, label it in the cell as a default rather than a measurement, and replace it with your own figure from the last two quarters of timesheets before the model leaves the building. Agencies carrying heavy internal product work, in-house teams and firms with large sales-support obligations commonly run lower; dedicated managed-service teams run higher. This single number moves the required headcount more than any other, which is exactly why it should not be inherited from somebody else's firm.
 
 **Ramp time.** Weeks before a person new to the engagement is productive, and who pays for those weeks. Missing: assume two weeks at fifty percent productivity for a person new to the client and four for a person new to the firm, and label it.
 
 **Client-side dependencies.** What the client must supply, by when, and what the delay costs when they do not. Missing: list the dependencies you can infer and put the delay cost in the downside scenario. Every services engagement that ran late has one of these in its history.
 
-**The firm's margin floor and rate card.** Missing: ask, because a price below the floor is a decision for someone other than the person building the model, and finding that out after the proposal is sent is expensive.
+**The firm's margin floor and rate card.** Your firm's, not the ones in this file. Missing: ask, because a price below the floor is a decision for someone other than the person building the model, and finding that out after the proposal is sent is expensive.
 
 ## The method
 
@@ -53,9 +53,9 @@ Do not use this to write the proposal, which is `proposal-writer`, or to define 
 
 6. **Cost it, then add contingency with a stated basis.** Contingency is a percentage tied to a named uncertainty, not a comfort blanket. Typical basis: scope definition quality, client dependency risk, technology novelty. Write the reason beside the number, because an unexplained contingency is the first thing a client's procurement function will challenge.
 
-7. **Price under each structure being considered,** from the same cost base. For fixed fee, cost plus target margin plus a risk premium sized to scope uncertainty. For time and materials, rate card multiplied by effort with a not-to-exceed figure. For a retainer, reserved capacity multiplied by rate, with a utilisation assumption and a rollover rule.
+7. **Price under each structure being considered,** from the same cost base. For fixed fee, cost plus target margin plus a risk premium sized to scope uncertainty. On the margin numbers: the forty percent target and twenty-five percent floor used in the worked example are the defaults of one kind of firm, a mid-size specialist services business selling defined project work to corporate buyers. They are defaults, not a standard. Staff augmentation and resourcing models run viably at fifteen to twenty-five percent gross margin; highly specialised advisory and firms with product leverage run well above forty. Get the target and the floor from your own finance function and write both in labelled cells before either is used as a test. For time and materials, rate card multiplied by effort with a not-to-exceed figure. For a retainer, reserved capacity multiplied by rate, with a utilisation assumption and a rollover rule.
 
-8. **Test the margin under two downsides, always the same two.** Scope grows twenty percent, and the start slips by one month while the team is already committed. If margin falls below the firm's floor under either, change the price or change the structure. Do not proceed on the argument that it will not happen; the two downsides are chosen precisely because they are the ones that do.
+8. **Test the margin under two downsides, always the same two.** Scope grows twenty percent, and the start slips by one month while the team is already committed. If margin falls below your firm's own floor under either, and not the illustrative twenty-five percent used here, change the price or change the structure. Do not proceed on the argument that it will not happen; the two downsides are chosen precisely because they are the ones that do.
 
 9. **Set the ceiling from client value, not from cost.** Estimate the value in the client's own numbers: revenue gained, cost saved, risk avoided, time released. A price above roughly twenty to thirty percent of clearly demonstrable annual value is hard to defend in a procurement conversation; a price below ten percent of it leaves money on the table and can signal that the work is minor. Where value cannot be quantified, price from cost and comparables and say so internally.
 
@@ -89,21 +89,21 @@ These arrangements need three additional blocks, because the economics change sh
 
 ## Worked example
 
-**Situation.** A sixty-person data engineering firm asked to price a nine-month platform migration for a mid-sized insurer. The account owner had already told the client the work would be "in the region of 300,000". Procurement wanted a fixed fee. The client's own team would supply data access and business rules validation.
+**Situation.** A sixty-person data engineering firm asked to price a nine-month platform migration for a mid-sized insurer. The account owner had already told the client the work would be "in the region of 300,000 dollars". Procurement wanted a fixed fee. All figures in this example are US dollars, and the firm's own margin target and floor are used throughout. The client's own team would supply data access and business rules validation.
 
 **Task.** Produce a defensible fixed-fee price with a staffing plan, in five working days, and establish whether the figure already mentioned was survivable.
 
-**Action.** The effort build was done with the engineer who would lead delivery, over two sessions. It came to 412 person-days across four phases: discovery 46, build 214, migration and parallel run 112, handover 40. Loaded daily costs were 780 for the principal, 520 for the lead engineer, 390 for an engineer, 300 for an analyst. Direct cost was 187,400, and contingency at twelve percent, on the stated basis that the source system documentation was known to be incomplete, took it to 209,900.
+**Action.** The effort build was done with the engineer who would lead delivery, over two sessions. It came to 412 person-days across four phases: discovery 46, build 214, migration and parallel run 112, handover 40. Loaded daily costs, in dollars, were 780 for the principal, 520 for the lead engineer, 390 for an engineer, 300 for an analyst. Direct cost was 187,400 dollars, and contingency at twelve percent, on the stated basis that the source system documentation was known to be incomplete, took it to 209,900 dollars.
 
-The wrong turn came at the staffing conversion. The first pass divided effort by twenty-two working days a month and concluded the engagement needed 2.8 full-time people, which produced a comfortable-looking plan and an impossible one. Rebuilt at sixteen billable days, the requirement was 3.9, which meant four, with the fourth needed from month three. The firm had no fourth engineer free then, so the plan added a subcontracted engineer at 460 a day against an internal cost of 390, adding 11,000. That correction, from one assumption cell, moved the required price by about nine percent and was the difference between a plan that worked and one that would have consumed the lead's weekends from month four.
+The wrong turn came at the staffing conversion. The first pass divided effort by twenty-two working days a month and concluded the engagement needed 2.8 full-time people, which produced a comfortable-looking plan and an impossible one. Rebuilt at sixteen billable days, the requirement was 3.9, which meant four, with the fourth needed from month three. The firm had no fourth engineer free then, so the plan added a subcontracted engineer at 460 dollars a day against an internal cost of 390 dollars, adding 11,000 dollars. That correction, from one assumption cell, moved the required price by about nine percent and was the difference between a plan that worked and one that would have consumed the lead's weekends from month four.
 
-Value was estimated in the client's terms: the legacy platform cost roughly 340,000 a year to run and the migration removed most of it, so demonstrable annual value was around 300,000. A fee near that level is defensible for a one-off migration with a permanent saving behind it.
+Value was estimated in the client's terms: the legacy platform cost roughly 340,000 dollars a year to run and the migration removed most of it, so demonstrable annual value was around 300,000 dollars. A fee near that level is defensible for a one-off migration with a permanent saving behind it.
 
-The fixed fee was set at 348,000, being cost plus contingency plus a forty percent target margin. Scope growing twenty percent took margin to 27 percent, above the firm's floor of 25. A one-month start slip with the team already committed took it to 24, below the floor, so the proposal carried a mobilisation clause: the team is reserved from a named date, and a delayed start bills reserved capacity at half rate. That clause, not the price, was the most valuable output of the model.
+The fixed fee was set at 348,000 dollars, being cost plus contingency plus this firm's forty percent target margin. Scope growing twenty percent took margin to 27 percent, above this firm's floor of 25. A one-month start slip with the team already committed took it to 24, below the floor, so the proposal carried a mobilisation clause: the team is reserved from a named date, and a delayed start bills reserved capacity at half rate. That clause, not the price, was the most valuable output of the model.
 
-**Result.** Priced at 348,000 against the 300,000 the client had heard, with the difference explained by the effort build and the migration parallel run, which the earlier conversation had not accounted for. The client negotiated to 335,000 in exchange for a two-week extension on the handover phase, which cost the firm 4,000 of effort against a 13,000 price reduction, so margin closed at 36 percent. The walk-away had been set at 310,000 and was never reached, which is what a walk-away is for.
+**Result.** Priced at 348,000 dollars against the 300,000 dollars the client had heard, with the difference explained by the effort build and the migration parallel run, which the earlier conversation had not accounted for. The client negotiated to 335,000 dollars in exchange for a two-week extension on the handover phase, which cost the firm 4,000 dollars of effort against a 13,000 dollar price reduction, so margin closed at 36 percent. The walk-away had been set at 310,000 dollars and was never reached, which is what a walk-away is for.
 
-The start slipped by three weeks. The mobilisation clause billed 22,000 and margin closed at 38 percent, above the base case.
+The start slipped by three weeks. The mobilisation clause billed 22,000 dollars and margin closed at 38 percent, above the base case.
 
 ### A second scenario, where it goes differently
 
@@ -177,6 +177,16 @@ Where a chart is used, show the monthly staffing curve and the cumulative margin
 - Client value is estimated in the client's own numbers, and the fee is expressed as a percentage of it.
 - For build-operate-transfer or managed services, the month cumulative margin turns positive is stated.
 - The terms that protect the margin are listed with the price, not left to the contract stage.
+
+## Adapting this to your context
+
+Every number here, the sixteen billable days, the forty percent target margin and the twenty-five percent floor, comes from one kind of firm: a mid-size project-based services business of fifty to three hundred people. Defaults, not standards.
+
+- **Sixteen billable days a month.** Pull your own figure from the last two quarters of timesheets. Agencies with heavy internal product work and in-house teams run lower; dedicated managed-service pods run higher.
+- **Forty percent target margin, twenty-five percent floor.** Resourcing and staff augmentation operate viably at fifteen to twenty-five percent; specialised advisory runs well above forty. Ask finance for both and write them in the workbook as your firm's own.
+- **Two weeks at fifty percent ramp.** Regulated environments with clearance, credentialing or system access queues run to months, and that wait belongs in the base case rather than the downside.
+- **The two standard downsides.** Where the recurring risk is client staff turnover, a regulatory date or a seasonal access window, replace one of them with the downside your own history keeps producing.
+- **What not to change.** The price traces to a bottom-up effort build made by the person who would run the work, and the walk-away is set with its reason before the first negotiation.
 
 ## Related skills
 

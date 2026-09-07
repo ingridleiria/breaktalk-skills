@@ -173,6 +173,16 @@ Plus the joiner pack, the run sheet, and the follow-up plan: record within 24 ho
 - The budget carries a stated contingency and the cancellation terms are recorded.
 - The record is circulated within 24 hours, actions tracked within a week, and a 30 day check scheduled the day the event ends.
 
+## Adapting this to your context
+
+The defaults come from leadership offsites of eight to twelve people at commercial companies, held over one or two days at a hired venue.
+
+- **The twelve-person threshold.** Above roughly twelve a room stops deciding and above forty it stops discussing. Both hold well, but a group used to formal chairing, such as a trustee board or a works council, can decide at twenty, while an unchaired group of ten often cannot.
+- **The 48-hour pre-read rule.** Written for people whose reading time is discretionary. Where attendees are clinical, shift-based or teaching, circulate a week ahead and expect the rule to be tested harder, because they cannot simply read it the evening before.
+- **The budget shape.** A per-head figure with ten to fifteen percent contingency assumes commercial spending discretion. Public and charitable funders often cap venue and catering spend or require competing quotes; get that rule before you shortlist venues.
+- **The 30-day action check.** Fits a monthly operating rhythm. Where the cycle is a term or a season, set the check at the next natural review point and put it in the calendar the day the event ends.
+- **What not to change.** Every outcome is an artefact that will exist afterwards, and the closing session is scheduled first and reads every decision and action back aloud.
+
 ## Related skills
 
 `meeting-to-decisions` is the capture discipline used inside every session and produces the record circulated afterwards. `decision-memo` writes the closed question and options for any session that must decide, and is the right pre-read for it. `okr-planning` and `strategic-plan-and-action-plan` supply the substance of a planning offsite and receive its outputs. `operating-cadence-design` covers the recurring meetings this sits outside, where an offsite's follow-through actually lives. `program-management` takes actions large enough to need a plan. `weekly-status-update` carries the 30 day check. `tailored-client-deck` produces client-facing materials.

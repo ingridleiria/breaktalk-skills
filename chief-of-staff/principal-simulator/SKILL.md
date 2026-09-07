@@ -93,7 +93,7 @@ A profile is calibrated when the first question is predicted correctly around th
 
 ## Worked example
 
-**Situation.** A Chief of Staff at a business software company of about 300 people supports a chief executive who came from an engineering background and has been running the company for six years. The company missed its quarterly number by eleven percent for the first time. The head of product wants to move an unreleased product forward by a quarter, which requires pulling four engineers off the platform migration, and has asked the Chief of Staff to get it on the leadership agenda. The memo argues that the earlier launch recovers roughly 900,000 of the shortfall in the following two quarters.
+**Situation.** A Chief of Staff at a business software company of about 300 people supports a chief executive who came from an engineering background and has been running the company for six years. The company missed its quarterly number by eleven percent for the first time. The head of product wants to move an unreleased product forward by a quarter, which requires pulling four engineers off the platform migration, and has asked the Chief of Staff to get it on the leadership agenda. The memo argues that the earlier launch recovers roughly 900,000 dollars of the shortfall in the following two quarters. All figures in this example are US dollars.
 
 **Task.** Decide whether the memo is ready to send, and if not, what to change, before Thursday's leadership meeting. Good means the meeting produces a decision rather than a request for more analysis.
 
@@ -101,19 +101,19 @@ A profile is calibrated when the first question is predicted correctly around th
 
 The read-through predicted attention stopping at the second paragraph, where the memo said the four engineers would return to the migration after launch. That sentence is the one that collides with the quotation, and the prediction was that it would produce not a question but a decision, before the revenue argument on page two had been read at all.
 
-The challenge produced three questions. What does the engineering lead think about pausing the migration. What is the new migration completion date. And what happens to the 900,000 if the launch slips four weeks, which it will, because the last two did.
+The challenge produced three questions. What does the engineering lead think about pausing the migration. What is the new migration completion date. And what happens to the 900,000 dollars if the launch slips four weeks, which it will, because the last two did.
 
 The memo answered none of them. It contained one line saying engineering was supportive, which under examination turned out to mean the head of product had mentioned it to the engineering lead in a corridor.
 
 The wrong turn: the first response was to rewrite the memo to defend the revenue estimate, which was the part the head of product was most attached to and had spent the most time on. Two hours went into a sensitivity table showing the estimate held under slippage. The simulation of the redraft predicted the same stop at the same sentence. The revenue figure was never the objection, and strengthening it made the memo longer without moving it. The table was cut.
 
-The rewrite instead did three things. It moved the migration impact to the opening, with a dated new completion date agreed in writing with the engineering lead. It replaced the corridor conversation with the engineering lead as a named co-author. And it added the slippage case honestly, showing the recovery at 900,000 on time and about 500,000 four weeks late, with the note that both were above the cost of the delay to the migration.
+The rewrite instead did three things. It moved the migration impact to the opening, with a dated new completion date agreed in writing with the engineering lead. It replaced the corridor conversation with the engineering lead as a named co-author. And it added the slippage case honestly, showing the recovery at 900,000 dollars on time and about 500,000 dollars four weeks late, with the note that both were above the cost of the delay to the migration.
 
 The prediction on the redraft was a conditional yes: proceed, with the migration date committed publicly to the leadership team and reviewed monthly. The recommendation section noted a divergence: the simulation predicted approval, but the Chief of Staff's own view was that the engineering lead's agreement had been obtained under pressure and was worth testing separately before the meeting. That test was run and the agreement held, with one condition added about a contractor for the migration.
 
 **Result.** Decided in the meeting in about fifteen minutes. The first question asked was "what does engineering think", in those words, which the memo answered in its second sentence with the co-author's name. The approval carried the predicted condition on the migration date, plus the contractor, which had come from the separate conversation and was already in the memo as a footnote.
 
-The launch slipped three weeks. Recovery came in around 560,000 over the two quarters, inside the range the memo had stated, which mattered more than the number itself: the next roadmap memo from the same team was read to the end.
+The launch slipped three weeks. Recovery came in around 560,000 dollars over the two quarters, inside the range the memo had stated, which mattered more than the number itself: the next roadmap memo from the same team was read to the end.
 
 The profile was updated with one new line, that the chief executive accepts a downside case stated plainly and reacts badly to one discovered by asking.
 
@@ -206,6 +206,16 @@ For the prediction log, one row per run:
 - The objection the user is avoiding is named explicitly, in one or two sentences.
 - No approval is simulated that the document has not earned; where the document is ready, the residual risk is still stated.
 - Confidence is labelled on the decision prediction, with the profile evidence behind it.
+
+## Adapting this to your context
+
+Written for a Chief of Staff supporting one or two executives in a company of one hundred to a thousand people, where the principal is reachable and decisions are made by a person rather than a committee.
+
+- **One principal, one profile.** Where the decider is a committee, an investment board or a public body, profile each voting member, simulate them separately, and treat the conflict between two as the output rather than averaging them into a composite nobody resembles.
+- **The recurring first question.** Stable in an individual over years. Committees have a standing agenda and published criteria instead, so read the last three sets of minutes rather than relying on remembered quotations.
+- **A profile older than two quarters is a hypothesis.** Shorten that window during a new board, a live financing or a restructure, and lengthen it for a long-tenured leader in a stable organisation.
+- **The standing six questions.** These fit commercial decisions. In clinical, academic, legal or regulated settings, add the two that always come: what does the evidence base say, and what does the governing rule require.
+- **What not to change.** The prediction and the recommendation stay in separate sections, and no approval is simulated that the document has not earned.
 
 ## Related skills
 

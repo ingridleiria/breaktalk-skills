@@ -95,7 +95,7 @@ Two evidence rules. A cause is only named where something in the record supports
 
 ## Worked example
 
-**Situation.** A twenty-two person advisory firm had delivered a phase one operating diagnostic to Pellworth Group, a specialty chemicals distributor with nine plants, for 118,000 across four months. The engagement closed in March, the sponsoring chief operating officer left in May, and the proposed phase two, an implementation scope worth about 240,000, was never signed. Fourteen months had passed and the account still sat in the pipeline at 30 percent. The master services agreement ran to the end of the following year. The last recorded interaction was a paid invoice in April; the last real conversation was a handover call in March.
+**Situation.** A twenty-two person advisory firm had delivered a phase one operating diagnostic to Pellworth Group, a specialty chemicals distributor with nine plants, for 118,000 US dollars across four months. All figures in this example are in US dollars. The engagement closed in March, the sponsoring chief operating officer left in May, and the proposed phase two, an implementation scope worth about 240,000, was never signed. Fourteen months had passed and the account still sat in the pipeline at 30 percent. The master services agreement ran to the end of the following year. The last recorded interaction was a paid invoice in April; the last real conversation was a handover call in March.
 
 **Task.** Decide within a week whether the account was worth re-engaging and, if so, produce a plan the account lead could execute the following month. Good meant either a first conversation booked with the successor or a defensible decision to close the file, and in either case an end to the account sitting at 30 percent.
 
@@ -203,6 +203,17 @@ Cover at least: the new stakeholder who does not know the history; internal chan
 - The re-entry route names who makes contact and why that person, tied to the diagnosis.
 - A close-the-file rule with a date exists before the first approach.
 - No claim about value delivered appears that the client could not repeat to their own leadership without support.
+
+## Adapting this to your context
+
+The dormancy clock, the three-factor screen and the five-conversation sequence come from services and software firms of ten to a hundred people selling repeat engagements. The diagnosis table travels further than the timings do.
+
+- **The dormancy clock.** Three and nine months suit a cycle where contact is monthly. Reset both from your own median gap between substantive conversations: an annual or grant-funded rhythm makes nine months normal; a monthly subscription makes three months terminal.
+- **The three-factor screen.** Access assumes one named buyer who will take a call. Public sector and grant relationships often have none; the equivalent is whether you are on the framework when the next round opens, which is a date rather than a relationship.
+- **The smallest credible step.** A paid sprint below the paused scope assumes you can sell one. Where procurement sets a threshold, the smallest step may be a workshop under an existing agreement or a place on the next bidder list. Keep the test: the client can name who uses the result and when.
+- **One owner per relationship.** A solo practice cannot send someone who was not in delivery, so a dissatisfaction conversation has to be rehearsed.
+
+- **What not to change.** The diagnosis is written before any outreach, and the close-the-file rule is set before the first contact.
 
 ## Related skills
 

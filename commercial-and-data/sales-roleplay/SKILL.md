@@ -17,7 +17,7 @@ Do not use it to review a call that already happened; that is `sales-call-analys
 
 ## What you need before starting
 
-**What is being sold, at roughly what price, to whom.** The price band changes buyer behaviour more than anything else: a decision at 4,000 a year is made by one person in one call, and a decision at 400,000 involves a committee, procurement and a security review. Missing: ask for a band rather than a figure, and failing that assume a mid-market annual contract near 40,000 and say you have assumed it.
+**What is being sold, at roughly what price and in what currency, to whom.** The price band changes buyer behaviour more than anything else: a decision at 4,000 US dollars a year is made by one person in one call, and a decision at 400,000 involves a committee, procurement and a security review. Missing: ask for a band rather than a figure, and failing that assume a mid-market annual contract near 40,000 US dollars and say you have assumed both the band and the currency.
 
 **Who the buyer is.** Title, company type, industry, and their relationship to the problem. Missing: pick from the persona reference and announce the choice in one line, so the seller can correct it rather than discovering mid-call that they are selling to the wrong person.
 
@@ -95,20 +95,22 @@ Two rules for the buyer. The presentable version always comes out first. And nev
 
 ## Stage notes
 
-| Stage | The buyer's posture, the seller's job, and what the coaching watches |
-| --- | --- |
-| Cold outreach | Mildly annoyed, thirty seconds of patience. Earn two more minutes, do not qualify and do not sell. Did they open in the buyer's world and ask for a specific next step rather than fold at the first pushback |
-| Discovery | Cautious, not hostile. Understand the problem well enough that the buyer feels heard, and map the decision. Watch the second-level questions and whether they know who else has to agree |
-| Demo | Judging whether this was worth the hour. Show only what connects to a pain already heard. Count the features shown that nobody asked about |
-| Proposal | Looking for a reason to decide either way. Defend value rather than read the document. Was value anchored before the price, and what happened in the silence after the number |
-| Negotiation | Testing limits, watching for desperation. Trade rather than give. Did the concessions buy anything, and do they know their walk-away |
-| Closing | Near a decision and still hesitant. Surface the remaining concern. Did they ask for the business at all, and was the ask apologetic |
+| Stage | The buyer's posture, the seller's job, and what the coaching watches | Passed when |
+| --- | --- | --- |
+| Cold outreach | Mildly annoyed, thirty seconds of patience. Earn two more minutes, do not qualify and do not sell. Did they open in the buyer's world and ask for a specific next step rather than fold at the first pushback | The first sentence contains no product noun, and a dated next step is asked for once, after at most one pushback |
+| Discovery | Cautious, not hostile. Understand the problem well enough that the buyer feels heard, and map the decision. Watch the second-level questions and whether they know who else has to agree | At least three follow-up questions go a level deeper than the answer they follow, and every name required to approve is on paper by the end |
+| Demo | Judging whether this was worth the hour. Show only what connects to a pain already heard. Count the features shown that nobody asked about | No more than one feature shown that traces to nothing said in discovery, and every other screen is introduced by the pain it answers |
+| Proposal | Looking for a reason to decide either way. Defend value rather than read the document. Was value anchored before the price, and what happened in the silence after the number | Value is stated before the number, and after the number the seller says nothing until the buyer speaks |
+| Negotiation | Testing limits, watching for desperation. Trade rather than give. Did the concessions buy anything, and do they know their walk-away | Every concession is paired with something received in the same sentence, and the walk-away is stated aloud before the call, unprompted |
+| Closing | Near a decision and still hesitant. Surface the remaining concern. Did they ask for the business at all, and was the ask apologetic | The business is asked for in one direct sentence with no hedge in front of it, and the remaining concern is named by the buyer rather than guessed at |
+
+Each threshold is observable from the transcript by somebody who was not in the room, which is the test a coaching note has to meet. A stage where the threshold is met twice running comes off the practice list.
 
 Pre-built buyers across common industries, each with an opening mood, real pains, a hidden truth, a withheld stakeholder and a set of objections, are in `references/personas-and-objections.md`. Invent the names and company details; keep the pressure structure.
 
 ## Worked example
 
-**Situation.** Marta Feld sells route-planning software to distributors at an average annual contract of about 28,000. In eleven months she had closed four deals and lost six, and in five of the six she had discounted before the buyer asked, ending at an average of 19 percent off list. Her own account was blunt: "I fold on price." A live deal with a regional distributor had a proposal call eight days out.
+**Situation.** Marta Feld sells route-planning software to distributors at an average annual contract of about 28,000 US dollars. All figures in this example are in US dollars. In eleven months she had closed four deals and lost six, and in five of the six she had discounted before the buyer asked, ending at an average of 19 percent off list. Her own account was blunt: "I fold on price." A live deal with a regional distributor had a proposal call eight days out.
 
 **Task.** Get her through a proposal walk-through and a price conversation without conceding unprompted. Success was defined before starting: she states the price, stops talking, and offers nothing until the buyer has asked for something specific.
 
@@ -203,6 +205,17 @@ Where the session is tied to a live account, add one line naming which parts of 
 - The debrief names one pattern, not a list of moments.
 - The score is honest, including when it is low, and the scale is anchored to observable outcomes.
 - The next session is specified with a scenario, a habit, and what would count as fixed.
+
+## Adapting this to your context
+
+The buyer behaviour, the difficulty settings and the price bands come from business-to-business software and services selling into mid-market accounts. The two-role separation is the method; almost everything else is a dial.
+
+- **The price band.** It drives buyer behaviour more than the industry does, so set it and the currency in the session contract. A four thousand a year decision and a four hundred thousand decision are different rehearsals, and running the wrong one teaches a habit that will not transfer.
+- **Who the buyer is.** The personas assume a commercial buyer with discretion. A public sector or grant-funded buyer cannot be sold to outside a process, so the rehearsal becomes a clarification meeting and the withheld truth is about evaluation criteria rather than budget. An agency rehearses objections about taste and about who else is pitching.
+- **The stages.** Cold outreach through closing suits a seller-led cycle. Where buying is self-serve and conversation starts after a trial, drop discovery and rehearse expansion and renewal instead.
+- **The debrief score.** Useful for an experienced seller working one named habit, harmful in someone's second week. Decide before the session whether this one carries a score.
+
+- **What not to change.** The buyer never volunteers the real problem, and the coach steps fully out of character to debrief.
 
 ## Related skills
 

@@ -93,9 +93,23 @@ Which fit statistic belongs depends on the estimator:
 | Fixed effects, absorbed | Within R-squared, labelled as within | Overall R-squared, which is dominated by the fixed effects and is near one by construction |
 | Instrumental variables | First-stage F or a weak-instrument statistic, and the number of instruments | R-squared, which has no useful interpretation after two-stage least squares |
 | Logit, probit, Poisson | Pseudo R-squared if anything, or log likelihood | R-squared, which is not defined |
+| Logistic reported as odds ratios | The odds ratio with its confidence interval, and a row stating that coefficients are exponentiated | Odds ratios and untransformed coefficients side by side in one table |
+| Multilevel, mixed or hierarchical models | The intraclass correlation from the empty model, the variance component at each level, the number of groups at each level, and marginal and conditional R-squared as a pair | A single R-squared, which hides whether the fit comes from the fixed part or the random part |
+| Structural equation and confirmatory factor models | Chi-square with degrees of freedom, CFI, TLI, RMSEA with its interval, SRMR, and the estimator | A model-wide R-squared, which is not what these models are judged on |
+| Survival and event history models | Number of events as well as observations, and the hazard ratio with its interval where that is the reported quantity | R-squared, and an events count omitted because the observation count looks large |
 | Any model with clustering | Number of clusters | Nothing extra, but the cluster count is mandatory |
 
 An R-squared reported without saying which variant it is causes a specific, avoidable referee comment.
+
+Four of those families carry conventions worth stating explicitly, because they are where fields outside economics differ most.
+
+**Logistic and other non-linear models.** Decide once whether the table reports coefficients, odds ratios, risk ratios or average marginal effects, state which in the note, and hold it constant across every column. Odds ratios are standard in epidemiology and much of public health, average marginal effects in economics, log odds in psychology. An odds ratio has a null of one rather than zero, so the significance statement is an interval that excludes one, and a star key defined against zero is simply wrong beneath an exponentiated coefficient.
+
+**Multilevel and mixed models.** Report the intraclass correlation from the unconditional model, since it is the justification for the nesting; report the variance component at each level; and report the number of groups at each level in the row where a single-level table reports the cluster count. For explained variance, report the marginal and the conditional R-squared as a pair: the marginal is the fixed part alone, the conditional includes the random effects, and either number on its own misleads. Stata's `mixed`, `lme4` and `lmerTest` in R, `MixedLM` in statsmodels and Mplus all produce these, and `performance::r2_nakagawa` computes the pair directly.
+
+**Structural equation and measurement models.** Report chi-square with its degrees of freedom, CFI, TLI, RMSEA with its confidence interval and SRMR, together with the estimator (ML, MLR, WLSMV for categorical indicators) and how missing data were handled. The conventional cutoffs are CFI and TLI at or above 0.95, RMSEA at or below 0.06 and SRMR at or below 0.08. Report the values themselves, not a sentence saying fit was acceptable, and report them once for the model rather than repeating them down a column.
+
+**Survival models.** Report the number of events alongside the number of observations, because a Cox model on 40,000 person-years with 61 deaths is a small study wearing a large sample's clothes, and the observation count alone conceals that.
 
 8. **Label coefficients as the paper names them, order them by importance, and be explicit about what is suppressed.** The parameter of interest is the first row. Controls that the reader needs to see follow. Nuisance terms, fixed effects and constants are suppressed, and the note says they were included. Suppressing a coefficient is legitimate; suppressing it silently is not, because a reader cannot distinguish "not reported" from "not included".
 
@@ -235,6 +249,16 @@ Clusters                   38         38         38
 - Decimals are constant down each column and no more precise than the standard errors support.
 - The dependent variable mean over the estimation sample appears wherever magnitude has to be judged.
 - No coefficient in the table appears anywhere in the manuscript with a different value.
+
+## Adapting this to your context
+
+The code here is Stata, the default output is booktabs LaTeX, and the conventions are economics ones: stars, clustered standard errors, a within R-squared. The generation rule is the method; the rest is dialect.
+
+- **The export tooling.** `eststo` and `esttab` are Stata names. In R use `modelsummary`, `gtsummary`, `texreg` or `stargazer`; in Python `statsmodels` with `summary_col`. Mplus, SPSS and SAS all write machine-readable output you export rather than retype. Whatever the tool, the table is written by code from stored estimates.
+- **The table style.** Booktabs LaTeX assumes an economics or finance target. APA 7 tables are Word, no vertical rules, notes ordered general then specific then probability, and variable names spelled out. Set the style once in the export call.
+- **Stars.** Economics still prints them. APA 7, most medical journals and a growing set of psychology journals prefer confidence intervals, and a few refuse p-values entirely. Follow the target and drop the stars rather than carrying both.
+- **The fit statistics.** The table above now covers logistic, multilevel, SEM and survival models. Use the row for your estimator rather than reporting an R-squared because the software printed one.
+- **What not to change.** No number reaches the document by hand, and deleting the table file and re-running the code must reproduce it exactly.
 
 ## Related skills
 

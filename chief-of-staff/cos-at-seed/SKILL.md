@@ -70,7 +70,7 @@ Decide alone: process, scheduling, the shape of documents, who is in a meeting, 
 
 Escalate: anything about people, anything that changes what the company is building, anything a customer will see, and anything the founder has an unstated opinion about, which at this stage is most things worth asking about once.
 
-Run: the weekly leadership meeting, a short all-hands on a predictable cadence, and the hiring decision meeting. Refuse, politely: standing coordination meetings a document would handle, project meetings with no decision in them, and anything recurring whose only owner is you. At twenty people an hour-long weekly meeting with six people in it costs roughly half a percent of the company's total working time, which is worth saying out loud.
+Run: the weekly leadership meeting, a short all-hands on a predictable cadence, and the hiring decision meeting. Refuse, politely: standing coordination meetings a document would handle, project meetings with no decision in them, and anything recurring whose only owner is you. At twenty people an hour-long weekly meeting with six people in it costs six hours against a company week of roughly eight hundred, which is three quarters of a percent of the company's total working time and is worth saying out loud.
 
 The habit that earns everything else: never surprise the founder in front of someone else. Disagree in private, in advance, as often as necessary.
 
@@ -159,6 +159,16 @@ Not doing this quarter: [3 to 5 items, with why]
 - Decisions are written down on the day they are made, in one place people already look.
 - What is deliberately not being done this quarter is written and visible.
 - No recurring meeting was added without one being removed.
+
+## Adapting this to your context
+
+The defaults here come from venture-funded companies of five to thirty people with a single founder and a runway measured in months. Read the signals, not the round.
+
+- **"Seed" as a label.** It stands for a company under about thirty people with no functional leaders, where the founder is the routing table and the board is one or two people. A family business, a two-partner agency, an NGO before its first programme director or a bootstrapped firm at that size is a seed company whatever it calls itself, and the funding language here can be ignored.
+- **The founder time ledger.** Built from a calendar. Where the principal's day happens on a shop floor, a ward or a site rather than in meetings, reconstruct it from a fortnight of interruptions logged as they happen.
+- **Runway and burn.** The pressure input, not the point. Substitute the seasonal cash trough, the grant period or the months of reserves where nobody raises money.
+- **The six artefacts.** Ordered for a company selling software. A charity puts the funder report where the investor update sits; an owner-managed business needs the numbers page first.
+- **What not to change.** Three changes a quarter and no more, and a named future owner with a transfer trigger recorded on the day each artefact is built.
 
 ## Related skills
 

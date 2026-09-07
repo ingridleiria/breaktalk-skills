@@ -160,6 +160,16 @@ Restart:          [the condition under which hiring resumes]
 - The hiring pause trigger has a number, a date, a named confirmer, and an exception list of named roles.
 - The narrative, the objectives and each function's version carry the same numbers.
 
+## Adapting this to your context
+
+The numbers here come from venture-funded software companies of a hundred to three hundred people planning against a cash runway. They are defaults, not standards.
+
+- **The loaded cost uplift.** A quarter to forty percent above salary assumes commercial employment in a high-tax market. Rebuild it from your last four hires; universities and public bodies are usually given a fixed overhead rate instead and should use theirs.
+- **The ramp figures.** Six to nine months for an enterprise seller, three to four for an engineer. Use the time your last five hires in that role took to reach standard, and where nobody measured it, say so on the page.
+- **The eight-week calendar.** It assumes a board approval date. Where approval sits with a partnership, a trustee board or a parent company, work back from their committee date, which is often fixed a year ahead and cannot move for you.
+- **The runway constraint.** A cash-out date suits a company burning money. Substitute the covenant, the grant period end or the reserves policy, and run the same three cases against that.
+- **What not to change.** Close the gap by revisiting the bets rather than cutting proportionally, and sequence every hire by its output month rather than its start date.
+
 ## Related skills
 
 `strategic-plan-and-action-plan` sets the destination and the bets that this plan prices, and must come first. `okr-planning` runs after approval and converts the funded plan into measured objectives. `operating-cadence-design` places the reconciliation, the approval and the quarterly re-plan into the company's rhythm, and `weekly-status-update` and `meeting-to-decisions` are the artefacts that rhythm produces during the cycle. `revenue-forecast` and `financial-model-builder` supply the revenue side of the envelope. `hiring-scorecard-and-interview-kit` turns an approved role into a definition and a process. `board-and-investor-management` presents the approved plan and the runway cases to the board, and `decision-memo` carries any single trade-off that has to be escalated rather than absorbed.

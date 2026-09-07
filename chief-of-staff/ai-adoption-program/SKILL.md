@@ -174,6 +174,16 @@ Then three short sections: what was stopped and why, the risk position including
 - Adoption is reported as active use on a named workflow with the denominator stated, never as licences issued.
 - At least one failure appears in each quarterly report, in the same detail as the successes.
 
+## Adapting this to your context
+
+The defaults here come from a three-hundred-person regulated broker and a forty-person clinical services firm. They are a starting point, not a standard.
+
+- **The fifty-person compression line.** The file compresses the sequence below about fifty people. Move that line by decision layers rather than by headcount: a hundred-person firm where three partners decide everything compresses the same way.
+- **The blind test size.** Twenty to fifty task instances assumes completed work with known good answers. Where output is judged rather than scored, use two graders on the same twenty items and report where they disagree.
+- **The data categories.** Public, internal, confidential, personal is a commercial classification. In health, education or government, attach the policy to the scheme your regulator already imposes rather than inventing a fifth category nobody applies.
+- **The baseline window.** Two to four weeks fits monthly work. Baseline a full cycle where the task is quarterly or seasonal, or the pilot measures the season rather than the tool.
+- **What not to change.** A baseline measured before anything starts, and a numeric stop threshold agreed in advance with a decider who is not the pilot owner. Without both, no report can say whether the thing worked.
+
 ## Related skills
 
 `vendor-evaluation` runs the head-to-head comparison the procurement step feeds, and produces the recommendation. `decision-memo` is the format for the go or no-go on a single tool, and supplies the reversibility judgement that sizes the procurement effort. `process-documentation-sop` records the changed process once a pilot succeeds, which is what makes the gain survive a departure. `program-management` runs delivery when adoption spans more than three functions or two quarters. `okr-planning` places the adoption targets alongside the rest of the operating plan. `board-and-investor-management` and `investor-update` carry the quarterly report outward. `business-agreements-drafting` writes the contract this skill specifies. `structured-problem-solving` takes over when the audit shows the real problem is a process rather than a capability.

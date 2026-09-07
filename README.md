@@ -8,6 +8,8 @@ Over the past two years I wrote these methods down as instruction files so an AI
 
 I write about how this works in practice at [BreakTalk](https://breaktalk.substack.com).
 
+**New here?** [USING_THESE_SKILLS.md](USING_THESE_SKILLS.md) explains how to run one of these in any assistant, and how to adapt it to your own numbers, tools and field. Take one file, run it on work you have already finished, and edit it where it disagreed with you and you were right.
+
 ## What is a skill
 
 A skill is a folder with a `SKILL.md` file inside it: a short frontmatter block saying what the skill is for, then the method written out in plain Markdown. Nothing else. No code, no dependencies, no framework.
@@ -17,6 +19,10 @@ Skills do not make a model know more. They make it work to a standard, in a repe
 The folder-and-frontmatter shape comes from [Anthropic's skills format](https://docs.claude.com), which is where I first built these. The content is not specific to any model. It is a written method, and any assistant that accepts written instructions can follow it.
 
 ## Using them, whichever assistant you use
+
+**[USING_THESE_SKILLS.md](USING_THESE_SKILLS.md) is the full guide**: how to load a skill into any assistant, how to make a first run that teaches you something, and a method for adapting a file to your own numbers, tools, field and jurisdiction. If you only read one page before taking something from here, read that one.
+
+The short version. A skill is a folder with a `SKILL.md` file in it, in plain Markdown, with nothing to install.
 
 **Claude**: on claude.ai, Settings, Capabilities, Skills, then upload a skill folder as a zip. In Claude Code, copy the folder into `.claude/skills/` in your project, or `~/.claude/skills/` for all projects. The releases page carries each skill zipped individually.
 
@@ -170,7 +176,7 @@ All 110 skills are built. Each row links to the skill.
 | --- | --- | --- | --- |
 | 85 | [breaktalk-brand](brand-and-writing/breaktalk-brand/SKILL.md) | The BreakTalk identity: logo rules, monochrome palette with navy and wine, typography, layout, voice | built |
 | 86 | [newsletter-post-writer](brand-and-writing/newsletter-post-writer/SKILL.md) | Long-form posts that open on a scene, argue with evidence, and end on the point | built |
-| 87 | [linkedin-post-writer](brand-and-writing/linkedin-post-writer/SKILL.md) | 150 to 300 word posts with one idea and no engagement bait | built |
+| 87 | [linkedin-post-writer](brand-and-writing/linkedin-post-writer/SKILL.md) | 120 to 300 word posts with one idea and no engagement bait | built |
 | 88 | [human-voice-editor](brand-and-writing/human-voice-editor/SKILL.md) | Removing the punctuation, vocabulary, and rhythm tells of generated prose | built |
 | 89 | [skill-builder](brand-and-writing/skill-builder/SKILL.md) | How to write a skill that triggers reliably and enforces a standard | built |
 | 90 | [weekly-review-and-planning](brand-and-writing/weekly-review-and-planning/SKILL.md) | A personal operating rhythm for people running two jobs | built |
@@ -213,14 +219,25 @@ The worked example is the part that makes a skill useful rather than merely corr
 
 ## Adapting a skill
 
-These encode my standards. Yours will differ, and the version you edit is worth more to you than the version you install.
+These encode my standards, which came from a B2B services company and an economics doctorate. Yours will differ, and the version you edit is worth more to you than the version you installed. Every skill now carries an **Adapting this to your context** section naming its own assumptions, and the full method is in [USING_THESE_SKILLS.md](USING_THESE_SKILLS.md).
 
-1. Install one and use it as written for a week, so you can see what it changes.
-2. Open the `SKILL.md`. It is plain Markdown with a short frontmatter block, nothing else. The `description` field is what decides when Claude loads a skill automatically, so it lists the phrases people actually say rather than a summary of the contents. On other assistants you are choosing the file yourself and the block is just a summary.
-3. Edit the quality bar at the bottom first. That section is the skill's actual argument: it says what "done" means. Change it to your definition and the rest of the file follows.
-4. Where a skill expects a local file, such as `standard.md` or `framework.json`, write yours. Those exist so the method can be public while the specifics stay yours.
+The idea in one paragraph. Every file here has three layers. The **method** is the sequence that would hold in any organisation, and it is why the file exists. The **defaults** are every number, cadence, threshold, currency, org shape and tool, and they came from one setting, so they should almost always be changed. The **illustration** is the worked example, which exists to show the method moving and can be replaced wholesale. The adaptation section in each file names its own defaults and illustration, and states what belongs to the method under the label **What not to change**.
 
-[SKILL_TEMPLATE.md](SKILL_TEMPLATE.md) is the empty shape if you would rather start from scratch.
+A quick test for telling them apart: cover every number in a step with your hand. If the step still tells you what to do, it is method. If it becomes meaningless, the number was doing the work, so it needs to be your number.
+
+The order that works, in about forty minutes:
+
+1. Read three sections, not the whole file: when to use it, what you need before starting, and the quality bar.
+2. Rewrite the quality bar first. It is the shortest section and it governs the rest.
+3. Replace the defaults with figures from your own history, not from your instinct about your own history.
+4. Decide what happens when each input is missing: proceed and flag, proceed on a stated assumption, or stop.
+5. Delete what does not apply. A shorter file that fits beats a complete file that does not.
+6. Replace the worked example with one of your own. This is the strongest edit and the one people skip.
+7. Give it to somebody else and do not help them.
+
+Where a skill expects a local file, such as a standards file or a competency framework, write yours. Those exist so the method can be public while the specifics stay yours. [SKILL_TEMPLATE.md](SKILL_TEMPLATE.md) is the empty shape if you would rather start from scratch, and [skill-builder](brand-and-writing/skill-builder/SKILL.md) is the skill that writes skills.
+
+**If you work outside economics**, the research track will name tools and conventions you do not use. Separate the rule from the dialect: "raw data is never edited, every dropped row is counted, every merge is followed by an assertion on the match rate" holds in R, SPSS, SAS or by hand, and only the syntax is Stata. Substitute the standard rather than the step: APA where a file says booktabs, MeSH or PsycINFO or ERIC descriptors where it says JEL codes, OSF or PROSPERO or ClinicalTrials.gov where it says the AEA RCT Registry. Each software and reporting skill now carries that split explicitly.
 
 ## What these are not
 
@@ -240,7 +257,7 @@ Nothing in the commercial and data track is an employer artefact. Where I had bu
 
 [`skills.json`](skills.json) and [`skills.csv`](skills.csv) carry every skill with its name, track, path and description, generated from the frontmatter rather than maintained by hand. Use them to build your own index, filter the library down to the tracks you want, or script an install.
 
-[`scripts/validate_skills.py`](scripts/validate_skills.py) checks the library against its own standard: frontmatter present, the name matching the folder, a when to use section, a worked example, a quality bar, a size floor that a stub cannot pass, and no dashes. It runs in a second and exits non zero on failure, so nothing ships below the bar.
+[`scripts/validate_skills.py`](scripts/validate_skills.py) checks the library against its own standard: frontmatter present, the name matching the folder, a when to use section, a worked example, a quality bar, an adaptation section naming the file's own defaults and what must not change, a size floor that a stub cannot pass, and no dashes. It runs in a second and exits non zero on failure, so nothing ships below the bar.
 
 ```
 python3 scripts/validate_skills.py

@@ -69,13 +69,13 @@ Do not use it to run the relationship with the people you are pitching once they
 
 ## Worked example
 
-**Situation.** A company selling scheduling and compliance software to independent veterinary practices, raising a first institutional round of 4m. Eleven months of revenue, 62 paying practices, 340,000 of recurring revenue growing about 9 percent a month, two founders, one of whom had run a group of practices for nine years.
+**Situation.** A company selling scheduling and compliance software to independent veterinary practices, raising a first institutional round of 4 million euros. All figures in this example are euros. Eleven months of revenue, 62 paying practices, 340,000 euros of recurring revenue growing about 9 percent a month, two founders, one of whom had run a group of practices for nine years.
 
-**Task.** A deck for fourteen partner meetings over five weeks, with an ask of 4m for eighteen months of runway to reach roughly 250 practices and a repeatable sales motion.
+**Task.** A deck for fourteen partner meetings over five weeks, with an ask of 4 million euros for eighteen months of runway to reach roughly 250 practices and a repeatable sales motion.
 
-**Action.** The first version opened with the product, put traction on slide nine, and sized the market with a figure from a published report on veterinary software, about 2.1bn. That version was abandoned after the title test. Read alone, the titles said what the product did three times and never said why anyone should fund it now. The market title said "A large and growing market", which asserts rather than shows.
+**Action.** The first version opened with the product, put traction on slide nine, and sized the market with a figure from a published report on veterinary software, about 2.1 billion euros. That version was abandoned after the title test. Read alone, the titles said what the product did three times and never said why anyone should fund it now. The market title said "A large and growing market", which asserts rather than shows.
 
-The market slide was rebuilt from countable inputs: roughly 5,100 independent practices in the two target countries from a professional register, of which about 3,400 met a size threshold evidenced from the founders' own sales data, times an observed average contract value of 6,900 from existing customers, giving about 23m of immediately addressable revenue. That is a hundredth of the report figure and far more persuasive, because both inputs were named and one came from the company's own signed contracts. Two partners later said that slide was why they took a second meeting.
+The market slide was rebuilt from countable inputs: roughly 5,100 independent practices in the two target countries from a professional register, of which about 3,400 met a size threshold evidenced from the founders' own sales data, times an observed average contract value of 6,900 euros from existing customers, giving about 23 million euros of immediately addressable revenue. That is a hundredth of the report figure and far more persuasive, because both inputs were named and one came from the company's own signed contracts. Two partners later said that slide was why they took a second meeting.
 
 The insight slide did not exist in the first version. It was written after a founder, asked in rehearsal why incumbents had not solved this, gave a three minute answer that was the best content in the whole session: incumbent systems are sold to practice groups and priced per site, so independents buy nothing and run on paper, and the constraint is not features but a purchase process that assumes a procurement function the buyer does not have. That became slide three and the deck reorganised around it.
 
@@ -151,6 +151,16 @@ Every slide carries its sources in the footer. Every projection is accompanied b
 - Every projection shows the drivers that produce it, and no number in the deck fails a single follow-up question.
 - The evidence section contains only things that happened, with the limits of the data stated.
 - The main deck is fourteen slides or fewer, and the appendix it refers to exists.
+
+## Adapting this to your context
+
+The ten to fourteen slide shape and the emphasis on insight and bottom-up sizing come from early-stage venture fundraising in Europe and North America. The discipline generalises; several conventions do not.
+
+- **The slide count and the appendix.** Grant committees, corporate investment boards and public funding bodies publish a required structure and a page limit, and that structure wins. Keep the title discipline inside their template.
+- **The ask expressed as money for runway.** A corporate partner is asked for a pilot with a success measure, a grant body for a work programme against deliverables, an internal board for headcount and a decision date.
+- **Bottom-up sizing from a register of buyers.** In consumer and developer markets, size from observed cohorts, funnel volumes or comparable adoption curves, and be explicit that the base is behavioural rather than a headcount.
+- **The team slide.** Written for markets where founder track record carries weight. Where a committee assesses institutional capacity, it becomes governance, partners and delivery capability rather than biography.
+- **What not to change.** The titles, read alone and in order, make the complete argument, and no number goes in that fails a single follow-up question.
 
 ## Related skills
 

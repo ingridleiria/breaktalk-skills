@@ -99,25 +99,25 @@ This is not only an ethical boundary, it is a practical one. A brief containing 
 
 ## Worked example
 
-**Situation.** A 160-person software company was three weeks from a partnership call with Kestrel Retail Systems, a mid-sized retail systems vendor. The proposal on the table was that Kestrel would resell our product to its installed base of roughly 900 retailers. Our chief executive had met their chief operating officer once, at a conference, and wanted a brief before the call.
+**Situation.** A 140-person managed technology services firm had a first meeting booked with the newly appointed group operations director at Ardmore Foods, a food manufacturer running nine sites and the firm's second-largest account at about 1.3 million a year, with the contract due for renewal in seven months. The previous sponsor, who had signed every renewal for six years, had left in March. The account director wanted a brief before the call.
 
-**Task.** One page, delivered two days before the call, answering whether the reseller proposal was the right thing to ask for. Good meant the chief executive learned something she did not already know and did not repeat anything that turned out to be wrong.
+**Task.** One page, delivered two days before the meeting, answering what the new director would be measured on and whether the renewal was at risk. Good meant the account director learned something she did not already know and did not repeat anything that turned out to be wrong.
 
-**Action.** The first pass was the wrong document and was thrown away. It was a company profile assembled from Kestrel's own site and a funding database: founded, funded, headcount, customer logos, recent announcements. Nine facts, of which the chief executive already knew seven, and the two she did not know made no difference to the call. It had cost a day.
+**Action.** The first pass was the wrong document and was thrown away. It was a profile of Ardmore assembled from their website and a company data service: turnover, sites, brands, board, recent announcements. Ten facts, of which the account director could have recited eight, and the two she could not made no difference to the meeting. It had cost most of a day.
 
-The reframe was to the second and fourth questions in the standard set: what changed in the last ninety days, and what does it mean for the ask. That turned the search from the company as a whole to a much smaller surface.
+The reframe was to the first and third questions in the standard set: what are they trying to achieve right now, and where is the pressure. That moved the search off the company and onto the person and the programme.
 
-Three things came back. First, eleven engineering roles posted in eight weeks, six of them under a team name, Merchant Platform, that had not existed in postings a year earlier, and three of those six describing work that overlapped with what we would be reselling. Second, an archived version of their pricing page from four months earlier listed an add-on module that was no longer listed, dated to within a fortnight by comparing snapshots. Third, their statutory filing showed a nine percent fall in services revenue against a rise in licence revenue, which was consistent with a shift away from bespoke implementation work.
+Three things came back. First, the director's own public record. In a recorded conference talk the previous November she had described reducing a supplier list from around sixty to about twenty in eighteen months in her previous role, in her own words, dated, and available to anyone who looked. Second, Ardmore's half-year results statement named a two-year cost programme with third-party spend as one of three stated sources, filed in September. Third, four job postings in eight weeks under a Group Procurement team that had not appeared in postings a year earlier, two of them specifying technology category experience, which is the difference between an intention and a programme with staffing behind it. An archived version of Ardmore's supplier page from four months earlier also showed a preferred supplier tier that had not existed before, which supplied the mechanism.
 
-Two facts were left out for failing verification. A trade press piece described a partnership with a logistics provider that appeared nowhere in either company's own material and could not be confirmed. A headcount figure from an aggregator was 40 percent above what their own careers page and filings implied, so the brief used the filing figure and marked the discrepancy.
+Two facts were left out for failing verification. A trade press piece said Ardmore was exploring a sale of its frozen division, which appeared nowhere in the company's own material and could not be confirmed. And a headcount figure from an aggregator sat about 30 percent above what the filings and the careers page implied, so the brief used the filed figure and marked the discrepancy.
 
-The synthesis was one implication: Kestrel appeared to be building in the category we proposed to sell them, so a reseller agreement was likely to be a short-lived arrangement in which they learned the category and then replaced us. The evidence was strong but circumstantial, and the brief said so in those words.
+The synthesis was one implication: this was not an introductory meeting. It was the opening round of a supplier consolidation in which the firm was one of roughly forty technology suppliers, and the risk was not price but being categorised as a point supplier rather than a platform one before anyone had argued the case.
 
-**Result.** The brief was one page: headline, six facts with sources and dates, three questions, and one thing not to raise, which was a customer loss that was public but embarrassing and irrelevant to the call.
+**Result.** The brief was one page: headline, six facts with sources and dates, three questions, and one thing not to raise, which was a redundancy announcement at one of their sites two weeks earlier.
 
-The chief executive did not present the conclusion. She asked the second question on the list, which was how they saw the Merchant Platform team developing over the next year. The answer confirmed the reading, and the conversation moved to a narrower data integration with a two-year term rather than a reseller agreement. That is a smaller deal, and it is the one that was still in place a year later.
+The account director did not present the conclusion. She asked the second question on the list, which was what the preferred supplier tier would require of an incumbent. The answer confirmed the reading and the conversation moved to the criteria rather than to the renewal. The firm was invited into the consolidation review four months early and signed a three-year agreement at a lower annual value across a wider scope, which is a smaller number and the one that was still in place two years later.
 
-The two useful facts came from job postings and an archived pricing page. Neither is difficult to find and neither was in the first day's work, because the first day was spent on the company rather than on the question.
+The two facts that did the work came from a recorded conference talk and four job postings. Neither is difficult to find and neither was in the first day's work, because the first day was spent on the company rather than on the question.
 
 ### A second scenario, where it goes differently
 
@@ -208,6 +208,16 @@ Every format leads with the headline. Where charts are used, keep them monochrom
 - The brief contains at least one thing the reader did not know, or says plainly that public information adds nothing.
 - The gaps are listed, and the questions for the meeting come from them.
 - Nothing in the document is personal rather than professional, and no adjective is doing the work of evidence.
+
+## Adapting this to your context
+
+The method was built for outside-in research on companies, using filings, job postings and archived pages in jurisdictions with public registers. Both assumptions vary widely.
+
+- **Statutory filings.** The source stack puts them first because in the United Kingdom, much of Europe and for listed companies they carry real numbers. In markets with minimal disclosure, and for partnerships and private trusts, drop them a tier and lean on hiring, procurement notices and public tenders.
+- **The ninety-day window.** Suits a company that ships and announces frequently. For a university, a hospital or a public body the equivalent is the last funding settlement, inspection or budget cycle.
+- **The two-source rule.** Sound for business facts. For a scientific, medical or regulatory claim it is not enough: verify against the publication, the register entry or the regulator's own record, and cite that rather than the press release.
+- **The privacy boundary.** Public professional information only. Some jurisdictions and sectors go further, restricting what may be held about an individual at all, and where the subject is a private person rather than an executive it tightens by default.
+- **What not to change.** Every fact carries a named source and a date in the same line, and company claims, third-party reports and your own inferences never blur into one another.
 
 ## Related skills
 

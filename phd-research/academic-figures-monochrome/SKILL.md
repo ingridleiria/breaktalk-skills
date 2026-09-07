@@ -185,7 +185,7 @@ graph bar (mean) share, over(category, label(labsize(small))) ///
       $GOPT
 ```
 
-Stata's fill textures are limited compared with matplotlib's hatching. Where more than two textures are needed, either move the figure to matplotlib or reduce the number of categories, which is usually the better answer anyway.
+Stata's fill textures are limited compared with matplotlib's hatching, and ggplot2 has none at all without an extra package. Where more than two textures are needed, either move the figure to matplotlib or reduce the number of categories, which is usually the better answer anyway.
 
 ## Implementation, Python
 
@@ -327,6 +327,81 @@ legend_below(ax, ncol=2)
 
 Note what makes that last block acceptable under the standard: the navy is one element, it is doing a job that grey cannot do because the donor pool is already grey, and the two labelled series still differ in dash pattern, so the figure survives greyscale conversion with only a loss of emphasis rather than a loss of information.
 
+## Implementation, R with ggplot2
+
+Same standard, same three channels, a third toolchain. Put the theme and the scales in one file sourced by every figure script, exactly as `plotting.py` and the Stata preferences do-file do.
+
+```r
+# plotting.R : the house standard, sourced by every figure script
+library(ggplot2)
+
+GREY    <- c("#000000", "#404040", "#7F7F7F", "#A6A6A6")
+NAVY    <- "#1F3864"   # accent one, sparingly
+WINE    <- "#7B1E28"   # accent two, sparingly
+
+DASHES  <- c("solid", "22", "11", "4212")   # ggplot2 hex dash strings
+SHAPES  <- c(16, 15, 17, 18)                # solid circle, square, triangle, diamond
+HOLLOW  <- c(1, 0, 2, 5)                    # the hollow equivalents
+
+theme_house <- function(base_size = 9) {
+  theme_classic(base_size = base_size, base_family = "serif") +
+    theme(
+      panel.grid       = element_blank(),
+      axis.line        = element_line(colour = "#404040", linewidth = 0.3),
+      legend.position  = "bottom",          # outside the panel, never inside
+      legend.title     = element_blank(),
+      legend.key       = element_blank(),
+      legend.margin    = margin(t = -2),
+      plot.title        = element_blank(),  # the caption carries the title
+      strip.background = element_blank()
+    )
+}
+
+save_fig <- function(p, stem, w = 5.2, h = 3.0) {
+  ggsave(paste0("figures/", stem, ".pdf"), p, width = w, height = h)
+  ggsave(paste0("figures/", stem, ".png"), p, width = w, height = h, dpi = 400)
+}
+```
+
+An event study, with the reference period normalised to zero and the pre-period given the same visual weight as the post-period:
+
+```r
+# fig2_event_study.R
+es <- readr::read_csv("output/event_study.csv")   # k, b, lo, hi
+
+p <- ggplot(es, aes(k, b)) +
+  geom_hline(yintercept = 0, colour = GREY[2], linetype = "22", linewidth = 0.3) +
+  geom_vline(xintercept = -0.5, colour = GREY[2], linetype = "22", linewidth = 0.3) +
+  geom_errorbar(aes(ymin = lo, ymax = hi), width = 0.12, colour = "black",
+                linewidth = 0.4) +
+  geom_point(shape = SHAPES[1], size = 1.6, colour = "black") +
+  labs(x = "Years relative to adoption", y = "Effect on log employment") +
+  theme_house()
+
+save_fig(p, "fig2_event_study")
+```
+
+Group trends separated by dash pattern and grey value, with the legend below and no colour at all:
+
+```r
+p <- ggplot(trends, aes(year, mean, linetype = group, colour = group)) +
+  geom_line(linewidth = 0.6) +
+  geom_vline(xintercept = 2018, colour = GREY[2], linetype = "22", linewidth = 0.3) +
+  scale_linetype_manual(values = DASHES) +
+  scale_colour_manual(values = GREY) +
+  guides(linetype = guide_legend(nrow = 1)) +
+  labs(x = NULL, y = "Mean registrations per 1,000 firms") +
+  theme_house()
+```
+
+Two things about ggplot2 are worth knowing before you rely on it for this standard.
+
+First, it has no native hatching. `geom_bar` fills with colour only, so a bar chart separated by texture needs the `ggpattern` package and `geom_bar_pattern`, with `pattern = "stripe"` and `pattern_angle` varied across categories, or `pattern = "none"` plus grey fills where two categories are enough. The package is not part of the tidyverse and has to be installed and recorded in `renv.lock` like any other dependency. Where you would rather not add it, the same rule applies as in Stata: reduce to two categories separated by grey value, which is usually the better figure anyway.
+
+Second, the default palettes are colour palettes and every one of them fails the greyscale test, `viridis` included, because a perceptually uniform colour ramp is not a perceptually uniform grey ramp. Set `scale_colour_manual` and `scale_fill_manual` explicitly in every plot, or set them once through `options(ggplot2.discrete.colour = GREY, ggplot2.discrete.fill = GREY)` in `plotting.R`. A figure that inherits the default palette will look fine on screen and print as three indistinguishable mid-greys.
+
+For maps, `sf` plus `geom_sf` with `scale_fill_grey()` and at most five classes gives the choropleth in the standard; set `na.value = "white"` and put the class breaks in the note. For small multiples, `facet_wrap` with `strip.background = element_blank()` is already in `theme_house` above.
+
 ## Caption and note
 
 The caption is a sentence, not a label. "Figure 2: Effect of rollout on employment, event-study estimates" is a caption. "Figure 2: Event study" is not.
@@ -424,6 +499,8 @@ And a one-line record per figure in the project's figure index, so a coauthor ca
 
 **Inconsistency across a document.** Three fonts, two aspect ratios, four marker conventions. Fix with one style module imported by every figure script, set up at the start of the project rather than at the end.
 
+**An inherited default palette.** Recognisable in ggplot2 by the hue wheel and in matplotlib by the tab10 blues and oranges, and in both by the figure printing as a set of similar mid-greys. Fix by setting the scales explicitly in the style module, and never rely on a palette being greyscale-safe because it is described as perceptually uniform in colour.
+
 ## Edge cases
 
 **The journal requires colour or supplies its own template.** Follow the journal, and keep the pattern separation anyway; a figure that works in both is never worse. Where the template mandates a palette, map the house roles onto it and keep the legend outside.
@@ -452,6 +529,16 @@ And a one-line record per figure in the project's figure index, so a coauthor ca
 - Every figure is produced by a script reading from an output file; deleting the exported file and rerunning reproduces it exactly.
 - No figure contains a number that was typed rather than read from the analysis output.
 - Every figure in the document shares one font, one aspect ratio convention, and one set of marker and dash assignments.
+
+## Adapting this to your context
+
+The palette, the four-series limit and the legend rules are a house standard for print journals where figures are reproduced in black and white at about 5 by 3 inches. The three channels rule holds anywhere; the specifics need checking against your target.
+
+- **Monochrome as the starting point.** Right for print-first journals. Many health and science journals are online-first and colour is free, so colour may lead, but the accessibility case remains: shape and dash must still carry the information for readers with a colour vision deficiency. Design for greyscale, then add colour if the venue rewards it.
+- **The toolchain.** Stata, matplotlib and ggplot2 are implemented above. In SPSS or SAS, export the plotted values and redraw in one of those three rather than fighting the chart editor.
+- **The figure types.** Event studies, coefficient plots, binned scatters. Elsewhere you need forest plots for meta-analysis, Kaplan-Meier curves for survival, PRISMA and CONSORT diagrams, several with mandated layouts to follow rather than restyle.
+- **Journal figure specifications.** Width in millimetres, minimum font size, format and resolution differ by publisher. Take them from the author guidelines before setting the figure size, not after.
+- **What not to change.** Every series is separated by at least two channels, the legend stays outside the plot area, and every figure is regenerated by a script, never edited by hand.
 
 ## Related skills
 

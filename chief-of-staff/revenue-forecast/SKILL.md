@@ -5,7 +5,7 @@ description: Builds and maintains the revenue number for the current year and qu
 
 # Revenue Forecast
 
-A forecast loses its authority the third time it moves without an explanation. In August the year lands at 11.2 million, in September at 10.4, in October at 10.9, and nobody in the room can say what happened between the versions. The board stops treating the number as information and starts applying its own reduction to it, usually somewhere between ten and twenty percent, applied silently and never discussed. From that point the company is run on two forecasts: the one the team produces and the one the board privately believes.
+A forecast loses its authority the third time it moves without an explanation. In August the year lands at 11.2 million dollars, in September at 10.4 million, in October at 10.9, and nobody in the room can say what happened between the versions. The board stops treating the number as information and starts applying its own reduction to it, usually somewhere between ten and twenty percent, applied silently and never discussed. From that point the company is run on two forecasts: the one the team produces and the one the board privately believes.
 
 The cost is not the arithmetic. It is that every decision downstream is made on a number nobody owns. Hiring gets approved against optimism and paused against panic, both late. Cash is managed to a figure that has no stated confidence attached. And the one quarter when the forecast is right and the team says so with conviction, nobody acts on it, because the signal is indistinguishable from the previous four.
 
@@ -50,7 +50,7 @@ Do not use this to set next year's target, which is a planning exercise with dif
 
 5. **Build three cases, each with its assumptions written beside it.** Commit is contracted plus renewals at the measured rate plus pipeline at a conservative conversion, and it is the number the leadership team would bet on. Likely uses measured rates throughout and is the headline. Upside requires specific named evidence, such as one identified deal with a signed term sheet, not a general improvement in conversion. The rule: any case you cannot attach a named cause to is not a case, it is a multiplier.
 
-6. **Build the bridge from the previous version.** Start at the last forecast, then one line per change with its cause and value, ending at the new number. Causes are specific: a named deal slipped, a renewal was lost, a segment converted above rate, pricing changed. A line reading "pipeline reassessment" is an admission that the change is not understood. The bridge is what experienced readers turn to first, because it reveals whether movement is understood or merely absorbed: a drop of 600,000 with four lines naming four deals is a team in control of its number, while the same drop under one line reading "revised assumptions" is a team presenting a surprise as an analysis. Include upward movements too.
+6. **Build the bridge from the previous version.** Start at the last forecast, then one line per change with its cause and value, ending at the new number. Causes are specific: a named deal slipped, a renewal was lost, a segment converted above rate, pricing changed. A line reading "pipeline reassessment" is an admission that the change is not understood. The bridge is what experienced readers turn to first, because it reveals whether movement is understood or merely absorbed: a drop of 600,000 dollars with four lines naming four deals is a team in control of its number, while the same drop under one line reading "revised assumptions" is a team presenting a surprise as an analysis. Include upward movements too.
 
 7. **Reconcile the total to the financial model.** The forecast revenue line and the model's revenue line must agree, or the difference must be explained in one sentence. Two live revenue numbers in one company is how a plan and a forecast drift apart unnoticed.
 
@@ -62,7 +62,7 @@ Do not use this to set next year's target, which is a planning exercise with dif
 
 Each layer is estimated separately and shown separately, so the reader can see certainty decline down the stack.
 
-1. **Contracted.** Revenue already under signed contract for the period, spread by month on the recognition rule confirmed with finance. A 120,000 annual contract signed in March is not 120,000 of March revenue, and getting this wrong is the most common single error in a first forecast.
+1. **Contracted.** Revenue already under signed contract for the period, spread by month on the recognition rule confirmed with finance. A 120,000 dollar annual contract signed in March is not 120,000 dollars of March revenue, and getting this wrong is the most common single error in a first forecast.
 2. **Renewals and expansion.** Contracts due to renew in the period multiplied by the measured renewal rate, plus expected expansion from the existing base at the historical net retention rate. State both rates and the period they were measured over.
 3. **Pipeline conversion.** Open opportunities weighted by measured stage-to-close conversion and by expected close timing after slippage. Customer relationship management system default probabilities are not evidence; measured conversion is. Where the two differ, show both and explain which you used.
 4. **Unidentified.** Revenue expected from deals not yet created, estimated from the historical rate of pipeline creation and within-period conversion. Small for long sales cycles, large for transactional businesses. This layer is the most uncertain and is always shown as the top band of the stack.
@@ -71,25 +71,25 @@ Sum by month. Show the composition as a stacked view: a year that is thirty perc
 
 ## Worked example
 
-**Situation.** A business software company with about 9.1 million in annual recurring revenue and a plan of 12.4 million in total revenue for the year. In early October the forecast presented to the board was 11.9 million, produced by summing weighted pipeline using the values the sales system reported. The chief financial officer had asked twice how the number was built and had not received an answer she could follow.
+**Situation.** A business software company with about 9.1 million dollars in annual recurring revenue and a plan of 12.4 million dollars in total revenue for the year. All figures in this example are US dollars. In early October the forecast presented to the board was 11.9 million dollars, produced by summing weighted pipeline using the values the sales system reported. The chief financial officer had asked twice how the number was built and had not received an answer she could follow.
 
 **Task.** Produce a forecast for the remaining quarter that the leadership team could defend line by line, ahead of a board meeting eighteen days away, and explain the gap to plan if there was one.
 
-**Action.** The first build used the sales system's own probability field, which is what had produced 11.9 million. Running `pipeline-deep-dive` first showed why that was wrong: measured stage-to-close conversion from the eighty-one closed opportunities of the previous four quarters was 34 percent at proposal against a system default of 60, and 11 percent at qualification against a default of 25. The defaults had never been recalibrated after a segment change eighteen months earlier.
+**Action.** The first build used the sales system's own probability field, which is what had produced the 11.9 million dollar figure. Running `pipeline-deep-dive` first showed why that was wrong: measured stage-to-close conversion from the eighty-one closed opportunities of the previous four quarters was 34 percent at proposal against a system default of 60, and 11 percent at qualification against a default of 25. The defaults had never been recalibrated after a segment change eighteen months earlier.
 
-Rebuilt in layers, the picture changed. Contracted revenue for the year was 8.6 million, of which 7.9 was already recognised through September. Renewals due in the quarter were 1.4 million at a measured renewal rate of 89 percent, giving 1.25 million, with expansion at 104 percent net retention adding 0.11. Open pipeline of 4.3 million, at measured conversion and after slippage, gave 0.94 million rather than the 2.1 the defaults implied. The unidentified layer was near zero, because the average cycle was 94 days and only 12 days of the quarter remained within a full cycle.
+Rebuilt in layers, the picture changed. Contracted revenue for the year was 8.6 million dollars, of which 7.9 million was already recognised through September. Renewals due in the quarter were 1.4 million dollars at a measured renewal rate of 89 percent, giving 1.25 million, with expansion at 104 percent net retention adding 0.11 million. Open pipeline of 4.3 million dollars gave 0.94 million once conversion was recalibrated and slippage applied, against the 2.04 million the system defaults implied. Of that 1.10 million difference, 0.76 million was the conversion recalibration and 0.34 million was two named deals moving out of the quarter. The unidentified layer was near zero, because the average cycle was 94 days and only 12 days of the quarter remained within a full cycle.
 
-The likely case came to 10.9 million against a plan of 12.4, with commit at 10.4 and upside at 11.3, the upside resting on one named renewal expansion with an order form pending countersignature rather than on a general improvement.
+The four layers summed to a likely case of 10.9 million dollars, which is 8.6 contracted plus 1.25 renewals plus 0.11 expansion plus 0.94 pipeline, against a plan of 12.4 million, with commit at 10.4 million and upside at 11.3 million, the upside resting on one named renewal expansion with an order form pending countersignature rather than on a general improvement.
 
-The wrong turn: the first version of the pipeline layer applied one blended conversion rate across all segments, producing 1.31 million, which looked reasonable. Splitting by segment showed the blend hiding two opposite errors. Mid-market converted at 41 percent; enterprise, carrying 68 percent of the open value, converted at 19 because those deals required a security review nobody had scheduled. The blended rate was arithmetically defensible and practically misleading, and the split is what turned the forecast into an action.
+The wrong turn: the first version of the pipeline layer applied one blended conversion rate across all segments, producing 1.31 million dollars, which looked reasonable. Splitting by segment showed the blend hiding two opposite errors. Mid-market converted at 41 percent; enterprise, carrying 68 percent of the open value, converted at 19 because those deals required a security review nobody had scheduled. The blended rate was arithmetically defensible and practically misleading, and the split is what turned the forecast into an action.
 
-**Result.** 10.9 million likely, with the composition showing 79 percent of the year contracted and 9 percent resting on pipeline. The bridge carried four lines: recalibrated conversion at negative 1.16 million, two named deals slipped at negative 0.34, one renewal lost at negative 0.09, one expansion signed at plus 0.19.
+**Result.** 10.9 million dollars likely, with the composition showing 79 percent of the year contracted and 9 percent resting on pipeline. The bridge carried four lines against the 11.9 million previously presented: recalibrated conversion at negative 0.76 million, two named deals slipped at negative 0.34 million, one renewal lost at negative 0.09 million, one expansion signed at plus 0.19 million. Those four movements sum to negative 1.0 million exactly, which is the whole of the distance from 11.9 to 10.9.
 
-The board conversation moved off the number within ten minutes and onto the security review backlog, which was the real constraint on the enterprise segment and had never surfaced as a revenue issue. Two reviewers were contracted the following week. The year closed at 11.1 million, inside the range, which mattered less than the fact that the next quarter's forecast was believed on first presentation.
+The board conversation moved off the number within ten minutes and onto the security review backlog, which was the real constraint on the enterprise segment and had never surfaced as a revenue issue. Two reviewers were contracted the following week. The year closed at 11.1 million dollars, inside the range, which mattered less than the fact that the next quarter's forecast was believed on first presentation.
 
 ### A second scenario, where it goes differently
 
-A transactional business selling to small companies, average deal value 4,200, average cycle eleven days. The layer weighting inverts. Contracted revenue for the quarter is trivial, the pipeline layer covers only the next fortnight, and the unidentified layer carries more than half the number, which makes this a marketing forecast wearing a sales label.
+A transactional business selling to small companies, average deal value 4,200 dollars, average cycle eleven days. The layer weighting inverts. Contracted revenue for the quarter is trivial, the pipeline layer covers only the next fortnight, and the unidentified layer carries more than half the number, which makes this a marketing forecast wearing a sales label.
 
 The method adapts in two ways. The unidentified layer is built properly, from lead volume by channel multiplied by measured lead-to-opportunity and opportunity-to-close rates, rather than left as a residual. And the cadence tightens to weekly all year, because with an eleven-day cycle a month is a third of a quarter's information. The capacity check that dominated the services case is irrelevant; the constraint here is demand, not delivery.
 
@@ -161,6 +161,16 @@ The stacked composition chart carries one message stated in its title, with the 
 - Capacity has been checked wherever delivery constrains revenue, and the constraint is stated as binding or not.
 - The forecast total agrees with the revenue line in the financial model, or the difference is explained in one sentence.
 - The page ends in three actions with owners and dates.
+
+## Adapting this to your context
+
+The four layers, the monthly cadence and the capacity check come from software and professional services companies with sales cycles of weeks to months. The structure travels; the weightings do not.
+
+- **The relative size of the layers.** This example is 79 percent contracted with the unidentified layer near zero. A transactional business inverts that: build the unidentified layer from channel volumes and treat pipeline as a fortnight of visibility.
+- **Monthly, weekly in the final quarter.** Match the cadence to the sales cycle, not the calendar. An eleven-day cycle needs weekly all year; a nine-month enterprise cycle needs monthly on a fixed day that never moves.
+- **The capacity check.** Written for businesses where people deliver the revenue. In product businesses, replace it with the constraint that actually binds, which is usually demand, supply or a certification date.
+- **Recognition timing.** The example assumes subscription revenue spread over a term. Usage-based, milestone-based and percentage-of-completion revenue each need a rule agreed with finance and written at the top of the workbook.
+- **What not to change.** Every figure traces to a contract, a measured rate or a labelled assumption, and the bridge accounts for the whole movement with each line naming a deal, a rate or a decision.
 
 ## Related skills
 

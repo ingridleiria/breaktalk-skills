@@ -73,7 +73,11 @@ Distinguish two states carefully, because in many jurisdictions the legal conseq
 
 Four specific hazards recur.
 
-Small cells identify people. A table with three respondents in a category, or a subgroup analysis on a rare characteristic, can expose an individual even in a large dataset. Set a minimum cell size in advance and apply it to outputs as well as to deposited data.
+Small cells identify people. A table with three respondents in a category, or a subgroup analysis on a rare characteristic, can expose an individual even in a large dataset. Set a minimum cell size in advance, as a number, and apply it to outputs as well as to deposited data.
+
+The conventions are settled enough to quote. Five is the common default for published frequency tables, and it is also the usual k in a k-anonymised microdata file; most health and education statistics producers suppress counts below it. Ten is what most secure research environments require for anything exported, and it is the right choice for any subgroup defined by a sensitive attribute: health, ethnicity, sexuality, immigration status, union membership, a criminal record. Three appears in some producers' rules for plainly non-sensitive counts and is rarely defensible on its own. Where the cell holds a total rather than a headcount, for instance total pay, the governing rule is a dominance rule instead: suppress where one or two contributors account for most of the total, commonly written as no single contributor above 85 percent.
+
+Three consequences follow and are routinely missed. Suppressing one cell without suppressing a second in the same row or column leaves the first recoverable by subtraction, so secondary suppression is part of the rule rather than an extra step. A percentage computed on a denominator below the threshold discloses as much as the count, so the threshold applies to denominators too. And two tables drawn from the same data can be differenced to recover a suppressed cell, so the rule applies across the whole set of outputs rather than table by table. If your data provider, agency or committee sets a number, use theirs and cite it; if nobody does, write five for published counts and ten for sensitive subgroups into the design and hold to it.
 
 Quotations carry unique details. A sentence naming a role, a length of service and a decision is identifying inside the organisation even when the organisation is pseudonymised, and it is colleagues rather than strangers who will do the identifying. Judge each quotation against the internal reader, not the external one.
 
@@ -119,7 +123,7 @@ The second wrong turn was in the draft information sheet, which promised that al
 
 The third repair was storage. The original plan had recordings going to a personal cloud account and a commercial transcription service chosen for price. Research computing confirmed the institution had an approved encrypted store and an approved transcription arrangement, and that the cheaper service retained audio for thirty days on servers in another jurisdiction, which would have been a cross-border transfer of personal data with no assessment behind it. The switch cost about four hundred pounds against the original budget line and removed a clause the committee would have queried.
 
-Consent was rebuilt around named uses, with separate boxes: participation, audio recording, linkage to shift records, use of anonymised quotations in publications, and deposit of the anonymised transcript set in a named repository under controlled access. Separating these mattered: eleven of the eventual participants agreed to everything, twenty-one declined the repository deposit, and two declined recording and were interviewed with notes.
+Consent was rebuilt around named uses, with separate boxes: participation, audio recording, linkage to shift records, use of anonymised quotations in publications, and deposit of the anonymised transcript set in a named repository under controlled access. Separating these mattered: of the twenty-nine people eventually interviewed, eleven agreed to everything and eighteen declined the repository deposit, and two of those eighteen also declined recording and were interviewed with notes.
 
 The four procedures were written in an afternoon. The disclosure procedure earned its place: the study asked about medication recording in a care setting, so a participant describing a practice that endangered a resident was foreseeable, and the threshold, the person to consult and the obligation to act were fixed in advance and stated in the information sheet.
 
@@ -216,7 +220,7 @@ Sharing route: [open / on request / controlled access via named committee]
 
 **Free text assumed clean.** Recognise it when the anonymisation plan lists variables and says nothing about open responses or transcripts. Fix by scheduling a human read of every free-text field before any sharing.
 
-**Small cells in published outputs.** Recognise it in a heterogeneity table with single-digit counts. Fix by setting a minimum cell size at design stage and applying it to the paper as well as the archive.
+**Small cells in published outputs.** Recognise it in a heterogeneity table with single-digit counts. Fix by setting a minimum cell size at design stage, as a number (five for published counts, ten for sensitive subgroups, unless your provider sets its own), and applying it to the paper as well as the archive.
 
 **Nobody responsible after the researcher leaves.** Recognise it when the plan's retention period outlasts the contract. Fix by naming a role that persists, and by telling that person.
 
@@ -253,6 +257,15 @@ Sharing route: [open / on request / controlled access via named committee]
 - Consent asks separately for each intended use, including linkage, quotation and deposit.
 - The data management plan names systems, people and dates, including who is responsible after the project ends.
 - Disclosure, incidental finding, breach and withdrawal procedures exist in writing before fielding.
+
+## Adapting this to your context
+
+The vocabulary here is European: a research ethics committee, a data protection officer, lawful basis, pseudonymised. The structure holds elsewhere; the names and some of the obligations do not.
+
+- **The regulatory frame.** In the United States this is an IRB under the Common Rule, with exempt, expedited and full board routes, plus HIPAA and its eighteen identifiers for health data. Brazil has the CEP and CONEP system and the LGPD, Canada TCPS 2 and an REB, Australia an HREC. Map each term to your own before writing, because the exempt route in particular has no European equivalent.
+- **Trials and clinical work.** Prospective registration on ClinicalTrials.gov, ISRCTN or a WHO primary registry is a condition of publication in most medical and many psychology journals, and it happens before the first participant is enrolled. Add adverse event reporting and, for anything with risk, a data monitoring arrangement.
+- **The cell size thresholds.** Five and ten above are general disclosure conventions. If your data provider, secure environment or statistical agency publishes its own, that number governs and yours is irrelevant.
+- **What not to change.** Every promise in the information sheet must be one the design can keep, and consent asks separately for each intended use, including deposit, before fielding, because none of it can be obtained afterwards.
 
 ## Related skills
 

@@ -47,7 +47,7 @@ Do not use it where the person should be an employee. Where the firm controls ho
 
 4. **Intake, taking what the conversation already contains and asking only for the rest.** Never invent a commercial term. Every unknown stays as a visible bracket in capitals so the document cannot be signed by accident. Keep a blank intake template and one filled example beside the skill; the filled example is worth more than any instruction about tone.
 
-5. **Apply the standing terms, marking deviations as you go.** Record clause, standing position, this draft, and what the change exposes.
+5. **Apply the standing terms, marking deviations as you go.** Record clause, standing position, this draft, and what the change exposes. Before any restraint is drafted, run the jurisdiction check in the section below. A non-solicitation or non-compete that is void where the contractor works is not a weak clause, it is no clause, and drafting it anyway hides the exposure rather than covering it.
 
 6. **Draft the master agreement in the fixed anatomy.** Do not reorder; the order is what makes two agreements comparable at a glance a year later.
 
@@ -58,6 +58,22 @@ Do not use it where the person should be an employee. Where the firm controls ho
 9. **Write the flag list above the draft.** Deviations from standing terms, gaps found in the flow-down check, outstanding qualification items, and any mechanic that has not been worked through with numbers, such as a success bonus with an ambiguous trigger.
 
 10. **Produce the file, validate it, and state the signing order in the message.** Formatted for signature to the firm's document standard, draft notice on every review copy, removed only for the signature version. For a new contractor, deliver both documents together and say in the message that the master agreement is signed first.
+
+## The jurisdiction check, before any restraint is drafted
+
+Non-solicitation, non-interference and non-compete clauses are not portable. They are enforceable in some places, narrowly enforceable in others, and void in several, and the differences are not marginal. California voids employee non-competes almost entirely and treats most customer non-solicitation as an unlawful restraint of trade; other United States states impose income thresholds, notice periods or mandatory consideration; several European jurisdictions require the restraint to be paid for during the restricted period; some require it to be in writing and time-limited on pain of being struck out whole rather than read down. Where the contractor works through their own company in one country while the firm and the client sit in another, three legal systems can touch the same clause.
+
+Run four questions before drafting, and record the answers in the flag list.
+
+Where does the individual actually perform the work, and where are they resident. That, not the governing law clause, is usually what decides enforceability of a restraint on a person.
+
+Is a restraint of this kind enforceable there at all, and if so, on what conditions: maximum duration, geographic or customer scope, a payment during the restricted period, a minimum income, written notice before signature.
+
+Is an over-broad clause read down or struck out. In a read-down jurisdiction an aggressive draft costs little; in a strike-out jurisdiction it costs the whole protection, which is why the narrowest version the firm would actually enforce is the right draft in both.
+
+What protects the firm if the restraint fails. Confidentiality, intellectual property assignment and a direct contractual relationship with the client are usually enforceable where a restraint is not, so where the answer to question two is no, the protection has to be rebuilt from those and the flag list has to say so in plain words rather than leaving a void clause on the page.
+
+Where the answer is unclear, draft the narrowest version, flag it as untested in that jurisdiction, and route it to counsel before signature rather than after. This skill drafts documents and is not legal advice.
 
 ## Two gates, confirmed before drafting
 
@@ -78,49 +94,44 @@ Do not use it where the person should be an employee. Where the firm controls ho
 
 ## The standing terms file
 
-Record once in a `standing-terms.md` beside this skill and apply consistently. Every deviation is flagged with what it exposes, never absorbed quietly.
+There are two files and only one of them is canonical. `business-agreements-drafting/party-defaults.md` is the canonical record of everything that is true of the firm whatever it is signing: entity and registration details, signatories and thresholds, governing law, forum, dispute resolution route, notices, payment terms, late payment, currency, expenses policy, liability cap and excluded losses, indemnity position, insurance held, confidentiality term, intellectual property position, and the never-accept-without-escalation list. Do not copy any of those into a second file. A duplicated governing law clause is the one that goes stale, and nobody finds out until two contracts signed in the same month disagree.
+
+`standing-terms.md` beside this skill records only what is different because the counterparty is an individual placed onto a client engagement. Keep it to the list below, and have it state on its first line which file it inherits from. Every deviation from either file is flagged with what it exposes, never absorbed quietly.
 
 ```
 # Standing terms: contractor engagements
+Inherits everything not listed here from business-agreements-drafting/party-defaults.md
 Last reviewed: [date]   Owner: [name]
 
-## Our entity
-Legal name as registered:            Company number:
-Registered address:                  Signatory and title:
-
-## Legal
-Governing law:                       Forum:
-Dispute resolution: [negotiation, then mediation, then arbitration or court; seat]
-Notices: [address, email, whether email alone is sufficient]
-
-## Protective terms
-Confidentiality: [term for ordinary information; perpetual for trade secrets]
-Confidentiality exclusions: [public domain, independently developed, lawfully received, required by law]
-Intellectual property: [all work product assigned on creation; background IP retained by
-  the contractor and licensed to us; moral rights waived where the jurisdiction allows]
+## Restraints, which are engagement-specific and jurisdiction-specific
 Non-solicitation: [period after the last task order ends; covers client staff, our staff,
   and direct contracting with any client the contractor was placed with]
 Non-interference: [period, and what it covers]
-Indemnity: [what the contractor indemnifies us for; whether it is mutual]
-Liability cap: [e.g. fees paid under the relevant task order in the preceding 12 months]
-Excluded from the cap: [confidentiality breach, IP infringement, wilful misconduct]
+Jurisdictions where a restraint is void, restricted or must be paid for, and the
+  fallback protection used in each: [list, reviewed annually]
+
+## Because the counterparty is an individual
+Intellectual property: [work product assigned on creation; background IP retained by the
+  contractor and licensed to us; moral rights waived where the jurisdiction allows;
+  personal undertaking required where the counterparty is their own company]
 Insurance required: [professional indemnity limit, public liability limit, evidence
   required before the first day, and who chases renewal]
 Background checks: [what is required, who pays, how the result is recorded]
 Subcontracting: [permitted or not; if permitted, with our prior written consent only]
+Classification: [the control, integration and equipment tests we apply before drafting]
 
-## Commercial
-Payment terms: [days from valid invoice]
-Invoice submission deadline: [e.g. by the 5th of the following month]
+## Because there is a client behind the engagement
+Flow-down defaults: [obligations we always carry through from a client contract]
 Back-to-back payment: [our default position, and when it may be used]
-Expenses: [what is reimbursable, approval threshold, receipt requirement, deadline]
+Invoice submission deadline: [e.g. by the 5th of the following month]
 Rate review: [when rates may be revisited]
 Termination for convenience: [notice period each side]
 Termination for cause: [what triggers it, and whether it is immediate]
 
 ## Never issue without
 [Executed master agreement; evidence of insurance at the client-required limit;
- qualification confirmed; flow-down check run against the client contract.]
+ qualification confirmed; flow-down check run against the client contract;
+ jurisdiction check run on every restraint.]
 ```
 
 ## Master agreement anatomy
@@ -135,15 +146,15 @@ Title, naming it as Exhibit A with the task order number. Draft notice while und
 
 ## Worked example
 
-**Situation.** Halden Ridge Advisory, an eleven-person operations firm, needed to place a fractional operations lead onto a six-month engagement with Northgate Dairy starting the following Monday. The contractor was known to the firm socially but had never worked for it. Terms discussed verbally: three days a week for six months at 1,150 a day, against a client rate of 1,850 a day. The client engagement had been signed the previous week.
+**Situation.** Halden Ridge Advisory, an eleven-person operations firm, needed to place a fractional operations lead onto a six-month engagement with Northgate Dairy starting the following Monday. The contractor was known to the firm socially but had never worked for it. Terms discussed verbally: three days a week for six months, about 78 working days, at 1,150 US dollars a day against a client rate of 1,850 a day. All figures in this example are in US dollars. Both parties and the client were in New York, and the firm's standing terms were drafted to New York law, which is why the restraint below was worth drafting at all; the same clause would have been void had the contractor been resident and working in California, and the jurisdiction check is in the method for that reason.
 
 **Task.** Paper the placement before the Monday start, with the firm protected and the contractor comfortable enough to sign in two days rather than negotiate for a week.
 
 **Action.** The wrong turn came first and it cost real money. Under time pressure, the account lead sent the Exhibit A alone on the Thursday, reasoning that the master agreement was administrative and could follow. The contractor signed it the same day and started on Monday.
 
-On the Wednesday of week two, the flow-down check was finally run against the client contract, and it found three obligations with nothing behind them. The client required professional indemnity insurance of five million for anyone on site; the contractor held two million. The client contract carried a twenty-four month non-solicitation covering its staff and any direct engagement of personnel introduced through the firm; the firm's standing non-solicitation was twelve months, and the contractor had signed nothing at all. And the client required all work product to be assigned to it, which the firm could not deliver, because it had no assignment from the contractor and therefore owned nothing to assign.
+On the Wednesday of week two, the flow-down check was finally run against the client contract, and it found three obligations with nothing behind them. The client required professional indemnity insurance of five million for anyone on site; the contractor held two million. The client contract carried a twenty-four month non-solicitation covering its staff and any direct engagement of personnel introduced through the firm; the firm's standing non-solicitation was twelve months, enforceable on the facts here but checked rather than assumed, and the contractor had signed nothing at all. And the client required all work product to be assigned to it, which the firm could not deliver, because it had no assignment from the contractor and therefore owned nothing to assign.
 
-Repairing this after the start was materially harder. The contractor was now working, had leverage, and had a reasonable objection to the twenty-four month term because they held an existing relationship with a competitor of the client. The negotiation took nine days and settled at twenty-four months limited to Northgate Dairy and its named subsidiaries rather than the client's whole sector, plus a rate increase to 1,250 a day in exchange, which cut the margin on the engagement from 38 percent to about 32 percent, roughly 9,400 across the six months. The insurance was upgraded at the firm's cost, 780 for the year, because the contractor would not carry a limit they only needed for one client.
+Repairing this after the start was materially harder. The contractor was now working, had leverage, and had a reasonable objection to the twenty-four month term because they held an existing relationship with a competitor of the client. The negotiation took nine days and settled at twenty-four months limited to Northgate Dairy and its named subsidiaries rather than the client's whole sector, plus a rate increase to 1,250 a day in exchange, which cut the margin on the engagement from 700 a day, or 38 percent, to 600 a day, or 32 percent. Across about 78 working days that is 100 a day of margin given up, which is 7,800 over the six months. The insurance was upgraded at the firm's cost, 780 US dollars for the year, because the contractor would not carry a limit they only needed for one client.
 
 The rebuild produced both documents properly. The master agreement carried the standing twelve-month non-solicitation, the full intellectual property assignment with background IP retained and licensed, a liability cap at fees paid in the preceding twelve months with carve-outs for confidentiality and IP infringement, and an insurance clause requiring evidence before the first day of any task order. The engagement-specific twenty-four month restriction and the five million insurance limit went into the task order as flow-down terms, so they bound this engagement without permanently changing the terms of every future one.
 
@@ -153,7 +164,7 @@ The success bonus was worked through with numbers before it was drafted. As disc
 
 **Result.** Both documents were executed at the end of week three, backdated in effect by an acknowledgement clause covering the period already worked rather than by falsifying the date, and the whole matter went to counsel who accepted them with one change to the survival clause. The engagement ran its six months and the contractor took two further task orders under the same master agreement, each of which took about forty minutes to produce.
 
-The lasting change was procedural. The firm added the flow-down check to its intake, and added a single line to its engagement checklist: no start date is confirmed with a client until the master agreement is executed. The cost of learning it was about 10,200 in margin and nine days of a partner's attention.
+The lasting change was procedural. The firm added the flow-down check to its intake, and added a single line to its engagement checklist: no start date is confirmed with a client until the master agreement is executed. The cost of learning it was 7,800 in margin plus 780 for the insurance upgrade, so about 8,600 in total, and nine days of a partner's attention.
 
 ### A second scenario, where it goes differently
 
@@ -163,7 +174,7 @@ The temptation was to re-paper the master agreement to bring it up to date. That
 
 The rest of the method compressed rather than changed. The flow-down check still ran and took twenty minutes, finding one obligation, a requirement that no client data leave the client's own systems, which went into the task order as a services constraint rather than into the addendum. Qualification was already on file. The task order itself took half an hour from the template.
 
-Back-to-back payment was raised by the account lead, because this client paid on ninety days. It was refused for a different reason from the first scenario: a one-week engagement with a payment tail of ninety days is not a credit risk the individual can absorb or price, and the total exposure to the firm was 5,750, which is a working capital question rather than a contractual one.
+Back-to-back payment was raised by the account lead, because this client paid on ninety days. It was refused for a different reason from the first scenario: a one-week engagement with a payment tail of ninety days is not a credit risk the individual can absorb or price, and the total exposure to the firm was 5,750 US dollars, being five days at 1,150, which is a working capital question rather than a contractual one.
 
 What changed: with an executed master agreement in place, the work moved from drafting to checking, and the judgement shifted from what to draft to what not to reopen. The whole placement was papered in about ninety minutes against roughly nine hours for the first one.
 
@@ -238,6 +249,17 @@ Signing order:    Master agreement, then task order. Do not counter-sign out of 
 - Standing terms match the recorded file, and every deviation is flagged with what it exposes.
 - Any bonus or success payment has a testable trigger with a fallback that does not depend on a third party acting.
 - The draft notice is present on every review copy, the file opens cleanly, and the signing order is stated in the covering message as well as in the documents.
+
+## Adapting this to your context
+
+This assumes a small placement or advisory firm with a bench, a client contract above each engagement, enforceable restraints, and one individual per task order. Three of those four vary a great deal.
+
+- **Enforceable restraints.** The twelve-month non-solicitation is a New York-style default. Run the jurisdiction check every time, and where a restraint is void or must be paid for, rebuild the protection from confidentiality, intellectual property and the client relationship, and say so in the flag list.
+- **Worker classification.** The contractor form assumes a control and integration test. Where a statutory test applies, an ABC test or a deemed-employment rule for public sector clients among them, answer the classification question before drafting; the answer may be that this skill does not apply.
+- **Currency and day rates.** The rates here are illustrative US dollar day rates. Take yours from the last four task orders, convert once at a stated rate where contractor and client are paid differently, and state the currency in the schedule.
+- **One person per task order.** A firm placing a team needs a key person clause per individual and a substitution position stated one way or the other.
+
+- **What not to change.** The master agreement is signed before the task order, and the flow-down check runs against the client contract every time.
 
 ## Related skills
 

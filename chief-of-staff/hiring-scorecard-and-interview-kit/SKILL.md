@@ -160,6 +160,14 @@ Plus one line: would you hire this person into this role, yes or no, and the str
 
 **The process that drifts.** Recognise it when elapsed time passes four weeks or a candidate has waited five days for a response. The best candidates leave first, so the pipeline degrades in quality faster than in quantity, which is invisible until the final two are both compromises.
 
+**A competency assessed by nobody.** Recognise it by building the coverage map before the first panel interview: every must-have competency should appear on at least two interviewers' guides, and none should appear on all of them. A blank row is the thing that runs late after the hire, which is exactly what happened to forecasting discipline in the worked example. Fix it while the guides are being written, not at the debrief when the evidence no longer exists.
+
+**The work sample that outgrew its cap.** Recognise it by asking the first three candidates how long the task actually took them. Where the median runs more than half an hour past the stated cap, the sample has stopped measuring capability and started measuring who had a free weekend. Cut its scope rather than cutting the stage, and reissue the same cut version to everyone still in the process.
+
+**Scores written after the room.** Recognise it when any interviewer's scores arrive during the decision meeting or in the thread afterwards. Anything submitted once the first opinion has been voiced is not independent evidence, whatever it says. Postpone the meeting by a day, once, and state why; it does not happen twice.
+
+**References taken as ceremony.** Recognise it when a reference call runs under fifteen minutes and produces no example with a date attached. Require at least one former manager and one specific instance behind every strength claimed, and treat a reference who will not answer whether they would hire the person again as having answered it.
+
 ## Edge cases
 
 **A role nobody has done before.** No equivalent experience exists to look for. Build competencies from first principles, weight the work sample heavily since it is the only direct evidence, and accept a wider band on the outcomes with an explicit review at month six.
@@ -182,6 +190,16 @@ Plus one line: would you hire this person into this role, yes or no, and the str
 - The process, the questions and the rubric are identical for every candidate for the role, with any adjustment recorded.
 - The decision is stated against the must-have competencies, naming the evidence for each.
 - Compensation range, level and constraints were fixed before the first candidate was contacted.
+
+## Adapting this to your context
+
+The defaults come from hiring into commercial companies of fifty to two hundred people, where the employer sets its own process. Local law and sector rules override anything here.
+
+- **Under three weeks from first contact to offer.** Realistic where a hiring manager books their own panel. Public bodies, universities and unionised employers often mandate an advert period, a panel composition rule and a fixed scoring form; build the kit inside their process rather than alongside it.
+- **The three-hour work sample cap.** Set so the task selects for capability rather than free time. For clinical, teaching or safety-critical roles the equivalent is an observed session or a simulation, with the same rubric written before anyone is assessed.
+- **Compensation history and the range.** Asking about history is prohibited in several jurisdictions, and pay transparency rules increasingly require the range in the advertisement. Check both before writing it, not before the offer.
+- **The one to four anchored scale.** Chosen to remove the midpoint. Where a mandated form uses five points or weighted criteria, score on their scale and keep the written evidence per competency, which is what does the work.
+- **What not to change.** Every candidate for a role meets the same stages, questions and rubric, and scores with their evidence are written before the decision meeting opens.
 
 ## Related skills
 

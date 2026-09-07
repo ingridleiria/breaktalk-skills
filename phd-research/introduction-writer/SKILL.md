@@ -186,6 +186,16 @@ Word count against budget:                [n] / [budget]
 - Every citation is the hyperlinked author-year form with a resolving DOI, appears in the reference list, and returns somewhere later in the paper.
 - No sentence summarises the paragraph it sits in, and the section ends on the contribution or the roadmap.
 
+## Adapting this to your context
+
+The five moves are the standard shape of an applied social science introduction of 900 to 1,400 words, ending in a contribution paragraph and sometimes a roadmap. The moves generalise; their length and order do not.
+
+- **Length.** Psychology and health introductions run much shorter, often 500 to 800 words, with the literature they compress living in a separate framework section. Take the length from three recent articles in the target before drafting.
+- **Move four, the finding in numbers.** An economics convention. Many psychology, medical and management journals keep the finding for the abstract and results. Check the target; where it is not stated up front, move four becomes one sentence on what the study tested.
+- **The gap as a limitation.** Written for a literature with prior estimates. For theory-building or qualitative work the gap is an unexplained phenomenon or a construct the framework cannot account for, and the same rule holds: name two works and what each could not do.
+- **Hypotheses.** In management and psychology they are numbered and stated formally, often after the framework; a registered report states them with the analysis plan; qualitative work states research questions and should not be pushed into hypothesis form.
+- **What not to change.** Every number is copied from an exhibit, and move five matches the conclusion in substance and in strength.
+
 ## Related skills
 
 `full-manuscript-build` places this section eighth in the writing order, second to last, and supplies the claim sentence and the budget. `research-design` supplies the question and the hypotheses; `research-question-ideation` is where to go when there is no question. `results-writing` supplies the numbers for move four and must be finished first. `discussion-and-conclusion` supplies the contribution wording for move five and is written before this. `theoretical-framework-review` takes the literature this section deliberately excludes. `literature-verification` sets the citation standard and `references-and-bibliography` formats and reconciles the result. `abstract-and-title` compresses this section and is written immediately after it. `research-proposal-and-grant` covers the future-tense version for work not yet done.

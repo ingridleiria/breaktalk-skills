@@ -211,6 +211,16 @@ DATA QUALITY REPORT: [source, extract date, version]
 - Nothing is imputed, top-coded or winsorised without a flag variable and a stated method.
 - The report states plainly what could not be verified and what the analysis therefore assumes.
 
+## Adapting this to your context
+
+The profiling sequence is written for administrative registers, large panels and linked government files. Every step applies to survey and experimental data too, but the emphasis shifts and two whole categories are missing.
+
+- **What is not profiled here.** Survey and instrument data need checks this list lacks: straightlining, completion time outliers, attention check failures, reverse-coded items never reversed, and scale reliability before the composite is built. Add them as a step 12 and run them before anything is scored.
+- **The benchmark check.** Written as reproducing a published national aggregate. For survey data, reproduce the published weighted estimates from the same wave; for a trial, the CONSORT flow counts; for a qualitative corpus, that the transcript count and the interview log agree.
+- **Sentinel values.** The 99, minus one and 9999 list is administrative. SPSS files carry user-missing values that read as valid numbers elsewhere, and Likert data often codes "prefer not to say" as 8 or 9 inside a live range. Read the codebook before the file.
+- **The tooling.** Stata and pandas are assumed. In R, `skimr`, `janitor` and `pointblank` cover the same ground and `pointblank` writes the report; SPSS `CODEBOOK` and `FREQUENCIES` do the per-variable pass.
+- **What not to change.** Raw files are read-only and every cleaning decision is code. Nothing is fixed in a spreadsheet, ever.
+
 ## Related skills
 
 `stata-data-management` implements these decisions in Stata and covers the traps specific to how Stata represents types, missing values, dates and panels; `python-for-econometrics` is the equivalent for a Python project. `stata-project-scaffold` provides the folder layout and the numbered stage the cleaning code lives in, and `stata-do-file-craft` governs how that code is written so it reruns cleanly. `research-design` and `econometrician` decide which observations belong in the sample on substantive grounds, and this skill supplies the counts that decision costs. `descriptive-statistics-tables` builds Table 1 from the cleaned file, and `data-section-writer` turns the quality report and sample construction table into the paper's data section. `survey-and-instrument-design` is where to look when the defects trace back to the instrument rather than the processing, and `qualitative-coding-and-analysis` takes the open-text fields this skill normalises. `analysis-audit` runs the independent rebuild at the end of the project, and `replication-package` deposits the pipeline this skill produces.

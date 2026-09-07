@@ -7,7 +7,7 @@ description: Evaluates and compares vendors, tools, and service providers for a 
 
 A vendor decision is a multi-year commitment usually made on the strength of a forty-five minute demonstration, run by a person whose job is to run it well, using data chosen to make the product look effortless. The requirements document, where one exists, is often written after the shortlist, which means it describes the front-runner. The decision is then made, and everything after it is procurement.
 
-The cost surfaces in three predictable places. The first is the implementation, where the internal hours nobody counted turn a 40,000 licence into a 150,000 first year. The second is the renewal, where a notice period buried in an order form has already passed and the price rises by the escalation clause nobody negotiated. The third is the exit, where the data comes out in a format that requires a project to use, and switching costs more than three years of the alternative would have.
+The cost surfaces in three predictable places. The first is the implementation, where the internal hours nobody counted turn a 40,000 dollar licence into a 150,000 dollar first year. The second is the renewal, where a notice period buried in an order form has already passed and the price rises by the escalation clause nobody negotiated. The third is the exit, where the data comes out in a format that requires a project to use, and switching costs more than three years of the alternative would have.
 
 None of these are discovered by a better demo. They are discovered by writing down what the organisation needs before looking at options, by insisting on evidence for every claim, and by costing the whole term rather than the first invoice.
 
@@ -65,7 +65,7 @@ Raw price lists, quotes, and rate assumptions in the workbook, with their source
 
 ## Worked example
 
-**Situation.** A 300-person services company replacing an applicant tracking system after four years. The head of talent had seen a demonstration of a product she liked and asked for approval to proceed. Nine years of candidate records sat in the incumbent system, and the incumbent's renewal date was five months away.
+**Situation.** A 300-person services company replacing an applicant tracking system after four years. The head of talent had seen a demonstration of a product she liked and asked for approval to proceed. All figures in this example are US dollars. Nine years of candidate records sat in the incumbent system, and the incumbent's renewal date was five months away.
 
 **Task.** Produce an auditable recommendation within four weeks, in time to negotiate rather than to accept.
 
@@ -75,13 +75,13 @@ Eleven criteria were agreed with weights summing to 100, with anchors written fo
 
 Trials ran for eight working days with two recruiters using live requisitions. The product the head of talent had seen scored 4 on demonstration and 2 in the trial, because its scheduling flow required the coordinator to leave the system for calendar conflicts, which the scripted demonstration had avoided. That single gap between demonstrated and trialled behaviour was the most valuable finding in the exercise.
 
-Total cost of ownership over three years reordered the field again. The apparent leader listed at 48,000 a year, but implementation and the migration of nine years of records was quoted at 34,000, the payroll integration required 22 days of internal engineering at loaded cost, and the escalation clause was seven percent annually uncapped. Total came to 214,000. The option listed at 31,000 a year, with migration included and a native integration, came to 178,000 with escalation capped at four percent after negotiation.
+Total cost of ownership over three years reordered the field again. The apparent leader listed at 48,000 dollars a year, but implementation and the migration of nine years of records was quoted at 34,000 dollars, the payroll integration required 22 days of internal engineering at loaded cost, and the escalation clause was seven percent annually uncapped. Total came to 214,000 dollars. The option listed at 31,000 dollars a year, with migration included and a native integration, came to 178,000 dollars with escalation capped at four percent after negotiation.
 
 The wrong turn: after scores were in and the head of talent's preferred option ranked third, a proposal was made to raise the reporting weight from 8 to 15 on the argument that reporting had been underrated. The change would have moved her preference to first. It was declined and handled instead by sensitivity analysis, which showed the ranking held unless reporting rose above 19, at which point it would also have exceeded the weight on scheduling, which no one was prepared to defend out loud. Running the sensitivity rather than refusing the request kept the process intact and kept the head of talent in it.
 
 Reference calls found the last material fact. Two references were supplied by the leading vendor and were positive. A third customer, found through a recruiter's professional network, reported that support response times had roughly doubled after the vendor was acquired the previous year, which was consistent with a slower trial response nobody had thought worth recording.
 
-**Result.** The recommendation was the second option, first on weighted score by 0.4 points and first on total cost by 36,000, with the closeness of the score stated in the memo rather than smoothed. The support finding became a negotiated service level with credits, and the renewal notice period was moved from 90 days to 30. The incumbent, told there was a live competitive process, offered a 22 percent reduction to stay, which was declined and which usefully established what the organisation had been overpaying.
+**Result.** The recommendation was the second option, first on weighted score by 0.4 points and first on total cost by 36,000 dollars, with the closeness of the score stated in the memo rather than smoothed. The support finding became a negotiated service level with credits, and the renewal notice period was moved from 90 days to 30. The incumbent, told there was a live competitive process, offered a 22 percent reduction to stay, which was declined and which usefully established what the organisation had been overpaying.
 
 Approved in one meeting with no further analysis requested. The migration ran two weeks late.
 
@@ -174,6 +174,16 @@ NEGOTIATION POINTS AND WALK-AWAY
 - Where the top two options are close, the sensitivity is stated rather than the margin smoothed.
 - The memo names the risks accepted, the negotiation points, and the costed walk-away.
 - The recommendation appears before the analysis, with one named decider and a date.
+
+## Adapting this to your context
+
+The eight to twelve criteria, the three-year term and the three to five shortlist come from software and service purchases inside commercial companies of one hundred to a thousand people, buying without a formal tender.
+
+- **Three years as the term evaluated.** Use five or seven for infrastructure or anything where migration cost dominates, and one year for a tool that can be cancelled monthly. The term sets the cost model.
+- **Eight to twelve weighted criteria.** Below a certain size, four criteria and a total cost line is proportionate. Where a formal tender applies, the buyer's published evaluation framework replaces yours.
+- **Freezing weights before scoring.** Public procurement usually requires the weights to be published to bidders in advance, which makes the freeze contractual rather than a matter of discipline. Sensitivity analysis is still the answer to a late reweighting request.
+- **The eight-day user trial.** Where a trial is impossible, for infrastructure or a regulated system, substitute a scripted session on your own scenarios plus a site visit, and mark the scores as what they are.
+- **What not to change.** Requirements and weights are fixed before any option is scored, every score names its evidence, and at least one reference is found that the vendor did not supply.
 
 ## Related skills
 

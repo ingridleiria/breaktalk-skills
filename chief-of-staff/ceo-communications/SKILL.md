@@ -182,6 +182,16 @@ Ordered with the questions the leader hopes nobody asks at the top.
 - The leader has read it aloud, and their instinctive rewordings are in the final text.
 - Nothing in the draft is a decision that has not actually been made.
 
+## Adapting this to your context
+
+The defaults come from internal announcements at commercial companies of a hundred to three hundred people in one jurisdiction. They travel less well than they look.
+
+- **Three to five unedited samples.** Assumes a leader who writes their own email. Where they dictate, speak more than they write, or work in a second language, sample transcripts instead and expect the voice note to describe cadence rather than vocabulary.
+- **The sequencing gaps.** Managers, then teams, then the company, then the public, each gap short. That assumes every manager is reachable within the hour. Shift-based and multi-time-zone organisations set the gap by when the last shift can be briefed, which may be a day.
+- **The all-hands length.** Ten to fifteen minutes of script came from a 240-person company. At forty people the same message is three paragraphs; above a thousand, questions must be collected in writing or two confident people take the session.
+- **Consultation language.** The redundancy scenario assumes a jurisdiction with a statutory consultation period. Where none exists the drafting problem inverts: outcomes can be stated, so the discipline becomes not stating them before the affected people have been told.
+- **What not to change.** The audience's first question is answered inside the first quarter of the length, and the hard part is stated plainly and early.
+
 ## Related skills
 
 `principal-simulator` predicts how the leader will react to a draft and shortens the edit cycle, and is worth running before the first version goes to them. `decision-memo` produces the settled decision this skill announces; drafting before it exists is the most common way this work is wasted. `crisis-and-incident-comms` takes over when something has gone wrong and people are affected now, and hands back to this skill for the reflective message afterwards. `meeting-to-decisions` supplies what was actually agreed when the message follows a leadership discussion. `investor-update` and `board-and-investor-management` carry the same news to investors on their own conventions. `board-deck` builds the board's version. `newsletter-post-writer` and `linkedin-post-writer` handle long-form and social pieces under the leader's byline, using the voice note this skill produces. `human-voice-editor` strips the generic register from a draft that has acquired one.

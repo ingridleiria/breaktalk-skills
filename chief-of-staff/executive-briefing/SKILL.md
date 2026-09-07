@@ -213,6 +213,16 @@ WALK-AWAY
 - The page ends with the next step we intend to propose and the walk-away.
 - It fits on one page and was sent early enough to be corrected.
 
+## Adapting this to your context
+
+The examples come from commercial meetings: customer renewals, investor calls and partner negotiations. The page shape holds; the content does not.
+
+- **The one-page, two-minute test.** Calibrated on an executive reading in a car. Where the principal reads deeply and will ask for the evidence, keep the one page and make the appendix real rather than lengthening the brief.
+- **The commitment history.** Built from a customer system and an email archive. In a clinical, legal or casework setting the equivalent record is the case file, and confidentiality rules may limit what can go on a page at all, which is worth stating on the brief.
+- **The positions and the walk-away.** Written for a negotiation. Where the meeting is with a regulator, an inspector or a funder there is no walk-away: replace it with the position you are obliged to state and the thing you must not speculate about.
+- **The do-not list.** Three lines in a commercial setting. In regulated or listed environments this section carries disclosure consequences and is worth a review by whoever owns them before the brief is sent.
+- **What not to change.** Every fact about the other party carries a source or the word unverified, no adjective is used about a person, and the page ends with the next step and the walk-away.
+
 ## Related skills
 
 `external-insights` supplies the verified outside-in research this page compresses. `principal-simulator` predicts how the executive, or the person on the other side, will react to a given position before the meeting. `meeting-to-decisions` captures what came out of the meeting and turns it into owned actions. `decision-memo` carries any decision the meeting surfaces to a named decider. `outreach-email` handles the contact that precedes a first meeting. `board-and-investor-management` and `board-deck` cover recurring investor and board preparation, where this format is used for the one-to-one calls around the meeting. `crisis-and-incident-comms` covers briefing under active pressure, where the holding line matters more than the positions.

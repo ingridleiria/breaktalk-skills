@@ -183,6 +183,16 @@ Variable definition table, in the appendix:
 - Every dataset, register and codebook is cited in the hyperlinked author-year form and appears in the reference list.
 - The availability statement matches what the licence actually permits.
 
+## Adapting this to your context
+
+The twelve steps assume secondary quantitative data, administrative or survey, with a treatment variable and an estimation sample. The reconciliation discipline is universal; the paragraph list is not.
+
+- **The missing paragraphs.** Primary data collection needs what this list omits: recruitment and sampling, consent and ethics approval with its reference number, the instrument and its provenance, translation and back-translation, and reliability and validity evidence for every scale. In a trial the registration identifier goes here and CONSORT governs the flow counts.
+- **The treatment paragraph.** Assumes a policy or programme. For an experiment it becomes the manipulation, the randomisation procedure and the unit of assignment; in psychology, the exposure measure and its psychometrics; in qualitative work, participants, setting and access.
+- **The 95 percent match rate.** A linked administrative data convention. Survey response rates run far lower and are judged against field norms and a nonresponse analysis, not a fixed number. State the rate, the norm and the comparison.
+- **Data availability.** Written for economics deposits. Health and psychology usually want an explicit statement plus an OSF or repository DOI, and restricted human data has wording the ethics approval specifies.
+- **What not to change.** Every count reconciles with every exhibit note and with the results prose, and the section is written so a replicator could act on it without asking a question.
+
 ## Related skills
 
 `full-manuscript-build` places this section third in the writing order, after the exhibits and before the empirical strategy, and its counts feed every later check. `data-profiling-and-cleaning` produces the missingness, outlier and coherence profile this section reports. `descriptive-statistics-tables` builds Table 1 and the balance table this section describes without duplicating. `stata-project-scaffold` and `stata-data-management` produce the traceable construction chain step one depends on. `econometric-model-writer` takes the sample this section defines and states what it identifies. `research-ethics-and-data-protection` covers consent, approval and de-identification; this section reports their outcome. `survey-and-instrument-design` supplies the instrument for primary data. `replication-package` turns the availability statement into an actual deposit. `references-and-bibliography` formats the data citations.

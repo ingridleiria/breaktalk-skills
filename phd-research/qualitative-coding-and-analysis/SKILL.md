@@ -55,7 +55,19 @@ Do not use it for a review of published studies, which is `systematic-review-pro
 
 7. **Write analytic memos while coding, not afterwards.** A short note whenever something is noticed: a possible relationship between codes, a case that does not fit, a moment where the code was applied reluctantly. These memos are where themes actually come from, and they cannot be reconstructed later because the noticing happens once. They are also the most convincing part of an audit trail.
 
-8. **Measure agreement where prevalence claims will be made, with a statistic that accounts for chance.** Two people code the same material independently, and disagreement is reported with an appropriate coefficient rather than as raw percentage agreement, which overstates consistency because it counts agreement that chance alone would produce. Report the statistic per code as well as overall, because a respectable overall figure routinely hides one code on which the coders disagree constantly. Resolve disagreements by discussion and record what the discussion changed. The rule: recurring disagreement on one code means the definition is wrong, not that a coder is careless, so revise the definition and recode that code across everything.
+8. **Measure agreement where prevalence claims will be made, with a statistic that accounts for chance.** Two people code the same material independently, and disagreement is reported with a chance-corrected coefficient rather than as raw percentage agreement, which overstates consistency because it counts agreement that chance alone would produce. Which coefficient:
+
+   | Coefficient | Use it when | Notes |
+   | --- | --- | --- |
+   | Cohen's kappa | Exactly two coders, nominal codes, both coding every unit in the overlap | The default for interview and document coding with a two-person team. Weighted kappa where the codes are ordered |
+   | Fleiss's kappa | Three or more coders, nominal codes, every unit coded by the same number of coders | Generalises Cohen's kappa; do not use it for two coders |
+   | Krippendorff's alpha | Any number of coders, missing data, unequal overlap, or ordinal, interval or ratio codes | The most general and the safest default when the coding design is untidy. Reported by content analysis journals as standard |
+   | Percentage agreement | Always, alongside one of the above, never alone | Descriptively useful and easy to read, but it counts chance agreement and is uninterpretable by itself |
+   | Gwet's AC1 | Prevalence is very skewed and kappa collapses despite high agreement | The kappa paradox: 95 percent agreement with kappa near zero on a rare code. Report it with the raw prevalence so the reader sees why |
+
+   The thresholds this file applies, which are Krippendorff's and are the ones most widely used across coefficients: 0.80 and above supports firm claims; 0.667 to 0.80 supports tentative claims and must be described as tentative; below 0.667 is not reportable and means the codebook is repaired and the material recoded, not that the number is presented with an apology. Report the statistic per code as well as overall, because a respectable overall figure routinely hides one code on which the coders disagree constantly. A per-code figure below 0.667 sitting under an acceptable overall figure is reported with the reason, not dropped. Resolve disagreements by discussion and record what the discussion changed. The rule: recurring disagreement on one code means the definition is wrong, not that a coder is careless, so revise the definition and recode that code across everything.
+
+   Where the analysis makes no prevalence claim and the tradition is explicitly interpretive, agreement statistics may be the wrong instrument entirely; the substitutes are named in the adaptation section below, and the choice is stated rather than left silent.
 
 9. **Build themes from codes, then test them.** A theme is not a code with a longer name. It is a pattern that holds across the material and does work in the argument, and it should be expressible as a claim that could be wrong. Build it by grouping codes, then go back to the raw extracts under those codes and check the grouping holds, because groupings made from code names rather than from data are how themes drift away from the material. Then attack it: search deliberately for extracts that contradict it. A theme that has never been challenged is an impression with a name.
 
@@ -91,7 +103,7 @@ The wrong turn came early and cost about two weeks. The first codebook was fully
 
 The codebook was rebuilt as hybrid, with the framework categories retained and four emergent codes added, of which the supplier relationship code became central. Everything already coded was recoded, which was the two-week cost. The lesson recorded in the audit trail was that a purely deductive scheme cannot signal its own inadequacy, since it always finds a home for every extract, and only the memos revealed the problem.
 
-The final codebook held 24 codes in two levels. Pilot double coding on one transcript gave a chance-corrected agreement coefficient of 0.58, which was not reportable. Disagreement was concentrated almost entirely on two codes whose boundary was unclear: informal workaround and local discretion. The two were collapsed into one code with an attribute distinguishing whether the action was sanctioned by a unit manager, which was the distinction that actually mattered. A second pilot on a different transcript gave 0.81, and the full corpus was then double coded on a third of transcripts, stratified across units, with an overall coefficient of 0.79 and a per-code table reported in the appendix. The lowest per-code figure was 0.64 on a code about perceived clinical risk, which was reported rather than hidden, with a sentence about why that code is harder to apply.
+The final codebook held 24 codes in two levels. Pilot double coding on one transcript gave a Krippendorff's alpha of 0.58, chosen over Cohen's kappa because the overlap was uneven across transcripts. That was below the 0.667 floor and therefore not reportable at all, tentatively or otherwise. Disagreement was concentrated almost entirely on two codes whose boundary was unclear: informal workaround and local discretion. The two were collapsed into one code with an attribute distinguishing whether the action was sanctioned by a unit manager, which was the distinction that actually mattered. A second pilot on a different transcript gave 0.81, above the 0.80 line, and the full corpus was then double coded on a third of transcripts, stratified across units, with an overall alpha of 0.79 and a per-code table reported in the appendix. At 0.79 the paper described its prevalence statements as tentative, which is what the 0.667 to 0.80 band requires. The lowest per-code figure was 0.64 on a code about perceived clinical risk, below the floor, which was reported rather than hidden with a sentence about why that code is harder to apply and a note that no prevalence claim rests on it alone.
 
 Three themes were built from the codes. The central one held that bypassing was concentrated where a unit had an established local supplier who had performed during a past shortage, and that the rule was experienced as removing an insurance policy rather than as an administrative burden. Negative case search found two units that fitted the supplier condition and complied anyway. Both had had a recent audit finding, which bounded the theme rather than breaking it, and that boundary became a substantive part of the paper.
 
@@ -107,7 +119,7 @@ The same researcher later had to analyse 4,180 open-ended responses to a single 
 
 Almost every parameter changed. There is no interview context to interpret against, so the level of interpretation moved to descriptive: the analysis reports what was said, and where meaning is ambiguous, the ambiguity is recorded rather than resolved. The unit of coding became the whole response rather than a passage, with a rule permitting up to two codes per response and a record of how often that happened.
 
-The codebook was built on a random sample of 300 responses rather than on the first 300, because early responders differ. Coding was done by two people on a random 15 percent overlap rather than on a third, since the volume made a third impractical and short responses make agreement easier to achieve. Agreement was 0.86, which reflects the simplicity of the material rather than superior work, and the paper said so.
+The codebook was built on a random sample of 300 responses rather than on the first 300, because early responders differ. Coding was done by two people on a random 15 percent overlap rather than on a third, since the volume made a third impractical and short responses make agreement easier to achieve. Agreement was 0.86 by Krippendorff's alpha, with 91 percent raw agreement reported beside it, which reflects the simplicity of the material rather than superior work, and the paper said so.
 
 Prevalence claims are legitimate here in a way they are not with interviews, because the responses come from a defined sample with a known response rate, so code frequencies were reported as counts and shares with the response rate stated alongside. No saturation claim was made or needed. Quotations were selected to illustrate each code's range rather than to show boundaries, and because responses are short, more of them were shown, twelve per major code in an appendix table.
 
@@ -125,9 +137,9 @@ What did not change: the codebook still had exclusion rules, the whole corpus wa
 
 **The agreement report:**
 
-| Code | Extracts double coded | Agreement coefficient | Main source of disagreement | Resolution |
+| Code | Extracts double coded | Coefficient and value | Percentage agreement | Main source of disagreement | Resolution |
 
-with the overall figure, the statistic used and why, the proportion of the corpus double coded, and how disagreements were resolved.
+with the overall figure, which coefficient was used and why that one given the number of coders and the code type, the threshold being applied and its source, the proportion of the corpus double coded, and how disagreements were resolved. Any per-code figure below the threshold is listed with an explanation rather than omitted.
 
 **The theme table:**
 
@@ -147,7 +159,7 @@ with the overall figure, the statistic used and why, the proportion of the corpu
 
 **Coding only the interesting transcripts.** Recognise it by an uneven number of extracts per source, concentrated in the sources the researcher remembers. Fix by coding everything, in mixed order.
 
-**Percentage agreement reported as reliability.** Recognise it by a figure above ninety percent with no coefficient named. Fix by computing a chance-corrected statistic, which will be lower and honest.
+**Percentage agreement reported as reliability.** Recognise it by a figure above ninety percent with no coefficient named. Fix by computing kappa or alpha, which will be lower and honest, and report the percentage beside it rather than instead of it.
 
 **A high overall agreement figure hiding one broken code.** Recognise it by the absence of a per-code table. Fix by reporting per-code figures and revising the definitions of the worst.
 
@@ -197,6 +209,16 @@ with the overall figure, the statistic used and why, the proportion of the corpu
 - Quotations are selected by a stated rule, edits are marked, and the spread of quotations across participants has been checked.
 - Prevalence language matches the design: counts for counts, and no percentages from small purposive samples.
 - An audit trail runs from any claim in the paper to a coded extract to a source, and the file list exists.
+
+## Adapting this to your context
+
+This file leans post-positivist: codebooks, double coding, agreement coefficients, prevalence language. That fits framework analysis, content analysis and the qualitative strand of mixed methods. It does not fit every tradition, and what does not fit should be swapped, not forced.
+
+- **Agreement statistics.** They assume the codebook should be applied consistently by different people. Reflexive thematic analysis, constructivist grounded theory, narrative and discourse analysis reject that on principle, and reporting kappa there signals you have misread the tradition. Substitute a reflexivity statement, an audit trail, member checking or peer debriefing, and say which and why.
+- **The software.** None is named here. NVivo, MAXQDA and ATLAS.ti all handle codebooks, extracts, memos and inter-rater statistics; Dedoose suits a distributed team. A spreadsheet works below roughly thirty transcripts if the extract register keeps its IDs.
+- **Two coders and a third of the corpus.** A social science default. Health services research often double codes everything; large open-text corpora use 10 to 15 percent. State the proportion and why.
+- **Stopping.** The file assumes a fixed corpus. If you are still collecting, use information power or a saturation rule fixed before fieldwork, not "until nothing new appeared".
+- **What not to change.** Code the whole corpus, not the interesting parts, and keep an audit trail that runs from any sentence in the paper back to a coded extract.
 
 ## Related skills
 

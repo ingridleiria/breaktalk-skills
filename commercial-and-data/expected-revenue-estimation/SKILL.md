@@ -69,7 +69,17 @@ This inherits the discipline in `spreadsheet-analysis-workbook` and does not rep
 
    Build the ramp curve from the comparables themselves: what proportion of steady-state revenue they achieved in months one, two, three and so on. A ramp assumed rather than observed is where optimistic year-one numbers come from.
 
-4. **Method three, top-down sizing.** Addressable pool multiplied by penetration multiplied by value per unit. The penetration rate is the whole argument, so anchor it on penetration observed among comparable populations and report the low, mean, and high observed rates rather than one chosen number. If no comparable population can be observed, do not use this method.
+4. **Method three, top-down sizing, and the three-way penetration sizing every other skill borrows.** Addressable pool multiplied by penetration multiplied by value per unit. The penetration rate is the whole argument, so anchor it on penetration observed among comparable populations rather than on a chosen number. If no comparable population can be observed, do not use this method.
+
+   This is where three-way sizing is defined for the whole set. `client-economics-analysis` applies it to whitespace inside an existing client base and `economics-report-from-data` states it in prose; both reference this and neither restates the reasoning.
+
+   ```
+   Potential at penetration p =Pool*p*Value_per_unit
+   Whitespace                 =MAX(0,Potential-Current)
+   Low / Base / High          p = MIN(observed), AVERAGE(observed), MAX(observed)
+   ```
+
+   Report all three, always, and mark the mean-penetration figure as the one to cite. The low case is the observed floor among comparables, not a haircut applied to the base; the high case is the observed ceiling, not a stretch target. Name the comparable population in the same sentence as the number, state how many observations it holds, and give the date the penetration was measured. Presenting only the high case as "the opportunity" is the commonest way an estimate loses credibility, and the second commonest is a low case that was invented by multiplying the base by a round fraction.
 
 5. **Method four, pipeline conversion.**
 
@@ -92,39 +102,45 @@ This inherits the discipline in `spreadsheet-analysis-workbook` and does not rep
 
 ## Cost of delay
 
+This skill owns the cost-of-delay calculation. `economics-report-from-data` states it in prose for a report and references this section rather than restating the arithmetic.
+
 Delayed revenue is forgone, not deferred. An initiative live in September does not recover June, July, and August, and the instinct in the room will be to treat the shortfall as timing that will be made up later. Say explicitly that there is no recovery mechanism.
 
 Per initiative: the monthly estimate multiplied by months lost, at all three scenario rates. Then the aggregate across initiatives, then the cumulative position at three, six, and twelve months.
 
 ```
-Monthly forgone      =$T$19
-Delay cost, 3 months =$T$19*3
+Naive, 3 months      =$T$19*3
+Ramp-based, D months =$T$19*SUM(OFFSET(Ramp!$B$2,0,0,$D,1))
 Aggregate            =SUMPRODUCT($T$12:$T$30,$U$12:$U$30)
 ```
 
-Where the initiative has a ramp, the cost of a delay is not the steady-state rate multiplied by the months lost; it is the ramp curve shifted, which usually costs more than the naive figure in the first year and less thereafter. Compute it both ways once, show the difference, and use the ramp-shifted figure.
+Where the initiative has a ramp, the naive figure, the steady-state rate multiplied by the months lost, is wrong in both directions depending on the horizon, so compute it both ways once and show the difference. The months a delayed rollout actually loses are the front months of its own curve, not mature ones, so the ramp-based figure is the smaller of the two inside the ramp period: sum the monthly ramp factors for the months lost and multiply by the steady-state rate. Beyond the ramp the two converge, because once both the delayed and the undelayed case are mature, a month of delay costs a full month of steady-state revenue and nothing less. That is why the horizon has to be stated in the same sentence as the number. Use the ramp-based figure, show the naive one beside it, and say plainly that neither is recoverable: the instinct in the room will be to treat the shortfall as timing that gets made up later, and there is no mechanism by which it does.
 
 ## Worked example
 
-**Situation.** Meridian Facilities Group, a commercial cleaning and maintenance company operating at 41 client sites, wanted to know what rolling out a planned maintenance programme to 18 further sites would be worth. Six sites already ran it. The board wanted a figure in ten days to decide whether to fund a programme manager and two technicians, and the head of operations had already circulated an estimate of 4.9 million a year.
+**Situation.** Meridian Facilities Group, a commercial cleaning and maintenance company operating at 41 client sites, wanted to know what rolling out a planned maintenance programme to 18 further sites would be worth. Six sites already ran it. The board wanted a figure in ten days to decide whether to fund a programme manager and two technicians, and the head of operations had already circulated an estimate of 4.19 million US dollars a year. All figures in this example are in US dollars.
 
 **Task.** A defensible year-one and steady-state estimate with scenarios, the dominant assumption identified, and a cost of delay, in a workbook the finance director could retune.
 
-**Action.** The 4.9 million figure was traced first, since a number in circulation has to be dealt with before a new one will be heard. It was top-down: 18 sites multiplied by the revenue of the best-performing existing site, annualised. It assumed every new site would match the best of six, from month one.
+**Action.** The 4.19 million figure was traced first, since a number in circulation has to be dealt with before a new one will be heard. It was top-down and the arithmetic reproduced exactly: 18 sites multiplied by 19,400 a month, the revenue of the best-performing existing site, multiplied by twelve, which is 4,190,400. It assumed every new site would match the best of six, from month one.
 
 The comparable benchmark method was the right one, because six comparables existed with their own histories. Building it exposed two problems with any simple average of them. Two of the six had been live for under six months, and their partial ramp had been averaged in as though it were steady state. One carried a one-off equipment sale of 61,000 inside its monthly average, which alone moved the composite by 850 a month.
 
-Recomputed properly, on active months, excluding incomplete months and stripping the non-recurring item, the composite steady-state figure was 12,800 per site per month, with a range across the four mature comparables of 8,100 to 19,400. The ramp curve, built from the four mature sites, showed roughly 9 months to steady state: 22 percent of steady state in month one, 41 in month three, 78 in month six, 96 in month nine. The average of the twelve monthly ramp factors was 0.63.
+Recomputed properly, on active months, excluding incomplete months and stripping the non-recurring item, the composite steady-state figure was 12,800 per site per month, with a range across the four mature comparables of 8,100 to 19,400. The ramp curve, built from the four mature sites, showed about nine months to steady state. The twelve monthly factors were written out rather than described, because the year-one figure and the cost of delay both read from them: 0.22, 0.31, 0.41, 0.53, 0.66, 0.78, 0.86, 0.92, 0.96, 1.00, 1.00, 1.00. They sum to 8.65, so the year-one ramp factor is 8.65 divided by 12, which is 0.72.
 
 The first version of the estimate applied the scenario band and the ramp together in one multiplication and produced a year-one figure that nobody could interpret, because it was not clear whether 70 percent meant a weaker site or a slower start. That version was abandoned and the two adjustments were separated onto their own input cells, which is how the workbook shipped.
 
-Scenarios at steady state, across 18 sites: conservative at 40 percent of composite, 92,160 a month; base at 70 percent, 161,280 a month, or 1.94 million a year; upside at 100 percent, 2.76 million. Year one, with the 0.63 ramp factor applied to the base case: 1.22 million.
+Scenarios at steady state, across 18 sites, in US dollars: conservative at 40 percent of composite, 92,160 a month; base at 70 percent, 161,280 a month, or 1,935,360 a year; upside at 100 percent, 2,764,800. Year one, with the 0.72 ramp factor applied: 797,200 conservative, 1,395,100 base, 1,993,000 upside.
 
-The sensitivity table varied the number of sites that actually adopt, which was the dominant assumption by a distance. At 12 sites adopting, the base annual figure was 1.29 million; at 18, 1.94 million; the swing across that plausible range was 50 percent of the estimate. Varying the composite by thirty percent moved it by only 30 percent. So the finding stated at the top of the output was that the estimate is governed by adoption, not by site performance, and that the resolving evidence was the first six sign-ups, which would exist within a quarter.
+The first sensitivity table compared a fall in adoption against a thirty percent swing in the composite and concluded that adoption dominated. That comparison was withdrawn, because the model is linear in both inputs: a thirty percent move in either one moves the estimate by exactly thirty percent, so any ranking produced that way is a ranking of the ranges chosen, not of the assumptions. The table was rebuilt to vary each assumption across its own plausible range, which is the only comparison the model can support.
 
-Cost of delay was computed on the ramp-shifted basis: 161,280 a month at the base rate once mature, but 78,000 a month in the first six months of any delayed cohort. Three months of delay across the full rollout cost 484,000, six months 968,000, twelve months 1.94 million, none of it recoverable.
+Adoption can run from 9 sites, the historical take-up of optional programmes at this firm, to 18, which is the whole rollout and a hard ceiling. That gives 967,700 to 1,935,400, a spread of 967,700. At the mid-point of 12 sites the base annual figure is 1,290,200. The composite was varied on the standard error of the mean of the four mature sites rather than on the site-to-site range, since the estimate uses the mean: that standard error came out at 2,400, so 12,800 plus or minus 2,400, which gives 1,572,500 to 2,298,200, a spread of 725,800.
 
-**Result.** The board funded the programme manager and one technician rather than two, staged on adoption, with the second technician triggered by the eighth site signing. The estimate cited was 1.94 million steady state and 1.22 million in year one, both marked base case, against the 4.9 million previously circulating; the difference was explained in one line as full maturity from month one assumed at the best site's rate.
+So adoption is the dominant assumption, by a third more spread, and that finding was stated at the top of the output with the reason attached: not because the model is more sensitive to it, but because its plausible range is wider and it is capped above. The tie-breaker recorded alongside it was resolvability. Adoption resolves within a quarter from the first six sign-ups; the composite resolves only once sites reach maturity, which is nine months away.
+
+Cost of delay was computed both ways once and the difference shown, as the method requires. The naive figure multiplies the steady-state rate by the months lost: 483,800 at three months, 967,700 at six, 1,935,400 at twelve. The ramp-based figure sums the monthly factors for the months actually lost, which during a rollout are the front months of the curve, not mature ones: 0.94 of a steady-state month lost over three months, 2.91 over six, 8.65 over twelve. At 161,280 a month that is 151,600 at three months, 469,300 at six, and 1,395,100 at twelve, the last being the whole of year one. The first six months of any delayed cohort average 78,200 a month rather than 161,280. The ramp figure was the one used, and the sentence that went with it was that none of it is recoverable and that the gap between the two figures closes to zero once the programme is mature, so the horizon has to be stated with the number.
+
+**Result.** The board funded the programme manager and one technician rather than two, staged on adoption, with the second technician triggered by the eighth site signing. The estimate cited was 1,935,400 steady state and 1,395,100 in year one, both marked base case, against the 4,190,400 previously circulating; the difference was explained in one line as full maturity from month one assumed at the best site's rate.
 
 The update trigger was written in: revise when six sites are live for three months each, expected within two quarters. At that point the observed composite came in at 11,600, below the 12,800 assumption, and the estimate was revised down by nine percent without argument, because the trigger and the method had been agreed in advance.
 
@@ -150,17 +166,24 @@ Method:          comparable benchmark (6 live sites, 4 mature)
 Comparables:     Sites 4, 9, 17, 22 (mature); Sites 31, 38 excluded from composite, under 6 months
 Key assumption:  18 of 18 sites adopt; composite steady state 12,800/site/month
 Source:          active-month mean of mature comparables, one-off equipment sale stripped
-Ramp:            9 months to steady state; year-one factor 0.63 (observed, 4 sites)
+Ramp:            ~9 months to steady state; monthly factors 0.22 0.31 0.41 0.53 0.66
+                 0.78 0.86 0.92 0.96 1.00 1.00 1.00; sum 8.65; year-one factor 0.72
+Currency:        USD
 
                  Monthly (steady)   Annual (steady)   Year one
-Conservative      92,160             1,105,920         696,700
-Base             161,280             1,935,360       1,219,300   <- the figure to cite
-Upside           230,400             2,764,800       1,741,800
+Conservative      92,160             1,105,920         797,200
+Base             161,280             1,935,360       1,395,100   <- the figure to cite
+Upside           230,400             2,764,800       1,993,000
 
-Sensitivity:     adoption count dominates. 12 sites = 1,290,000; 18 sites = 1,935,000.
-                 A 30% swing in composite moves the estimate 30%; adoption moves it 50%.
-Cost of delay:   161,280 per month at steady state, 78,000 per month during ramp.
-                 3 months 484,000 | 6 months 968,000 | 12 months 1,935,000. Not recoverable.
+Sensitivity:     linear in both inputs, so equal percentage swings are not a comparison.
+                 Compared across plausible ranges instead:
+                 adoption  9 to 18 sites   =   967,700 to 1,935,400   spread 967,700
+                 composite 10,400 to 15,200 = 1,572,500 to 2,298,200  spread 725,800
+                 Adoption dominates on range width and resolves first (first 6 sign-ups).
+Cost of delay:   ramp-based, months lost are front-of-curve months, not mature ones.
+                 3 months 151,600 | 6 months 469,300 | 12 months 1,395,100.
+                 Naive steady-state equivalents 483,800 | 967,700 | 1,935,400.
+                 Not recoverable. Horizon stated with the figure.
 Update when:     6 sites live for 3 months each, expected within 2 quarters.
 ```
 
@@ -210,6 +233,17 @@ Update when:     6 sites live for 3 months each, expected within 2 quarters.
 - Cost of delay is computed on the ramp-shifted basis and stated as forgone, not deferred.
 - An update trigger is written, with the expected date and the owner.
 - Every assumption sits in a labelled input cell and appears in the sentence that uses it.
+
+## Adapting this to your context
+
+The five methods, the forty, seventy and one hundred percent scenario band, and the pipeline step assume a firm of forty to two hundred and fifty people with a maintained CRM and a repeatable acquisition motion.
+
+- **The scenario band.** Those three percentages come from services rollouts with a nine-month ramp. Pull yours from what your own comparables achieved against the composite in their first year, and widen rather than narrow where only one comparable exists.
+- **The pipeline method.** Stage probabilities assume a CRM somebody maintains. Without one, use the historical close rate on open pipeline. Grant and public sector work has no pipeline: use an award calendar with a per-round success rate.
+- **The unit.** Revenue per site per month suits a rollout. Usage-based billing estimates a usage unit and a price separately. A marketplace estimates take rate on gross volume and needs both sides in the ramp.
+- **The ramp.** Nine months to steady state is what four maintenance sites produced. Build yours from your own comparables, and where none exist publish the steady-state figure alone rather than assume a curve.
+
+- **What not to change.** Never publish a point estimate, and keep the ramp and the scenario band in separate input cells so a reader can tell a slower start from a weaker outcome.
 
 ## Related skills
 

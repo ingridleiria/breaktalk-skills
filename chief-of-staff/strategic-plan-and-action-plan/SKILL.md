@@ -9,6 +9,16 @@ Most strategy documents fail at the join. The strategy half is a set of ambition
 
 The cost is not the two days of leadership time. It is that the company spends a year executing its previous priorities while believing it changed direction, and that nothing ever stops, because nothing says what stopping would look like. Twelve months later the same team meets, notices the numbers did not move, and writes a longer document. The test applied throughout: could someone who was not in the room execute this on Monday, and would they know what to stop doing.
 
+## Start here for next year's plan
+
+If you have arrived with "we need a plan for next year", open this file first. Three skills make up the planning cluster and they run in order.
+
+1. **This one sets the destination and the bets.** Where the company is going, with a number and a date; what has to be true to get there; and what will not be done. Nothing downstream is decidable until those exist, even if for now they exist only in the leadership team's head.
+2. **`okr-planning` comes next.** It takes the bets from this document and converts them into measured objectives with baselines, targets, dates, named owners and named measurement sources, plus the scoring rhythm. This file says what has to be true; that one says how we will know, by when, and who is holding it.
+3. **`annual-planning-and-headcount` runs alongside or straight after.** It prices the plan and sequences the hiring: whether the bets are affordable, who arrives in which month, and what the whole thing costs to operate.
+
+Run them out of order and the usual failure follows. Objectives written before a direction is agreed turn into a negotiation between functions, and a headcount plan built before the bets exist quietly funds last year's shape for another twelve months.
+
 ## When to use this, and when not to
 
 Use it when the direction of a company, a function, or a large programme has to be set or reset; when a leadership team has an ambition and no path; when a plan exists but nobody can say which parts are bets and which are certainties; when growth has stalled and the reason is contested; or when a turnaround needs a plan that fits on a page.
@@ -61,7 +71,7 @@ Confidence is stated openly. One high-confidence bet and three low-confidence on
 
 ## Worked example
 
-**Situation.** Kestrel Systems, 210 people, field-service scheduling software, revenue 31.4m growing at 14 percent, down from 39 percent two years earlier. Net revenue retention 96 percent. The previous year's offsite had produced nine strategic pillars, none with an owner. The chief executive's brief: the board meets in five weeks and asks every quarter why growth stopped, and the answer has been a different theory each time.
+**Situation.** Kestrel Systems, 210 people, field-service scheduling software, revenue 31.4 million dollars growing at 14 percent, all figures in this example being US dollars, down from 39 percent two years earlier. Net revenue retention 96 percent. The previous year's offsite had produced nine strategic pillars, none with an owner. The chief executive's brief: the board meets in five weeks and asks every quarter why growth stopped, and the answer has been a different theory each time.
 
 **Task.** One plan, circulated in four weeks and presented to the board in five, that named a destination and the bets and could be executed by people who were not at the offsite. Good meant that at the next quarterly review each owner could say whether their bet was holding.
 
@@ -69,7 +79,7 @@ Confidence is stated openly. One high-confidence bet and three low-confidence on
 
 The first destination drafted was "growth back to 30 percent by year end", and it was abandoned on the reachability test: the sales cycle averaged 4.7 months and the mid-market base renewed across the full year, so nothing started in month one could move an annual growth rate by December. It became net revenue retention of 108 percent by 31 December, from 96, which the board accepted as the leading indicator of the growth question.
 
-Four bets survived from eleven candidates: that mid-market churn is caused by never reaching a second use case, evidenced by 31 of 38 lost accounts having used scheduling only and never dispatch; that the same product serves mid-market if onboarding differs; that a usage-based tier would raise expansion revenue; and that the enterprise motion needs no change, stated as a bet so it could be disproved rather than assumed. The exclusion list took longest and was where the plan became real: the integrations marketplace with its two engineers, a reseller programme that had produced 140k in eighteen months, and a planned move into an adjacent vertical. The marketplace was hardest because it was the previous strategy, and it was recorded as paused with a date to revisit rather than cancelled.
+Four bets survived from eleven candidates: that mid-market churn is caused by never reaching a second use case, evidenced by 31 of 38 lost accounts having used scheduling only and never dispatch; that the same product serves mid-market if onboarding differs; that a usage-based tier would raise expansion revenue; and that the enterprise motion needs no change, stated as a bet so it could be disproved rather than assumed. The exclusion list took longest and was where the plan became real: the integrations marketplace with its two engineers, a reseller programme that had produced 140,000 dollars in eighteen months, and a planned move into an adjacent vertical. The marketplace was hardest because it was the previous strategy, and it was recorded as paused with a date to revisit rather than cancelled.
 
 The wrong turn: the second draft added two cross-cutting workstreams, one for data and one for enablement, because several bets needed both. Within a week neither owner could say what would be different when their workstream was done. Both were dissolved and their work written into the bets that needed it, as dependencies with a named person who owed delivery.
 
@@ -77,7 +87,7 @@ The wrong turn: the second draft added two cross-cutting workstreams, one for da
 
 ### A second scenario, where it goes differently
 
-A 60-person hardware services business with 7.5 months of cash, whose board had declined to extend runway without a plan. The destination is not a growth number but a cash date: monthly operating breakeven by 31 August. The exclusion list moves to the front and is written before the bets, because under a cash constraint what you stop funds what you continue. Bets shrink from five to two, because a business with seven months of cash cannot run five experiments and staff none of them properly. Kill criteria become cash thresholds rather than performance thresholds: not "if this does not work we stop" but "if monthly burn exceeds 620k in any month, the second bet stops regardless of progress". The review goes weekly on cash.
+A 60-person hardware services business with 7.5 months of cash, whose board had declined to extend runway without a plan. The destination is not a growth number but a cash date: monthly operating breakeven by 31 August. The exclusion list moves to the front and is written before the bets, because under a cash constraint what you stop funds what you continue. Bets shrink from five to two, because a business with seven months of cash cannot run five experiments and staff none of them properly. Kill criteria become cash thresholds rather than performance thresholds: not "if this does not work we stop" but "if monthly burn exceeds 620,000 dollars in any month, the second bet stops regardless of progress". The review goes weekly on cash.
 
 What changed: horizon, number of bets, position of the exclusion list, currency of the kill criteria, review frequency. What did not: every bet still falsifiable, every workstream still one owner and a first step inside two weeks.
 
@@ -154,6 +164,16 @@ The run-the-business list, separately, so the cost of keeping the lights on is v
 - Every bet has kill criteria with a number, a date, and a named checker.
 - Every dependency names the person who owes it and the date.
 - The review cadence exists, with dates in calendars, before the plan circulates.
+
+## Adapting this to your context
+
+The twelve-month horizon, the three to five bets and the monthly and quarterly review split come from venture-backed commercial companies of fifty to five hundred people planning on an annual cycle.
+
+- **Three to five bets over twelve months.** Cut to two where cash is short. Genuinely multi-year businesses, infrastructure, pharmaceuticals, capital projects, hold a three-year horizon with the bets re-tested annually.
+- **A destination as a growth or retention number.** For a public body, a charity, a university department or an internal function it becomes a service level, a cost per unit or an outcome measure. The reachability test does not change.
+- **A first step inside two weeks.** Where work can begin only at a budget round, a procurement cycle or a committee date, the first step is the paper that enters that cycle, dated to its deadline.
+- **Kill criteria as performance thresholds.** Under a cash constraint they become cash thresholds. In a regulated or contracted setting they become dates: the last moment the option can still be exited without cost.
+- **What not to change.** Every bet is a claim that could be false, written with the evidence that would overturn it, and the plan names at least one thing currently resourced that will stop.
 
 ## Related skills
 

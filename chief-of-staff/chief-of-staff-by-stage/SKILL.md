@@ -58,13 +58,13 @@ Everything operational belongs to one of the five: `cos-at-seed` builds what doe
 ## The five archetypes in one table
 
 | Archetype | Playbook | Rough size | Constraint | Decision rights | Characteristic trap |
-| Builder | `cos-at-seed` | 5 to 30 | Finding what works | Informs, rarely decides | Permanent owner of everything built |
-| Rebuilder | `cos-at-series-a` | 30 to 100 | Making it repeatable | Decides on process | Rebuilding faster than anything is adopted |
-| Synthesist | `cos-at-series-b` | 100 to 300 | Scaling across functions | Advises, influences | Becoming a very senior project manager |
-| Mandate holder | `cos-at-series-c` | 300 to 1,000 | Scale without losing speed | Decides inside the mandate | Scope dissolving into leftover work |
+| Builder | `cos-at-seed` | 5 to 29 | Finding what works | Informs, rarely decides | Permanent owner of everything built |
+| Rebuilder | `cos-at-series-a` | 30 to 99 | Making it repeatable | Decides on process | Rebuilding faster than anything is adopted |
+| Synthesist | `cos-at-series-b` | 100 to 299 | Scaling across functions | Advises, influences | Becoming a very senior project manager |
+| Mandate holder | `cos-at-series-c` | 300 to 999 | Scale without losing speed | Decides inside the mandate | Scope dissolving into leftover work |
 | Proxy | `cos-at-series-d` | 1,000 and up | Governing a portfolio | Decides in the chief executive's name | Power without accountability |
 
-The headcount column is the least reliable row in the table. The diagnosis comes from the five signals.
+The bands do not overlap, so no headcount belongs to two archetypes: a company of exactly three hundred reads as a mandate holder on that column and a company of ninety-nine as a rebuilder. The precision is there to stop two people reading the same number differently, not because it means anything. The headcount column is the least reliable row in the table, and where it disagrees with the layer count the layer count wins. The diagnosis comes from the five signals.
 
 ## The transitions, which is where the role breaks
 
@@ -167,6 +167,16 @@ FIRST NINETY DAYS
 - Decision rights carry a money threshold wherever the role can spend.
 - A re-diagnosis date and the three triggers are on the page.
 - Nothing in the charter is a function that already has a leader.
+
+## Adapting this to your context
+
+The five signals were calibrated on venture-funded technology companies between five and a thousand people. The signals travel much further than the round labels do.
+
+- **The round names.** They are shorthand for headcount, decision layers and board formality, nothing more. A family business, an agency, an NGO, a university department or a bootstrapped company should read the five signals and ignore the funding language in whichever playbook it lands on.
+- **The headcount bands.** The least reliable column in the table, and taken from software companies. Labour-intensive operations run two or three times the headcount at the same number of layers; research, investment and design firms run a fraction of it. Layers win, always.
+- **The leadership reality test.** Two weeks of an uncontactable chief executive suits a company. For a partnership, a clinical department or an owner-managed business, ask instead whether a decision above the usual threshold can be made while the principal is away.
+- **Runway and the round.** Where nobody raises money, substitute the equivalent pressure: the grant cycle, the seasonal cash trough, the parent company's budget round, or a succession date.
+- **What not to change.** Diagnose from observed signals rather than from the round, and apply the conflict rule rather than averaging when the signals disagree.
 
 ## Related skills
 

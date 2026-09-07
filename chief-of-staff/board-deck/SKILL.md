@@ -75,7 +75,7 @@ The dashboard kept the same fifteen metrics in the same order, which required re
 
 The region question was reframed from an information item to a decision paper, because it committed roughly 1.1m of the next twelve months of spend. Three options: open in the first half, defer pending two quarters of ramp data, or contract coverage through an existing partner. Management recommended deferring, with a numeric trigger: proceed when the new representatives reach 70 percent of quota for two consecutive quarters.
 
-**Result.** The pack circulated five days ahead at 21 pages plus a 30 page appendix. Reporting took 40 minutes; the balance went to the decisions and one strategic topic. The option pool passed on consent because the dilution table had already answered the only question. The region decision passed as recommended, with the trigger written into the minutes, so it did not recur the following quarter: management simply reported against the trigger.
+**Result.** The pack circulated five days ahead at 21 pages plus a 30 page appendix. Reporting was held to its twenty minutes; the balance of the three hours went to the decisions and one strategic topic. The option pool passed on consent because the dilution table had already answered the only question. The region decision passed as recommended, with the trigger written into the minutes, so it did not recur the following quarter: management simply reported against the trigger.
 
 ### A second scenario, where it goes differently
 
@@ -148,6 +148,16 @@ The follow-up page:
 - Every recurring number is identical everywhere, to the same rounding, from one stated source.
 - Metric definitions are unchanged, or the change is flagged and the prior period restated.
 - The main pack contains nothing that belongs in executive session.
+
+## Adapting this to your context
+
+The shape here comes from a venture-backed board of six directors meeting quarterly for three hours on a fifteen to twenty-five page pre-read. Adjust it before adopting it.
+
+- **The twenty-minute reporting cap.** Set against a three-hour meeting where the pre-read is read. Where the board meets for ninety minutes, or will not read ahead, cut the pack rather than raising the cap, and hold the ratio at roughly one part reporting to two parts deciding.
+- **Ten to fifteen dashboard metrics.** Suited to a single-product software company. A services business tracks utilisation, backlog and realisation; a charity tracks restricted and unrestricted funds and months of reserves. Keep the count, change the rows.
+- **Fifteen to twenty-five pages, five days ahead.** Move both to fit your directors' actual reading, and where a notice period is constitutional, the notice period wins.
+- **Resolution language.** Written for a board that passes motions. Advisory boards and steering groups resolve nothing, so drop the decision pages and put the weight on strategic questions instead.
+- **What not to change.** Management states every miss before a director could find it, and every recurring number is identical everywhere, from one stated source.
 
 ## Related skills
 

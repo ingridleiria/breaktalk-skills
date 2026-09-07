@@ -223,6 +223,16 @@ The register also changes. A funder wants confidence; a thesis committee wants t
 - Three to five risks are named with an early signal and a response.
 - Every citation is verified, and the reference style matches the call.
 
+## Adapting this to your context
+
+The worked example is a national research council early-career scheme in economics with a published four-criterion rubric. Funders differ more than fields do.
+
+- **The rubric.** That split belongs to one council. NIH scores significance, investigators, innovation, approach and environment, with approach carrying most of the weight. NSF has two criteria and broader impacts is a real one. ERC weights the principal investigator as heavily as the project. Rebalance the pages against yours.
+- **Power, not minimum detectable effect.** The design section mentions power in passing, an economics habit. Health, psychology and education panels expect a formal calculation with the assumed effect size and its source, alpha, attrition, and for clustered designs the intraclass correlation and design effect.
+- **What counts as preliminary data.** Here, a descriptive figure on a subsample. In lab and clinical work, pilot data with an observed effect size; in qualitative work, negotiated access and two or three pilot interviews.
+- **Registration commitments.** Where your field expects prospective registration or a reporting guideline, name both in the outputs section. Panels in health and psychology read their absence as a weakness.
+- **What not to change.** Build the compliance checklist from the call before writing a word, and evidence feasibility with a status, a route, a wait time and a fallback rather than an adjective.
+
 ## Related skills
 
 `research-design` produces the question, hypotheses, identification strategy and exhibit list that this proposal argues for; build it first. `identification-defense` supplies the threats and diagnostics paragraph and the fallback design. `literature-verification` verifies the citations, and a fabricated reference in a funding application is a far more serious matter than in a draft. `survey-and-instrument-design` supplies the instrument where data must be collected. `research-ethics-and-data-protection` supplies the ethics and data management sections. `preregistration-and-analysis-plan` overlaps heavily with the design section and should be written consistently with it. `replication-package` defines what a data sharing commitment can honestly promise. `thesis-advisor` decides whether the applicant has the time this proposal assumes. `thesis-defense-prep` prepares the proposal hearing or the panel interview. `response-to-reviewers` supplies the discipline for a resubmission after panel feedback.

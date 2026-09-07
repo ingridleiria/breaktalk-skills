@@ -77,11 +77,15 @@ Options ran at three levels. Do nothing, with the cost stated as the call-out re
 
 ### A second scenario, where it goes differently
 
-The same manager took a related concept to a client's leadership team rather than to their own, proposing a shared monitoring pilot across that client's twelve sites.
+The obvious variant, taking the same concept to a client's leadership team, is not this skill's job. Rebuilding a deck around one named account, in their vocabulary and with their numbers, is `tailored-client-deck`; where that client has already been through discovery and is ready to approve an engagement, the route is `discovery-to-proposal-deck` and then `proposal-writer`. This skill covers the idea nobody has approved yet, which includes one shape people rarely think of as an idea.
 
-Three things changed. The vocabulary became the client's, including their names for their own sites and teams, since internal shorthand reads as carelessness to an external audience. The evidence had to be their numbers rather than the company's, which meant the bottom-up build was rebuilt from their site count and their call-out history, and where their figures were not available, the slide said so rather than substituting a benchmark. And the ask shrank, because an external audience cannot approve an internal reallocation: it became a paid two-site diagnostic with a fixed fee.
+Eighteen months later the same manager proposed retiring the company's small print management line: eleven clients, about 190,000 a year, which three people had separately concluded was losing money and none had proposed stopping.
 
-The line worth holding: if that client had already been through discovery and was ready to approve an engagement, the right document was not this deck but `discovery-to-proposal-deck` followed by `proposal-writer`. This deck was correct only because the concept was still an idea, and the client was being asked to shape it rather than to buy it.
+Three things changed. Why now had no external trigger, so it had to be built from an internal one, and the dated fact became the month the last dedicated engineer left and the work started being absorbed by the maintenance team. The evidence slide inverted: instead of a bottom-up build of a market that might exist, it was a bottom-up build of a cost that already did, at 240 hours a quarter of field time against 47,000 of gross margin, every input from a system the room already trusted. And the visible slide became the letter the eleven clients would receive, drafted in full, because the objection to a stop proposal is never the arithmetic, it is what happens to the people affected.
+
+The options still ran at three levels of commitment and doing nothing still appeared honestly, since continuing was a real choice with a stated cost. What replaced the kill criterion was its mirror: the condition under which the line would be restarted, which is what made a decision that sounded irreversible cheap enough to approve.
+
+What changed was the direction of the ask, not the spine. A proposal to stop something needs the same eight slides, and the slide it most often omits is the visible one.
 
 ## Output
 
@@ -137,6 +141,16 @@ Appendix: the costing detail, the bottom-up sizing with its assumptions, sources
 - Any market or revenue figure is built bottom up from numbers the audience already trusts.
 - The recommended option has a success metric, a review date, and a kill criterion.
 - Nothing is on a slide because the slide looked empty.
+
+## Adapting this to your context
+
+The defaults come from ten-minute slots at leadership meetings in commercial companies of fifty to three hundred people. The spine holds; the slot rarely matches.
+
+- **Eight slides for ten minutes.** A ratio, not a rule. A thirty-minute working session supports about fifteen slides. A written-decision culture supports none, and the right artefact there is `decision-memo` with the mock attached to it.
+- **The bottom-up build.** It assumes the organisation trusts its own numbers. Where the payoff is not revenue, build the same way from whatever you already count: hours released, places filled, incidents avoided, grant income at risk.
+- **The kill criterion.** Written for a reversible pilot. Where the commitment is a licence, a building or a permanent hire, the equivalent is a stated stage gate with money released in tranches, and it belongs on the slide rather than in the appendix.
+- **The audience's first objection.** Cost or distraction in most commercial rooms. In regulated, clinical or public settings it is usually risk or precedent, and it is answered by naming the governance route rather than by the options slide.
+- **What not to change.** Facts and beliefs sit in visibly different registers, and the deck ends on one ask carrying a decision, a resource and a date.
 
 ## Related skills
 

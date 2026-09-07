@@ -213,6 +213,16 @@ The build log is not bureaucracy. It is what lets a coauthor see what changed, w
 - Every in-text citation is the hyperlinked author-year form with a resolving DOI, and text and list reconcile in both directions.
 - The manuscript sits inside the journal's limit without the results section having been cut to get there.
 
+## Adapting this to your context
+
+The eleven-step order and the section budget come from empirical social science papers of 8,000 to 12,000 words with a separate empirical strategy section. The order encodes dependency between sections and survives any layout; the budget does not.
+
+- **The section budget.** Fifteen percent to empirical strategy and twenty-five to results is an economics allocation. An IMRaD paper in psychology or health gives Methods more and runs a shorter introduction; a qualitative paper puts a third of its length into findings because the extracts sit there. Reallocate from three recent articles in the target, keeping results the largest block.
+- **Exhibits first.** Right when tables and figures carry the finding. For qualitative work the spine is the theme table and the extract register, built first for the same reason.
+- **The writing order.** Results fifth, discussion sixth, introduction eighth. That holds wherever the introduction promises a paper that already exists. In a registered report the introduction and methods were accepted before any data, so only results and discussion are in play.
+- **Reporting standards.** Absent from the checks. Add the one your field requires as a check 13: CONSORT, PRISMA, STROBE, JARS or COREQ, each with a checklist journals increasingly demand at submission.
+- **What not to change.** One claim sentence fixed before any prose, and every cross-section check fixed rather than noted.
+
 ## Related skills
 
 `research-design` supplies the question, the hypotheses and the exhibit plan this build assembles, and is where to go back to when the claim sentence cannot be written. `journal-targeting` fixes the target that sets the budget. The section skills do the actual writing and are called in this order: `data-section-writer`, `econometric-model-writer`, `results-writing`, `discussion-and-conclusion`, `theoretical-framework-review`, `introduction-writer`, `abstract-and-title`, `references-and-bibliography`. The exhibits come from `descriptive-statistics-tables`, `academic-tables-booktabs` and `academic-figures-monochrome`. `literature-verification` supplies the verified reference set and runs as one of the checks. `identification-defense` handles a threat too heavy for the strategy section. `peer-review-simulator` reads the assembled manuscript adversarially before submission, and `thesis-chapter-review` does the same for a chapter. `response-to-reviewers` handles the revision, and hands the revised manuscript back here for the seam checks.

@@ -48,11 +48,16 @@ import delimited using "$data/raw/survey_2023.csv", ///
 import excel using "$data/raw/accounts.xlsx", ///
     sheet("Panel") cellrange(A4:AK5210) firstrow clear
 
-* fixed width, driven by a dictionary file that is itself version controlled
-infix using "$code/dict/census2010.dct", using("$data/raw/census2010.txt") clear
+* fixed width, driven by a dictionary file that is itself version controlled.
+* The dictionary's own first line names the data file, so the two travel together:
+*     infix dictionary using "census2010.txt" {
+*         str5 state  1-5
+*         int  age    6-8
+*     }
+infix using "$code/dict/census2010.dct", clear
 ```
 
-For Excel, check what the first row actually is before using `firstrow`: merged header cells, a title row, or a units row will become variable names and produce silent nonsense. For fixed width, the dictionary file is part of the code and belongs under version control, because a one-character offset shifts every field on the line.
+For Excel, check what the first row actually is before using `firstrow`: merged header cells, a title row, or a units row will become variable names and produce silent nonsense. For fixed width, the data file is named inside the dictionary rather than passed as a second `using`, and the dictionary is part of the code and belongs under version control, because a one-character offset shifts every field on the line.
 
 3. **Convert strings to numbers deliberately, and check what the conversion lost.** `destring` is for numbers that happen to be stored as text. `encode` is for genuine categories. Using one where the other belongs is the second most common typing error.
 
@@ -108,7 +113,7 @@ count if date >= td(01jan2015) & date < td(01jan2020)
 
 The two failures here are a two-digit year read into the wrong century, which the `topyear` argument fixes, and a date variable left as a string, where "02/03/2019" sorts before "10/01/2015" and every comparison is wrong without warning.
 
-6. **Merge with an expectation, and account for every `_merge` value.** `_merge` takes 1 for master only, 2 for using only, and 3 for matched. Every one of those three needs a stated disposition before the variable is dropped. The rule: tabulate first, decide second, assert third, and never let `keep if _merge == 3` be the first thing written.
+6. **Merge with an expectation, and account for every `_merge` value.** The standard here is not this skill's. `data-profiling-and-cleaning` owns it: state an expected match rate before the merge, report the actual rate, and characterise the unmatched rows on observables rather than counting them. Read the reasoning there. What follows is how Stata executes it. `_merge` takes 1 for master only, 2 for using only, and 3 for matched. Every one of those three needs a stated disposition before the variable is dropped. The rule: tabulate first, decide second, assert third, and never let `keep if _merge == 3` be the first thing written.
 
 ```stata
 merge m:1 muni_code year using "$data/clean/muni_controls.dta", generate(_m_muni)
@@ -161,7 +166,7 @@ drop if missing(inc) & missing(emp)   // rows created for years never observed
 
 The trap in `reshape long` is that it produces a complete rectangle of `i` by `j`, so a firm observed in three of eleven years gains eight rows of missing values, and the observation count in the summary statistics table is then whatever the estimation command happens to drop. Decide explicitly whether those rows should exist and delete them if not. `reshape` is also slow on large files; where it becomes the bottleneck, `greshape` from the gtools package does the same job faster, and the checks afterwards are identical.
 
-10. **Establish uniqueness with `isid`, and resolve duplicates with a written rule.** `duplicates drop` without an examination is the single most damaging one-line command in data management, because which row survives depends on sort order and the discarded row may have been the correct one.
+10. **Establish uniqueness with `isid`, and resolve duplicates with a written rule.** Examine, write a rule, apply the rule, record how many cases it touched: that sequence is `data-profiling-and-cleaning`'s and the argument for it lives there. The Stata-specific hazard is that `duplicates drop` resolves ties by whatever sort order the file happens to be in, silently, so the surviving row is chosen by the file rather than by you.
 
 ```stata
 duplicates report firm_id year
@@ -175,7 +180,7 @@ isid firm_id year
 
 Where duplicates are genuine conflicts rather than exact copies, the tie-break rule goes in the cleaning log and in the data section of the paper, with the number of affected rows.
 
-11. **Handle missing codes at import, and use extended missing to preserve the reason.** Stata's numeric missing values are larger than any number, so `if income > 50000` includes every missing value. This is the most frequently made mistake in the language and it produces a sample that is silently wrong rather than an error.
+11. **Handle missing codes at import, and use extended missing to preserve the reason.** Finding the sentinel codes is `data-profiling-and-cleaning`'s step and it explains why they are the most damaging silent defect there is. Converting them without losing the reason is Stata's, and so is the trap underneath: Stata's numeric missing values are larger than any number, so `if income > 50000` includes every missing value. That is the most frequently made mistake in the language and it produces a sample that is silently wrong rather than an error.
 
 ```stata
 * recode source codes into extended missing, preserving what each meant
@@ -208,7 +213,7 @@ bysort muni_code year: egen n_muni    = count(wage)
 
 `collapse` computes each statistic over the observations that are non-missing for that variable, so different columns can be means over different samples. Where a consistent sample matters, use the `cw` option or restrict beforehand. `collapse` also discards variable labels, so relabel immediately afterwards or the clean file arrives unlabelled.
 
-13. **Declare the panel and inspect its shape before estimating anything on it.** `xtset` requires the panel identifier and time variable to uniquely identify rows and the time variable to be a proper integer with an interpretable spacing.
+13. **Declare the panel and inspect its shape before estimating anything on it.** Panel coherence, meaning who enters, who leaves, whether identifiers persist and whether gaps sit inside a unit's series, is `data-profiling-and-cleaning`'s check and its account of why attrition is a result rather than a nuisance. `xtset` and `xtdescribe` are how that check is run in Stata. `xtset` requires the panel identifier and time variable to uniquely identify rows and the time variable to be a proper integer with an interpretable spacing.
 
 ```stata
 xtset firm_id year
@@ -244,7 +249,9 @@ Where a coauthor runs an older Stata release, add a `saveold` copy rather than d
 
 ## The build log
 
-Every operation that can change the number of rows or units is recorded as it happens, with the counts either side. This table is the answer to the referee question "how did you get from the raw file to your estimation sample", and it cannot be reconstructed later from the code alone because the counts are not in the code.
+This is `data-profiling-and-cleaning`'s sample construction table, kept in Stata's vocabulary. That skill owns the requirement that every step between the raw row count and the estimation sample is counted and given a reason; the columns below are the version that fits Stata operations, and the counts recorded here fill in its merge report rather than starting a second one.
+
+Every operation that can change the number of rows or units is recorded as it happens, with the counts either side. It cannot be reconstructed later from the code alone, because the counts are not in the code.
 
 | Step | Operation | Rows before | Rows after | Units before | Units after | Check | Result |
 | 1 | Import survey_2023.csv | 0 | 41,206 | 0 | 41,206 | `isid person_id` | pass |
@@ -277,7 +284,7 @@ Two things did not reduce. The raw-file rule mattered more than usual, because t
 
 ## Output
 
-The deliverable is three things: a saved `.dta`, the build log table above, and a codebook entry for every constructed variable.
+The deliverable is three things: a saved `.dta`, the build log table above, and a codebook entry for every constructed variable. The merge report is not a fourth: match rates recorded here go into the one `data-profiling-and-cleaning` defines, so a project has one merge report and not two.
 
 ```
 data/clean/analysis_panel.dta
@@ -339,6 +346,16 @@ Codebook rows for constructed variables:
 - Source missing codes are converted to extended missing values at import, and every inequality in the code guards against missing.
 - The saved file carries notes recording its unit of observation, key, sources, build script and date, and `compress` was run before saving.
 - The build log accounts for every observation between the raw row count and the estimation sample.
+
+## Adapting this to your context
+
+Two layers. The method: raw data stays read only, the unit of observation is named before any code, every step that can change the row count is checked, every merge reports its match rate, one script rebuilds the file from raw. The commands are dialect.
+
+- **Checks.** `assert` and `isid` are Stata names. Use `stopifnot()` or `assertr` in R, a raised exception in Python, an explicit abort in SAS. What matters is that a failed check stops the run.
+- **Merge outcomes.** `_merge` is Stata's. `dplyr` with `anti_join` for the unmatched, pandas `merge(indicator=True)`, SAS `MERGE ... IN=`, SPSS `MATCH FILES` with `IN=` give the same three counts. Report all three.
+- **Identifiers as text.** `stringcols()` becomes `col_character()` in readr, `dtype=str` in pandas, a `$` informat in SAS. A dropped leading zero is unrecoverable in every language.
+- **Missing codes and categories.** Extended missing `.a` to `.z` maps onto SAS special missings and SPSS user-missing values; R and Python have one NA, so carry the reason in a parallel column. `encode`'s alphabetical coding is the trap R factor levels and pandas categoricals share: declare levels in code.
+- **What not to change.** Raw files stay read only, every drop is counted and logged with a reason, one script rebuilds the analysis file from raw. That is the method; the rest is syntax.
 
 ## Related skills
 

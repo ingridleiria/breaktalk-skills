@@ -21,7 +21,7 @@ Do not use it for the companion page to a single paper or project, which is `res
 
 **One or two sentences saying what you work on, in words a colleague in an adjacent field would understand.** Not a field label. What question, in what setting, using what kind of evidence. Missing: draft three versions from the abstracts of the three most recent papers and pick the one a non-specialist can repeat back.
 
-**The publication list, with DOIs and the version status of each hosted file.** Missing a DOI: link the repository record or the publisher page, and add the DOI later. Missing the version status: do not host the file until the publisher's policy is checked, because posting the published version where only the accepted manuscript is permitted is a copyright matter.
+**The publication list, with DOIs and the version status of each hosted file.** Missing a DOI: link the repository record or the publisher page, and add the DOI later. In fields where books, chapters and proceedings dominate and DOIs are rare, use the link order in the edge case below rather than waiting for one. Missing the version status: do not host the file until the publisher's policy is checked, because posting the published version where only the accepted manuscript is permitted is a copyright matter.
 
 **The current status and date of every working paper.** Missing: ask the author for each, one line each. This conversation usually removes two or three entries, which is itself the value.
 
@@ -210,6 +210,8 @@ DOI | [Version label] (PDF) | Project page | BibTeX | Data and code
 
 **Student and coauthored work.** Where a student led, say so in one line. It costs nothing, it is true, and the people who matter notice both its presence and its absence.
 
+**Books, chapters and proceedings rather than journal articles.** In much of the humanities and in computer science the record is monographs, chapters in edited volumes, conference papers, and sometimes editions, translations or catalogues, and DOIs are often absent. Keep the grouping rule and change the groups: books first, then edited volumes and chapters, then peer-reviewed conference papers, then journal articles and other writing. Name the venue and its acceptance year on every conference paper, because a reader outside the field cannot tell a workshop from a flagship conference and will not guess. Where there is no DOI, link in this order: a repository record with a permanent identifier such as a handle or an ARK, the publisher's page, the ACM or IEEE Digital Library record, arXiv or another preprint server, then a library catalogue record with its ISBN. A chapter you cannot host still needs the volume, the editors, the publisher and the pages, since that is what a citation is made of. For a monograph, one plain line, the publisher link and a catalogue link is the whole entry, and reviews of the book belong under other writing rather than in the publication list.
+
 **An institution that mandates a template.** Build the real site on your own domain and treat the institutional page as an advertisement for it. Do not fight the template.
 
 **Readers on slow or metered connections.** Keep total page weight under about two hundred kilobytes, compress the photograph, and do not load a font service. A large share of the international readers this page is for are on a connection that makes a heavy page unusable.
@@ -224,6 +226,17 @@ DOI | [Version label] (PDF) | Project page | BibTeX | Data and code
 - The site is static, has no build step, and all content is present with scripting disabled.
 - Headings are in order, images have real alternative text, and the page works at 320 pixels wide and by keyboard.
 - A maintenance checklist exists in the repository with two fixed dates in the year.
+
+## Adapting this to your context
+
+The defaults come from a quantitative social science page: journal articles first, DOIs everywhere, preprints normal, a job market on a calendar.
+
+- **The three readers.** A search committee, a referee, a prospective student. If your field hires mostly into industry or government, replace a reader and rebuild the above-the-fold block for whoever takes their place.
+- **The publication grouping.** Journal articles first. Book-first and proceedings-first fields regroup as the edge case above describes, and where author order carries meaning, state the convention in one line.
+- **Identifiers and profiles.** ORCID plus a general scholar profile. Add the ones your field reads: arXiv, SSRN, RePEc, dblp, PhilPapers, PubMed, or an institutional repository handle.
+- **Preprint norms.** Posting a working paper is standard in economics and physics and contested in parts of medicine and the humanities. Check the venue's policy before hosting anything, and keep the version label either way.
+- **The maintenance rhythm.** Twice a year plus triggers, sized for about twenty entries kept by one person. A fast-publishing field or a group site needs quarterly and a named owner.
+- **What not to change.** Plain sentences and a working email address above the fold, a dated status on every unpublished item, a resolvable link on every entry, static files with no build step.
 
 ## Related skills
 

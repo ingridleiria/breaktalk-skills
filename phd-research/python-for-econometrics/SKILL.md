@@ -228,23 +228,29 @@ def legend_outside(ax, ncol=1):
 
 Save figures as PDF for LaTeX and as high-resolution PNG only where a format demands it. Never save a figure that was tweaked in a viewer.
 
-9. **Decide the language per task, not per project, and write the decision down.** The comparison below is the honest one. It changes over time, and the entries where Python has been catching up fastest are the fixed effects and difference-in-differences estimators.
+9. **Decide the language per task, not per project, and write the decision down.** The comparison below is the honest one, across the three languages that actually compete for this work. It changes over time, and the entries where Python has been catching up fastest are the fixed effects and difference-in-differences estimators.
+
+R belongs in this comparison and is left out of most Stata-versus-Python arguments for no better reason than that economics adopted the other two first. Outside economics it is frequently the default: psychology, ecology, biostatistics, epidemiology and increasingly education and sociology run on it. For applied microeconometrics specifically, `fixest` is the fastest high-dimensional fixed effects estimator in any of the three, `did` and `didimputation` implement the heterogeneity-robust difference-in-differences estimators, `sandwich` and `clubSandwich` cover robust and small-sample cluster-robust variance, `survey` is a genuine equivalent of Stata's `svy` suite, `lme4` and `nlme` are the reference implementations for multilevel and mixed models, `lavaan` for structural equation models, and `ggplot2` for figures. On reproducibility, `renv` does what a lockfile does and `targets` does what a master do-file does. R is also free, which matters for the same reasons Python being free matters.
 
 | Task | Better tool now | Why |
-| Panel fixed effects, instrumental variables, standard difference-in-differences | Stata, narrowly | Mature commands, defaults that match what referees expect, and a large body of user-written estimators that appear there first. The Python packages are close and closing |
-| Survey design estimation with strata, clusters and finite population correction | Stata, clearly | The `svy` suite has no complete Python equivalent, and reimplementing it is a way to get a published statistic wrong |
-| Postestimation margins, predicted probabilities, contrasts across complex models | Stata, clearly | `margins` covers cases that require substantial custom work in Python |
+| Panel fixed effects, instrumental variables, standard difference-in-differences | Stata or R | Stata for defaults referees expect; R's `fixest` is faster than either alternative and its syntax is closer to the algebra. Python's `pyfixest` and `linearmodels` are close and closing |
+| Heterogeneity-robust staggered difference-in-differences | R, narrowly | The new estimators tend to appear as R packages first, then Stata, then Python |
+| Survey design estimation with strata, clusters and finite population correction | Stata or R | Stata's `svy` suite and R's `survey` package are both validated implementations. Python has no complete equivalent, and reimplementing it is a way to get a published statistic wrong |
+| Multilevel and mixed models, structural equation models, item response and measurement models | R, clearly | `lme4`, `nlme`, `lavaan`, `mirt`. Stata's `mixed` and `sem` are capable; Python's are thin. This is the row that matters most for readers outside economics |
+| Postestimation margins, predicted probabilities, contrasts across complex models | Stata or R | Stata's `margins`, or R's `marginaleffects` and `emmeans`, which now cover most of the same ground. Both require substantial custom work in Python |
 | Data larger than memory | Python | Out-of-core and columnar tools handle it; Stata requires the data to fit or to be chunked by hand |
 | Text, documents, web sources, APIs | Python, decisively | Not a contest |
+| Publication figures | R or Python | `ggplot2` and matplotlib both do it well and both are scriptable. Stata is workable and more effort per figure |
+| Literate documents combining code, tables and prose | R, narrowly | Quarto and R Markdown are mature and widely used for supplements and theses; Quarto also runs Python |
 | Simulation, custom estimators, anything requiring a written likelihood or a bootstrap of an unusual statistic | Python | Faster to write, easier to test, and the result is a function you can unit test |
 | Machine learning inside a causal design, including cross-fitting and double machine learning | Python | The libraries and the sample-splitting machinery live there |
 | Reproducible environments | Python | Lockfiles pin every dependency exactly; Stata pins the language but not the user-written packages, which have to be shipped by hand |
 | Cost and access | Python | No licence, which matters for coauthors without one, for students, and for anyone reproducing the work |
 | Team familiarity and referee familiarity | Whichever the team has | A language nobody on the project can debug is the wrong language regardless of its merits |
 
-The rule that decides most cases: choose the tool that requires the fewest lines of code you have to write yourself, because every custom line is a line that can be wrong and that nobody will check. A project that reimplements survey weighting or `margins` in pandas has chosen wrong. A project that scrapes 40,000 documents with a Stata shell command has also chosen wrong.
+The rule that decides most cases: choose the tool that requires the fewest lines of code you have to write yourself, because every custom line is a line that can be wrong and that nobody will check. A project that reimplements survey weighting or `margins` in pandas has chosen wrong. A project that scrapes 40,000 documents with a Stata shell command has also chosen wrong. A project that writes its own mixed model likelihood in Python because the team does not know R has also chosen wrong.
 
-Mixed projects are legitimate and often correct. Do the data assembly in whichever language handles the sources, hand over a documented Parquet or `.dta` file, and do the estimation in whichever language has the estimator. Document the handoff file as an interface with its unit of observation and key, and make the handoff a step in the pipeline rather than a manual export.
+Mixed projects are legitimate and often correct, and this holds across all three languages. Do the data assembly in whichever language handles the sources, hand over a documented Parquet or `.dta` file, which all three read and write, and do the estimation in whichever language has the estimator. Document the handoff file as an interface with its unit of observation and key, and make the handoff a step in the pipeline rather than a manual export.
 
 ## Worked example
 
@@ -330,9 +336,9 @@ Each output file is mapped to the script and the paper exhibit that uses it, whi
 
 **A coauthor who will only open a notebook.** Give them a notebook that imports the pipeline modules and calls them, so the notebook is a viewer and the logic stays in tested functions. Never let logic accumulate in cells.
 
-**An estimator that exists in Stata and not in Python.** Do not reimplement it under deadline. Either call it through a documented handoff to Stata, or choose a different estimator and justify the choice on its own merits, not on tooling convenience.
+**An estimator that exists in Stata or R and not in Python.** Do not reimplement it under deadline. Either call it through a documented handoff, or choose a different estimator and justify the choice on its own merits, not on tooling convenience. Multilevel models, structural equation models and survey variance estimation are the three cases where this comes up most, and R has all three.
 
-**Results that differ between Stata and Python for the same specification.** Investigate rather than choosing. The usual causes, in order of frequency, are a different default covariance estimator, a different treatment of missing values, a different degrees-of-freedom correction for clustering, and a different reference category for a factor variable. All four are findable in under an hour and all four have a right answer.
+**Results that differ between Stata, R and Python for the same specification.** Investigate rather than choosing. The usual causes, in order of frequency, are a different default covariance estimator, a different treatment of missing values, a different degrees-of-freedom correction for clustering, and a different reference category for a factor variable. R's `sandwich` and Stata's `robust` differ by a finite-sample correction by default, which accounts for a large share of the small discrepancies people report. All are findable in under an hour and all have a right answer.
 
 **Long-running estimation inside a pipeline.** Cache the fitted results to disk keyed on a hash of the inputs and the specification, so downstream table building can be rerun without refitting, and make the cache invalidate on any input change rather than on a manual flag.
 
@@ -346,6 +352,16 @@ Each output file is mapped to the script and the paper exhibit that uses it, whi
 - The transformation functions have unit tests, and the pipeline has a smoke test on a small sample.
 - Tables and figures are written by code, never edited afterwards, and figures follow the monochrome standard with the legend outside the plot area.
 - The language choice for each part of the project is written down with its reason, and no established published procedure has been reimplemented by hand.
+
+## Adapting this to your context
+
+This is written for applied microeconometrics in Python against Stata, because that is the comparison economics arguments actually have. The engineering discipline is language-neutral; the package names are not.
+
+- **The whole pipeline, in R.** Step for step: `here::here()` replaces `config.py`; `renv::snapshot()` writes the lockfile; `targets` or a plain `run_all.R` is the master script; `dplyr` or `data.table` replaces pandas, with `left_join(relationship = "one-to-one")` as the guard `validate=` gives you; `fixest::feols` replaces `pyfixest` and `linearmodels`; `sandwich` and `clubSandwich` replace the covariance arguments; `testthat` replaces `pytest`; `modelsummary` or `fixest::etable` writes the tables; `ggplot2` and `ggsave` the figures; `set.seed()` at the top of each script.
+- **The estimator set.** A causal inference set. For multilevel models, structural equation models or item response theory, R is where they live: `lme4`, `lavaan`, `mirt`. Mplus is still the reference for complex latent variable models.
+- **The Stata to pandas map.** Read it as a map of silent defaults. Base `merge()` in R defaults to an inner join, and `dplyr` joins expand many-to-many unless `relationship` is set.
+- **SPSS and SAS shops.** The reproducibility rules hold unchanged: syntax files rather than menus, one entry point, no result from a dialog box.
+- **What not to change.** A result comes from a script that runs end to end in a clean session, environment pinned and seed set, and no number reaches the paper by hand.
 
 ## Related skills
 

@@ -123,7 +123,7 @@ The revised plan: three chapters. Chapter four cut entirely, with its estimates 
 
 The supervision plan: a three-sentence note to both supervisors stating the change from four chapters to three, the regulation it relied on, and a request for written confirmation. The written confirmation is what makes a scope cut real; a scope cut agreed verbally is reopened at the pre-submission meeting.
 
-**Result.** Submitted five weeks before the funding ended, which was ten months earlier than the original deadline and, more importantly, while she was still being paid. Three chapters. The viva asked one question about whether a second country would have strengthened the external validity claim, which was answered in about forty seconds by saying yes and that it was the next paper. Chapter four's material became a working paper the following year, which it would not have done had it been rushed into the thesis.
+**Result.** Submitted five weeks before the funding ended, at about month seven of the eight, which was roughly seven months inside the original fourteen-month deadline and, more importantly, while she was still being paid. Three chapters. The viva asked one question about whether a second country would have strengthened the external validity claim, which was answered in about forty seconds by saying yes and that it was the next paper. Chapter four's material became a working paper the following year, which it would not have done had it been rushed into the thesis.
 
 Anneke's own account afterwards was that the decisive step was counting the weeks. Everything after that followed.
 
@@ -219,6 +219,16 @@ Verdict:                    [fits / fits with the cuts below / does not fit]
 - The plan has a dated next action and one measurable checkpoint with a review date.
 - The load-bearing work is scheduled first and is protected from the rest.
 - Any encouragement is attached to something specific and does not stand in for the verdict.
+
+## Adapting this to your context
+
+The worked example is a four-chapter economics thesis, thirty hours a week, funding ending before the deadline. The counting and the verdict are the method; the shape of the thesis is not.
+
+- **The thesis shape.** Three or four empirical chapters is one convention. Psychology and health doctorates often run three studies inside a general introduction and discussion; a monograph carries a literature review chapter; Dutch and Nordic theses staple published articles. Read your regulations and two recent theses from your department.
+- **What is cuttable.** Here, a heterogeneity extension and a second country. In lab work, a fourth study; in qualitative work a second site, harder because the saturation argument leans on it; in a trial a follow-up wave, which cannot be cut late without a protocol amendment.
+- **The work nobody budgets.** Three to six weeks for the thesis introduction and conclusion is the economics version. Add yours: transcription at four to six hours per interview hour, translation, ethics amendments, data access queues measured in months.
+- **The hours figure.** Thirty a week with teaching is one case. Part-time, clinical and professional doctorates commonly run ten to fifteen, which changes every arithmetic here.
+- **What not to change.** Count weeks of available work rather than months of calendar, put the verdict in the first paragraph, and make every recommendation name what is dropped for it.
 
 ## Related skills
 

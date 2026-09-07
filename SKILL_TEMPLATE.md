@@ -62,6 +62,13 @@ The situations where the standard method does not apply, and what to do in each.
 - Written as standards, not aspirations. "Every figure traced to a source cell" passes this test. "Thorough analysis" does not.
 - The line you would check first if you had thirty seconds goes first.
 
+## Adapting this to your context
+
+One or two sentences saying where this file's defaults came from and that they are defaults, not a standard.
+
+- **The assumption.** What the file currently assumes, then what to change it to and under what condition. Three to six of these, drawn from the file's own numbers, cadences, tools, org shapes, jurisdictions, data shapes or software.
+- **What not to change.** The one or two rules that are the method itself and hold in any setting.
+
 ## Related skills
 
 Which skill hands work to this one, which one this hands to, and which adjacent skill covers the case this deliberately excludes.

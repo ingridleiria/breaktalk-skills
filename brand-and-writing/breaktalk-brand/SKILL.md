@@ -211,6 +211,17 @@ For a set of artifacts produced together, one note covers the set and lists the 
 - Every word in the artifact passes the editorial rules, including headings and captions, and public material carries the sign-off with its links.
 - The delivery note records the fonts actually rendered and any exception made for the medium.
 
+## Adapting this to your context
+
+Every value here belongs to one person and one publication: the mark, the masthead line, the accents, the sign-off. Fork this as a template, replace the values, keep the shape.
+
+- **The identity.** The name, wordmark, coffee motif and masthead line are Ingrid Leiria's. Replace all four, and delete `assets/breaktalk_logo.png` rather than recolour it.
+- **The palette.** Eight monochrome roles with navy and wine. Replace every hex, but keep one role per colour and one accent per artifact.
+- **The numeric limits.** 0.15 em tracking, 2.5 cm and 8 percent margins, 60 to 75 characters a line, 11 pt body, 18 pt on slides. Reset each from your own longest headline and furthest viewing distance.
+- **Voice rules.** The banned word list, the colon title form and the fixed sign-off are one writer's habits. Build your list from the words that keep reappearing in your own drafts.
+- **The recipe table.** Its rows cover a Substack, LinkedIn, decks and READMEs. Replace them with the surfaces you publish on, at this year's dimensions.
+- **What not to change.** Adjectives cannot be enforced, so every rule must be checkable in ten seconds by someone holding the finished file. Keep that, and keep the behavioural rules that survive a host's template: headline as a claim, one idea per slide, series separated before colour.
+
 ## Related skills
 
 `newsletter-post-writer` and `linkedin-post-writer` write the content this file styles, and both defer to the editorial rules here when the piece is published under this name. `human-voice-editor` runs the final language pass and enforces the dash and vocabulary rules mechanically. `skill-builder` is the method for building a brand skill for a different identity, using this file's structure and none of its values. `academic-figures-monochrome` governs figures where a journal's requirements override any house palette. Document and presentation generation mechanics belong to whichever such skill the environment provides; this file supplies the appearance rules they apply.

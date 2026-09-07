@@ -49,7 +49,7 @@ Do not use it as a substitute for the theory. A design says how the effect will 
 
 6. **Name the key assumption and the diagnostic that will probe it.** One assumption, one diagnostic, both written down. Parallel trends and a pre-treatment event study. No manipulation at the cutoff and a density test. Exclusion and a defence in prose plus a first-stage F statistic. Selection on observables and a balance table with the limitation stated as a limitation. A design that cannot name its own biggest threat has not been stress-tested, and the threat it cannot name is the one a referee will find.
 
-7. **Write the estimating equation with every term defined.** Unit and time subscripts explicit, fixed effects listed individually rather than as "the usual controls", the parameter of interest identified by name, and the clustering level stated with its reason. The rule for clustering: cluster at the level at which treatment is assigned, and where that produces fewer than roughly forty clusters, say now what inference method will be used instead, because discovering the problem after the results exist creates pressure to choose the method that gives the answer you want.
+7. **Write the estimating equation with every term defined.** Unit and time subscripts explicit, fixed effects listed individually rather than as "the usual controls", the parameter of interest identified by name, and the clustering level stated with its reason. The rule for clustering: cluster at the level at which treatment is assigned, and where that produces fewer than about forty clusters, say now what inference method will be used instead, because discovering the problem after the results exist creates pressure to choose the method that gives the answer you want. Forty is the threshold this library uses throughout, and `econometrician` and `identification-defense` state the same number for the same reason: cluster-robust inference is justified asymptotically in the number of clusters, the variance estimator is downward biased in finite samples, and the bias is already material in the thirties and always runs in one direction, towards a p-value that is too small. Count the treated clusters as well as the total, since fewer than about ten treated is a problem even where the total looks comfortable.
 
 8. **Write the data section as facts and problems.** Source, years, unit, expected sample, and the exact variables measuring treatment and outcome including who records them and how. Then list the three data problems most likely to appear, with a plan for each. Almost always among them: attrition or entry and exit of units, measurement error in the outcome, and treatment misclassification. Naming them in advance converts them from crises into scheduled work.
 
@@ -186,7 +186,7 @@ KILL CRITERIA
 
 **No exogenous variation and none obtainable.** Do not decorate. Declare the claim type as conditional association or descriptive in the question sentence, add a bounding or sensitivity exhibit as a main table, and fix the vocabulary of the eventual abstract now. A well-executed descriptive paper on an important question publishes; a weakly identified paper claiming causality does not.
 
-**Small number of treated clusters.** Below roughly forty, and severely below fifteen, conventional cluster-robust inference fails. Decide in the design: wild cluster bootstrap, randomisation inference, or a design change that moves identification to a lower level such as an eligibility threshold within units. Make this choice before the results exist.
+**Small number of treated clusters.** Below about forty, and severely below fifteen, conventional cluster-robust inference is not safe to quote on its own: the asymptotic justification rests on the number of clusters growing, the variance estimator is downward biased in finite samples, and the bias always runs towards a p-value that is too small. Forty is the same threshold `econometrician` and `identification-defense` use, deliberately, so the three files do not give a reader three numbers to reconcile. Decide in the design: wild cluster bootstrap, randomisation inference, or a design change that moves identification to a lower level such as an eligibility threshold within units. Make this choice before the results exist.
 
 **The treatment is measured with error or is partially misclassified.** Say what direction the bias runs, which for classical measurement error in a binary treatment is towards zero and therefore makes a null result uninformative. Where the main result may be null, this must be settled at design stage, because a null under attenuation cannot be interpreted afterwards.
 
@@ -208,6 +208,16 @@ KILL CRITERIA
 - The equation defines every term, lists fixed effects individually, and states the clustering level with its reason and the cluster count.
 - The claim type is declared as causal, associational or descriptive, and the language of the paper is fixed to match.
 - Kill criteria are written with numbers in them.
+
+## Adapting this to your context
+
+The decision table is built from quasi-experimental economics designs on administrative panel data. Variation before method holds everywhere. The rows do not.
+
+- **The design table's rows.** Add the ones your field uses: cluster randomised and stepped-wedge trials, waitlist controls, single-case and multiple-baseline designs, latent growth models, and mediation designs, where the assumption to name is sequential ignorability rather than parallel trends.
+- **Nesting as the object, not a nuisance.** Economics treats clustering as an inference correction. In education and psychology, pupils in classes in schools is the structure being modelled. State the multilevel model level by level, the expected intraclass correlation, and which level each predictor sits at.
+- **Power.** This document has kill criteria and no power calculation, an economics habit. Psychology, education, health and most registries expect an a priori analysis against the smallest effect size of interest, using G*Power, `simr`, PowerUp! or Optimal Design. Add it before the exhibit list.
+- **Where it gets registered.** Name it in the document: OSF or AsPredicted in psychology, PROSPERO for systematic reviews, ClinicalTrials.gov or ISRCTN for trials, the AEA RCT Registry for field experiments.
+- **What not to change.** Name the source of variation in plain words before any method or notation appears, map every exhibit to a hypothesis or an assumption, and write kill criteria with numbers in them.
 
 ## Related skills
 

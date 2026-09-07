@@ -5,7 +5,7 @@ description: Sets the typography and document form of every table in an academic
 
 # Academic Tables, Booktabs
 
-A well-set table is invisible. The reader sees the numbers and the structure and never notices the formatting, which is exactly the point: attention spent decoding a table is attention not spent on the result. The booktabs convention exists because it achieves that with a small number of rules, and because economics, education, management and most social science journals expect it, which means a table set any other way signals inexperience before a single number is read.
+A well-set table is invisible. The reader sees the numbers and the structure and never notices the formatting, which is exactly the point: attention spent decoding a table is attention not spent on the result. The booktabs convention exists because it achieves that with a small number of rules, and because economics, finance, management and most quantitative social science journals expect it, which means a table set any other way signals inexperience before a single number is read. The main exception is the APA Publication Manual, which governs psychology, much of education and several neighbouring fields and specifies its own table format; the section below sets out exactly where the two standards diverge, and everything else in this file applies to both.
 
 The failure this prevents is a document whose tables were each formatted at the moment they were needed, by whichever tool made them, and never reconciled. Table 1 has vertical lines because it came out of a spreadsheet. Table 3 is in a smaller font because it was too wide and got squeezed. Table 4 has three decimal places in one column and two in the next, and its note is a sentence fragment that does not say what the standard errors are clustered on. None of these are errors of substance. All of them are visible on the first page turn, and together they tell a referee that the author did not read their own document as a document.
 
@@ -196,6 +196,31 @@ Export with `fragment` and no notes, then wrap the fragment in the `table`, `thr
 
 **Float behaviour.** Use `[htbp]` and let LaTeX place the table. Do not use `[H]` to force position; it produces enormous white gaps and fights the layout for the rest of the document. If tables are drifting far from their discussion, the usual cause is too many floats in a short stretch of text, and the fix is `\clearpage` at a section break rather than forcing each one.
 
+## APA style tables, and where they conflict with this one
+
+Booktabs is not the only standard and outside economics it is often not the expected one. Journals following the APA Publication Manual, which covers psychology, much of education, communication, nursing and a good deal of management, specify table format themselves, and a booktabs table submitted there will be sent back for reformatting. The two standards agree on more than they disagree on, and the disagreements are worth knowing precisely rather than discovering at proof stage.
+
+What they agree on: horizontal rules only, no vertical lines, no shading, no cell borders. A rule above the column headings, a rule below them, a rule at the bottom, and no others except a short spanning rule under a column head that covers several columns. Numbers aligned on the decimal. One note structure serving the whole table. Tables generated rather than hand-formatted.
+
+What differs, and each of these is a real reformatting job:
+
+| Element | This file's booktabs convention | APA 7 |
+| --- | --- | --- |
+| Caption | One sentence above the table, in the caption style, sentence case | Two lines above the table: the table number in bold on its own line, then the title on the next line in italic title case |
+| Note | One block below the rule, smaller size | Up to three blocks in order, each starting on a new line: a general note labelled `Note.` in italics, then specific notes keyed by superscript lowercase letters, then a probability note |
+| Significance | Stars permitted, convention stated in the note | Stars deprecated. Report exact p values and confidence intervals; where stars are used they go in the probability note, and asterisk conventions differ from the economics one |
+| Uncertainty | Standard error in parentheses under the estimate | Standard error in its own column, and a 95 percent confidence interval in its own column or as `[lower, upper]` |
+| Leading zeros | `0.086` | No leading zero on a quantity that cannot exceed one: `p = .03`, `r = .41`, but `0.086` for a coefficient that can |
+| Statistical symbols | Roman | Italic: *M*, *SD*, *N*, *n*, *p*, *t*, *F*, *r*, *b*, and Greek left roman |
+| Bottom block | Fixed effects and control indicator rows, N, clusters, fit statistic | Usually only *N* and the fit statistic; indicator rows for control blocks are an economics habit and read as clutter |
+| Row labels | Variables in words | Same, with the stub column left-aligned and levels of a factor indented under their heading |
+| Spacing | Single | Double spacing throughout the table unless the journal says otherwise |
+| Placement | Where the layout puts it | Often required after the references, one table per page, in submission manuscripts |
+
+Producing APA tables from code, which matters as much here as it does for booktabs: in R, `apaTables` writes APA-formatted tables directly, `papaja::apa_table` does it inside an R Markdown or Quarto manuscript that renders to a full APA document, and `modelsummary` with a `flextable` or `gt` backend gives fine control over both standards from one set of stored estimates. In Python, `pandas.io.formats.style` plus `python-docx`, or writing to `.docx` through a template. In Stata, `estout` and `esttab` can be configured close to APA but not all the way, so the usual route is `esttab` to `.rtf` and a Word table style named for the journal. SPSS output should be exported and rebuilt, never pasted as a pivot table.
+
+The rule that survives whichever standard applies: one convention chosen for the document, applied to every table in it, generated by a script, with a note that makes the table readable on its own. Choose the standard from the target's author guidelines and from three recent articles in it, and note the choice in the project README so that a coauthor does not reformat half the tables the other way.
+
 ## When a table will not fit
 
 In order, and the order matters because the first four cost nothing and the last two cost readability:
@@ -346,6 +371,7 @@ The checklist run against every table before delivery:
 
 ## Quality bar
 
+- The table standard was chosen from the target's guidelines, booktabs or APA, and is recorded in the project README.
 - Three horizontal rules, no vertical lines, no shading, in every table in the document.
 - Every table carries a caption above it in sentence form, with a label, and a note below it in a smaller size.
 - The note states the sample, the period, the estimator, what is in the parentheses, the clustering level and the number of clusters, every abbreviation used, and the source.
@@ -354,6 +380,16 @@ The checklist run against every table before delivery:
 - Every table was written to file by a script; deleting the file and rerunning reproduces it exactly, with no hand edits anywhere.
 - No table has been scaled to fit; width was resolved by removing content, shortening labels, or rotating.
 - The font size, decimal policy, note structure and caption style are identical across every table of the same class in the document.
+
+## Adapting this to your context
+
+These rules are booktabs as economics journals apply it, for regression tables of a few columns typeset in LaTeX. The typography discipline is general; the assumed standard and content are not.
+
+- **Booktabs itself.** Assumed throughout. If the target follows the APA Publication Manual, use the APA section above instead: bold table number and italic title above, three-tier notes, exact p values and confidence intervals rather than stars, no leading zero on p and r. Pick from the author guidelines, not from habit.
+- **The bottom block.** Fixed effects indicator rows, clusters, comparison-group mean: an economics table. Psychology and education want *M*, *SD*, *N* and a correlation matrix; medicine wants the effect measure, its interval and the number analysed per arm.
+- **Stars.** Permitted here with the convention stated. APA deprecates them, many medical journals ban them, and confidence intervals are increasingly expected in their place. Reporting the interval costs a column and never loses information.
+- **The toolchain.** LaTeX with `esttab`, Word with a named table style. In R, `modelsummary`, `gt`, `flextable`, `apaTables` and `papaja` write LaTeX, Word and HTML from one set of stored estimates, which is the cleanest route when coauthors want different formats.
+- **What not to change.** No vertical lines, the note makes the table self-contained, and the table is written by a script and never edited by hand.
 
 ## Related skills
 

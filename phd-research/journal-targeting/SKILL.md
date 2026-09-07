@@ -179,6 +179,16 @@ Followed by the compliance checklist covering length, abstract format, structure
 - The author's hard constraints, especially indexing, appear at the top of the deliverable and every rung satisfies them.
 - The next rung is named before the current one is submitted to.
 
+## Adapting this to your context
+
+The ladder, the metrics and the screening logic are built around SSCI-indexed social science journals and the ranking lists that bind economics and business authors. The method holds anywhere; the lists and the timelines do not.
+
+- **The ranking lists.** ABDC and ABS are business lists. Education and psychology are usually judged on JCR quartile and Scopus alone; health adds PubMed and MEDLINE indexing, which is the real gate; sociology and area studies often weigh society sponsorship more than quartile. Use the list your department or funder actually applies, and say which.
+- **The twelve-week reach target rule.** An economics timeline, where reviews are slow and desk rejection fast. Psychology and medicine turn round faster and the rule can tighten; management journals run slower and a reach target may be indefensible at any speed.
+- **Field databases.** The candidate search assumes reference lists and general search. Add ERIC for education, PubMed for health, PsycINFO for psychology, RePEc and EconLit for economics, and DOAJ when checking open access status.
+- **Registered reports.** Absent from the ladder. Where the design is preregistrable, a journal offering registered reports changes the calculation entirely, because acceptance in principle comes before the result exists.
+- **What not to change.** Verify indexing against the official source with the date checked, run the predatory screen first, and give the total expected timeline in months.
+
 ## Related skills
 
 `peer-review-simulator` runs before this and decides whether the paper is submittable at all; its editor decision is the honest input to the top of the ladder. `identification-defense` determines how high the design can credibly reach, which sets the ceiling of the ladder. `literature-verification` supplies the verified reference list this skill counts and the target-journal citations added during tailoring. `abstract-and-title` rebuilds the abstract to the target's format and length. `full-manuscript-build` performs the restructuring the tailoring step calls for when the changes run deeper than framing. `replication-package` produces what a data availability statement has to be true about. `response-to-reviewers` takes over the moment a decision letter arrives. `refereeing-for-a-journal` is the same landscape seen from the other side, when you are the reviewer rather than the author. `thesis-advisor` decides whether this paper is worth submitting now at all, given everything else the candidate has to finish.

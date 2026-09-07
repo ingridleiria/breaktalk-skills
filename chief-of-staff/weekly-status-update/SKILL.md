@@ -172,6 +172,16 @@ Where metrics are charted, keep the chart monochrome, distinguish series by mark
 - The update is the same shape, order and length as last week's.
 - It arrives at the same time every week, before the meeting it feeds.
 
+## Adapting this to your context
+
+The weekly rhythm, the 400-word ceiling and the five to eight metrics come from leadership rollups in commercial companies of one hundred to five hundred people, where the update feeds a Monday meeting.
+
+- **Weekly.** Match the frequency to how fast the work can visibly change. Fortnightly is honest for research, construction or capital work; daily is right during an incident. A cadence faster than the work produces no-change lines nobody reads.
+- **Under 400 words above the appendix.** Sized for fourteen workstreams and one senior reader. Fewer should be shorter, not padded. The test is whether the reader can act after the headline and the decision section.
+- **Five to eight metrics from named systems.** Where the meaningful measures are compiled by hand, name the person, state the compile day, and keep the count smaller, because each one costs someone real time.
+- **Written before the meeting it feeds.** Where the update replaces the meeting, add background to each exception and a written-response deadline per decision item, or a four-minute decision takes a fortnight.
+- **What not to change.** Every done line is an outcome rather than an effort, the status word is honest even when the owner objects, and every workstream appears every week including the ones that sent nothing.
+
 ## Related skills
 
 `operating-cadence-design` decides that this update exists, who writes it, who reads it and which meeting it feeds. `okr-planning` supplies the key results and their measurement sources that the metrics section reports against, and `strategic-plan-and-action-plan` supplies the workstreams and milestone dates. `meeting-to-decisions` records what happens in the meeting this update prepares, and the decision items surfaced here become its agenda. `decision-memo` is what a recurring decision item should become when it needs preparing rather than raising again. `investor-update` and `board-and-investor-management` cover the external versions, which need narrative this format deliberately excludes.

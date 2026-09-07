@@ -11,7 +11,7 @@ Three failures ride along with it, and each is more expensive than the first. Co
 
 The cost is not only rejection. A results section that does not commit to a finding cannot be defended in a viva, cannot be summarised by anyone else, and cannot be turned into an abstract, which is why authors who skip this discipline end up rewriting the whole paper from the results outward anyway.
 
-The section is written fourth in the manuscript order, directly against exhibits that already exist and will not change, and immediately before `discussion-and-conclusion`.
+The section is written fifth in the manuscript order set by `full-manuscript-build`, directly against exhibits that already exist and will not change, and immediately before `discussion-and-conclusion`, which is sixth.
 
 ## When to use this, and when not to
 
@@ -192,6 +192,16 @@ Exhibits used in the text: [n of n]
 - Exploratory results are labelled where they are reported, with the number of cuts examined.
 - Robustness states what varied and the range of estimates, never "results are robust".
 
+## Adapting this to your context
+
+The estimate sentence, the translations and the diagnostics are economics conventions on a quasi-experimental design. The architecture, hypothesis by hypothesis, is what travels.
+
+- **The reporting format.** APA 7 wants the test statistic with degrees of freedom, an exact p value, and an effect size with its interval: Cohen's d, partial eta squared, an odds ratio. Clinical journals want the absolute effect beside the relative one. Rebuild the template sentence accordingly.
+- **What makes a magnitude legible.** Percent of a baseline mean is the economics move. In psychology and education it is a standardised effect size benchmarked against published effects in the same literature; in health, risk difference and risk ratio together. Pick one and hold it.
+- **The diagnostics paragraph.** Pre-trends and first-stage F belong to these designs. Report what your model can fail on: intraclass correlation and variance components for multilevel models, fit indices and any modification made for SEM, each scale's reliability computed in this sample rather than the published value.
+- **Multiple testing.** Economics often leaves this to a footnote. Psychology, education and health expect a stated correction or a preregistered primary outcome. Say which, where the outcomes are introduced.
+- **What not to change.** Organise by hypothesis and adjudicate every one, including the failures; calibrate every verb to what the design supports; trace every number to an exhibit cell.
+
 ## Related skills
 
-`full-manuscript-build` places this section fourth in the writing order, after the data and strategy sections and immediately before the discussion, and it holds the largest share of the word budget. `research-design` supplies the hypotheses that organise the section. `econometric-model-writer` states the model this section estimates, and `identification-defense` handles a threat that needs more than a diagnostic paragraph. `academic-tables-booktabs`, `descriptive-statistics-tables` and `academic-figures-monochrome` build the exhibits this section is written against. `discussion-and-conclusion` takes the finding and interprets it, and must not strengthen the verbs. `abstract-and-title` takes its numbers from here. `peer-review-simulator` attacks the finished section the way a referee will.
+`full-manuscript-build` places this section fifth in the writing order, after the data and strategy sections and immediately before the discussion, which is sixth, and it holds the largest share of the word budget. `research-design` supplies the hypotheses that organise the section. `econometric-model-writer` states the model this section estimates, and `identification-defense` handles a threat that needs more than a diagnostic paragraph. `academic-tables-booktabs`, `descriptive-statistics-tables` and `academic-figures-monochrome` build the exhibits this section is written against. `discussion-and-conclusion` takes the finding and interprets it, and must not strengthen the verbs. `abstract-and-title` takes its numbers from here. `peer-review-simulator` attacks the finished section the way a referee will.

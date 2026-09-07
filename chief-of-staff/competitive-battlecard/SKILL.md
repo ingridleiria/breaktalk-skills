@@ -69,7 +69,7 @@ A trap is only legitimate when the criterion is a genuine requirement for that b
 
 ## Worked example
 
-**Situation.** A workforce scheduling software company selling to mid-market healthcare operators, roughly 60 to 400 sites. Over three quarters, win rate against one competitor had fallen from 55 percent to 31 percent across 29 competitive deals. The sales team's explanation, held with confidence, was that the competitor was buying deals with heavy discounts. The existing battlecard was fourteen months old and four pages long.
+**Situation.** A workforce scheduling software company selling to mid-market healthcare operators, roughly 60 to 400 sites. Over three quarters, win rate against one competitor had fallen from 55 percent to 38 percent across 29 competitive deals, eleven won and eighteen lost. The sales team's explanation, held with confidence, was that the competitor was buying deals with heavy discounts. The existing battlecard was fourteen months old and four pages long.
 
 **Task.** Produce a card the team would actually use in calls, and establish whether the discount theory was true, within three weeks.
 
@@ -173,6 +173,16 @@ WHERE WE LOSE                [deal patterns, and what to do about each]
 - Pricing is labelled as observed, with the date and deal context, never asserted as certain.
 - The card is one page and every trap is a criterion the buyer genuinely needs.
 - The version, date, owner and next review are visible at the top.
+
+## Adapting this to your context
+
+The thresholds here come from business software sold to mid-market operators, with a customer system that records which competitor was in the deal. They are defaults.
+
+- **Eight to ten encounters.** The line below which you write a watch note instead of a card. In enterprise sales running six deals a year the line is lower and the loss interviews carry more weight; in high-volume transactional sales, thirty encounters is a better floor.
+- **The three-instance pattern rule.** Sound where deals are broadly comparable. Where deal shapes vary widely, require three instances inside one segment rather than three across the whole pipeline, or the pattern is an artefact of mixing.
+- **Quarterly review.** Set for a competitor shipping every few weeks. A rival with an annual release and a published price list can be reviewed twice a year; one in a funding or acquisition cycle is reviewed on the event.
+- **Naming a competitor at all.** Comparative claims are restricted, or require substantiation on request, in several jurisdictions, and some regulated sectors prohibit them outright. Check what your market allows before the card leaves the building.
+- **What not to change.** Every weakness carries a dated source a salesperson can defend in one sentence, and at least one place the competitor genuinely beats you appears on the page.
 
 ## Related skills
 

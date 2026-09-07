@@ -71,6 +71,14 @@ Adapt this, do not copy it. The shape holds for a company of roughly fifty to th
 | Annually | Strategy and budget offsite | Leadership | Two days | Annual plan, budget, priorities |
 | Annually | Performance and compensation cycle | Managers, people team | Multi-week | Reviews, decisions |
 
+### How to collapse it below about fifty people
+
+Merge on shared attendees, not on shared topic, and work up the table from the bottom. With one leadership layer, the weekly leadership meeting and the fortnightly function review are the same room meeting twice, so keep the weekly one and delete the fortnightly. The weekly rollup goes, because the leadership meeting is the rollup. The all-hands and the leadership meeting become one weekly session of thirty minutes. Quarterly priority setting keeps its half day and loses the week of cascade, because there is nobody below to cascade to. Below about fifteen people, fold the monthly metrics review into the weekly session and run three moments in total, as the second scenario does. Four things survive every collapse: one weekly decision moment, one look at the numbers each month after close, one quarterly priorities session, and a decision log.
+
+### How to add a layer above about three hundred people
+
+Do not lengthen the leadership meeting, and do not add attendees to it. Add a tier beneath it and give that tier its own artefact. Each function runs its own weekly leadership meeting at the same frequency as the one above, producing its own exceptions and decisions list, and the company leadership meeting reads those lists rather than hearing them narrated. Two things have to be designed at the same moment or the new tier degrades into a status meeting within a quarter. First, decision rights: write down what each tier decides alone and what it escalates, because anything unwritten floats upward by default. Second, the monthly metrics review splits in two, a functional review inside each function first and then one leadership review that looks only at the variances the functional reviews escalated. Above roughly a thousand people, or wherever the business has genuinely separate units, repeat the whole reference table inside each unit and keep only the quarterly and annual moments at group level.
+
 ## Worked example
 
 **Situation.** Alder Health Systems, 145 people across three countries, eight months after a funding round that had doubled headcount. The chief executive's complaint was that she was in meetings from Monday to Thursday and still learned about a slipped launch from a customer. The leadership team had grown from five to nine.
@@ -160,6 +168,16 @@ Artefact: decision log entries and action list, circulated same day.
 - Status is written and circulated before the meeting it feeds.
 - Synchronous burden across time zones is rotated rather than fixed on one region.
 - The rollout has a single start date and a review date eight to twelve weeks out, both in calendars.
+
+## Adapting this to your context
+
+The reference cadence, the meeting lengths and the eight to twelve week review come from venture-funded scale-ups of fifty to three hundred people with one leadership layer and two or three overlapping time zones.
+
+- **The frequency ladder.** Weekly, monthly, quarterly, annual assumes a quarterly business rhythm. Where the natural cycle is an academic year, a public budget round or a growing season, move priority setting onto that cycle.
+- **Sixty to ninety minutes for the leadership meeting.** Sized for five to nine direct reports with a written pre-read. More than nine is a signal to add a tier rather than to extend the meeting.
+- **Attendee-hours as the headline diagnostic.** In billable or shift environments, count lost billable hours or the cost of covering the shift, because that is the number the reader will actually feel.
+- **The monthly review on the fourth working day after close.** Anchor it to your own close timetable. A finance function that closes on day ten cannot hold a day-four review.
+- **What not to change.** Every recurring moment has one named owner and one named artefact, and status is written and circulated before the meeting rather than narrated inside it.
 
 ## Related skills
 

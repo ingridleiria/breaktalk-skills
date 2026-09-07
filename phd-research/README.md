@@ -1,5 +1,7 @@
 # PhD research track
 
+How to run one of these in any assistant, and how to adapt it to your own numbers, tools and field: [USING_THESE_SKILLS.md](../USING_THESE_SKILLS.md). Every skill below carries an **Adapting this to your context** section naming its own assumptions.
+
 Forty skills covering the empirical research pipeline from a vague topic to a replication package, and beyond it into examining and refereeing, written for doctoral students and early career researchers. Mostly quantitative, since that is the work I do, but the instrument design, coding, systematic review, and ethics skills serve qualitative and mixed methods work too.
 
 The standard they enforce is the one a referee applies. A design is written before anything is estimated. A citation does not enter a draft until it has been checked against a real record. Causal language is calibrated to what the design can support, and a null result is reported as a result. None of this is difficult; all of it is skipped under deadline, which is why it belongs in an instruction file rather than in good intentions.

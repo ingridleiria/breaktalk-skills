@@ -106,7 +106,7 @@ Blocked names the blocker, the person who can unblock it, and the date the block
 
 ## Worked example
 
-**Situation.** Bramley Logistics, a 340-person distribution business, had to replace its order management system. The incumbent contract expired on 31 January and the vendor had quoted 180,000 for a three-month extension. Peak trading ran from late October to the third week of December, during which the operations director would not accept any change to live systems. The program had existed for seven weeks with a name, a weekly meeting, and no tracker, and three people gave three different answers to what was in scope.
+**Situation.** Bramley Logistics, a 340-person distribution business, had to replace its order management system. The incumbent contract expired on 31 January and the vendor had quoted 180,000 pounds for a three-month extension. All figures in this example are pounds sterling. Peak trading ran from late October to the third week of December, during which the operations director would not accept any change to live systems. The program had existed for seven weeks with a name, a weekly meeting, and no tracker, and three people gave three different answers to what was in scope.
 
 **Task.** Get the new system live before 31 January without touching production during peak, or establish early enough that it could not be done to negotiate the extension from a position other than desperation. Good meant that by the end of week three, the leadership team could see the critical path and knew what the realistic options were.
 
@@ -118,11 +118,11 @@ The critical path ran through data migration, seven of the fourteen milestones. 
 
 In week nine the data migration owner turned the workstream amber with a specific note: 61 percent of stock-keeping unit records were failing validation against the new schema, mostly because of a legacy free-text field used for three different purposes by three different depots. Amber for two consecutive weeks triggered the escalation rule, and it went to the sponsor in week ten with three costed options.
 
-Cut scope: defer the returns module, which removed five weeks from the critical path and required a manual process for roughly forty returns a week until March. Move the date: the 180,000 extension, plus the risk that the same problem reappeared in a longer run. Add resources: two data contractors at 46,000 for eight weeks, expected to save around two weeks after allowing for a ten-day ramp.
+Cut scope: defer the returns module, which removed five weeks from the critical path and required a manual process for roughly forty returns a week until March. Move the date: the 180,000 pound extension, plus the risk that the same problem reappeared in a longer run. Add resources: two data contractors at 46,000 pounds for eight weeks, expected to save around two weeks after allowing for a ten-day ramp.
 
 The sponsor chose cut scope plus one contractor: not the cheapest option and not the fastest, but the combination that put the most slack on the critical path for the least money. The plan was re-baselined once, publicly, in a twenty-minute session, and the new dates were treated as the real ones from that point.
 
-**Result.** The system went live on 24 January, seven days before the contract expiry, with the returns module deferred to March and two of the five integrations running in a reduced mode that needed a daily reconciliation for six weeks. The extension was not needed, so the 180,000 was not spent, against 46,000 for the contractor.
+**Result.** The system went live on 24 January, seven days before the contract expiry, with the returns module deferred to March and two of the five integrations running in a reduced mode that needed a daily reconciliation for six weeks. The extension was not needed, so the 180,000 pounds was not spent, against 46,000 pounds for the contractor.
 
 The deferred returns module cost real operational pain: about forty manual returns a week for nine weeks, absorbed by two people in customer service who were not happy about it and said so in the closure retrospective. That is the honest ledger. The program hit its date by choosing which promise to break, early enough to choose.
 
@@ -214,6 +214,16 @@ BLOCKERS:    [blocker, who can clear it, date it became binding]
 - Every action carries owner, action, and date, and was circulated within twenty-four hours.
 - The escalation rule is written down and has actually been used at least once.
 - Decisions are in the log on the day they are made, with a one-line rationale.
+
+## Adapting this to your context
+
+The four artefacts, the weekly written cadence and the escalation defaults come from cross-functional programmes in commercial companies of one hundred to a thousand people, running over three to twelve months.
+
+- **Three to six workstreams.** Above seven this is a portfolio: give each part its own one-pager, sponsor and date, and keep one milestone map across them rather than one giant tracker.
+- **The escalation defaults.** Amber twice, red immediately, an external dependency late by five working days. Tighten all three where a regulator or a contract fixes the date, and loosen the five-day rule where the owner is a public body or a monthly release train.
+- **The critical path as the organising idea.** It has teeth only where an external date is fixed. Where none exists, as in the second scenario, replace it with a versioned scope contract and a written kill rule, or the programme fails by continuing.
+- **The tracker as a shared spreadsheet or board.** Regulated programmes may require a controlled tool with an approval trail. Use theirs, keep the same six columns, and never run a second private tracker alongside it.
+- **What not to change.** Every milestone is a verifiable event with a date and one accountable name, and status is written before it is discussed.
 
 ## Related skills
 

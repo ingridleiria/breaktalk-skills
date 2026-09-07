@@ -61,7 +61,11 @@ overall combined   = mean(overall self, overall leadership)
 
    Average the leaders' means rather than pooling their raw items, so that a leader who answered more questions does not silently carry more weight. Where a leader did not evaluate someone, they are absent and the consensus uses whoever did; publish the count so a score built on one leader is never read as a score built on three.
 
-5. **Compute the gap and apply the flag rule.** Flag any person whose leadership and self scores differ by more than two points on a four-point scale, in either direction. That flag is a coaching conversation regardless of the underlying level, and it is often the most valuable single output of the whole exercise. Set the threshold in the framework file so the same rule applies next cycle.
+5. **Compute the gap and apply the flag rule.** Flag any person whose leadership and self scores differ by 0.75 points or more on a one to four scale, in either direction. Set the threshold in the framework file so the same rule applies next cycle.
+
+   The threshold is calibrated, not chosen for roundness. A one to four scale has three points of usable range, so a gap of two points is two thirds of everything the instrument can express, and in practice it is rarer than a straight-lined response set; a rule set there flags almost nobody and the gap analysis quietly stops existing. Area means, which are what is being compared, sit inside a much narrower band than raw items do. A quarter of the usable range, which is 0.75 points here, flags roughly a fifth to a third of a team, which is the number of coaching conversations a leader can actually hold in a cycle. Convert it proportionally when the instrument differs: a quarter of the usable range is 1.0 on a one to five scale and 1.75 on a one to eight. Where the flag rate comes out above about a third of the team, the finding is calibration between the two sources rather than perception on individuals, and it is reported that way.
+
+   The flag is a coaching conversation regardless of the underlying level, and it is often the most valuable single output of the whole exercise.
 
 6. **Map to fit labels on one scale.** Read on the blended score across a one to four instrument: 3.5 and above is high, 3.0 to 3.49 moderate to high, 2.5 to 2.99 moderate, 2.0 to 2.49 low to moderate, below 2.0 low. Use the same five labels for the competency score, the personality fit and the overall fit, so the three read on one scale rather than three vocabularies. Where the instrument uses a different range, convert once, at the start, and state the conversion.
 
@@ -100,7 +104,7 @@ The wrong turn came next. Because leader coverage was incomplete, the first vers
 
 A second question then had to be settled. Leader A's overall mean across all fourteen was 2.6; leader B's across their nine was 3.4, a difference of 0.8. Adjusting for leader severity was considered and rejected: with nine and fourteen evaluations there is no way to separate a stricter leader from a stronger group, and an adjustment applied on that evidence would be a judgement dressed as a correction. Instead, per-leader means were shown in every table, the difference was named in the findings, and the two leaders were asked to calibrate on three people together, which took an hour and moved leader B down about 0.3 on the areas where they had been most generous.
 
-Results: team competency mean 2.81, moderate. The strongest area was relationship management at 3.24, the weakest executive communication at 2.38, with the widest spread of any area, from 1.6 to 3.8. Four people were flagged on the two-point gap rule, three of them over-rating in executive communication, one under-rating across everything. Of the nine with a personality component, six had overall fits at moderate to high or above.
+Results: team competency mean 2.81, moderate. The strongest area was relationship management at 3.24, the weakest executive communication at 2.38, with the widest spread of any area, from 1.6 to 3.8. Four people of fourteen were flagged on the 0.75-point gap rule, three of them over-rating in executive communication by between 0.8 and 1.3 points, one under-rating across everything by an average of 0.9. Of the nine with a personality component, six had overall fits at moderate to high or above.
 
 The finding that changed the decision was not in the ranking. Executive communication was both the weakest area and the one the leaders had named as decisive for named accounts, and the three people scoring highest on it in their self-assessment were all in the over-rating flag group. The named-account split was made on the blended score for that area alone, and two people the leaders had expected to move did not.
 
@@ -171,7 +175,7 @@ Note:                        [specifics are agreed in the coaching conversation]
 
 **A team of three or four.** Do not publish a ranking or a quadrant. Report per-area findings, the gaps, and the coaching plans, and say in the document that the group is too small for comparative reading.
 
-**One leader only.** The leadership consensus is one opinion. Say so in the header of every table rather than in a footnote, and widen the gap threshold to two and a half points before flagging, since a single evaluator's calibration cannot be checked against anything.
+**One leader only.** The leadership consensus is one opinion. Say so in the header of every table rather than in a footnote, and widen the gap threshold from 0.75 to 1.0 points on a one to four scale before flagging, since a single evaluator's calibration cannot be checked against anything and a stricter or more generous leader will otherwise flag half the team. Widen it, and record in the output that you did and by how much.
 
 **Someone who is both assessed and an assessor.** Keep the roles separate in the data, and never let a person's evaluations of others touch their own scores. Where a team lead assesses peers, say so on the coverage line.
 
@@ -195,6 +199,17 @@ Note:                        [specifics are agreed in the coaching conversation]
 - Open-ended comments and any personality text are reproduced from source, never invented or paraphrased.
 - One scale and one set of five labels throughout the report.
 - Coaching objectives are presented as a data-grounded scaffold, with specifics agreed in the live conversation.
+
+## Adapting this to your context
+
+The five competency areas, the one to four scale and the 0.75-point gap threshold come from business-to-business sales teams of ten to forty people with two or more leaders evaluating. The framework file exists so all of it can change without touching the method.
+
+- **The five areas.** They suit a named-account motion. A transactional or inbound team replaces executive communication and account management with qualification speed and multi-threading. A team selling into public sector procurement needs bid discipline and compliance as areas in their own right.
+- **The scale and the gap threshold.** 0.75 assumes a one to four instrument. Convert proportionally, a quarter of the usable range, then check the flag rate on the first cycle: far outside a fifth to a third of the team means the threshold is wrong, not the team.
+- **Two leaders per person.** With one leader, widen the threshold to 1.0 and publish the coverage count. Where peers or an account team evaluate instead, per-evaluator means go in every table.
+- **The self-assessment.** It assumes people answer honestly because the exercise is developmental. Where the data touches pay or promotion, they will not, and the instrument should not be run.
+
+- **What not to change.** The blended score drives every label, and every figure is a formula reading the response sheet.
 
 ## Related skills
 

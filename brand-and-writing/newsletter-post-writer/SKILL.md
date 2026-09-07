@@ -183,6 +183,17 @@ For an edit rather than a draft, deliver the diagnosis first, in this shape, so 
 - The lens does work: removing it would change the argument.
 - Length matches the type in the table, and nothing was padded to reach it.
 
+## Adapting this to your context
+
+The defaults come from a fortnightly essay newsletter of about 2,100 subscribers, written for operations readers through an economics lens.
+
+- **The length table.** 1,200 to 3,500 words across four types. A weekly cadence, a daily briefing or a technical blog needs its own bands, taken from where your readers stop.
+- **The reply signal.** The example calls 22 replies a success against a baseline of three to five. On a list of 200 or 20,000 that reads differently. Set your own baseline over four issues.
+- **The lens.** Economics here. Substitute whatever explains a mechanism an intelligent outsider could not: clinical practice, law, epidemiology, teaching. The test holds either way: delete the lens and see whether the argument changes.
+- **The source standard.** Two to five sources, each with a job. Where the evidence is a case file, an archive, an interview transcript or a code repository, keep the jobs and change what fills them.
+- **Publication conventions.** The colon title, the preview text and a paywall at a section boundary are Substack-shaped. Check where your platform actually cuts.
+- **What not to change.** One idea per post, a specific opening the close returns to, and the strongest objection stated at full strength and then answered or conceded.
+
 ## Related skills
 
 `linkedin-post-writer` takes the strongest single idea from a finished issue and turns it into short form; the two share evidence but not structure. `literature-verification` runs before drafting on anything citing research, and its standard applies to every source here. `human-voice-editor` is the final pass and this skill hands every draft to it. `breaktalk-brand` supplies the title convention, sign-off and visual treatment where the publication is that one. `ceo-communications` covers the organisational announcement this deliberately excludes, and `external-insights` supplies the raw research a data-led issue is built from.

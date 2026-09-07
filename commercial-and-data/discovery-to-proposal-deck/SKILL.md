@@ -47,8 +47,7 @@ Do not use it for the document that asks for a yes at a price. That is `proposal
 
 5. **Choose the shape of the engagement, and let the client's risk position choose it.** Where budget authority sits in the room and the problem is bounded, propose the whole engagement in phases. Where budget is uncertain, trust is unproven or the constraint is genuinely unclear, propose a short paid diagnostic first with a decision point at its end, and say plainly that the second phase should not be committed until the first has run. A firm that offers the small version first wins more work in total, because the client's real objection is rarely price, it is risk.
 
-6. **Write the design principles before the phases.** Two or three sentences governing choices inside the work: nothing is built that the client's team cannot maintain, say, or every recommendation is tested at one site before rollout. Principles matter more than the phase diagram, because they are what the client holds you to when month two goes unexpectedly, and they are what separates an approach from a schedule.
-
+6. **Write the design principles before the phases.** Two or three sentences governing choices inside the work: nothing is built that the client's team cannot maintain, say, or every recommendation is tested at one site before rollout. Principles matter more than the phase diagram, because they are what the client holds you to when month two goes unexpectedly, and they are what separates an approach from a schedule. Two rules make them real rather than decorative. Each one has to be traceable to something the client said in discovery, named in the note where it appears, because a principle nobody asked for is a preference. And each one has to be capable of ruling something out: write down the specific thing this principle forbids you from doing, and if nothing comes to mind, the sentence is a value statement and not a principle. Two principles that would rule out the same choice are one principle, so cut to the sharper wording.
 7. **Name deliverables as artefacts, with a format and an owner.** "Workshops" is an activity. "A one-page operating rhythm, in the client's template, owned by the operations lead" is an artefact. The test: could an unfamiliar person walking past the desk in month three point at it. Where a deliverable genuinely is a capability rather than a document, say what evidence will show it exists.
 
 8. **Build the phase plan around the client's dependencies, not yours.** Each phase gets a duration, a milestone that is a verifiable event rather than a percentage, and the client-side inputs it needs: data, access, people's time in hours, decisions with dates. Client dependencies are what actually slip a plan, and showing them is not defensive, it is the part experienced buyers look for. Judgement call: how granular. Rule: name any client input that, if it arrived two weeks late, would move the end date.
@@ -83,7 +82,7 @@ Nothing about the firm appears before slide six. Credentials, if they appear at 
 
 ## Worked example
 
-**Situation.** A twelve-person operations advisory firm ran discovery with Ardent Vale Foods, a chilled-goods manufacturer with three sites and about 600 staff. Discovery was three interviews across two weeks: the chief operating officer, a site manager, and the head of planning. The presenting problem, as briefed, was "we need better production planning". The firm had ten days to come back with something the chief operating officer could take to a budget conversation on the 26th.
+**Situation.** A twelve-person operations advisory firm ran discovery with Ardent Vale Foods, a chilled-goods manufacturer with three sites and about 600 staff. Discovery was three interviews across two weeks: the chief operating officer, a site manager, and the head of planning. All figures in this example are in US dollars. The presenting problem, as briefed, was "we need better production planning". The firm had ten days to come back with something the chief operating officer could take to a budget conversation on the 26th.
 
 **Task.** A deck that would get agreement on the shape of the work, not a price. Good meant the chief operating officer forwarded it to the finance director without needing to explain it, and that the meeting was spent on the approach rather than on the situation.
 
@@ -95,7 +94,7 @@ The hypothesis changed accordingly: the binding constraint was not planning capa
 
 Objectives were cut from six to four, all measurable, all traceable to ledger lines: move the forecast to Thursday of the preceding week measured by delivery date; cut Monday replanning time from a stated six hours to under one; hold plan adherence in the final week of the month above 80 percent, from a stated baseline the head of planning put at "about half"; and give the planning team one owned artefact they maintain themselves.
 
-The shape chosen was a five-week paid diagnostic at 24,000 with a decision point at the end, rather than the full engagement at roughly 145,000. Budget authority was not in the room, the month-end incentive touched sales rather than operations, and the honest position was that the second phase should not be committed until the incentive question had an owner. The deck said that in a sentence.
+The shape chosen was a five-week paid diagnostic at 24,000 US dollars with a decision point at the end, rather than the full engagement at roughly 145,000. Budget authority was not in the room, the month-end incentive touched sales rather than operations, and the honest position was that the second phase should not be committed until the incentive question had an owner. The deck said that in a sentence.
 
 Value was sized with the client's own numbers only: six hours of replanning weekly across three sites at a stated loaded rate, which came to a figure the client had supplied every component of. The forecast benefit of plan adherence was left unsized, with the sentence naming the one figure needed to size it, the cost of a short-notice line changeover, which nobody in discovery could give.
 
@@ -178,6 +177,17 @@ Next steps, one line: the ask, the owner on each side, the date, and what happen
 - Every figure in the value section is the client's own, with the arithmetic visible, or the section says what it cannot size and what it needs.
 - Nothing about the firm appears before the understanding section.
 - Exactly one next step, with an owner on each side and a date.
+
+## Adapting this to your context
+
+This assumes a services firm of ten to a hundred people selling a scoped engagement to a named client after discovery, to a buyer with a rough budget and no agreed approach. The evidence discipline holds everywhere; the shape of the deck does not.
+
+- **The deck itself.** Fourteen to eighteen slides suits a client who will forward it. A public sector or grant buyer often cannot accept a deck: the output is a structured response against published criteria, and the understanding section becomes their specification played back with paragraph numbers cited.
+- **Three to five measurable objectives.** These assume the client already measures something. Where they do not, the first objective is to establish the measurement, and the target is set at the next review rather than invented now.
+- **The paid diagnostic first.** Offering a small version depends on being able to sell one. Where everything must be tendered whole, that option disappears and the deck carries the full shape with stage gates instead.
+- **Sizing the value.** With no client figures, describe the mechanism, name the one figure that would size it, and ask for it. That usually produces the figure.
+
+- **What not to change.** Nothing about the firm appears before the understanding section, and every point in it traces to the evidence ledger.
 
 ## Related skills
 

@@ -139,7 +139,7 @@ a:focus-visible { outline: 3px solid var(--wine); outline-offset: 2px; }
 </script>
 ```
 
-8. **State the data and code position exactly.** Where they are, under what licence, what a person needs in order to reproduce the results, and what is restricted. Link the archive rather than attaching a zip, so there is one canonical copy with a version.
+8. **State the data and code position exactly.** Where they are, under what licence, what a person needs in order to reproduce the results, and what is restricted. Link the archive rather than attaching a zip, so there is one canonical copy with a version. The decisions behind that, which archive, which licence, what the deposit contains and which identifier cites it, belong to `replication-package` and are made there. This page states the outcome in three or four lines and links to it, because a second account of the same reasoning will disagree with the archive's own README inside a year.
 
 9. **Add discovery metadata, and nothing that tracks.** A descriptive title, a meta description that is the plain-language sentence, an image for social previews showing the headline figure, and the bibliographic meta tags that reference managers read.
 
@@ -159,7 +159,7 @@ a:focus-visible { outline: 3px solid var(--wine); outline-offset: 2px; }
 
 11. **Set a status review date on the page and in a calendar.** Publication status and version are the parts that rot. Six months is a reasonable interval, and a note in the page source saying when it was last reviewed keeps the next person honest.
 
-12. **Archive the page and the files.** Where the page holds anything not published elsewhere, deposit a copy in an archive that issues an identifier, and keep the URL stable. A project page that moves loses every link anyone made to it, which is most of its value.
+12. **Archive the page and the files.** Where the page holds anything not published elsewhere, deposit a copy in an archive that issues an identifier, and keep the URL stable. A project page that moves loses every link anyone made to it, which is most of its value. Where the thing being deposited is the code and data rather than the page, that deposit is `replication-package`'s job: cite its identifier and do not create a second archive of the same files.
 
 ## What to leave out
 
@@ -245,7 +245,7 @@ The page carries these sections in this order.
 
 ## Edge cases
 
-**Data that cannot be shared.** State the restriction, the licence holder, and the process by which someone else could obtain the same extract. Publish whatever can be published: the code, the derived aggregates behind the figures, the variable definitions. Silence is read as unwillingness.
+**Data that cannot be shared.** State the restriction, the licence holder, and the process by which someone else could obtain the same extract. Publish whatever can be published: the code, the derived aggregates behind the figures, the variable definitions. Silence is read as unwillingness. Keep it to the restriction and the route in one short block, and link `replication-package`, where the licence terms and the application process are documented in full.
 
 **A retracted or corrected paper.** The page says so at the top, in the status line, permanently, with the date and the nature of the correction. Removing the page is the worst option available, because the citations remain.
 
@@ -269,6 +269,17 @@ The page carries these sections in this order.
 - The citation is present as formatted text and as BibTeX, both selectable without scripting.
 - Data and code are linked with their licences, or their absence is explained on the page.
 - Persistent identifiers are used, the URL is stable, and no third-party request is made by the page.
+
+## Adapting this to your context
+
+The defaults come from quantitative social science: a working paper circulated before submission, a DOI on the article, greyscale figures, one page per paper.
+
+- **Preprint norms.** Posting a working paper is routine in economics and physics, unusual in parts of medicine and the humanities, and in computer science the conference version is the article. Read the venue's policy before deciding what the page hosts.
+- **Persistent identifiers.** A DOI for article and data. Where none exists, use what your field resolves on: an arXiv or SSRN identifier, a handle or ARK, a study accession, an ISBN, a repository record.
+- **The headline figure.** A results chart here. For a systematic review it is the PRISMA flow diagram, for a trial the CONSORT diagram, for a qualitative study a coding framework. The rule survives: one figure, and it carries the finding.
+- **The figure standard.** Monochrome first, series separated by shape and dash. For maps, photographs or imaging, keep only the part that matters: meaning is never carried by colour alone.
+- **The status review interval.** Six months. Three while data collection is live or turnaround is fast; a year for a monograph.
+- **What not to change.** Static files with no build step, the plain-language finding above the abstract, real alternative text checked by an author, a status and version dated on the page.
 
 ## Related skills
 

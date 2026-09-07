@@ -11,7 +11,7 @@ The first is the discussion that restates the results. Table 3 said 2.1 percenta
 
 The second is the discussion that inflates. The results section said "is associated with", the discussion says "drives", the policy implication proposes national rollout on the strength of a local estimate from one region, and each limitation is followed by a sentence explaining why it does not really matter. This is more common among good papers than bad ones, because a strong result invites the author to claim the general version of it. It is also the failure that ends papers, since a referee who catches one overclaim rereads the entire manuscript looking for others and usually finds them.
 
-Between the two sits the actual job: say what the finding means, how much of it to believe, and what follows from it, in that order and at no greater strength than the design allows. These sections are written fifth in the manuscript order, immediately after `results-writing` and before the framework and the introduction, because the interpretation is sharpest while the estimates are still in the author's head and because the introduction's contribution paragraph is copied from here rather than the other way round.
+Between the two sits the actual job: say what the finding means, how much of it to believe, and what follows from it, in that order and at no greater strength than the design allows. These sections are written sixth in the manuscript order set by `full-manuscript-build`, which puts the results fifth and the introduction eighth. They come immediately after `results-writing` and before the framework and the introduction, because the interpretation is sharpest while the estimates are still in the author's head and because the introduction's contribution paragraph is copied from here rather than the other way round.
 
 ## When to use this, and when not to
 
@@ -199,6 +199,16 @@ Limitations table, used while drafting and often kept in an appendix:
 - Nothing new appears: no new number, no argument-changing citation, no untested mechanism claim without a label.
 - The contribution sentences match the introduction's fifth move exactly in substance, and the last sentence of the conclusion is a finding.
 
+## Adapting this to your context
+
+The ten moves assume a quantitative paper with one headline estimate, a separation of discussion from conclusion, and policy implications as the end point. The calibration discipline generalises; the furniture does not.
+
+- **Section shape.** Health and psychology journals often run one Discussion containing findings, comparison, limitations and conclusions, sometimes with mandated subheadings. Merge moves 1 to 8 under those headings; the order of the argument stays the same.
+- **Implications.** Written here as policy implications with a cost comparison. In psychology it is theoretical implications and what the result does to the model; in education and nursing, implications for practice; in sociology, what the case says about the wider claim.
+- **Comparison by number.** That assumes a literature of comparable effect sizes. Where there is none, compare with the closest qualitative findings and say what converges and what does not; in a meta-analytic literature, compare with the pooled estimate and its interval, not with individual studies.
+- **The estimand.** An econometrics word. Elsewhere it means stating the target population and the conditions of transfer, and in qualitative work a claim to transferability rather than generalisability.
+- **What not to change.** Nothing new appears in the discussion, every limitation carries a direction, and no sentence claims more than the design supports.
+
 ## Related skills
 
-`full-manuscript-build` places these sections fifth in the writing order, immediately after the results and before the framework and the introduction. `results-writing` supplies the estimates and the hypothesis adjudication this section interprets. `introduction-writer` copies its contribution wording from here. `identification-defense` supplies the conceded threats that the limitations must include. `literature-verification` supplies the prior estimates compared in move four, and `references-and-bibliography` formats them. `abstract-and-title` takes the finding and the comparison from here. `thesis-chapter-review` and `thesis-defense-prep` test the chapter-level version of these claims. `peer-review-simulator` attacks the overclaims before a referee does, and `response-to-reviewers` handles what comes back.
+`full-manuscript-build` places these sections sixth in the writing order, immediately after the results at step 5 and before the framework and the introduction at step 8. `results-writing` supplies the estimates and the hypothesis adjudication this section interprets. `introduction-writer` copies its contribution wording from here. `identification-defense` supplies the conceded threats that the limitations must include. `literature-verification` supplies the prior estimates compared in move four, and `references-and-bibliography` formats them. `abstract-and-title` takes the finding and the comparison from here. `thesis-chapter-review` and `thesis-defense-prep` test the chapter-level version of these claims. `peer-review-simulator` attacks the overclaims before a referee does, and `response-to-reviewers` handles what comes back.

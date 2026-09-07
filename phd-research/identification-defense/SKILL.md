@@ -130,7 +130,7 @@ Ask every question that applies. The point of a fixed list is that it does not s
 
 **Cross-cutting, every design**
 
-- Is the clustering level the level at which treatment is assigned, and are there enough clusters for the inference to be reliable?
+- Is the clustering level the level at which treatment is assigned, and are there enough clusters, and enough treated clusters, for the inference to be reliable? Below about forty clusters, or ten treated, the conventional standard error is not the one to quote.
 - Is the outcome measured the same way in treated and comparison units, and the same way before and after? A measurement change that coincides with treatment is a confounder with a nearly perfect disguise.
 - Is the sample selected in a way related to treatment: attrition, endogenous entry, survivorship, a filter applied after treatment?
 - What is the minimum detectable effect, and can the design distinguish the estimated effect from zero and from an economically meaningful alternative?
@@ -233,7 +233,7 @@ A: [concession] The application is a choice, so timing is not random.
 
 **The instrument is weak and there is no other.** Report the weak-instrument-robust confidence set rather than a point estimate with an implausibly wide interval, and be explicit that the design supports a bound rather than a number. Do not add controls until the first-stage statistic crosses a threshold; the threshold is not the point and the controls change the estimand.
 
-**Few clusters.** Under roughly thirty, and certainly under fifteen, the asymptotic justification for cluster-robust inference is thin. Report a wild bootstrap or a randomisation inference procedure, state the number of clusters prominently, and do not let the number appear only in a table note.
+**Few clusters.** Under roughly forty, and severely under fifteen, the asymptotic justification for cluster-robust inference is thin: it rests on the number of clusters growing, the variance estimator is downward biased in finite samples, and the bias always runs towards a p-value that is too small. Forty is the same threshold `econometrician` uses, deliberately, so that the two files do not give a reader two numbers to reconcile. Report a wild bootstrap or a randomisation inference procedure, state the number of clusters and the number of treated clusters prominently, and do not let either appear only in a table note.
 
 **The design is fine and the effect is null.** Attack it exactly as hard, and then attack the power. A null result is only informative if the design could have detected an effect worth detecting; state the minimum detectable effect and compare it to a magnitude that matters.
 
@@ -255,6 +255,16 @@ A: [concession] The application is a choice, so timing is not random.
 - The verdict states plainly whether the design survives at the named venue, and where it does not, the nearest defensible question is written out as a design.
 - The top six objections have spoken answers of three sentences, concession first.
 - Method citations were verified against live records.
+
+## Adapting this to your context
+
+The attack lists are built from the designs an economics or policy referee sees most. The grading method is general; the question banks are not.
+
+- **The design list.** It omits what dominates elsewhere: randomised and cluster randomised trials, stepped wedge, single-case designs, interrupted time series, mediation and moderation. For a trial, attack randomisation integrity, allocation concealment, differential attrition and outcome switching against the registered protocol; CONSORT is the checklist. For observational epidemiology, use STROBE and draw the causal diagram.
+- **The venue bar.** Set here as a good economics field journal. Health journals press harder on protocol adherence and reporting standards and less on estimator choice; psychology journals press on measurement validity, manipulation checks and power.
+- **Measurement, a cross-cutting worry here.** In psychology and education it is a primary line of attack: construct validity, reliability, and whether the measure is invariant across the groups compared. Bring the invariance test rather than waiting to be asked.
+- **The qualitative equivalent.** Credibility, transferability, dependability and confirmability, evidenced by an audit trail, negative case analysis and member checking. Same discipline of anticipating the attack, different criteria.
+- **What not to change.** Grade every objection honestly, and be willing to conclude the design does not identify what the paper claims. Decorating a broken design is the one thing this must never do.
 
 ## Related skills
 

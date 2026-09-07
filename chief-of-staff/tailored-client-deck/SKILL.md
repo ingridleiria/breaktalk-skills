@@ -150,6 +150,16 @@ Slide-by-slide disposition, kept as a working record: slide number, inherited or
 - Charts carry their message in the title and separate series by shape and pattern, not colour alone.
 - No previous client's name survives anywhere in the file.
 
+## Adapting this to your context
+
+The three-slide tailoring threshold, the two-quarter staleness rule and the assumption that a client publishes its priorities come from business-to-business services selling into listed or large private companies.
+
+- **The three-slide test.** Calibrated for a fifteen to twenty-five slide deck rebuilt for one account. On a seven-slide meeting deck the threshold is one. The proportion matters, not the number.
+- **Public sources for the client's stated goals.** Private companies, family businesses, public bodies and charities publish different things: filed accounts, strategic plans, inspection reports, tender documents, annual reviews. Find their equivalent rather than inferring a priority from the sector.
+- **Two quarters as the staleness limit.** Where the client reports annually, or the fact is a multi-year strategy commitment, a year-old source is still current and the date on the slide does the work.
+- **Speaker notes carrying the sources.** This assumes you present the deck. Where it will be forwarded, and most are, move the essential context onto the slides or build a separate leave-behind.
+- **What not to change.** The client's situation appears before anything about your organisation, and every client fact on a slide carries its source and date somewhere in the file.
+
 ## Related skills
 
 `external-insights` gathers and sources the client facts that make the context sheet credible, and `customer-interview-synthesis` supplies the client signals behind the situation slide. `discovery-to-proposal-deck` builds the argument this skill rebuilds when no baseline deck exists, and `ideation-deck` covers a concept with no named buyer. `proposal-writer` carries the commercial ask that usually follows this meeting, and the deliverables, price and terms must match it exactly; `sow-and-scope` follows once the client agrees. A brand skill such as `breaktalk-brand` supplies the presenter's visual system that this deck applies. `executive-briefing` prepares the person presenting, `principal-simulator` rehearses the client's likely reaction, and `partnership-assessment` covers the case where the counterparty is a partner rather than a client.

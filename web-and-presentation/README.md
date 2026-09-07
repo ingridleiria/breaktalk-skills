@@ -1,5 +1,7 @@
 # Web and presentation track
 
+How to run one of these in any assistant, and how to adapt it to your own numbers, tools and field: [USING_THESE_SKILLS.md](../USING_THESE_SKILLS.md). Every skill below carries an **Adapting this to your context** section naming its own assumptions.
+
 Four skills for the moment the work is finished and has to be seen by someone who was not involved in it. A paper that only exists as a PDF behind a login, and a set of numbers that only exists in the analyst's workbook, both reach far fewer people than they should.
 
 Everything here is built the same way: static files, no build step, accessible by default, and figures that follow the same monochrome-first standard as the print versions. A page built on a framework stops working in three years when the build no longer runs. A page that is one HTML file and a folder of figures opens in ten.

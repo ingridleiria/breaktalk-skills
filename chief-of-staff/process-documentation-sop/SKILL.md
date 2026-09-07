@@ -104,7 +104,7 @@ Retire rather than delete. Mark a superseded SOP as retired with the date and wh
 
 ## Worked example
 
-**Situation.** A market research company of about 200 people had one operations analyst who ran the monthly client billing reconciliation. She had done it for four years, it took a day and a half each month, and she had accepted a job elsewhere with four weeks' notice. The reconciliation matched project delivery records against the finance system before invoices were issued, and in a typical month it caught three to eight billing errors worth roughly 15,000 to 40,000. Nobody else had ever run it. The written material was a calendar reminder titled "billing recon" and a spreadsheet tab called "checks (do not delete)".
+**Situation.** A market research company of about 200 people had one operations analyst who ran the monthly client billing reconciliation. She had done it for four years, it took a day and a half each month, and she had accepted a job elsewhere with four weeks' notice. The reconciliation matched project delivery records against the finance system before invoices were issued, and in a typical month it caught three to eight billing errors worth roughly 15,000 to 40,000 US dollars. Nobody else had ever run it. The written material was a calendar reminder titled "billing recon" and a spreadsheet tab called "checks (do not delete)".
 
 **Task.** Produce an SOP that someone in the finance team could run in the month after her departure, tested before her last day.
 
@@ -190,6 +190,16 @@ The SOP document, following the twelve-section structure above. Alongside it:
 - It carries an owner, a version, a last-reviewed date and a next-review date, and lives where the team already looks.
 - The improvement list is separate from the SOP, and the SOP describes the process as it is performed today.
 - Any step removed or changed during mapping was agreed with the owner and recorded in the change log.
+
+## Adapting this to your context
+
+The twelve-section structure, the review cadence and the silent test come from office and back-office processes in commercial companies of fifty to five hundred people, running in software systems.
+
+- **The twelve-section structure.** Where a quality system prescribes a template, ISO 9001, Good Manufacturing Practice, a clinical procedure format, a laboratory quality manual, use theirs and map these sections onto it.
+- **The silent test with a fresh person.** Where the process touches patients, production, money movement or live infrastructure, test against the previous cycle's inputs in a copy environment, publish as version 0.9, and let the first supervised live run be the real test.
+- **Quarterly or annual review.** Set the cadence from how fast the underlying system changes. A process built on software that ships weekly needs an event trigger on every release note.
+- **Exact on-screen names instead of screenshots.** For physical or laboratory procedures, a photograph of a correct setup is often the only accurate description, and there the picture is the content.
+- **What not to change.** The document is a draft until someone who has never done the work completed it from the text while the author watched in silence, and it describes the process as performed, with improvements on a separate list.
 
 ## Related skills
 

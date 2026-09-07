@@ -47,7 +47,7 @@ Adjacent cases. Presenting an approach for reaction, before anyone is asked to b
 
 7. **State the investment plainly, under its own heading.** Fee, structure, payment schedule, included, not included. Rule on options: at most two, and only where they are different levels of commitment rather than a discount ladder. Never split the commercial picture across three places.
 
-8. **Put credibility late and attach a figure to every claim.** Two or three reasons tied to this problem, one case each with a number and a date. No superlatives: "world-class" asks the reader to take on faith the one thing they were about to check.
+8. **Put credibility late and attach a figure to every claim.** Two or three reasons tied to this problem, one case each with a number and a date. Rule on placement: nothing about the firm appears before the investment section. Credentials read before the price are read as justification for the price and get discounted; credentials read after it are checked, which is what you want, because the reader has already decided whether the work is worth buying and is now asking only whether you can do it. The single exception is a tender pack that demands firm background in section one, where the buyer controls the order. Rule on which cases: choose them to match on whatever made this problem hard, not on industry label. A same-sector case with a different difficulty proves nothing and invites the comparison you would lose. No superlatives: "world-class" asks the reader to take on faith the one thing they were about to check.
 
 9. **Close with one next step, dated and owned.** "Countersign by the twentieth and we start the week of the twenty-seventh" is a next step; "let us know your thoughts" is an invitation to defer.
 
@@ -57,17 +57,17 @@ For a formal RFP or tender these rules are overridden where they conflict with t
 
 ## Worked example
 
-**Situation.** Arbor Analytics, a twenty-two person analytics firm, ran two discovery calls with Northbank Logistics, a regional freight company of four hundred staff. Northbank's operations director said depot managers made next-day capacity decisions from a spreadsheet one analyst rebuilt every evening, that the analyst had resigned with six weeks of notice, and that they had lost roughly 180,000 the previous year on empty return legs. Their finance director had said anything above 75,000 goes to a three-supplier comparison.
+**Situation.** Arbor Analytics, a twenty-two person analytics firm, ran two discovery calls with Northbank Logistics, a regional freight company of four hundred staff. All figures in this example are US dollars. Northbank's operations director said depot managers made next-day capacity decisions from a spreadsheet one analyst rebuilt every evening, that the analyst had resigned with six weeks of notice, and that they had lost roughly 180,000 dollars the previous year on empty return legs. Their finance director had said anything above 75,000 dollars goes to a three-supplier comparison.
 
 **Task.** A proposal within six working days that the operations director could forward without a meeting. Good meant a signature or a clear no before the analyst left.
 
-**Action.** The situation page was written first from call notes only: the resigning analyst by role, the nightly rebuild, the 180,000 attributed to them, and their own phrase, "we plan the morning after the day we needed to". Nothing about Arbor appeared on it.
+**Action.** The situation page was written first from call notes only: the resigning analyst by role, the nightly rebuild, the 180,000 dollars attributed to them, and their own phrase, "we plan the morning after the day we needed to". Nothing about Arbor appeared on it.
 
-The first version of the offer was a twelve-week rebuild of the planning process at 96,000. It was abandoned once the procurement threshold surfaced. At 96,000 the proposal triggers a three-supplier comparison that would run longer than the six weeks of notice remaining, so Northbank would lose the knowledge before any supplier started. The threshold was not an obstacle to work around; it was information about what they could buy.
+The first version of the offer was a twelve-week rebuild of the planning process at 96,000 dollars. It was abandoned once the procurement threshold surfaced. At 96,000 dollars the proposal triggers a three-supplier comparison that would run longer than the six weeks of notice remaining, so Northbank would lose the knowledge before any supplier started. The threshold was not an obstacle to work around; it was information about what they could buy.
 
-The rewrite split the work. Phase one at 48,000 over eight weeks, ending with the nightly model running as a scheduled job the depot managers could trigger themselves, a written handover of the analyst's logic, and one training session. Phase two, the wider planning redesign, was named and sized as a range to be scoped separately. Outcomes were cut from five to three, because Northbank had stated three problems and the other two were Arbor's ideas. The timeline named the two dependencies that could break it: database access by end of week one, and four hours of the analyst's time in weeks two and three.
+The rewrite split the work. Phase one at 48,000 dollars over eight weeks, ending with the nightly model running as a scheduled job the depot managers could trigger themselves, a written handover of the analyst's logic, and one training session. Phase two, the wider planning redesign, was named and sized as a range to be scoped separately. Outcomes were cut from five to three, because Northbank had stated three problems and the other two were Arbor's ideas. The timeline named the two dependencies that could break it: database access by end of week one, and four hours of the analyst's time in weeks two and three.
 
-**Result.** Sent on the Wednesday and approved without a call, because it sat under the threshold and payment was two milestone instalments. Kickoff was eleven days later with two weeks of notice remaining. Phase two was signed four months on at 71,000, and that conversation started from the phase one deliverable list rather than from nothing. What made the difference was treating the procurement threshold as a design constraint on the offer rather than an administrative detail for the terms section.
+**Result.** Sent on the Wednesday and approved without a call, because it sat under the threshold and payment was two milestone instalments. Kickoff was eleven days later with two weeks of notice remaining. Phase two was signed four months on at 71,000 dollars, and that conversation started from the phase one deliverable list rather than from nothing. What made the difference was treating the procurement threshold as a design constraint on the offer rather than an administrative detail for the terms section.
 
 ### A second scenario, where it goes differently
 
@@ -129,6 +129,16 @@ Exclusions follow the table as plain sentences: "This engagement does not includ
 - Every claim about the firm carries a figure or a named case.
 - Every milestone that depends on a client input says so, with the input named.
 - No previous client's name survives anywhere in the file.
+
+## Adapting this to your context
+
+Written for small and mid-size professional services firms selling engagements of tens to low hundreds of thousands to a named buyer inside a company. The structure survives most settings; several of the settings do not.
+
+- **The ten-section order, with credibility late.** That assumes you control the document. A tender, a framework call-off or a grant application does not, and there the compliance matrix comes first and their numbering wins.
+- **The procurement threshold as a design constraint.** The buyer's constraint may instead be a board approval date, a capital and operating expenditure split, or a fiscal year end. Design the phase boundary against whatever the answer is.
+- **At most two options.** Some public and regulated buyers require a fixed number of priced variants. Give them what the pack demands, and make the variants differ in scope rather than in discount.
+- **Phases of a few weeks each.** Where a single procurement, clinical or academic cycle is the smallest unit that can be evaluated, make the phase that long and say what interim evidence appears inside it.
+- **What not to change.** Section one is written from the client's own words and numbers with no firm content in it, and the document ends in one dated, owned next step.
 
 ## Related skills
 

@@ -222,6 +222,16 @@ One thing does not change. The panel is assessing whether the candidate knows th
 - The talk, where required, states the contribution in the first ninety seconds and the limitations before any examiner raises them.
 - The candidate has a written plan for recording required revisions during the examination and reading them back.
 
+## Adapting this to your context
+
+Built around a closed viva on a quantitative economics thesis, with a bank weighted towards identification. The three-part answer holds anywhere; the format and the bank are local.
+
+- **The format.** A closed examination by two examiners is one model. A United States committee defence opens with a public talk then closes the room; a Brazilian banca is public with fixed time per member; Nordic and Dutch defences give a formal opponent a prescribed role. Establish who asks, for how long, in what order.
+- **The method fundamentals bank.** Ten questions on estimators, clustering and estimands is the economics version. Substitute yours: how missing data was handled, the factor retention decision, what the intraclass correlation implies for the nesting, or in qualitative work how the coding frame was built and what would have counted as a disconfirming case.
+- **The concessions.** Here, identification weaknesses. Elsewhere, a single site, an underpowered sample, a self-report measure standing in for behaviour, or a coding frame applied by one person. Name yours and rehearse saying them calmly.
+- **The talk.** Twenty to forty minutes assumes a presentation is required. Where none is, preparation shifts entirely to the bank and the chapter map.
+- **What not to change.** Lead with the direct answer or the concession, know the page and exhibit behind every answer, and write each required revision down in the examiner's own words on the day.
+
 ## Related skills
 
 `thesis-chapter-review` runs first and supplies the weak points this skill turns into questions. `thesis-advisor` decides whether the thesis is ready to submit and what the post-viva correction plan can realistically contain. `identification-defense` supplies the per-design attack list and the bounding exercises that make a concession credible rather than merely honest. `conference-presentation-deck` builds the defence talk and the indexed appendix. `response-to-reviewers` supplies the ledger discipline for the required revisions after the examination. `analysis-audit` prevents the worst viva moment, which is an examiner finding a number that cannot be reproduced. `replication-package` is a deposit requirement at many institutions and belongs in the post-defence plan.

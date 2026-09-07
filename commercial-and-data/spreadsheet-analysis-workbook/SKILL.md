@@ -114,10 +114,10 @@ Share    =IFERROR($D12/$D$8,0)
 
 Use `"n/a"` where a blank is a real answer and `0` where it is not.
 
-**The reconciliation and the containment check.** Containment catches the wildcard matching more than intended, which reconciliation alone will not: a channel figure exceeding its own entity total can still leave the grand total balanced.
+**The reconciliation and the containment check.** Containment catches the wildcard matching more than intended, which reconciliation alone will not: a channel figure exceeding its own entity total can still leave the grand total balanced. The range below covers the 486 customers of the worked example on a table whose first data row is 12, so it ends at row 497. Derive the last row from your own entity count every time rather than copying a range: a range that stops short of the last data row is the first entry in the error catalogue below and the most common defect in this whole file.
 
 ```
-Reconciliation   =ROUND('Verify'!$B$4-SUM($D$12:$D$486),2)
+Reconciliation   =ROUND('Verify'!$B$4-SUM($D$12:$D$497),2)
 Containment      =IF($E12>$D12+0.005,"CONTAINMENT FAIL","ok")
 ```
 
@@ -127,7 +127,7 @@ Ranges that stop short of the last data row. Wildcards matching more than intend
 
 ## Worked example
 
-**Situation.** An operations lead at Kestrel Components, an industrial parts distributor of about 240 people, sent an invoice extract: 150,262 rows over thirty-four months, one row per invoice line, twenty-three columns. The question was which customers held the top half of revenue and whether the service line was growing faster than parts. The lead believed the three-year total was "about 41.2 million" from a prior board pack, and needed something a leadership meeting could read in four days.
+**Situation.** An operations lead at Kestrel Components, an industrial parts distributor of about 240 people, sent an invoice extract: 150,262 rows over thirty-four months, one row per invoice line, twenty-three columns. The question was which customers held the top half of revenue and whether the service line was growing faster than parts. All figures in this example are in US dollars. The lead believed the three-year total was "about 41.2 million" from a prior board pack, and needed something a leadership meeting could read in four days.
 
 **Task.** A workbook with a customer table, a monthly trend, a parts against service split, and enough verification that the finance director could open it and satisfy himself in ten minutes. Good meant every figure clickable to a formula and a reconciliation reading zero.
 
@@ -164,12 +164,12 @@ Source sheet:   Data
 Columns read:   D customer ID (key), F customer name (display only), K invoice date, O net amount
 First data row: 6        Last data row: 150267 (dynamic; see Verify!B6)
 Extract dated:  2026-08-31
-Assumptions:    Net of credit notes. Single currency. Blank code rows counted in totals, excluded from line split.
+Assumptions:    Net of credit notes. Single currency, USD. Blank code rows counted in totals, excluded from line split.
 ```
 
 The verification tab is not optional and not hidden.
 
-| Check | Expected | Computed | Difference | Status |
+| Check | Expected (USD) | Computed (USD) | Difference | Status |
 | Ground truth, net amount | 41,187,344.18 | 41,187,344.18 | 0.00 | ok |
 | Sum of customer table | 41,187,344.18 | 41,187,344.18 | 0.00 | ok |
 | Sum of monthly trend | 41,187,344.18 | 41,187,344.18 | 0.00 | ok |
@@ -177,7 +177,7 @@ The verification tab is not optional and not hidden.
 | Row count | 150,262 | 150,262 | 0 | ok |
 | Untrimmed keys | 0 | 34 | 34 | repaired in helper col |
 
-| Spot-check | Route | Expected | Tab value | Match |
+| Spot-check | Route | Expected (USD) | Tab value (USD) | Match |
 | Largest customer, ID 10442 | raw filter | 3,088,406.97 | 3,088,406.97 | yes |
 | Mid-table, ID 20871 | raw filter | 214,930.00 | 214,930.00 | yes |
 | Awkward name, ID 30119 | raw filter | 88,412.55 | 88,412.55 | yes |
@@ -223,6 +223,17 @@ The covering note runs to five lines: the ground truth and how it was computed, 
 - Every tab carries a header note naming its source sheet, columns, first data row, and assumptions.
 - The ground truth is stated with its row count, and any difference from a previously believed figure is explained rather than absorbed.
 - Anything ambiguous was escalated rather than assumed, visibly, in the delivery.
+
+## Adapting this to your context
+
+This is written for a spreadsheet holding an extract of tens to hundreds of thousands of rows, read by a finance or operations reader who will click a cell. The six non-negotiables travel further than the mechanics do.
+
+- **The spreadsheet itself.** Every pattern has an equivalent elsewhere: a criteria-based sum is a `GROUP BY`, a helper column a derived field, a header note a docstring, a reconciliation cell a failing test. In SQL, R or Python, keep the six rules and drop the formulas.
+- **The ranges and row numbers.** Row 6 as the first data row and 150,262 rows of extract are one file's shape, not a convention. Derive every range from your own inventory, and prefer a structured table reference wherever the file will be refreshed.
+- **Single currency.** A multi-currency extract needs a rate column with its date convention stated and taken from whoever owns it, and a ground truth established per currency before anything is consolidated.
+- **Who receives it.** A finance reader wants the reconciliation tab first. A research reader wants the audit trail and every helper column reproducible from a script.
+
+- **What not to change.** The raw data stays in the file, every analysis cell is a live formula reading it, and a visible reconciliation cell reads zero on every tab.
 
 ## Related skills
 

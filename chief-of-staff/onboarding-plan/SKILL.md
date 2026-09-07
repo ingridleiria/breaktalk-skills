@@ -206,6 +206,16 @@ Ending in one line: confirmed, on track with named gaps and support, or not work
 - The check-in cadence has a fixed shape and a stated end point.
 - Anything raised at day 90 was already raised at day 60.
 
+## Adapting this to your context
+
+The 30-60-90 shape, the people-list sizes and the check-in cadence come from fast-growing commercial companies of fifty to five hundred people, where a joiner can be productive within a quarter.
+
+- **Ninety days as the horizon.** Regulated, clinical and licensed roles have a credentialing period that owns the first phase. Start the ninety days when it clears, and say so in the plan.
+- **Fifteen to twenty-five introductions for a senior role.** Add a layer in a matrixed or multi-country organisation, where the people who can block the role sit two functions away. Cut it hard where the role has a defined queue.
+- **A visible change by day 60 for an executive.** In a partnership, a public body or a long-tenured team the same move reads as arrogance. There the day 60 artefact is the diagnosis, discussed with the people it affects.
+- **The buddy who is not reporting on the hire.** Where a works council, union agreement or probation framework governs the relationship, check what may be recorded before promising confidentiality.
+- **What not to change.** The outcomes are written and agreed before day one, and the day 90 output is a decision in one of three stated forms. Silence at day 90 is the failure this prevents.
+
 ## Related skills
 
 `hiring-scorecard-and-interview-kit` produces the outcomes this plan runs against, and receives the day 90 feedback on what the interview process missed. `operating-cadence-design` is the natural day 30 deliverable for a Chief of Staff or operations hire, and what a senior joiner usually has to learn before changing anything. `process-documentation-sop` captures a departing person's knowledge so the incoming one reads rather than interviews, which is the highest-value use of a short overlap. `weekly-status-update` is the reporting habit to adopt from week one. `decision-memo` is the format for the first structural recommendation, which should not appear before the day 30 read-back. `principal-simulator` helps a senior joiner calibrate to a new chief executive.

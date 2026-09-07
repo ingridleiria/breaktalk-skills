@@ -99,23 +99,23 @@ Where a figure exists only in tier five, say so in the line where it appears.
 
 ## Worked example
 
-**Situation.** Alderby Systems, a field service scheduling software company with 18 million in revenue, was deciding whether to open a dedicated team for the dental practice segment in one European country. The head of sales had two inbound wins in that segment and believed it was a large market. The board would review the annual plan in five weeks, and a dedicated team meant four hires and roughly 620,000 of annual cost.
+**Situation.** Alderby Systems, a field service scheduling software company with 18 million euros in revenue, was deciding whether to open a dedicated team for the dental practice segment in one European country. The head of sales had two inbound wins in that segment and believed it was a large market. The board would review the annual plan in five weeks, and a dedicated team meant four hires and roughly 620,000 euros of annual cost.
 
-**Task.** Establish whether the serviceable market justified a dedicated team, against a threshold the chief financial officer set at the start: at least 15 million of serviceable annual spend and a credible route to 10 percent of it within three years. Anything below that and the segment would be served through the existing generalist team.
+**Task.** Establish whether the serviceable market justified a dedicated team, against a threshold the chief financial officer set at the start: at least 15 million euros of serviceable annual spend and a credible route to 10 percent of it within three years. Anything below that and the segment would be served through the existing generalist team.
 
-**Action.** The top-down leg was attempted first and produced the wrong turn. A published figure of 480 million euros for practice management software across the region was cut by country share, then by the software share of it, giving something near 62 million. It looked decisive and it was abandoned in the second week, for a specific reason: reading the report's own methodology note showed the figure bundled imaging hardware, chairside equipment software, and payment processing. Nobody could say what fraction was scheduling and workforce software, and three successive cuts to an unknown base is arithmetic on a number, not a size.
+**Action.** The top-down leg was attempted first and produced the wrong turn. A published figure of 480 million euros for practice management software across the region was cut by country share, then by the software share of it, giving something near 62 million euros. It looked decisive and it was abandoned in the second week, for a specific reason: reading the report's own methodology note showed the figure bundled imaging hardware, chairside equipment software, and payment processing. Nobody could say what fraction was scheduling and workforce software, and three successive cuts to an unknown base is arithmetic on a number, not a size.
 
 The bottom-up leg replaced it and was built from a primary count. The national dental council register listed 12,430 registered practices. That count was then corrected for the buying unit, which was the correction that changed the answer: 31 percent of practices belonged to groups operating five or more sites, and those groups bought centrally, so the actual number of buying units was about 9,100, not 12,430.
 
-Spend per unit came from two observed sources: the published list pricing of two incumbent products, which ranged from 240 to 410 euros per site per month, and Alderby's own two realised contracts in the segment, at 3,900 and 4,600 euros a year. Taking a conservative 3,800 euros per buying unit per year gave a serviceable market of about 34.6 million euros, and applying it only to the practices with three or more staff, which was the smallest size at which the product made sense, cut it to about 21 million.
+Spend per unit came from two observed sources: the published list pricing of two incumbent products, which ranged from 240 to 410 euros per site per month, and Alderby's own two realised contracts in the segment, at 3,900 and 4,600 euros a year. Taking a conservative 3,800 euros per buying unit per year gave a serviceable market of about 34.6 million euros, and applying it only to the practices with three or more staff, which was the smallest size at which the product made sense, cut it to about 21 million euros.
 
 The two methods disagreed by roughly three times, so the divergence was investigated rather than averaged. The gap was almost entirely the bundled hardware and payments inside the top-down anchor. That finding was reported in one line and the top-down figure was retained only as an upper bound.
 
 The competitive map covered five named competitors plus two non-obvious ones. The most useful row was the status quo: interviews with the two existing customers, plus fourteen practice websites and three trade forum threads, indicated that a large share of small practices ran scheduling on a general-purpose calendar and a paper day book. The most recent strategic move that mattered was dated: the largest incumbent had raised funding eleven months earlier and posted six roles in that country in the previous quarter, which was visible on their own careers page.
 
-**Result.** The serviceable market came in at 21 million euros, above the 15 million threshold. The share question failed instead. Alderby's realised share in the closest comparable segment it already served was 3.1 percent after four years, and reaching 10 percent of dental in three years would have required roughly three times that rate against a better-funded incumbent that was actively hiring in the country.
+**Result.** The serviceable market came in at 21 million euros, above the 15 million euro threshold. The share question failed instead. Alderby's realised share in the closest comparable segment it already served was 3.1 percent after four years, and reaching 10 percent of dental in three years would have required roughly three times that rate against a better-funded incumbent that was actively hiring in the country.
 
-The recommendation was not to open a dedicated team, and instead to sign one reseller already serving the segment, at a cost of about 90,000 in the first year against 620,000. The board took that decision. Whether the reseller route reaches the same revenue is unknown; at the time of writing it had produced nine opportunities in two quarters, which is ahead of the plan but too early to read.
+The recommendation was not to open a dedicated team, and instead to sign one reseller already serving the segment, at a cost of about 90,000 euros in the first year against 620,000 euros. The board took that decision. Whether the reseller route reaches the same revenue is unknown; at the time of writing it had produced nine opportunities in two quarters, which is ahead of the plan but too early to read.
 
 The part that mattered was the buying-unit correction. It moved the number by a quarter, and it came from a register that took twenty minutes to find and cost nothing.
 
@@ -125,7 +125,7 @@ A different question: sizing a market for a product category that does not yet e
 
 The top-down leg is unavailable, so it is not faked. The method substitutes displacement sizing: the spend already going somewhere else that this product would take. Here that was audit preparation time, established from three sources, and the fees paid to the firms currently doing the work, established from two published fee schedules and one interview. The bottom-up leg is built from the national business register count of manufacturers above a staff threshold.
 
-The deliverable changes shape. Instead of a single serviceable figure it presents a range, from 8 to 26 million, with the one assumption that dominates the range named explicitly: what share of the current external fee is displaceable rather than mandatory. The recommendation is correspondingly conditional, and the document says in its first line that the range is wide and why.
+The deliverable changes shape. Instead of a single serviceable figure it presents a range, from 8 to 26 million euros, with the one assumption that dominates the range named explicitly: what share of the current external fee is displaceable rather than mandatory. The recommendation is correspondingly conditional, and the document says in its first line that the range is wide and why.
 
 What changed is not the discipline. It is that with only one sizing method available, the honest output is a range with its dominant assumption exposed, and presenting a point estimate from that evidence base would have been the failure.
 
@@ -206,6 +206,16 @@ Where the research feeds a deck, the memo is written first and the slides are bu
 - Total, serviceable, and winnable are distinguished, and each filter between them is a numbered assumption.
 - The competitive set includes the status quo and at least one adjacent player, and every row has a dated latest move.
 - What is known, what is estimated, and what is assumed are visibly different, and no adjective does the work of a number.
+
+## Adapting this to your context
+
+The sourcing order, the two-times reconciliation rule and the register-based count come from software and services markets in Europe and North America, where registers are public and pricing is often published.
+
+- **Registers as the bottom-up count.** Where no public register exists, substitute a trade association list, a procurement portal or an industry directory, and say what it excludes.
+- **Published list pricing.** Common in software, rare in industrial, medical device and defence contracting. Where price is negotiated, build spend per unit from your own realised contracts or from published tender awards, and mark it as the dominant assumption.
+- **The two-times reconciliation rule.** A tolerance for a mature category with a published anchor. For an emerging category, use the displacement method in the second scenario rather than forcing a top-down leg that does not exist.
+- **The twelve-month staleness rule.** Right for pricing and funding in fast-moving software. A structural figure in a slow regulated market may hold for three years; under regulatory change, six months is old.
+- **What not to change.** The kill number is written before the research starts, every figure carries its source and its year in the same line, and a gap is stated as a gap rather than filled.
 
 ## Related skills
 

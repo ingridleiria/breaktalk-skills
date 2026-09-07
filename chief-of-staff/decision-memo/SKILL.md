@@ -116,9 +116,15 @@ Appendix for anything longer. The one page is the deliverable.
 
 ## The decision log
 
-Every decision made goes into one log, kept where the team already looks. Date, the decision, the decider, the reasoning in one line, and a link to the memo.
+This skill owns the decision log. `meeting-to-decisions` feeds the same log with decisions taken in conversation rather than prepared beforehand, and the two write into one place; where the two descriptions differ, this one governs.
+
+Every decision made goes into one log, kept where the team already looks. Six fields and no more: the date, the decision in one sentence, the decider, the reasoning in one line, the reversibility judgement, and a link to the memo or the meeting record behind it. Six is deliberate. A log that acquires a status column and an owner column becomes a project tracker, stops being written in within a month, and the decisions go back to being remembered rather than recorded.
 
 The log answers the two questions that otherwise consume enormous time: was this decided, and why. When someone reopens a settled question, the answer is the log entry and a request for what new information has appeared. A decision should be revisited on new evidence and should not be revisited because the person who disagreed waited long enough for everyone to forget.
+
+Two habits make it usable rather than decorative. Write the entry on the day the decision is made, because the reasoning is the part that cannot be reconstructed a fortnight later. And log the decisions to do nothing, which are the ones nobody remembers making and the ones most often reversed by drift rather than by argument.
+
+Where no log exists, start one and seed it with the last three decisions people are still arguing about. It takes minutes a week to maintain once it exists, and it is the cheapest institutional memory an organisation can hold.
 
 Review the log quarterly for decisions whose assumptions have since been disproved. Reopening those deliberately is healthy; reopening by attrition is not.
 
@@ -161,6 +167,16 @@ Review the log quarterly for decisions whose assumptions have since been disprov
 - Every cost is either a real figure or a labelled range.
 - One page, with everything else in an appendix.
 - The decision is written to the log with its reasoning on the day it is made.
+
+## Adapting this to your context
+
+The examples come from software companies of fifty to two hundred people where one named person can decide. Fix the decision rights before you fix the format.
+
+- **One named decider.** Assumes an executive hierarchy. In a partnership, a co-operative, a trustee board or a works council the equivalent is a body plus a written tie-break, and the memo has to name the quorum and the majority the decision needs.
+- **The reversibility judgement.** Sized here in weeks and money. Where undoing costs a licence, a reputation, a clinical outcome or someone's employment, say so in those terms rather than converting it into a number that understates it.
+- **The one-page limit.** Suits readers who read. Where the decider is a committee working through fifty pages, keep the one page and put the reference material behind it, which is what the appendix is for.
+- **Costs as ranges.** Fine commercially. Public bodies and grant-funded organisations usually have a mandated business case template; write this memo first and fill their form from it, never the other way round.
+- **What not to change.** The decision is a closed question, doing nothing is presented fairly as an option, and the date carries a stated default.
 
 ## Related skills
 

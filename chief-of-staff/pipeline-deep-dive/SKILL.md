@@ -69,23 +69,23 @@ Raw export in the workbook, untouched, with the column map recorded. Every metri
 
 ## Worked example
 
-**Situation.** A software company selling to mid-market operations teams, quarterly target of 4.1 million, six weeks into the quarter. The sales leader reported 12.3 million of open pipeline and described coverage as three times, which the leadership team had accepted for two quarters running while both quarters missed.
+**Situation.** A software company selling to mid-market operations teams, quarterly target of 4.1 million dollars, six weeks into the quarter. All figures in this example are US dollars. The sales leader reported 12.3 million of open pipeline and described coverage as three times, which the leadership team had accepted for two quarters running while both quarters missed.
 
 **Task.** Establish whether the quarter would land, before the halfway point, with enough specificity to change something.
 
-**Action.** The export held 214 open opportunities and 173 closed from the previous four quarters. Hygiene came first and reshaped the conversation before any forecast was built. Forty-one open deals, worth 1.9 million, had close dates already in the past. Sixty-three, worth 3.4 million, had no recorded activity in more than thirty days. Twenty-two had no next step. After removing deals with past close dates that had not moved in sixty days, the genuinely open figure for the quarter was 9.6 million rather than 12.3, and raw coverage fell from three times to 2.3.
+**Action.** The export held 214 open opportunities and 173 closed from the previous four quarters. Hygiene came first and reshaped the conversation before any forecast was built. Forty-one open deals, worth 3.6 million dollars, had close dates already in the past. Sixty-three, worth 5.1 million, had no recorded activity in more than thirty days. Twenty-two had no next step. Twenty-nine of the forty-one, worth 2.7 million, had a past close date and had not moved in sixty days; removing those took the genuinely open figure for the quarter from 12.3 million to 9.6 million, and raw coverage fell from three times to 2.3.
 
-Measured conversion was the substantive finding. The system carried defaults of 60 percent at proposal and 30 at qualification. Measured from the 173 closed deals, proposal converted at 29 percent and qualification at 9. Weighted coverage was therefore 1.4 times, not three.
+Measured conversion was the substantive finding. The system carried defaults of 60 percent at proposal and 30 at qualification. Measured from the 173 closed deals, proposal converted at 29 percent and qualification at 9. Applying the measured rates stage by stage to the 9.6 million left after hygiene gave 2.9 million of weighted pipeline, so weighted coverage against the 4.1 million target was 0.7 times, not three.
 
-The wrong turn: the first conversion calculation used all 173 closed deals and gave 38 percent at proposal. That included two quarters of a small-business segment the company had stopped selling to in the spring, which had closed fast and cheaply. Excluding it left 118 deals and dropped proposal conversion to 29 percent. The blended figure was arithmetically correct and would have overstated the quarter by roughly 600,000. The rule taken from it: before computing any rate, ask what changed in the business during the history you are measuring, and exclude the periods that answer.
+The wrong turn: the first conversion calculation used all 173 closed deals and gave 38 percent at proposal. That included two quarters of a small-business segment the company had stopped selling to in the spring, which had closed fast and cheaply. Excluding it left 118 deals and dropped proposal conversion to 29 percent. The blended figure was arithmetically correct and would have overstated the quarter by roughly 600,000 dollars. The rule taken from it: before computing any rate, ask what changed in the business during the history you are measuring, and exclude the periods that answer.
 
-Velocity showed the mechanism. Median time in proposal for won deals was 21 days; 34 open deals had been in proposal for more than 42, carrying 2.7 million. Win rate cut by size band showed deals above 100,000 converting at 11 percent against 34 percent below, and every one of those large deals was single-threaded, with one contact engaged.
+Velocity showed the mechanism. Median time in proposal for won deals was 21 days; 34 open deals had been in proposal for more than 42, carrying 2.7 million dollars. Win rate cut by size band showed deals above 100,000 dollars converting at 11 percent against 34 percent below, and every one of those large deals was single-threaded, with one contact engaged.
 
-The three-way forecast: commit 3.2 million, weighted 2.9, trend 3.4. Likely case 3.1 against a target of 4.1.
+The three-way forecast: commit 3.2 million dollars, weighted 2.9 million, trend 3.4 million. Likely case 3.1 million against a target of 4.1 million.
 
-**Result.** The brief opened with the gap of one million, stated in week six rather than week eleven. Twenty-nine deals were removed from the forecast, reducing reported pipeline by 2.2 million, which was uncomfortable in the meeting and made the remaining number believable. Three actions carried owners: a second contact identified in each of the eleven large open deals within two weeks, a multi-threading requirement added to the proposal stage exit criteria, and 1.8 million of new pipeline required in the following six weeks to protect the next quarter.
+**Result.** The brief opened with the gap of one million dollars, stated in week six rather than week eleven. The twenty-nine stale deals were removed from the forecast, reducing reported pipeline by 2.7 million, which was uncomfortable in the meeting and made the remaining number believable. Three actions carried owners: a second contact identified in each of the eleven large open deals within two weeks, a multi-threading requirement added to the proposal stage exit criteria, and 1.8 million dollars of new pipeline required in the following six weeks to protect the next quarter.
 
-The quarter closed at 3.4 million, above the likely case and below target. The forecast was accurate to within ten percent, which had not happened in the previous three quarters, and the multi-threading change moved large-deal win rate to 19 percent over the following two quarters.
+The quarter closed at 3.4 million dollars, above the likely case and below target. The forecast was accurate to within ten percent, which had not happened in the previous three quarters, and the multi-threading change moved large-deal win rate to 19 percent over the following two quarters.
 
 ### A second scenario, where it goes differently
 
@@ -176,6 +176,16 @@ Charts only where they change understanding: the stage funnel, the forecast wate
 - Concentration is stated, and any deal above a quarter of the number is shown separately.
 - Every reconciliation cell in the workbook reads zero against total open pipeline.
 - The brief ends in actions with owners and dates, including the pipeline generation needed for next period.
+
+## Adapting this to your context
+
+The thresholds here, thirty days without activity, twice the median cycle, twenty closed deals as the floor for computing rates, come from software and services businesses with cycles of one to six months.
+
+- **The staleness threshold.** Thirty days is a signal in a three-month cycle and noise in a twelve-month one. Set it from the point at which a deal that goes quiet stops closing; in a transactional business that may be seven days.
+- **The forecast period.** The method is written around a quarter. Where the sales cycle is longer than the period, run the analysis on a rolling four quarters and report coverage in deal counts, as the second scenario does.
+- **Twenty closed deals as the minimum for measured rates.** A rough floor, not a statistical test. High variance in deal size needs more. Show the count behind every rate either way.
+- **The concentration cut.** The example cuts by size band and segment. Cut on whatever actually varies in your business: geography, channel, partner-sourced against direct, new logo against expansion.
+- **What not to change.** Conversion rates are measured from closed history and never taken from the system's default probability field, and hygiene is quantified above the conclusions rather than underneath them.
 
 ## Related skills
 

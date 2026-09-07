@@ -45,7 +45,7 @@ Do not use it to build a systematic review's search or screening record, which i
 
 3. **Reconcile in both directions and report three sets.** Cited but not listed; listed but not cited; and mismatched between the two on author spelling, year, or the use of et al. Fix all three before formatting anything. Formatting a list that does not match the text is the most common wasted hour in this work.
 
-4. **Confirm every entry resolves.** Authors, year, exact title, venue, volume, issue, pages and identifier, each checked against a live record. The specific check that matters most: follow the DOI and confirm it lands on that paper, not on a paper by the same first author in the same year. Entries that cannot be resolved are removed and flagged to the author with the claim they supported, so the sentence can be revised or resourced; an unresolvable entry is never left in a submitted list.
+4. **Confirm every entry resolves, to the standard `literature-verification` sets.** That skill owns the rule that the identifier must resolve to the record cited, and states why it is the check that catches a fabricated or drifted citation; apply its rule here rather than reasoning it out again. What this pass adds is the field-level comparison against the live record: authors, year, exact title, venue, volume, issue and pages. Entries that cannot be resolved are removed and flagged to the author with the claim they supported, so the sentence can be revised or resourced; an unresolvable entry is never left in a submitted list.
 
 5. **Apply the hyperlinked author-year standard to the in-text citations,** as set out in the section below.
 
@@ -111,7 +111,7 @@ The in-text citations were converted in the same pass as the list. Two ABNT-spec
 
 The hyperlinks were applied last, on the author-year text, with the DOI behind each. A final integrity check found six links pointing at records that no longer matched their citation, all of them in chapter one, all copied from an earlier draft where the neighbouring citation had since been changed.
 
-**Result.** 195 entries, all resolving, one style, deposited with two days to spare. The BibTeX file went into the project repository as the single source, and the two chapters that later went out as articles were converted to their journals' styles in about ninety minutes each, from the structured records, without a reconciliation problem. The total cost was roughly twenty hours, of which the two days lost to find-and-replace were avoidable and are the reason the method's step six is worded as it is.
+**Result.** 206 entries, all resolving, one style, deposited with two days to spare. The BibTeX file went into the project repository as the single source, and the two chapters that later went out as articles were converted to their journals' styles in about ninety minutes each, from the structured records, without a reconciliation problem. The total cost was roughly twenty hours, of which the two days lost to find-and-replace were avoidable and are the reason the method's step six is worded as it is.
 
 ### A second scenario, where it goes differently
 
@@ -152,7 +152,7 @@ Plus, where the project uses LaTeX, the cleaned `.bib` file; and where it uses a
 
 **Reconciling in one direction.** Recognise it when the list has entries nobody cites. Checking that every citation has an entry is the half people do; the other half is what removes the cut-paragraph leftovers.
 
-**Trusting the DOI because it exists.** Recognise it by following three at random and finding one that lands on a neighbouring paper. The near-miss is the failure this catches and visual inspection never will.
+**Trusting the DOI because it exists.** Recognise it by following three at random and finding one that lands on a neighbouring paper. This is `literature-verification`'s resolution rule applied a second time, at the end, because links drift during revision; visual inspection never catches it.
 
 **Formatting before reconciling.** Recognise it when the beautifully formatted list still contains eleven entries that do not correspond to anything in the text. Reconcile first.
 
@@ -196,6 +196,16 @@ Plus, where the project uses LaTeX, the cleaned `.bib` file; and where it uses a
 - Unresolvable entries were removed and their claims flagged, with nothing left marked as unverified in the submitted file.
 - The style note records which rule was applied, from what source, and how each ambiguity was resolved.
 - The reconciliation was rerun after the final edit, not before it.
+
+## Adapting this to your context
+
+The house form here is hyperlinked author-year, the worked example is a Brazilian thesis in ABNT, and the tooling assumed is BibTeX. All three are defaults, not the method.
+
+- **The field default in step 1.** The resolution order lists Chicago author-date for economics. Substitute yours: APA 7 in psychology, education and management, ASA in sociology, AMA or Vancouver in medicine and public health, ABNT in Brazilian institutions.
+- **The hyperlinked author-year form.** It assumes an author-year style. Vancouver, Nature and IEEE number citations in order of appearance. Keep the manuscript in author-year and convert to numbers once, at the end, from the structured records.
+- **The identifier.** DOI is assumed. Add PMID or PMCID for health sources, ERIC document numbers in education, registry numbers for trials, and dataset DOIs from ICPSR, OSF or a national archive. Record whichever your field's readers will search.
+- **The tooling.** BibTeX assumes LaTeX. Zotero with a CSL style, EndNote or Mendeley do the same job in Word; keep one library as the single source and deliver field-level corrections rather than a retyped list.
+- **What not to change.** Reconcile mechanically in both directions, convert from structured records rather than editing strings, and let nothing unresolvable reach a submitted list.
 
 ## Related skills
 

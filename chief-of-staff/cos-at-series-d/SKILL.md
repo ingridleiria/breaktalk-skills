@@ -27,7 +27,7 @@ Two adjacent cases belong elsewhere. The mechanics of the transaction itself, th
 
 **The metric definitions in use in every business unit.** Missing: collect them before anything else. A company that cannot add up its own numbers across units cannot be run, cannot be diligenced and cannot be listed, and the discovery always comes later than it should.
 
-**The statutory and committee calendar for the next eighteen months.** Missing: get it from the company secretary. At this size the calendar has legal consequences and nothing on it should ever be a surprise.
+**The statutory and committee calendar for the next eighteen months.** Missing: get it from whoever is responsible for corporate governance. That is a company secretary in the United Kingdom and much of the Commonwealth, a general counsel or corporate secretary in the United States, and a governance officer or clerk in a charity or a public body. At this size the calendar has legal consequences and nothing on it should ever be a surprise.
 
 **The current succession picture.** Who would step into each executive role, internally, tomorrow. Missing: it will be uncomfortable and it is the board's question before it is yours. Assemble the honest version privately with the people leader first.
 
@@ -188,6 +188,16 @@ SUCCESSION
 - Contact with the actual work is in the calendar, not in the intention.
 - A succession picture exists for every executive role, including the honest gaps.
 - The end of the role is planned and dated rather than allowed to drift.
+
+## Adapting this to your context
+
+The defaults come from a late-stage private company of about two thousand people preparing for a listing. Most of it survives translation; the vocabulary does not.
+
+- **"Series D" as a label.** It means separate business units or geographies holding their own results, decisions routinely made in the chief executive's name, and outside obligations on fixed dates. A group of trading subsidiaries, an NGO with country offices or a family holding company is here whatever it has raised.
+- **The readiness state.** Written for a listing or a sale. The same register serves a regulatory inspection, an accreditation review or a generational handover, unglamorous items first.
+- **The authority thresholds.** Two million per item and six million a quarter came from one company's balance sheet. Set yours as a fraction of monthly cash movement rather than by copying a figure, and keep the reputational test beside it.
+- **Delegated authority and the law.** The instrument is internal. In many jurisdictions certain acts must be signed by a named director, trustee or officer of a specific entity, so keep the list of what must be signed by whom before relying on a threshold.
+- **What not to change.** The authority is written, communicated by the chief executive, and every decision under it is logged the day it is made.
 
 ## Related skills
 

@@ -44,7 +44,11 @@ This inherits the discipline in `spreadsheet-analysis-workbook` and does not rep
    Herfindahl       =SUMPRODUCT(($F$12:$F$107)^2)*10000
    ```
 
-   Read the index against bands: below 1,500 diversified, 1,500 to 2,500 moderate, above 2,500 concentrated, above 5,000 dominated. The index is the more honest of the two because it responds to the whole distribution rather than to where the cut happens to fall, and a portfolio can pass a top-five test while failing the index. For business-to-business services, the high-risk bands are a largest client above a fifth of revenue, a top three above two fifths, or a top five above three fifths.
+   This skill is where the bands and the cut points are defined for the whole set, and the other skills reference this statement rather than restating it.
+
+   Read the Herfindahl index against four bands: below 1,500 diversified, 1,500 to 2,500 moderate, above 2,500 concentrated, above 5,000 dominated by a few relationships. The index is the more honest of the two measures because it responds to the whole distribution rather than to where the cut happens to fall, and a portfolio can pass a top-five test while failing the index. The bands assume a portfolio of at least fifteen entities; below that the index swings by hundreds of points on a single win and should not be banded at all.
+
+   Read the cut points against the high-risk thresholds. For business-to-business services and software, those are a largest client above a fifth of revenue, a top three above two fifths, a top five above three fifths, and a top ten above four fifths. Each threshold sits in an input cell, because the level a business can survive is a function of its cost base and its notice periods rather than of its sector, and an agency or a solo practice will set them much higher. State which threshold was crossed and by how much, never that concentration is "high", and report the index and at least one cut point together in every summary.
 
 3. **Score anchoring out of ten, from data signals only.** The rule that matters: no signal enters the score unless it can be computed from the extract. Impressions of how sticky a relationship feels are systematically optimistic, and they are most optimistic about the relationships in most danger.
 
@@ -104,9 +108,9 @@ This inherits the discipline in `spreadsheet-analysis-workbook` and does not rep
 
 ## Worked example
 
-**Situation.** Trevane Managed Services, an IT managed services firm of about 130 people, had 14.2 million of revenue across 96 clients and was eighteen months from a likely sale. The chair had asked for a concentration analysis after a diligence conversation went badly on a smaller deal elsewhere. The largest client, a regional hospital group, held 23.4 percent of revenue and everyone in the leadership team named it immediately when asked where the risk was.
+**Situation.** Trevane Managed Services, an IT managed services firm of about 130 people, had 14.2 million US dollars of revenue across 96 clients and was eighteen months from a likely sale. The chair had asked for a concentration analysis after a diligence conversation went badly on a smaller deal elsewhere. The largest client, a regional hospital group, held 23.4 percent of revenue and everyone in the leadership team named it immediately when asked where the risk was.
 
-**Task.** A concentration and exposure workbook in a week, and a retention priority list the sales director would actually work from.
+All figures in this example are in US dollars. **Task.** A concentration and exposure workbook in a week, and a retention priority list the sales director would actually work from.
 
 **Action.** The distribution was built first from the reconciled entity table. Eleven clients of 96 held half of revenue and 34 held four fifths. The Herfindahl index came out at 2,810, in the concentrated band, and the top-three share at 41.2 percent, just over the high-risk threshold. So far this confirmed what the room believed.
 
@@ -126,7 +130,7 @@ The number the chair used in the sale conversation was not the concentration rat
 
 ### A second scenario, where it goes differently
 
-An engineering design firm of 40 people, 6.8 million of revenue, two clients holding 71 percent between them, both under ten-year framework agreements, both anchored at 9 out of 10. The Herfindahl index is 5,940, deep in the dominated band.
+An engineering design firm of 40 people, 6.8 million US dollars of revenue, two clients holding 71 percent between them, both under ten-year framework agreements, both anchored at 9 out of 10. The Herfindahl index is 5,940, deep in the dominated band.
 
 Here the fragility ranking is nearly useless. Both large clients score almost identically, the ordering between them is noise, and the register produced is a list of two names everybody already knows. The method has to change rather than be reported. Three things replace the ranking: a renewal calendar showing every framework expiry and re-tender date on one timeline, because in this portfolio the risk is entirely a matter of dates; a named-person map showing which individual on each side holds the relationship and what happens if they move, since a framework agreement does not survive a hostile procurement review; and a scenario run at the framework level rather than the client level, because these clients do not leave, they re-tender, and the realistic downside is a margin reduction on renewal rather than a total loss.
 
@@ -136,17 +140,19 @@ What changed is that concentration and anchoring are both extreme, which removes
 
 A workbook and a one-page summary. The risk register is the deliverable that gets used.
 
-| Rank | Client | Revenue | Share | Anchor /10 | Fragility | Clients to replace | Months to replace | Action |
-| 1 | Northgate Distribution | 1,150,400 | 8.1% | 1 | 4.05 | 9 | 6.4 | contract plus second line |
-| 2 | Perrin Retail | 604,900 | 4.3% | 1 | 2.15 | 5 | 3.6 | contract |
-| 3 | Halcyon Foods | 812,300 | 5.7% | 2 | 1.90 | 7 | 5.0 | second sponsor |
-| 4 | Kestrel Components | 498,100 | 3.5% | 1 | 1.75 | 4 | 2.9 | monitor |
-| 5 | Braddon Hospital Group | 3,322,800 | 23.4% | 9 | 2.34 | 26 | 18.6 | renewal calendar |
+Ordered by fragility, descending, with the revenue rank shown beside it so the inversion is visible rather than asserted. All amounts in US dollars.
+
+| Rank | Revenue rank | Client | Revenue (USD) | Share | Anchor /10 | Fragility | Clients to replace | Months to replace | Action |
+| 1 | 4 | Northgate Distribution | 1,150,400 | 8.1% | 1 | 4.05 | 9 | 6.4 | contract plus second line |
+| 2 | 1 | Braddon Hospital Group | 3,322,800 | 23.4% | 9 | 2.34 | 26 | 18.6 | renewal calendar |
+| 3 | 7 | Perrin Retail | 604,900 | 4.3% | 1 | 2.15 | 5 | 3.6 | contract |
+| 4 | 5 | Halcyon Foods | 812,300 | 5.7% | 2 | 1.90 | 7 | 5.0 | second sponsor |
+| 5 | 9 | Kestrel Components | 498,100 | 3.5% | 1 | 1.75 | 4 | 2.9 | monitor |
 
 The summary block carries the measures and the verdict.
 
 ```
-CONCENTRATION SUMMARY
+CONCENTRATION SUMMARY   (all amounts in USD)
 Clients:                96        Revenue: 14,201,300
 Clients to 50% / 80%:   11 / 34
 Top 1 / 3 / 5 / 10:     23.4% / 41.2% / 52.8% / 68.9%
@@ -155,6 +161,7 @@ Revenue quality:        54 / 100  (diversification 14, recurring 22, trend 18)
 Highest fragility:      Northgate Distribution, 8.1% share, anchor 1
 Diversification gap:    1,710,000 above top-three target, 13 mid-tier clients to close
 Assumptions:            avg new client 128,000 (median); CAC 22,000; win rate 1.4/month
+                        currency USD; bands and cut points as defined in step 2
 ```
 
 ## Failure modes
@@ -198,6 +205,17 @@ Assumptions:            avg new client 128,000 (median); CAC 22,000; win rate 1.
 - Every threshold and replacement assumption sits in a labelled input cell and is stated in the summary.
 - Clients under common ownership are aggregated before ranking.
 - The output ends in named clients, named actions, and a diversification target expressed in clients to win.
+
+## Adapting this to your context
+
+The bands, the anchoring signals and the replacement assumptions come from services and software firms of forty to two hundred and fifty people selling to named accounts under contracts. They are a starting point, not a standard.
+
+- **The anchoring signals.** The five signals assume a contract flag, a product code column and a first activity date. A usage-based business substitutes a committed minimum or a platform integration; a marketplace scores active counterparties opposite.
+- **Grant and public sector revenue.** An award is anchored by its period and its re-tender date, not by tenure or breadth. Swap those two signals out, and make the re-tender rather than a silent departure the failure scenario.
+- **The high-risk cut points.** A largest client above a fifth is a services norm. Agencies and solo practices routinely run above half, so set thresholds from what the cost base survives for two quarters, and record why.
+- **The replacement denominator.** Average revenue per new client won assumes one to two wins a month. Where wins arrive as grant rounds or tenders, express replacement in cycles and say how long a cycle is.
+
+- **What not to change.** Rank the register by fragility rather than revenue, and size every loss in replacement time as well as in currency. Those two are the method.
 
 ## Related skills
 

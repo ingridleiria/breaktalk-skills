@@ -143,13 +143,22 @@ stats = (sample[list(labels)]
          .round({"mean": 2, "std": 2, "median": 2, "min": 2, "max": 2}))
 stats["count"] = stats["count"].astype(int)
 
-def normalised_difference(frame, var, group):
-    a = frame.loc[frame[group] == 1, var]
-    b = frame.loc[frame[group] == 0, var]
-    pooled = ((a.var(ddof=1) + b.var(ddof=1)) / 2) ** 0.5
-    return (a.mean() - b.mean()) / pooled
-
 stats.to_latex("tables/tab1_summary.tex", escape=False, column_format="lrrrrrr")
+
+def normalised_difference(frame, var, group):
+    treated = frame.loc[frame[group] == 1, var]
+    comparison = frame.loc[frame[group] == 0, var]
+    pooled = ((treated.var(ddof=1) + comparison.var(ddof=1)) / 2) ** 0.5
+    return (treated.mean() - comparison.mean()) / pooled
+
+covariates = ["pop_k", "infra"]
+balance = pd.DataFrame({
+    "Comparison": [sample.loc[sample.treat == 0, v].mean() for v in covariates],
+    "Treated":    [sample.loc[sample.treat == 1, v].mean() for v in covariates],
+}, index=[labels[v] for v in covariates])
+balance["Difference"] = balance["Treated"] - balance["Comparison"]
+balance["Normalised diff."] = [normalised_difference(sample, v, "treat") for v in covariates]
+balance.round(2).to_latex("tables/tab2_balance.tex", escape=False, column_format="lrrrr")
 ```
 
 The rule that matters more than the choice of tool: the script writes the file, the document includes the file, and no human types a number in between.
@@ -168,7 +177,7 @@ None of these were wrong. All three were defensible restrictions. But the first 
 
 The wrong turn cost two days. Aiko's first balance table compared treated and comparison firms on fourteen covariates across the full 9,632 observations, with a t-test column. Every covariate but two showed p below 0.01. The table was two-thirds of a page and communicated nothing, because with that many firm-years any difference is significant, and because it was built on the wrong sample anyway. It was abandoned.
 
-The replacement did three things differently. It conditioned on the estimation sample flag from step 2. It reported pre-period means only, for 2015 to 2017, since the design compares changes rather than levels. And it replaced the p-value column with a normalised difference column, keeping the p-values in a final column because the target journal's recent papers showed them. Under normalised differences the picture became readable: eleven of fourteen covariates were under 0.10, which is unremarkable, and three were above 0.25. Those three were firm age, prior training expenditure, and a metropolitan indicator, and all three ran in the same direction: firms taking up vouchers were younger, already trained more, and were disproportionately urban.
+The replacement did three things differently. It conditioned on the estimation sample flag from step 2. It reported pre-period means only, for 2015 to 2017, since the design compares changes rather than levels. And it replaced the p-value column with a normalised difference column, keeping the p-values in a final column because the target journal's recent papers showed them. Under normalised differences the picture became readable: eleven of fourteen covariates were under 0.10 in absolute value, which is unremarkable, and three were above 0.25 in absolute value, one of them negative. Those three were firm age, prior training expenditure, and a metropolitan indicator, and all three ran in the same direction: firms taking up vouchers were younger, already trained more, and were disproportionately urban.
 
 That was a finding, not a formatting problem, and it changed the identification section. The text now said, in two sentences, that treated firms differ in levels on three characteristics, that the design does not require level balance, and that the concern is whether those characteristics predict differential employment trends, which is answered by the event study in Figure 2 and by a specification interacting each of the three with year effects in Table 5 column 4.
 
@@ -197,11 +206,13 @@ What changed is that the estimand is local, so the descriptive exhibits have to 
 | Step | Restriction | Observations | Dropped | Firms | Firms dropped |
 | 0 | Raw registry extract, 2015 to 2022 | 12,880 | | 1,610 | |
 | 1 | Drop firms with no employment record | 11,204 | 1,676 | 1,401 | 209 |
-| 2 | Drop sectors without capital intensity | 10,223 | 981 | 1,278 | 123 |
-| 3 | Require three pre-treatment years | 9,821 | 402 | 1,228 | 50 |
-| 4 | Drop entrants after 2019 | 9,718 | 103 | 1,215 | 13 |
-| 5 | Non-missing outcome and controls | 8,146 | 1,572 | 1,204 | 11 |
+| 2 | Drop firm-years with missing employment outcome | 9,632 | 1,572 | 1,367 | 34 |
+| 3 | Drop sectors without capital intensity | 8,651 | 981 | 1,244 | 123 |
+| 4 | Require three pre-treatment years | 8,249 | 402 | 1,217 | 27 |
+| 5 | Drop entrants after 2019 | 8,146 | 103 | 1,204 | 13 |
 | | Analysis sample | 8,146 | | 1,204 | |
+
+Note states: steps 0 to 2 are the cleaning script; steps 3 to 5 were previously applied inside the estimation script and are now shown here.
 
 **Summary statistics:**
 
@@ -217,12 +228,12 @@ What changed is that the estimand is local, so the descriptive exhibits have to 
 **Balance table, pre-period levels:**
 
 | | Comparison | Treated | Difference | Normalised diff. | p |
-| Firm age (years) | 15.9 | 11.1 | 4.8 | 0.49 | 0.000 |
+| Firm age (years) | 15.9 | 11.1 | -4.8 | -0.49 | 0.000 |
 | Prior training spend (thousands) | 2.1 | 4.6 | 2.5 | 0.31 | 0.000 |
 | Metropolitan location (=1) | 0.41 | 0.58 | 0.17 | 0.35 | 0.000 |
 | Capital intensity | 0.62 | 0.65 | 0.03 | 0.06 | 0.041 |
 
-Note states: pre-period means, 2015 to 2017, estimation sample, 1,204 firms. Normalised difference is the difference in means over the pooled standard deviation. The design does not require level balance; pre-treatment trends are shown in Figure 2.
+Note states: pre-period means, 2015 to 2017, estimation sample, 1,204 firms. The Difference column is treated minus comparison, so a negative entry means the treated group is lower. Normalised difference is that same difference in means over the pooled standard deviation, and it carries the same sign. The design does not require level balance; pre-treatment trends are shown in Figure 2.
 
 ## Failure modes
 
@@ -274,6 +285,16 @@ Note states: pre-period means, 2015 to 2017, estimation sample, 1,204 firms. Nor
 - Every table was written to file by a script, and deleting the file and rerunning reproduces it exactly.
 - The prose reports only the facts a later section depends on, at the same precision as the table, naming the table.
 - Every table is readable without the surrounding text.
+
+## Adapting this to your context
+
+These exhibits assume a large observational panel, a treated and comparison group, and an economics journal's habits about Table 1. The construction table travels everywhere; the rest needs translating.
+
+- **Normalised differences and the 0.25 rule.** A causal inference convention. Psychology and medicine report the same arithmetic as a standardised mean difference or Cohen's d, and CONSORT discourages significance tests on baseline entirely. Use your field's name and threshold; keep the practice of scaling the difference rather than testing it.
+- **The balance table.** It presumes a treatment. In survey and correlational work the equivalent is means by the main grouping variable plus a correlation matrix with reliability coefficients on the diagonal, which is what a psychology or education reviewer expects.
+- **Stata and pandas.** In R, `gtsummary::tbl_summary` or `table1` produces the whole exhibit; in SPSS, `FREQUENCIES` and `DESCRIPTIVES` driven from saved syntax. The rule is the same: the script writes the file and nobody types a number in between.
+- **Sample construction.** Called an attrition table here. In a systematic review this is the PRISMA flow diagram, and in a clinical trial the CONSORT diagram. Same object, mandated format.
+- **What not to change.** Descriptives are computed on exactly the estimation sample, and every count from raw data to analysis sample is shown in order.
 
 ## Related skills
 

@@ -54,7 +54,11 @@ This inherits the discipline in `spreadsheet-analysis-workbook` and does not rep
    Discounted      =$C12/(Inputs!$B$4+Tier_churn)
    ```
 
-   At 100,000 of annual revenue, fifteen percent churn and a ten percent discount rate, discounted lifetime value is 400,000. The judgement is which churn rate goes in, and the rule is that it comes from the data and it is computed per tier. Blending a portfolio whose top tier churns at four percent and whose tail churns at twenty-three percent produces a number that is wrong for both. Compute LTV separately for the top, middle, and long tail; the ratio between tiers is the argument for where retention money goes, and it is usually larger than anyone expects.
+   At 100,000 US dollars of annual revenue, fifteen percent churn and a ten percent discount rate, discounted lifetime value is 100,000 divided by 0.25, which is 400,000. Every lifetime value figure you publish should reproduce from that division in one step; if it does not, the churn rate in the sentence is not the churn rate in the cell.
+
+   The judgement is which churn rate goes in, and the rule is that it comes from the data and it is computed per tier. Blending a portfolio whose top tier churns at four percent and whose tail churns at twenty-three percent produces a number that is wrong for both. Compute LTV separately for the top, middle, and long tail; the ratio between tiers is the argument for where retention money goes, and it is usually larger than anyone expects.
+
+   Tiers here are revenue quintiles, because that is usually where churn separates most cleanly. Where health and revenue tiers disagree, and a large client is also declining, the revenue-tier rate flatters it badly: a client at the top-quintile rate of four percent shows a lifetime value that assumes twenty-five years of a relationship that is visibly ending. Compute the observed churn for clients below the health threshold as its own rate, apply that rate to those clients, and publish the rate used in its own column so every row can be reproduced from the formula.
 
 3. **Classify trajectory on the annual view, then momentum on the recent view.** Annual direction alone is too slow: a client with flat annual revenue and a falling last quarter will not appear in the annual view for another two quarters, and by then the conversation is a renewal rather than a save.
 
@@ -79,6 +83,8 @@ This inherits the discipline in `spreadsheet-analysis-workbook` and does not rep
 
    Tiers: 80 and above strategic, invest in expansion; 60 to 79 core, protect and deepen; 40 to 59 developing, monitor; below 40 at risk, intervene. Every score is a nested `IF` reading profile columns. The reason for the rule is not purity: hand-scored health is systematically generous about the accounts closest to the people doing the scoring, and those are the accounts the score exists to catch.
 
+   The five dimensions and the equal twenty-point weights are a starting default, not a standard, and they should be retuned rather than inherited. Retune them in this order. First, drop any dimension your data cannot compute and rescale the remainder to one hundred, saying so on the tab, exactly as the breadth dimension is dropped where there is no code column. Second, replace a dimension that does not measure anything in your business with one that does, as the second scenario replaces recurring adoption with repeat rate. Third, set the weights from what actually predicts loss in your own history: cross-tabulate each dimension against the clients you lost in the last two years, and give more weight to the dimensions that separated the leavers from the stayers. Where there is no loss history to test against, keep the weights equal and say they are untested. Whatever you choose, put the five weights and the four band cut points in labelled input cells, publish them beside the score, and hold them fixed for a full cycle, because a score whose weights move between runs cannot be compared with itself.
+
 5. **Compute the cost of loss, which is not the lost revenue.**
 
    ```
@@ -89,7 +95,7 @@ This inherits the discipline in `spreadsheet-analysis-workbook` and does not rep
 
    For a client with no recurring anchor, add a fragility premium: the uplift in loss probability multiplied by annual revenue. Write the result as a sentence a leader can act on: losing this client requires acquiring N new clients at the average new-client size, at an estimated acquisition cost of X, so the economic cost is Y.
 
-6. **Size expansion and whitespace, and gate it on health.** Flag each client for a location or division not yet served, a tier upgrade its volume already justifies, and a line it does not buy. Whitespace is assumed full potential minus current revenue, with the potential assumption in a labelled input cell. Size the pool only across clients above the health threshold. Whitespace inside an at-risk account is not an opportunity; it is a retention problem wearing an opportunity's clothes, and counting it is how expansion targets get set that the account team knows are fiction.
+6. **Size expansion and whitespace, and gate it on health.** Flag each client for a location or division not yet served, a tier upgrade its volume already justifies, and a line it does not buy. Whitespace is assumed full potential minus current revenue, with the potential assumption in a labelled input cell. Size it three ways, at the lowest, mean and highest penetration observed among comparable clients, by the method `expected-revenue-estimation` defines and owns; do not restate that reasoning here, and cite the mean-penetration figure. Size the pool only across clients above the health threshold. Whitespace inside an at-risk account is not an opportunity; it is a retention problem wearing an opportunity's clothes, and counting it is how expansion targets get set that the account team knows are fiction.
 
 7. **Compute net revenue retention on a true cohort.** Revenue this period from the clients present last period, divided by their revenue last period. New clients are excluded, and excluding them is the entire point.
 
@@ -114,13 +120,17 @@ The rule: compute it from the data, per tier, on revenue as well as logos, with 
 
 ## Worked example
 
-**Situation.** Ashcombe Data Systems, a business-to-business analytics firm of about 90 people, had 8.6 million of revenue from 214 clients and had just approved a 40 percent increase in the acquisition budget on the strength of nine percent headline growth. The chief executive wanted a per-client view before the money was committed, in two weeks.
+**Situation.** Ashcombe Data Systems, a business-to-business analytics firm of about 90 people, had 8,598,700 US dollars of revenue from 214 clients. All figures in this example are in US dollars. The firm had just approved a 40 percent increase in the acquisition budget on the strength of nine percent headline growth. The chief executive wanted a per-client view before the money was committed, in two weeks.
 
 **Task.** A client economics workbook with lifetime value, health, and retention, and a defensible answer to whether the acquisition increase made sense.
 
 **Action.** The profile tab was built first from a reconciled entity table, 214 rows, every cell a formula. Then lifetime value, and this is where the first version went wrong.
 
-The first pass used a twelve percent annual churn rate taken from a published figure for the sector, producing a blended discounted lifetime value of 391,000 against a fully loaded acquisition cost of 34,000: a ratio of about eleven to one, which looked like a licence to spend. That version was abandoned when observed churn was computed from the data with a dormancy window of nine months, twice the median inter-purchase interval of four and a half. Actual churn was 4.1 percent in the top quintile, 11.8 percent in the middle three, and 23.4 percent in the bottom quintile. On tier-level churn, discounted lifetime value came out at 1,240,000 for the top tier, 262,000 for the middle, and 61,000 for the tail. Against a 34,000 acquisition cost, the tail returned less than two to one before any servicing cost, and the tail was where 61 percent of new clients had been landing for two years.
+The first pass used a twelve percent annual churn rate taken from a published figure for the sector. Mean revenue per client was 40,181, so at a ten percent discount rate the blended discounted lifetime value was 40,181 divided by 0.22, which is 182,600, against a fully loaded acquisition cost of 34,000: a ratio of about five to one, comfortably above the three to one the board used as its bar, and it looked like a licence to spend.
+
+That version was abandoned when observed churn was computed from the data with a dormancy window of nine months, twice the median inter-purchase interval of four and a half. Actual churn was 4.1 percent in the top quintile, 11.8 percent in the middle three quintiles, and 23.4 percent in the bottom quintile. The revenue behind those tiers was 5,336,300 across the 43 clients of the top quintile, an average of 124,100 each; 2,918,400 across the 128 in the middle, averaging 22,800; and 344,000 across the 43 in the tail, averaging 8,000. Those three sum to 8,598,700, which is the portfolio, and the tier table was built to reconcile to it before any lifetime value was computed.
+
+At a ten percent discount rate, discounted lifetime value for the average client in each tier was 124,100 divided by 0.141, which is 880,100; 22,800 divided by 0.218, which is 104,600; and 8,000 divided by 0.334, which is 24,000. The ratio from top tier to tail was about thirty-seven to one. Against a 34,000 acquisition cost the tail returned less than one to one before any servicing cost at all, and the tail was where 61 percent of new client wins had been landing for two years.
 
 The second finding came from net revenue retention. The first calculation, run across all clients present in the current twelve months, produced 118 percent and a comfortable story. Recomputed on the true cohort, the 187 clients present twelve months earlier, it was 94 percent. Headline revenue was growing nine percent while the existing book was contracting six. Acquisition was paying for churn.
 
@@ -128,7 +138,7 @@ The health scores then located it. Of 214 clients, 31 scored 80 or above, 74 bet
 
 Whitespace was sized at 2.1 million across the portfolio on the first pass. Gated on the health threshold of 60, it fell to 1.24 million, and three of the largest whitespace entries turned out to sit inside accounts scoring below 40. Those three moved from the expansion list to the retention list.
 
-**Result.** The acquisition increase was redirected rather than approved as proposed. About a third of it went to a retention programme aimed at the nine large-and-unhealthy accounts, and the qualification criteria for new business were tightened to exclude the profile that had been landing in the tail. Six of the nine accounts were stabilised over the following two quarters; two churned, one of which had been sized in the cost-of-loss table at four replacement clients and 3.1 months, so the impact was known in advance rather than discovered.
+**Result.** The acquisition increase was redirected rather than approved as proposed. About a third of it went to a retention programme aimed at the nine large-and-unhealthy accounts, and the qualification criteria for new business were tightened to exclude the profile that had been landing in the tail. Six of the nine accounts were stabilised over the following two quarters; two churned, one of which had been sized in the cost-of-loss table at four replacement clients and, at the observed win rate of 1.3 new clients a month, 3.1 months, so the impact was known in advance rather than discovered.
 
 Net revenue retention was 101 percent nine months later, on a cohort basis, with headline growth of six percent. Lower headline growth, better economics. The tier-level lifetime value table became a standing input to the pricing conversation.
 
@@ -136,7 +146,7 @@ The workbook took about fourteen hours. The churn rework cost three of them and 
 
 ### A second scenario, where it goes differently
 
-A project-based engineering consultancy, 5.2 million of revenue from 71 clients, where work arrives as discrete commissions six to eighteen months apart and there is no recurring channel at all. Two dimensions of the standard method stop working.
+A project-based engineering practice, 5.2 million US dollars of revenue from 71 clients, where work arrives as discrete commissions six to eighteen months apart and there is no recurring channel at all. Two dimensions of the standard method stop working.
 
 Churn is not well defined, because a client with no activity for a year may be entirely healthy and simply between projects. The dormancy window does the heavy lifting here rather than being a footnote: set at twice the median inter-commission interval, which was fourteen months, it reclassified 19 of the 71 clients from churned to dormant. Lifetime value moves from a subscription lifespan basis to a repeat-purchase basis: expected number of future commissions multiplied by average commission value, discounted, with the repeat rate observed from the data by cohort. The recurring adoption dimension of the health score is unusable and is replaced by repeat rate, which measures the same thing in this business, and the tenure dimension is reweighted because a three-year relationship with one commission is weaker than an eighteen-month relationship with three.
 
@@ -150,10 +160,12 @@ Portfolio overview with client count, total revenue, mean and median per client.
 
 The client table is the working deliverable.
 
-| Client | Revenue | Share | Recurring % | Breadth | Tenure mths | YoY | Momentum | Health | Tier | LTV (disc.) | Cost of loss | Quadrant | Action |
-| Halden Freight | 412,600 | 4.8% | 71% | 4 | 74 | +14% | +2 | 88 | strategic | 1,486,000 | 512,600 | protect and deepen | expansion review |
-| Perrin Retail | 388,100 | 4.5% | 12% | 1 | 29 | -3% | -1 | 47 | developing | 214,000 | 490,100 | intervene now | contract and second line |
-| Corven Foods | 96,400 | 1.1% | 0% | 1 | 11 | -31% | -2 | 24 | at risk | 38,000 | 130,400 | evaluate | no further investment |
+| Client | Revenue (USD) | Share | Recurring % | Breadth | Tenure mths | YoY | Momentum | Health | Tier | Churn used | LTV (disc., USD) | Cost of loss (USD) | Quadrant | Action |
+| Halden Freight | 412,600 | 4.8% | 71% | 4 | 74 | +14% | +2 | 88 | strategic | 4.1% | 2,926,200 | 514,600 | protect and deepen | expansion review |
+| Perrin Retail | 388,100 | 4.5% | 12% | 1 | 29 | -3% | -1 | 47 | developing | 19.6% | 1,311,100 | 490,100 | intervene now | contract and second line |
+| Corven Foods | 96,400 | 1.1% | 0% | 1 | 11 | -31% | -2 | 24 | at risk | 19.6% | 325,700 | 130,400 | evaluate | no further investment |
+
+Every row reproduces from the inputs, and the inputs are published under the table rather than held in someone's head. Discount rate 10 percent. Observed churn 4.1 percent in the top revenue quintile, 11.8 percent in the middle, 23.4 percent in the tail, and 19.6 percent for clients scoring below the health threshold of 60, which is the rate applied to both Perrin Retail and Corven Foods, because their revenue-tier rates would have valued two visibly declining relationships at ten and twenty-five years of revenue. Portfolio 8,598,700 across 214 clients, so shares divide by that. Discounted lifetime value is revenue divided by the discount rate plus the churn rate used: 412,600 divided by 0.141 is 2,926,200, and 96,400 divided by 0.296 is 325,700. Cost of loss is annual revenue plus replacement cost, where replacement clients are the revenue divided by 150,000, the average revenue per new client won outside the tail band, rounded up, multiplied by a fully loaded acquisition cost of 34,000: three clients and 102,000 for Halden Freight, giving 514,600, and one client and 34,000 for Corven Foods, giving 130,400. Blended across all wins including the tail, the average new client is 63,400 rather than 150,000, which roughly doubles every replacement count; publish which denominator you used, because the difference is larger than anything else in the table.
 
 ## Failure modes
 
@@ -197,6 +209,17 @@ The client table is the working deliverable.
 - Whitespace is gated on health, and the excluded amount is shown rather than dropped silently.
 - Every assumption sits in a labelled input cell, and the report states each one in the sentence that uses it.
 - The report ends in five named client actions, each traceable to a figure above it.
+
+## Adapting this to your context
+
+The defaults come from services and software firms of forty to two hundred and fifty people, with a recurring channel, an account team, and two years of clean history. Almost every number is a setting.
+
+- **The five health dimensions and their weights.** Equal twenty-point weights are a starting default. Retune them against your own loss history by the procedure in step 4, replace any dimension your business does not have, and rescale rather than leaving a blank.
+- **Churn and the dormancy window.** Nine months came from a four and a half month inter-purchase interval. Grant and public sector books have no churn in this sense: use award expiry and a renewal probability from your re-tender record. Usage-based businesses need revenue churn as well as logo churn.
+- **The replacement denominator and acquisition cost.** 150,000 per new client won and 34,000 to acquire one dominate the cost of loss. Take both from the last twelve months, and publish whether the denominator includes your smallest wins.
+- **One account team.** A marketplace or self-serve product has none, so the quadrant becomes a segment plan and the actions become programme changes.
+
+- **What not to change.** Churn comes from your own data, per tier, with a stated dormancy window, and retention is computed on a true cohort.
 
 ## Related skills
 

@@ -23,7 +23,7 @@ Do not use it to rehearse a live conversation, which is `sales-roleplay` and nee
 
 **The end state of each deal, decided before writing.** What the buyer has confirmed by the last call, what remains a seller assertion, and which decisive unknowns are still open. Missing: choose one from the portfolio patterns below and write it down in one paragraph. Writing the end state first is the single control that stops dialogue drifting into an outcome nobody intended.
 
-**The product, the price band, and the industry.** These set what is realistic to say. A 12,000 a year tool does not have a security review and a 900,000 platform does not close in one call. Missing: default to a mid-market business software product at 40,000 to 80,000 annually and name the assumption in the specification.
+**The product, the price band, and the industry.** These set what is realistic to say, and the currency belongs in the specification alongside the figure. A tool at 12,000 US dollars a year does not have a security review and a 900,000 dollar platform does not close in one call. Missing: default to a mid-market business software product at 40,000 to 80,000 US dollars annually and name both the band and the currency in the specification.
 
 **The cast.** One seller with a title, the account, the primary buyer-side contact, and the secondary stakeholders who appear later. Missing: invent them, and check the names against the constraint that they must not resemble any real company or person connected to the work.
 
@@ -86,17 +86,17 @@ Where the set runs to four or five deals, add one that is lost for a reason visi
 
 **Situation.** A team building an internal coaching process needed material for a workshop with nine new sellers. Customer recordings existed but could not be used, since consent covered internal quality review only and the workshop included two contractors. The requirement was three deal histories, five calls each, in a facilities management context, ready in four days.
 
-**Task.** Fifteen transcripts, roughly 70,000 words in total, where an analysis run over them produces visibly different verdicts and the differences are explainable in a room.
+**Task.** Three deal histories of up to five calls each, roughly 70,000 words in total, where an analysis run over them produces visibly different verdicts and the differences are explainable in a room. All monetary figures in this example are in US dollars.
 
 **Action.** The first attempt wrote dialogue first, three calls of the advancing deal, on the theory that the specification could be inferred afterwards. It was abandoned after a check on call two. Reading it back through the four passes showed the buyer had restated the seller's savings figure in their own words at minute nineteen, and had named the finance approver unprompted, which meant the deal was already largely qualified at call two of five. Everything intended for calls three and four had nowhere to go, and the honest options were to rewrite the later calls as a formality or to rewrite call two. The cost of the wrong turn was about 4,500 words discarded. The lesson generalises: dialogue drifts toward resolution, because writing a buyer who withholds is uncomfortable in a way that writing a buyer who cooperates is not.
 
-The rebuild started with three ledgers. The advancing deal moved eleven facts from blank to established across five calls, with a deliberate plateau at call three where nothing moved and the seller talked too much. The recovering deal kept everything flat for two calls behind a capital freeze, then introduced a new operations director on call three who had run a similar project elsewhere and who moved four facts in one conversation. The honest early deal established six facts in total and left both the money and the approval route at asserted-only for the whole set, ending on a hollow next step at call four and a fifth call that never happened, which was recorded as a note rather than written.
+The rebuild started with three ledgers. The advancing deal moved eleven facts from blank to established across five calls, with a deliberate plateau at call three where nothing moved and the seller talked too much. The recovering deal kept everything flat for two calls behind a capital freeze, then introduced a new operations director on call three who had run a similar project elsewhere and who moved four facts in one conversation. The honest early deal established six facts in total and left both the money and the approval route at asserted-only for the whole set, ending on a hollow next step at call four and a fifth call that never happened, which was recorded as a note rather than written. That is why the set runs to fourteen transcripts rather than fifteen: the unwritten call is the point of the deal, and writing it to make the count round would have removed the only unresolved outcome in the portfolio.
 
 Word counts were checked rather than assumed. The first drafts came in at 2,900, 3,100 and 2,700 words against a 4,000 floor, which is the usual undershoot. Expanding them meant adding a second movement to each call, typically a tangent about an adjacent problem that goes nowhere, which is what real calls contain and what makes the transcript feel like a recording.
 
-Then all fifteen were read back through the four passes. Six defects surfaced: two next steps that were stronger than the ledger intended, one seller name that changed spelling between call three and call four, one buyer confirming a fact the ledger had marked as never established, one call at 3,400 words after editing, and one invented reference to a shared folder that read like a real link.
+Then all fourteen were read back through the four passes. Six defects surfaced: two next steps that were stronger than the ledger intended, one seller name that changed spelling between call three and call four, one buyer confirming a fact the ledger had marked as never established, one call at 3,400 words after editing, and one invented reference to a shared folder that read like a real link.
 
-**Result.** Fifteen transcripts, 71,400 words, delivered in three and a half days, with the ledgers included as the answer key. In the workshop, the eleven-fact advancing deal and the six-fact honest deal produced exactly the argument the material was built to produce, which was whether the honest deal should be in the forecast at all. Two of the nine sellers said afterwards that the flat call three was the most useful of the fifteen, because it was the one that resembled their own week.
+**Result.** Fourteen transcripts, 66,600 words, delivered in three and a half days, with the ledgers included as the answer key and a one-line note in place of the fifteenth call. In the workshop, the eleven-fact advancing deal and the six-fact honest deal produced exactly the argument the material was built to produce, which was whether the honest deal should be in the forecast at all. Two of the nine sellers said afterwards that the flat call three was the most useful of the fourteen, because it was the one that resembled their own week.
 
 One caveat worth recording: two participants found the recovering deal's turning point convenient. It was written as a single conversation in which a new stakeholder solved the blockage, which happens, but less often and less cleanly than the transcript showed. The next version spread the recovery across two calls with a partial setback in between.
 
@@ -104,7 +104,7 @@ One caveat worth recording: two participants found the recovering deal's turning
 
 Building a regression fixture to test whether a change to an analysis process still catches near-miss confirmations. Different requirements throughout.
 
-Length drops: twelve to fifteen hundred words per fixture, because the fixture tests one behaviour and a full-length call adds noise without adding coverage. Volume rises: sixteen short transcripts rather than three long histories. And the design principle inverts, from realism to isolation. Each pair differs in exactly one thing: in the first, the buyer says "yeah, that is right" to the seller's cost figure; in the second, the buyer says "yeah, that is right, we worked it out at about 300,000 last year". Everything else in the two transcripts is identical, word for word. The analysis must mark the first as asserted and the second as established, and if it does not, the fixture has located the failure precisely.
+Length drops: twelve to fifteen hundred words per fixture, because the fixture tests one behaviour and a full-length call adds noise without adding coverage. Volume rises: sixteen short transcripts rather than three long histories. And the design principle inverts, from realism to isolation. Each pair differs in exactly one thing: in the first, the buyer says "yeah, that is right" to the seller's cost figure; in the second, the buyer says "yeah, that is right, we worked it out at about 300,000 dollars last year". Everything else in the two transcripts is identical, word for word. The analysis must mark the first as asserted and the second as established, and if it does not, the fixture has located the failure precisely.
 
 The ledger becomes the assertion set, one expected classification per fixture, and the whole set can be rerun automatically after any change. Portfolio contrast, arc and emotional realism all stop mattering. What matters is that only one variable moves.
 
@@ -151,7 +151,7 @@ Deliver alongside it a set-level file containing, for each deal, the end state p
 
 **One call needed rather than a history.** Write the specification anyway, in five lines, with the end state and the four or five facts that will be established. A single transcript with no specification drifts faster than a set, because there is no later call to keep it honest.
 
-**A very short sales cycle.** Where a real deal closes in two calls at 8,000 a year, do not stretch it to five. Shorten the set, keep the evidence sparse, and note in the specification that the pattern being demonstrated is velocity rather than complexity.
+**A very short sales cycle.** Where a real deal closes in two calls at 8,000 US dollars a year, do not stretch it to five. Shorten the set, keep the evidence sparse, and note in the specification that the pattern being demonstrated is velocity rather than complexity.
 
 **Audio-style artefacts.** Where the material will be shown next to real machine transcription, include what that produces: false starts, crosstalk marked as such, an occasional mis-heard word, timestamps if the real ones carry them. Where the material is for reading, leave them out; they cost legibility and buy nothing.
 
@@ -172,6 +172,17 @@ Deliver alongside it a set-level file containing, for each deal, the end state p
 - Next steps vary in strength across the set, including at least one hollow one.
 - The set contains contrast, and at least one deal that does not resolve.
 - A four-pass read of the finished transcripts matches the ledger.
+
+## Adapting this to your context
+
+The defaults, five calls per deal, four to five and a half thousand words each, a mid-market US dollar deal and a three-deal portfolio, come from software and services selling with a named seller on every call.
+
+- **Five calls and the stage names.** Discovery, ideation and proposal are a services sequence. A transactional cycle closes in two calls and should be written as two. A tender-led cycle has no discovery call: the set is a briefing, a clarification round and a presentation, and the ledger tracks what the authority put in writing.
+- **The price band and the currency.** The band drives what is realistic in dialogue more than the industry does. State figure and currency in the specification, and derive every other number from the two or three real ones fixed there.
+- **One seller per deal.** Where your motion runs a seller plus a solutions engineer, put the second person in the cast from call one and make any handoff a visible moment.
+- **Word budgets.** Four thousand words is a floor for a thirty to forty minute call in English. Calibrate against two real transcripts before setting it.
+
+- **What not to change.** The specification and the evidence ledger are written before the dialogue, and at least one deal in the set does not resolve.
 
 ## Related skills
 

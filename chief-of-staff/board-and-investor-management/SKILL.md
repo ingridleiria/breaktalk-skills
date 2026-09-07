@@ -27,7 +27,7 @@ Do not use it for ordinary internal meetings. `meeting-to-decisions` captures de
 
 **The constitutional documents.** Articles, shareholders agreement, board charter. They set quorum, notice periods, reserved matters, and which decisions need shareholder rather than board approval. Missing: get them before the first meeting you run. Discovering a reserved matter after the fact is a governance defect, not an administrative one.
 
-**The fiscal calendar and the statutory dates.** Audit, budget approval, option refresh, compensation review, filing deadlines. Missing: ask the finance lead and the company secretary, and set provisional dates rather than leaving them to arrive.
+**The fiscal calendar and the statutory dates.** Audit, budget approval, option refresh, compensation review, filing deadlines. Missing: ask the finance lead and whoever holds the corporate calendar, which is a company secretary in the United Kingdom and much of the Commonwealth, a general counsel or finance director elsewhere, and a clerk or governance officer in a charity or a public body. Set provisional dates rather than leaving them to arrive.
 
 **Last meeting's minutes and open actions.** Missing: reconstruct and get the chair to confirm. Actions that vanish teach a board that its requests are optional.
 
@@ -142,7 +142,7 @@ Actions read back before close.
 
 **A new director joining.** Onboard in the first month: constitutional documents, the last four packs and minutes, the operating model, metric definitions, the plan, and a one-to-one with the chief executive and the chair. A director who starts without context spends two meetings asking questions the pack already answered.
 
-**A crisis.** Contact directors when it happens, not at the next meeting. Notice periods and quorum still apply to any decision taken, so involve the company secretary early. `crisis-and-incident-comms` covers the wider communication.
+**A crisis.** Contact directors when it happens, not at the next meeting. Notice periods and quorum still apply to any decision taken, so involve whoever is responsible for corporate governance early, a company secretary where the role exists and otherwise counsel or the governance officer. `crisis-and-incident-comms` covers the wider communication.
 
 ## Quality bar
 
@@ -154,6 +154,16 @@ Actions read back before close.
 - Minutes were filed within a week, recording decisions and dissent rather than discussion.
 - Every action from the previous meeting has a status reported at the next one.
 - Each director had at least one contact per quarter outside a meeting.
+
+## Adapting this to your context
+
+The cadence here comes from a venture-backed board of five to seven directors meeting quarterly. Trustee boards, family boards, joint venture steering groups and investment committees work differently.
+
+- **The five-day pre-read.** Set from directors who read the night before. Trustee and public sector boards often have a constitutional notice period, commonly seven to fourteen days, which overrides this and cannot be shortened for convenience.
+- **Pre-wiring one to one.** Expected and legitimate with investor directors. In some public bodies, mutuals and listed committees, substantive discussion outside the meeting is restricted or must itself be recorded, so read the standing orders before booking the calls.
+- **The director roster.** Written around funds with different clocks. For a family board, a founder trust or a members' association, the equivalent question is which branch or constituency each director speaks for, and the roster should say so.
+- **Quarterly contact per director.** Workable with six directors. With a fifteen-person trustee board, hold it for the chair and the committee chairs and make it annual for everyone else, rather than doing it badly for all fifteen.
+- **What not to change.** No director learns material bad news from a document, and every item where a director could reasonably object is pre-wired before circulation.
 
 ## Related skills
 

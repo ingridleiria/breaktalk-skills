@@ -65,7 +65,7 @@ Value of one point of shift  =$Total_revenue*0.01
 Margin value of one point    =$Total_revenue*0.01*($Margin_A-$Margin_B)
 ```
 
-A mix shift is structural when it persists across three or more consecutive periods, traces to a named product, pricing, or programme change rather than a promotion, and is not reversing. All three, or call it cyclical and say what is driving it.
+The structural against cyclical test is defined in `revenue-analysis-workbook`, which owns it. Apply it there and report the verdict here with all three pieces of evidence in the sentence: the periods it persisted across, the named and dated change it traces to, and the fact that it is not reversing. Do not restate the test in the report and do not keep a second copy of the rule.
 
 **Concentration risk.** A top five above half of revenue is high concentration; a single entity above fifteen percent is a meaningful dependency and above twenty-five percent a critical one. What matters is not the share but the grip: a large client held by a contract or an integration is a different risk from one buying order by order. Express exposure as replacement: losing this account requires the equivalent of N average mid-tier accounts, taking M months at the current win rate. `revenue-concentration-risk` produces the analysis; this is how it is stated in prose.
 
@@ -81,17 +81,11 @@ Residual check          =$Total1-$Total0-$D5-$D6      must read 0
 
 An annualised run rate is valid only when the elapsed months are complete, no exceptional item distorts the average, and seasonality has been accounted for. State that in the sentence carrying the number, not in a footnote.
 
-**Whitespace and conversion.** Where comparable entities show very different penetration of a valuable channel, the gap is the opportunity. Size it at the lowest, mean, and highest penetration observed among comparables, and report all three.
+**Whitespace and conversion.** Where comparable entities show very different penetration of a valuable channel, the gap is the opportunity. Three-way sizing at the lowest, mean and highest observed penetration is defined in `expected-revenue-estimation`, which owns it; size it there and report all three figures here.
 
-```
-Potential at penetration p =$D12*p
-Whitespace                 =MAX(0,$D12*p-$E12)
-Low / Base / High          p = MIN(obs), AVERAGE(obs), MAX(obs)
-```
+What this skill adds is how the three are written. Put the penetration assumption in the same sentence as the number, name the comparable population and how many observations it holds, and mark the mean-penetration figure as the one to cite. Presenting only the upside as "the opportunity" is the commonest way an analysis loses credibility.
 
-Presenting only the upside as "the opportunity" is the commonest way an analysis loses credibility,.
-
-**Cost of delay.** Delayed revenue is forgone, not deferred: an initiative launching in September does not recover June, July, and August. Multiply the monthly estimate by months lost, report per initiative and in aggregate at all three rates, and say plainly that there is no recovery mechanism, because the instinct in the room will be to treat it as timing. `expected-revenue-estimation` produces the monthly figures.
+**Cost of delay.** Delayed revenue is forgone, not deferred: an initiative launching in September does not recover June, July and August. The calculation, including the ramp-based figure and the naive steady-state figure shown beside it, belongs to `expected-revenue-estimation`, which owns it. Take both figures from there rather than multiplying a monthly rate by months lost inside the report, because a naive figure written into prose is the version that gets quoted afterwards. Report per initiative and in aggregate at all three scenario rates, state the horizon in the same sentence as the number, and say plainly that there is no recovery mechanism, because the instinct in the room will be to treat it as timing.
 
 **Seasonality.** With two or more full cycles, separate the seasonal baseline from the directional trend before calling anything growth or decline. Report which periods systematically outperform, the peak to trough ratio, and whether the pattern holds across years. The implication is usually timing: an initiative that misses the peak waits a full cycle, which is a cost-of-delay figure rather than a scheduling inconvenience.
 
@@ -121,25 +115,25 @@ Replace "revenue went up" with the rate and the comparison basis. Replace "a big
 
 ## Worked example
 
-**Situation.** Lambert Skills Group, a workplace training provider of about 200 people, had 24.6 million of revenue and a board meeting in six days. Revenue was up 25 percent year on year and the chief executive wanted the growth explained, because the board had asked twice whether it was repeatable without getting an answer. Two channels existed: open courses sold seat by seat, and corporate programmes sold as annual agreements.
+**Situation.** Lambert Skills Group, a workplace training provider of about 200 people, had 24.6 million US dollars of revenue and a board meeting in six days. All figures in this example are in US dollars. Revenue was up 25 percent year on year and the chief executive wanted the growth explained, because the board had asked twice whether it was repeatable without getting an answer. Two channels existed: open courses sold seat by seat, and corporate programmes sold as annual agreements.
 
 **Task.** A one-page executive summary answering whether the growth was repeatable, with the analysis behind it, in a form the board would not send back.
 
 **Action.** The first draft was three charts and four paragraphs, leading with "revenue grew 25 percent, driven by strong performance in corporate programmes". It was abandoned after being read against the five second test: every sentence would have been true of any training business with a good year. It was level one written three times.
 
-The rewrite started with growth decomposition. Client count had gone from 312 to 331, worth 1.4 million of the 4.9 million increase; revenue per client had risen from 68,900 to 82,100, worth 3.5 million, residual zero. Growth was overwhelmingly existing clients spending more, not new clients won, which is a different business and a different repeatability answer.
+The rewrite started with growth decomposition, on the two figures that had to reconcile: 19,656,000 in the prior year and 24,570,000 in the current one, an increase of 4,914,000, which is the 25 percent. Client count had gone from 312 to 325, so 13 more clients at the prior year's average of 63,000 each, worth 819,000. Revenue per client had risen from 63,000 to 75,600, so 12,600 more across 325 clients, worth 4,095,000. The two components sum to 4,914,000 and the residual check read zero. Growth was overwhelmingly existing clients spending more, not new clients won, which is a different business and a different repeatability answer.
 
-Then the mechanism. Splitting revenue per client by channel put the whole increase in corporate programmes, and tracing it to individual clients showed nine that had moved from open-course seats to annual programme agreements during the year, accounting for 3.2 million of the 3.5 million. Named and dated, this was level two.
+Then the mechanism. Splitting revenue per client by channel put the whole increase in corporate programmes, and tracing it to individual clients showed nine that had moved from open-course seats to annual programme agreements during the year, accounting for 3,500,000 of the 4,095,000 attributed to revenue per client, and 71 percent of the total increase of 4,914,000. Named and dated, this was level two.
 
 Level three came from the predictability framework. Programme revenue arrives without a new selling motion; open-course revenue is re-sold every cycle. Programme clients renewed at 91 percent against 62 percent, both from the data. The mix shift therefore meant the business was moving from restarting each year to compounding, and it passed all three structural tests: persistent across three consecutive periods, traceable to a programme launched eighteen months earlier, not reversing.
 
-The second wrong turn was the opportunity sizing. The first version put conversion whitespace at 4.1 million using the highest observed programme penetration among comparable clients. The finance director took it apart in a preparatory read, correctly, because it assumed every remaining client would behave like the best. Rebuilt three ways: 1.2 million at the lowest observed penetration, 2.4 at the mean, 4.1 at the highest, base marked and the assumption in the same sentence.
+The second wrong turn was the opportunity sizing. The first version put conversion whitespace at 4.1 million using the highest observed programme penetration among comparable clients. The finance director took it apart in a preparatory read, correctly, because it assumed every remaining client would behave like the best. Rebuilt three ways on the method `expected-revenue-estimation` defines: 1.2 million at the lowest observed penetration, 2.4 million at the mean, 4.1 million at the highest, base marked and the penetration assumption in the same sentence as each figure.
 
 The falsification condition was written in: the thesis is wrong if programme renewals fall below 80 percent, or if conversions stop coming from the existing base. Both observable within two quarters.
 
 **Result.** The summary led with the sentence that growth was 71 percent driven by nine existing clients converting to annual programmes rather than by new clients won, and that this made it more repeatable rather than less, conditional on conversion capacity. The board asked one question, how many more clients fit the conversion profile, which the whitespace section answered at three levels.
 
-Two sales roles were reallocated from new business to conversion. The cost-of-delay section priced waiting: 2.4 million of base-case whitespace at the observed conversion rate implied roughly 200,000 a month forgone and not recoverable. Nine months later programme renewal was 89 percent, inside the falsification band, and the thesis stood.
+Two sales roles were reallocated from new business to conversion. The cost-of-delay section priced waiting, using both figures from `expected-revenue-estimation` rather than a monthly rate multiplied by months. At maturity the 2.4 million base case implies 200,000 a month, so a quarter of delay looks like 600,000. On the conversion ramp observed from the nine clients already converted, the first three months of a delayed start are worth 0.94 of a mature month between them, an average of about 62,700 a month, so a quarter of delay forgoes roughly 188,000 within the first year and converges on the full 600,000 only once the motion is mature. Both figures went in, with the horizon stated, and the sentence that none of it is recoverable. Nine months later programme renewal was 89 percent, inside the falsification band, and the thesis stood.
 
 The report took about nine hours including workbook checks. The abandoned first draft took two of them, and what saved it was reading its opening sentence aloud against the five second test.
 
@@ -233,6 +227,17 @@ Where the report carries charts, keep them monochrome first: series separated by
 - A falsification condition is stated, with the date the evidence will exist.
 - The limits of the data appear beside the claims they qualify, not collected at the end.
 - The report ends in actions, each with an owner, a date, and the figure that justifies it.
+
+## Adapting this to your context
+
+The frameworks assume a services or software company with two or more channels, a reconciled workbook behind it, and a leadership team meeting on a cycle. The templates and the language standard travel further than the frameworks do.
+
+- **Which frameworks apply.** Channel economics needs two channels; a single-channel business drops it and says so rather than inventing a split. Grant-funded and public sector bodies replace it with funder mix and award expiry, since the question there is which awards end when.
+- **Growth decomposition.** More entities against more revenue per entity assumes a countable entity. Usage-based businesses need a third component, price against volume, or a tariff change is reported as expansion. A marketplace decomposes into participants, transactions each and take rate.
+- **The audience.** A funder or a regulator reads for compliance against stated objectives, so the template becomes objectives, evidence, variance and action. Keep the four levels and the falsification condition; change the headings.
+- **Whitespace and cost of delay.** Both are borrowed from `expected-revenue-estimation`. A solo practice with no comparable population cannot size whitespace three ways, and should state what the ceiling would have to be instead.
+
+- **What not to change.** Every report reaches level three, no consequence is asserted without a mechanism named and dated above it, and every figure traces to a cell.
 
 ## Related skills
 

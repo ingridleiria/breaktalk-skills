@@ -188,6 +188,16 @@ Files out:  build/02_merge_rollout.do -> data/derived/panel_v3.dta
 - The report says what did not work and what could not be found, in the same document as the findings.
 - A colleague could pick up the log, the scripts and the task card and continue without asking a question.
 
+## Adapting this to your context
+
+The example is a doctoral assistant on an economics panel dataset in Stata. The habits are general; the deliverables, thresholds and escalation triggers are not.
+
+- **The deliverable.** A panel, a figure, a memo. In qualitative work the equivalents are a coded extract set, a coding frame and analytic memos, delivered with the NVivo, MAXQDA or ATLAS.ti project file. In survey work, a cleaned response file with the scoring syntax.
+- **The sample loss thresholds.** Five percent of a step and twenty percent cumulative come from administrative data with thousands of units. On a clinical or lab sample of 300, five percent is fifteen people. Set the trigger in cases rather than percentages when the sample is small.
+- **The escalation rule.** Contacting a participant, changing a consent script or reusing data outside the approved purpose needs the ethics committee or IRB, not only the person who set the brief.
+- **The decision handed back.** Here it is the estimator and the clustering. Elsewhere it is the imputation model, the number of factors retained, the level structure of a multilevel model, or a change to the coding scheme.
+- **What not to change.** Read the brief back and get a yes before starting; write the log as the work happens; and label every quantity as reported, calculated or assumed.
+
 ## Related skills
 
 `thesis-advisor` is the other side of this relationship and sets the brief this skill executes. `research-design` and `research-question-ideation` decide what should be done, where this decides how to do it well and how to report it. `literature-verification` holds the citation standard applied in step 7, and `systematic-review-protocol` is the formal version when a search must be reproducible. `data-profiling-and-cleaning` and `stata-data-management` cover the data work itself, and `stata-do-file-craft` and `python-for-econometrics` the code discipline the scripts must meet. `econometrician` owns the estimator and inference decisions an assistant should escalate rather than take. `research-ethics-and-data-protection` governs the access and licence conditions in the escalation rule. `analysis-audit` is what happens to this work when somebody checks it from the outside, and work done to this standard passes it.

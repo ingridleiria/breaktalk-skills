@@ -221,6 +221,16 @@ Anything I could not say to the author: [...]
 - No sentence addresses the authors rather than the work, and nothing in the report would embarrass the referee if attributed.
 - Anything genuinely well done is named specifically, so the authors know what to protect.
 
+## Adapting this to your context
+
+These defaults come from refereeing empirical economics papers, where reports are long prose and the recommendation ladder has five rungs. Adjust the surface, not the tests.
+
+- **The time budget.** Four to eight hours assumes a forty-page paper with tables. A short psychology report runs two to three; a qualitative manuscript runs longer, because the evidence is the extracts.
+- **The reading order.** Abstract, conclusion, tables, method, introduction assumes evidence sits in tables. For qualitative work, read the extracts and the analytic procedure in the tables' place. For a trial or review, read the registration first and compare it to what was reported.
+- **Reporting guidelines.** Economics has none. Health, psychology and education journals often expect CONSORT, STROBE, PRISMA, or COREQ for qualitative work. Where the journal names one, checking against it is a legitimate minor point.
+- **Report shape.** Some journals want a structured form with scored subratings rather than prose, and some publish reviews signed. Map the five recommendation categories onto the options your form gives before you write.
+- **What not to change.** The change test: a major point must name what it would change about the conclusion if it came out against the authors. Anything failing it is a suggestion. And read the whole paper before writing a word.
+
 ## Related skills
 
 `peer-review-simulator` is the same activity performed on your own manuscript before submission, where exhaustiveness is a virtue rather than a fault. `identification-defense` supplies the design-specific attack list that makes a methodological major point specific rather than vague. `literature-verification` is how you check a citation you doubt before writing that you doubt it. `analysis-audit` is what a data editor does with the numbers, which is not a referee's job but is worth naming in confidential comments when you suspect a computational error. `response-to-reviewers` is how the author on the other end will handle your report, and reading it explains why an unevidenced request produces an unevidenced refusal. `thesis-chapter-review` applies an examiner's criteria rather than a journal's. `journal-targeting` is the decision that put this paper in front of you.

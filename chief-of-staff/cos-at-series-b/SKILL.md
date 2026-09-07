@@ -182,6 +182,16 @@ Everything longer goes in an appendix nobody is required to read.
 - One legacy process has been stopped this quarter, on the evidence of the starting-today question.
 - The role owns no function, and everything functional was handed over with a date.
 
+## Adapting this to your context
+
+The method was calibrated on venture-funded companies of a hundred to three hundred people with five or six functional leaders. The label is only a proxy.
+
+- **"Series B" as a label.** It means a leadership team that owns its numbers, two layers between the chief executive and the work, a cadence that survives a busy week, and a board that governs. A professional firm with practice heads, a hospital directorate or a university faculty is here regardless of funding.
+- **The monthly cycle.** Fits a business that closes its books monthly. Where the cycle is a term, a season or a grant year, run the synthesis on that rhythm: a monthly document over a seasonal business finds nothing for months and everything in one.
+- **Three findings on one page.** Sized for one chief executive who reads. Where the principal is a partnership board or a management committee, the three findings need an owner from each part and a longer circulation window.
+- **The four searches.** Written around sales, roadmap and retention. Keep the logic and change the sources: rota against demand, caseload against staffing, enrolment against places.
+- **What not to change.** Every finding is shown to the leader it implicates before it reaches the chief executive, and carries a consequence in money or weeks.
+
 ## Related skills
 
 `cos-at-series-a` precedes this and produces the handover that makes synthesis possible; attempting synthesis while still owning functions produces neither. `cos-at-series-c` follows, when the value moves from reconciliation to carrying a named mandate.

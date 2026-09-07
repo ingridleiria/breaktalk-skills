@@ -45,7 +45,7 @@ Do not use it to choose the estimator or the clustering, which is `econometricia
 
 **Who else will run this code, and on what operating system.** Missing: assume at least one other person on a different system, which costs one conditional in the master file and saves a day later.
 
-**The Stata version and flavour available to everyone involved.** Missing: scaffold to the lowest version anyone has, and record it, since a do-file written under a newer version can fail silently in an older one on syntax that changed meaning.
+**The Stata version and flavour available to everyone involved.** Missing: scaffold to the lowest version anyone has, and record it, since a do-file written under a newer version can fail silently in an older one on syntax that changed meaning. The skeleton below pins `version 18`, matching `stata-do-file-craft`; the reason a version line exists at all is set out with the master file.
 
 ## The method
 
@@ -195,7 +195,7 @@ water-metering/
 
 ```stata
 * 00_master.do : entry point. Nothing else is run directly.
-version 17
+version 18
 clear all
 
 * the only machine-specific line in the project
@@ -232,6 +232,8 @@ if `do_import'    do "$code/02_import.do"
 
 log close
 ```
+
+The `version` line is pinned, and pinned to the same release `stata-do-file-craft` uses, deliberately. It is pinned at all because Stata's defaults and small-sample adjustments have changed between releases, so the same code under a newer Stata can return a slightly different number with no error and no warning, and an unexplained third decimal is the most expensive kind of discrepancy to chase. The line makes the code declare which release's behaviour it was written against, so the mismatch surfaces as a version statement rather than as a mystery. It is pinned to 18 here so that this skill and `stata-do-file-craft` do not hand a reader two numbers to reconcile. On your own project the number is the oldest release anyone on the team runs, changed in the master and in every script header at the same time.
 
 **The open decisions register:**
 
@@ -298,6 +300,16 @@ log close
 - Packages are installed into a project-local directory with their versions recorded.
 - The open decisions register lists every provisional choice, each findable by one search of the code.
 - A stranger can read the README and reproduce the results without asking a question.
+
+## Adapting this to your context
+
+The method is the stage contract: one decision lives in exactly one stage, every stage loads from disk and saves, raw is read only, one entry point. That holds in any language. Do-files, globals and `.dta` are dialect.
+
+- **The tree in another language.** In R, numbered scripts sourced by `run_all.R` with `here::here()` and `renv` for `code/ado`; in Python a `src/` package with a Makefile and a lockfile; in SAS one `%include` driver; in SPSS syntax chained with `INSERT FILE`. The contract does not change.
+- **The diagnostics stage.** The design table is quasi-experimental economics. Add your row: intraclass correlation and variance components for multilevel work; measurement invariance and fit indices for SEM; a participant flow diagram, arm balance and attrition by arm for a trial.
+- **Intermediate files.** `.dta` becomes `.rds`, `.parquet` or `.sav`. Where coauthors use different software, save an open format alongside and note that value labels do not travel with a csv.
+- **Qualitative projects.** An NVivo, MAXQDA or ATLAS.ti project file is a binary that cannot be rebuilt from raw or diffed. The equivalent is dated copies of it plus the coding frame, the memos and exported code reports, kept as text under version control.
+- **What not to change.** Raw stays read only, one decision lives in exactly one stage, and every stage begins by loading from disk rather than from memory.
 
 ## Related skills
 

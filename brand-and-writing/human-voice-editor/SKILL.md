@@ -210,6 +210,17 @@ DASH CHECK
 - The change report gives counts before, three before-and-after pairs, and the list of unanswered queries.
 - A reader who knows the author would accept the result as theirs.
 
+## Adapting this to your context
+
+The stock word list, the tells and the dash check are calibrated to English business and academic prose as it reads now. The vocabulary list dates fastest.
+
+- **The stock vocabulary.** Thirty-odd words that current models overproduce in English. Refresh it from your own recent drafts, and delete any that is a term of art in your field: robust, leverage and nuanced all have technical uses.
+- **The tells.** Triplets, balanced clauses and uniform sentence length are English patterns. In Portuguese, German or Japanese the giveaways differ, so rebuild the diagnostic from samples in that language.
+- **The register.** The worked example is an all-staff note and the second scenario an economics methods section. For clinical notes, legal drafting or fiction, decide first which markers are conventions there rather than tells.
+- **The dash check.** `scripts/check_dashes.py` enforces one house rule. If your style guide allows dashes, drop it or repoint it at what your guide does ban.
+- **Sentence length targets.** A median of 14 words with a spread of 4 to 38 came from one author's emails. Compute yours from two or three unedited samples.
+- **What not to change.** Substance before style: restore the number, the name and the agent before touching rhythm, never invent a specific to fill a gap, and report counts rather than adjectives.
+
 ## Related skills
 
 `newsletter-post-writer` and `linkedin-post-writer` produce the drafts that come here for the final pass, and both name this skill as their last step. `literature-verification` runs before this on anything carrying citations, because verified sources are a precondition for editing rather than a consequence. `breaktalk-brand` supplies the editorial rules that constrain the edit when the piece is published under that identity. `content-quality-gate` decides whether the piece should go out at all, which this skill assumes has already been settled. `ceo-communications` and `thesis-chapter-review` both hand their near-final drafts here.

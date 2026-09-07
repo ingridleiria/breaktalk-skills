@@ -39,7 +39,7 @@ And do not call something a systematic review because the method was careful. Na
 
 **A reference manager and a screening record.** Any tool that deduplicates and holds decisions per record; a spreadsheet is acceptable if it holds one row per record with a decision and a reason. Missing: use a spreadsheet with a fixed column set, defined before screening starts, and never edit a decision without recording who changed it and why.
 
-**The reporting guideline the field expects, and its checklist.** Missing: use the general reporting logic in this skill, and say which guideline you did not follow.
+**The reporting guideline the field expects, and its checklist.** For most fields this is PRISMA 2020, whose checklist and flow diagram are what a journal or an examiner will look for; PRISMA-P covers the protocol itself, PRISMA-ScR the scoping review, and PRISMA-S the reporting of the search. The alternatives are real and field-specific: MOOSE for meta-analyses of observational epidemiology, ENTREQ for qualitative evidence synthesis, ROSES in environmental and conservation work, and the Campbell Collaboration's conduct and reporting standards in social policy, education and criminology. Missing: work to PRISMA 2020, which is the safest default outside those cases, and say which guideline you followed and which you did not.
 
 **A realistic time estimate.** Screening runs at roughly six hundred to a thousand titles and abstracts per person-day, and full-text assessment at fifteen to thirty papers per person-day. Missing: estimate from those rates, and note that first-time reviewers run at roughly half them.
 
@@ -51,7 +51,7 @@ And do not call something a systematic review because the method was careful. Na
 
 3. **Write eligibility criteria, each with its reason, and operationalise them.** Population, exposure, comparator, outcomes reported, design, period, language, publication status, and geography where relevant. Every criterion carries one clause of justification, because language and date restrictions are the two a referee always asks about and "resources" is an acceptable answer where it is the true one. Operationalise until a screener does not have to ask: not "adequate sample size" but "twenty or more units per arm". Ambiguity in the criteria is what agreement statistics later measure.
 
-4. **Write the protocol and register it.** Question, criteria, databases and platforms, the draft search string, screening process and number of screeners, the extraction fields, the risk of bias tool, the synthesis approach and the pooling rule, the certainty framework, the team, and the date. Register it where the field has a registry; where none exists, deposit it with a timestamp in an institutional or public repository. The judgement call is how much detail to commit to before you know the literature, and the rule is that anything you would be tempted to change after seeing results must be fixed now: the outcome hierarchy, the pooling rule, and the subgroups.
+4. **Write the protocol and register it.** Question, criteria, databases and platforms, the draft search string, screening process and number of screeners, the extraction fields, the risk of bias tool, the synthesis approach and the pooling rule, the certainty framework, the team, and the date. Register it where the field has a registry. PROSPERO takes reviews with a health-related outcome, broadly defined, and is the default in health, public health and much of psychology; OSF Registries accepts a protocol in any field; the Campbell Collaboration registers titles and protocols in education, social welfare and criminal justice; INPLASY and Research Registry exist where those do not fit. Write the protocol itself to PRISMA-P, which is the checklist for exactly this document. Where no registry accepts it, deposit it with a timestamp in an institutional or public repository, which achieves the same thing: the date is fixed before the results are visible. The judgement call is how much detail to commit to before you know the literature, and the rule is that anything you would be tempted to change after seeing results must be fixed now: the outcome hierarchy, the pooling rule, and the subgroups.
 
 5. **Build the search in concept blocks, then validate it against the seed set.** One block per question element, controlled vocabulary and free-text synonyms combined within a block, blocks combined across. Include spelling variants, plurals and truncation, and the vocabulary of every discipline that studies the question, because fields name the same construct differently and a string built in one field's language finds one field's papers. Then run the recall test: does the string return every paper in the seed set? If it misses one, the string is wrong, not the seed. Fix the string and rerun. A string that fails the recall test and is used anyway will miss an unknown quantity of the literature, and the failure is undetectable afterwards.
 
@@ -149,7 +149,7 @@ Team, roles, funding, conflicts
 
 | Database | Platform | Date run | Full string | Records returned | Notes |
 
-**The flow counts**, which must reconcile arithmetically:
+**The flow counts**, which populate the PRISMA 2020 flow diagram and must reconcile arithmetically:
 
 | Stage | Count |
 | Records identified, database search | |
@@ -221,11 +221,21 @@ Team, roles, funding, conflicts
 - The protocol was registered or timestamped before the first search was run, and every deviation appears in the deviations table with its date and whether results were visible.
 - The search string was validated against a named seed set and returned every paper in it.
 - Every database run is recorded with platform, exact string, date and records returned, so any of them can be rerun.
-- The flow counts reconcile arithmetically, and every full-text exclusion carries a reason from a fixed list.
+- The flow counts reconcile arithmetically, populate the PRISMA 2020 flow diagram or the named alternative, and every full-text exclusion carries a reason from a fixed list.
 - Screening used two people, or discloses single screening with a checked subsample and reports agreement.
 - Risk of bias is judged per domain per study and visibly changes something in the synthesis.
 - The pooling decision is stated with its reasoning, and studies are combined only where the four comparability tests pass.
 - The review is labelled as the type it actually is, and its shortcuts are named rather than implied.
+
+## Adapting this to your context
+
+The worked example is an education and economics review with two screeners and eight weeks. The protocol discipline is the method; the databases, appraisal tools and synthesis vocabulary are field choices.
+
+- **The databases.** Two plus a grey literature route, but which two matters. MEDLINE and Embase in health, PsycINFO and Web of Science in psychology, ERIC in education, Scopus in sociology, EconLit and RePEc in economics. Search each platform's controlled vocabulary alongside free text: MeSH, the PsycINFO thesaurus, ERIC descriptors.
+- **The appraisal tool.** Name it in the protocol, not later. RoB 2 for randomised trials, ROBINS-I for non-randomised intervention studies, the Newcastle-Ottawa Scale for cohort and case-control designs, CASP or the Mixed Methods Appraisal Tool for qualitative evidence. For certainty, GRADE or GRADE-CERQual.
+- **Synthesis when pooling is not justified.** Report it to SWiM, the guideline for synthesis without meta-analysis. Qualitative syntheses have their own methods, thematic synthesis, framework synthesis, meta-ethnography, named in the protocol like any other.
+- **The screening rates.** Six hundred to a thousand abstracts a person-day suits structured medical abstracts. Social science abstracts are longer and less standardised, so budget nearer the bottom, lower again for a multilingual set.
+- **What not to change.** Register or timestamp the protocol before the first search runs, validate the search string against a seed set, and date every deviation with whether results were visible.
 
 ## Related skills
 

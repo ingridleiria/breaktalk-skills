@@ -11,6 +11,8 @@ That asymmetry is the whole problem, and it is invisible week by week. Nobody no
 
 This is the review and the plan that make the decision explicit each week, on paper, so that the week is chosen rather than absorbed, and so that a bad pattern is visible in four weeks instead of four quarters.
 
+A note on where this sits: it is filed in the writing track because that is where this library keeps the working methods I run on myself, but it is a personal operations skill rather than a writing one, and it is written for one person planning their own week rather than for a manager planning someone else's.
+
 ## When to use this, and when not to
 
 Use it weekly for anyone running two or more commitments that each have real obligations: a role plus a doctorate, a role plus a business, a role plus significant caring responsibilities, or two part-time roles. Use it when someone says they have too much on and does not know what to cut, when one commitment has been slipping for weeks, when two deadlines are converging, and monthly or quarterly in the extended form described below.
@@ -95,9 +97,9 @@ The wrong turn was in the first version of the block placement. He scheduled the
 
 The two outcomes were then written: for the doctorate, the results section rewritten with the new specification, about 2,500 words; for the role, the board pack complete and sent to the chief executive by Thursday evening for comment. Both are checkable by someone else.
 
-The shortlist was cut from fourteen items to six against the rule. Two items nobody was waiting on went to the not-this-week list. Two were reversible if late and were moved to the following week. One, a hiring scorecard, could be done badly and improved later, so it was done in forty minutes rather than the three hours it had been given. The escalation stayed, because it had an external deadline and other people were blocked on it.
+The shortlist was cut from fourteen items to eight against the rule. Four items nobody was waiting on went to the not-this-week list. Two more were reversible if late and were moved to the following week, which put them on the same list. One, a hiring scorecard, could be done badly and improved later, so it was done in forty minutes rather than the three hours it had been given. The escalation stayed, because it had an external deadline and other people were blocked on it.
 
-The not-this-week list had five named items on it, including a piece of analysis a colleague had asked for. Rui sent that colleague a message on the Monday saying it would come the following week, which took two minutes and removed the item from his attention entirely.
+The not-this-week list had six named items on it, including a piece of analysis a colleague had asked for. Rui sent that colleague a message on the Monday saying it would come the following week, which took two minutes and removed the item from his attention entirely.
 
 The deadline list, merged for eight weeks, surfaced the collision that mattered: the chapter deadline and the quarter-end reporting cycle both landed in the week of the 29th. Because it was visible on the 6th, three hours of chapter work were pulled forward into the current week and the following one, rather than being discovered as an impossibility three weeks later.
 
@@ -109,13 +111,15 @@ What did not resolve: the Thursday block, which had been intended as a second th
 
 ### A second scenario, where it goes differently
 
-Some weeks the arithmetic returns a number that cannot be planned around. A week with the board meeting, a two-day site visit and a conference submission deadline came out at 6 discretionary hours against a shortlist of 24.
+The shape changes completely for someone with no employer. Ana Beltran is a freelance data analyst with four active clients, no salary, and a fifth commitment nobody pays her for: a training course she is building to sell, which is the only work not billed by the hour and the only work with nobody chasing it.
 
-The method changes shape rather than being abandoned. Instead of one outcome per commitment, the week gets a single outcome, chosen by the rule that the externally imposed and irreversible deadline wins: the conference submission, because the date does not move and missing it costs a year. The other commitment is not merely deprioritised, it is declared. Rui wrote to his supervisor on the Monday saying the chapter would not move that week and would resume on the following Tuesday, which converted a silent slip into a managed one.
+Two things about her week are different from the example above. There is no single calendar to subtract from, because four clients book her separately and none of them can see the others, so the fixed commitments have to be assembled by hand each Sunday and the unplanned load runs higher, at 9 hours in her four-week average rather than the 6 in the table. And the ordering rule in step 9 collides with money. The commitment nobody is chasing is also the one earning nothing this month, while a client deadline that moved forward by a week carried an invoice of 4,200 euros with it.
 
-The deep-work block still gets scheduled, at one block instead of two, because a week with none is the week that becomes a month with none. The shortlist is cut to items that are blocking other people, and everything else goes on the not-this-week list without apology.
+The arithmetic returned 12 discretionary hours against a shortlist of 26. The method does not settle the money question and should not pretend to. What it does is put the trade on the page. She took the client deadline, wrote one outcome for the week rather than two, and gave the course a single 90-minute block on Tuesday at 07:00 instead of the two three-hour blocks she had planned, on the rule that a week with no block is how a month with no block begins.
 
-The condition that changed is scarcity, and one rule inverts under it: normally the commitment nobody is chasing gets protected first, but when a hard external deadline is inside the week, it takes the hours, and the protected commitment gets its block moved earlier in the following week rather than dropped. The signal to watch is repetition. Once is a hard week. Twice in a row is a scheduling problem to fix in the plan. Three times is not a planning problem at all, it is a question about whether both commitments can be held in their current form, and that question belongs in `decision-memo` rather than in another weekly plan.
+The declaration step works differently without an employer. There is no supervisor to write to, so the person she told was herself, in the review log, with a date: the course resumes in the week of the 20th. A commitment with no external observer needs its deferral written down and dated, or it is not a deferral at all, it just quietly stops, and that is the failure this whole file exists to catch.
+
+What changed: with several clients and no salary the scarce resource is predictability rather than hours, and the rule that inverts is a different one. Ana cannot protect the unchased commitment first when a paying deadline sits inside the week, so she protects its minimum instead, one short block, and watches for repetition. Once is a hard week. Twice in a row is a scheduling problem to fix in the plan. Three times means the course is not a business but a hobby with a deadline attached, and that question belongs in `decision-memo` rather than in another weekly plan.
 
 ## Output
 
@@ -196,6 +200,17 @@ The review log is a single running document, one block per week, so the pattern 
 - The review was completed before the plan, and it records the unplanned hours and a reason code for every missed item.
 - The energy line is written, and a run of poor lines has visibly changed the plan.
 - The whole plan fits on one page.
+
+## Adapting this to your context
+
+The numbers come from one salaried office-hours week, run by someone holding a full-time role and a part-time doctorate. The arithmetic transfers; the figures do not.
+
+- **The hours table.** 48 intended, 21 fixed, 6 unplanned, 21 discretionary. Shift work, a teaching term or a clinical rota moves the intended figure weekly, so recompute rather than carry it forward.
+- **The unplanned load placeholder.** One fifth of working hours for the first fortnight. Front-line and clinical roles routinely run at a third. Replace it with your own four-week average.
+- **The good hours assumption.** Early morning before other people are working. Wrong for shift workers, for anyone whose colleagues sit in another time zone, and for people whose mornings belong to children.
+- **The number of commitments.** Two, in both scenarios. Three will not fit, and the method's honest use then is to show which one to drop.
+- **The cadence.** A 30 to 45 minute review and a 20 minute plan, weekly. Where deadlines move monthly, run it fortnightly and keep the merged list current between runs.
+- **What not to change.** The order. Review before plan, arithmetic before choosing work, blocks before shortlist, and a written not-this-week list naming who has been told.
 
 ## Related skills
 

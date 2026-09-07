@@ -39,7 +39,7 @@ Do not use it as a substitute for ethics approval or a data management plan; tho
 
 **An honest account of what has already been seen.** For existing data: which variables have been examined, which specifications run, by whom, and when. Missing: ask directly and record the answer in the plan. This determines what can be called confirmatory and what cannot, and it cannot be determined later.
 
-**The registry and its template.** Different registries demand different fields and some are field-specific. Missing: write the plan in the structure below and map it to the registry's fields at submission, rather than letting a form dictate the thinking.
+**The chosen registry and its template.** Different registries demand different fields and most are field-specific: OSF for anything, and the default where nothing else fits; AsPredicted for short experiment plans, nine questions and deliberately fast; the AEA RCT Registry for randomised trials in economics, which most economics journals now expect; ClinicalTrials.gov or an equivalent WHO primary registry for clinical and health intervention trials, where registration is a condition of publication under ICMJE rules; and PROSPERO for systematic review and meta-analysis protocols. Missing: pick from the list in the registration section below, then write the plan in the structure here and map it to the registry's fields at submission, rather than letting a form dictate the thinking.
 
 ## The method
 
@@ -97,6 +97,18 @@ Where a study has several arms, say whether each arm is compared with control on
 
 Register in a public timestamped repository appropriate to the field, before collection begins. Note the registry, the identifier and the date in the paper itself, not only in a cover letter, so a reader can check without asking.
 
+Which registry:
+
+| Registry | Use it for | Notes |
+| --- | --- | --- |
+| OSF Registries | Any field, any design, including secondary analysis of existing data | The general default. Accepts a full plan as an attached document, so nothing has to be cut to fit a form |
+| AsPredicted | Short experiment plans, common in psychology and behavioural science | Nine questions, twenty minutes. Good discipline, but too thin for a complex trial |
+| AEA RCT Registry | Randomised controlled trials in economics and development | Expected by most economics journals for field experiments, and it carries the trial's own identifier |
+| ClinicalTrials.gov, or another WHO primary registry such as ISRCTN or ANZCTR | Clinical trials and health interventions, including behavioural health | Registration before enrolment is a condition of publication under the ICMJE rules, so this is not optional in medicine |
+| PROSPERO | Systematic review and meta-analysis protocols, health and increasingly social science | Registers the review, not a study. Some social science reviews register on OSF instead |
+
+Where a field has more than one convention, register once in the registry the target journals recognise and, if a second is needed, cross-reference the first identifier rather than filing two independent plans that can drift apart.
+
 Where the field supports registered reports, in which the design is peer reviewed before data collection and acceptance does not depend on the result, consider that route seriously. It is the strongest available protection against the file drawer and it changes what can be published when the answer is null, which for a doctoral student with one shot at a chapter is not a small consideration.
 
 For analysis of data that already exists, the plan is still worth writing and the disclosure requirement is absolute. Write what has been seen, by whom, when, and at what level of detail. Three routes are available and the plan must say which is being used. First, register before requesting or accessing the outcome variables at all, which is clean and requires planning ahead with the data provider. Second, split the sample, explore in a holdout and register the confirmatory analysis for the remainder, stating the split rule and the seed. Third, register with a full exploration log and describe the analysis as a preregistered analysis of previously examined data, which is weaker and is still far better than nothing, provided nobody describes it as more than it is.
@@ -105,19 +117,19 @@ A preregistration written after exploration and presented as though written befo
 
 ## Worked example
 
-**Situation.** Dr Yusuf Baran, a postdoctoral researcher at the Verrell Institute for Social Research, had funding to field a survey experiment on public support for a proposed housing density reform. The design had three arms: a control vignette, a vignette emphasising local affordability, and a vignette emphasising construction jobs. Fielding was booked with a panel provider for six weeks' time, and the funder required a registered analysis plan before the money was released. The budget covered 3,000 completed responses.
+**Situation.** Dr Yusuf Baran, a postdoctoral researcher at the Verrell Institute for Social Research, had funding to field a survey experiment on public support for a proposed housing density reform. The design had four arms: a control vignette, a vignette emphasising local affordability, a vignette emphasising construction jobs, and a fourth emphasising traffic and congestion that had been added out of interest rather than because a hypothesis required it. Fielding was booked with a panel provider for six weeks' time, and the funder required a registered analysis plan before the money was released. At the questionnaire length the four-arm design implied, the budget covered 4,000 completed responses, 1,000 per arm.
 
 **Task.** A registered plan specific enough that the analysis could be run by someone else, submitted to the funder in ten days.
 
 **Action.** The first draft failed the two-analysts test in four places and two of them changed the study rather than the document.
 
-The first was the outcome. The draft named five primary outcomes: support for the reform on a seven-point scale, willingness to sign a petition, a feeling thermometer towards developers, perceived fairness, and an open-text sentiment measure. All were described as central. Under step 4 this is not a plan, because with five primaries and three arms there are fifteen headline contrasts and one of them will be significant. The repair was to build a three-item support index defined in advance, specifying the items, the coding direction and the aggregation as the mean of standardised items, and to name that index as the single primary outcome. The petition measure and the thermometer became secondary. The open-text measure moved to exploratory, because its coding scheme did not exist yet and a coding scheme built after seeing responses cannot be confirmatory.
+The first was the outcome. The draft named five primary outcomes: support for the reform on a seven-point scale, willingness to sign a petition, a feeling thermometer towards developers, perceived fairness, and an open-text sentiment measure. All were described as central. Under step 4 this is not a plan, because with five primary outcomes and four arms there are thirty pairwise contrasts, and one of them will be significant. The repair was to build a three-item support index defined in advance, specifying the items, the coding direction and the aggregation as the mean of standardised items, and to name that index as the single primary outcome. The petition measure and the thermometer became secondary. The open-text measure moved to exploratory, because its coding scheme did not exist yet and a coding scheme built after seeing responses cannot be confirmatory.
 
 The second was power, and it nearly ended the study. The closest prior experiment reported framing effects on policy support of about 0.08 standard deviations. With 1,000 respondents per arm, a two-sided test at the five percent level and eighty percent power, the minimum detectable effect between two arms was roughly 0.13 standard deviations. The study was therefore unable to detect the effect the literature would lead one to expect, and would have produced a null that meant nothing.
 
 The wrong turn here is worth naming precisely. The first response was to assume a larger effect on the grounds that the vignettes in this study were stronger than in the prior work, and to write 0.15 standard deviations into the plan as the assumed effect. That is reverse-engineering the assumption from the affordable sample, and it is the most common way a power section becomes fiction. It was abandoned after a colleague asked the obvious question: what evidence supports 0.15. There was none.
 
-The repair was structural. A fourth arm, which had been included out of interest rather than necessity, was cut, redistributing the sample across three arms at 1,600 each. Pre-specified covariate adjustment on three baseline variables collected before the vignette was added, which the prior literature suggested would absorb enough variance to matter. Together these moved the minimum detectable effect to roughly 0.10 standard deviations. The plan stated openly that effects below 0.10 would not be detectable and that a null would be interpreted as evidence against effects larger than that, not as evidence of no effect.
+The repair was structural. The traffic arm, which had been included out of interest rather than because anything in the design turned on it, was cut. That mattered twice over. It removed one vignette and its follow-up block, which took about four minutes off the interview, and the panel provider's revised quote at the shorter length covered 4,800 completes for the same money instead of 4,000. Three arms at 1,600 each, against four arms at 1,000 each, moved the minimum detectable effect from roughly 0.13 to roughly 0.10 standard deviations. Pre-specified covariate adjustment on three baseline variables collected before the vignette was added as well, which the prior literature suggested would absorb enough variance to give a further margin, and the plan did not count that margin in the headline number. The plan stated openly that effects below 0.10 would not be detectable and that a null would be interpreted as evidence against effects larger than that, not as evidence of no effect.
 
 The third repair was exclusions. The draft said inattentive respondents would be excluded. The plan replaced this with a rule: respondents failing two or more of three attention checks, with the checks and their correct answers written into the appendix, plus respondents completing the survey in under a third of the median completion time from a soft launch of 200 responses. The plan committed to reporting the primary result both with and without exclusions.
 
@@ -125,9 +137,9 @@ The fourth was subgroups. The draft mentioned that heterogeneity by tenure would
 
 **Result.** The plan was registered eleven days before fielding, with the identifier recorded. The affordability frame moved the primary index by 0.14 standard deviations, significant, and the jobs frame by 0.03, not distinguishable from zero. The renter subgroup showed the predicted larger effect.
 
-Two deviations occurred and both went into the deviations table. The panel provider delivered 4,712 rather than 4,800 completes, and one attention check turned out to be ambiguously worded, so the rule was applied on the remaining two checks with the change documented and the original rule also reported. Neither changed the conclusion, and a referee said the deviations table was the reason they trusted the rest of the paper.
+Two deviations occurred and both went into the deviations table. The panel provider delivered 4,712 rather than the promised 4,800 completes, short by 88 and unevenly spread across the three arms, and one attention check turned out to be ambiguously worded, so the rule was applied on the remaining two checks with the change documented and the original rule also reported. Neither changed the conclusion, and a referee said the deviations table was the reason they trusted the rest of the paper.
 
-The plan cost about three days of work. Cutting the fourth arm was the decision that made the study answerable, and it was made only because the power calculation was done honestly under step 6.
+The plan cost about three days of work. Cutting the traffic arm was the decision that made the study answerable, and it was made only because the power calculation was done honestly under step 6.
 
 ### A second scenario, where it goes differently
 
@@ -247,6 +259,16 @@ why, and what the preregistered version would have shown.
 - The multiple comparison families and every subgroup are named in advance.
 - What would count as a null and what would count as inconclusive are both written down.
 - A deviations table is promised in the plan itself.
+
+## Adapting this to your context
+
+This structure is built for a quantitative study with a named estimating equation, usually an experiment or administrative data. The logic carries elsewhere; the fields do not.
+
+- **The registry.** The file assumes you choose. In medicine you do not: ICMJE journals require ClinicalTrials.gov or another WHO primary registry before the first participant is enrolled. Systematic reviews go to PROSPERO, economics trials to the AEA RCT Registry, short psychology experiments to AsPredicted, everything else to OSF.
+- **The power calculation.** It assumes a two-arm comparison of means. In clustered education trials, compute the minimum detectable effect from the number of clusters and the intraclass correlation, not the number of pupils; for multilevel models, simulate; for survival outcomes, power on events.
+- **The specification.** Written here as a regression with fixed effects and clustering. Substitute what your field reports: a mixed model with its random effects written out, a structural equation model with the measurement model fixed in advance, an ANOVA with its factors and contrasts named.
+- **Qualitative work.** Preregister only what can honestly be fixed in advance: sampling and stopping rule, the interview guide, the analytic approach, who codes and how disagreement is resolved. Never themes.
+- **What not to change.** The two-analysts test, and the promised deviations table. A plan that does not constrain the analysis is worse than no plan.
 
 ## Related skills
 

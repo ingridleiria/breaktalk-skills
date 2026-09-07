@@ -11,6 +11,8 @@ The failure this skill prevents is not a bad chapter. It is a candidate who cann
 
 Ranking by consequence is therefore not a presentational choice. It is the substance of the deliverable, and a review that does not do it has failed regardless of how accurate its individual findings are.
 
+This skill owns chapter and thesis review inside a doctorate, whichever reader it is heading for next, a supervisor, an upgrade panel or an examiner; `peer-review-simulator` owns the same activity for a manuscript going to a journal.
+
 ## When to use this, and when not to
 
 Use it before a chapter goes to a supervisor, before a full thesis goes to examiners, before a progress review or upgrade panel, and when a candidate wants to know whether a chapter is finished. Use it on a full thesis at least once, because chapter-level problems are frequently invisible within the chapter and obvious against the rest of the document: the same variable defined two ways, a result in chapter three that contradicts a claim in chapter five, an introduction promising a contribution the chapters do not deliver.
@@ -223,6 +225,16 @@ PREFERENCES, WHICH THE AUTHOR MAY IGNORE
 - The spine was extracted and any drift between question, hypotheses, specifications, exhibits and conclusion is reported.
 - The viva questions are in an examiner's words and the ones the text avoids are marked.
 - Three to five specific things that are well done are named, so the candidate knows what to protect.
+
+## Adapting this to your context
+
+Written for a quantitative economics thesis examined by viva with a corrections category attached. The ranking by consequence is the method. The examination system and the design question are local.
+
+- **The examination system.** A viva with pass, pass with corrections and major revision is one model. A United States committee usually resolves the outcome before the defence, a Brazilian banca defends publicly, several European systems approve the manuscript before the ceremony. Which stage this feeds decides what "would fail" means.
+- **The design dimension.** "Does the method support the claim" is written around causal identification. For interpretive work the equivalent is warrant: case selection, the audit trail, reflexivity, whether negative cases were sought. For measurement work it is validity evidence and, where groups are compared, measurement invariance.
+- **What counts as a contribution.** In economics, a new identification, setting or dataset. In psychology a preregistered replication with an extension counts; in education, nursing and social work a contribution to practice counts, and examiners ask for it by name.
+- **The apparatus checks.** Monochrome figures and booktabs are an economics convention. Substitute APA 7 tables and figures, or your institution's template, and check against whichever binds at deposit.
+- **What not to change.** Rank every finding by consequence, label a preference as a preference so it can be ignored, and give the smallest sufficient fix rather than the ideal one.
 
 ## Related skills
 

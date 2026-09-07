@@ -65,11 +65,11 @@ Keep scores away from compensation. Where an organisation insists on linking the
 
 ## Worked example
 
-**Situation.** Meridian Pay, 340 people, business payments software. Going into the third quarter the goal document ran to eleven company objectives and 47 key results across seven teams. The second quarter had scored 0.81 on average, and revenue had missed plan by 9 percent in the same period. The chief executive's question was direct: how do we score 0.81 and miss.
+**Situation.** Meridian Pay, 340 people, business payments software. Going into the third quarter the goal document ran to eleven company objectives and 47 key results across seven teams. The second quarter had scored 0.73 on average, and revenue had missed plan by 9 percent in the same period. The chief executive's question was direct: how do we score 0.73 and miss.
 
 **Task.** A goal set for the third quarter that would make that contradiction impossible, published within two weeks so teams had eleven weeks to work against it.
 
-**Action.** The second quarter was scored properly first, which had not happened. Of the 47 key results, 29 were projects: migrate the reconciliation service, run the partner summit, hire three account executives. All 29 scored above 0.9, which is what produced the 0.81 average. The 18 genuine outcome metrics averaged 0.44. That split answered the chief executive's question in one line and was the most useful output of the exercise.
+**Action.** The second quarter was scored properly first, which had not happened. Of the 47 key results, 29 were projects: migrate the reconciliation service, run the partner summit, hire three account executives. All 29 scored above 0.9 and averaged 0.91. The 18 genuine outcome metrics averaged 0.44. That is where the headline number came from: 29 at 0.91 plus 18 at 0.44 is 34.31 points across 47 key results, which is 0.73. That split answered the chief executive's question in one line and was the most useful output of the exercise.
 
 Eleven objectives were cut to three, each traceable to a bet in the annual plan: that mid-market retention is the constraint on growth, that self-serve activation is the cheapest source of new revenue, and that gross margin has to hold while both happen.
 
@@ -79,7 +79,7 @@ One objective had no baseline. Self-serve activation was measured nowhere, three
 
 Labels were applied explicitly: two commits, five stretches. Margin was a commit, because finance had already given the number to the board. The activation improvement was a stretch at a factor of two, with 0.6 stated in writing as a good outcome.
 
-**Result.** Three objectives, nine key results, one page, published on day twelve. The cascade closed on day eighteen with six of seven teams complete; the seventh published four days late with a named date rather than holding up the rest. At the mid-quarter check five key results were on track, three at risk, one off track, and the off-track one got an intervention the previous format would never have surfaced: two support engineers moved off the ticket queue for six weeks. It finished at 0.7. The quarter scored 0.63 on average, well below the previous 0.81, and revenue landed within 2 percent of plan. The lower score with the better result was the point, and it was said out loud so nobody read the drop as decline.
+**Result.** Three objectives, nine key results, one page, published on day twelve. The cascade closed on day eighteen with six of seven teams complete; the seventh published four days late with a named date rather than holding up the rest. At the mid-quarter check five key results were on track, three at risk, one off track, and the off-track one got an intervention the previous format would never have surfaced: two support engineers moved off the ticket queue for six weeks. It finished at 0.7. The quarter scored 0.63 on average, well below the previous 0.73, and revenue landed within 2 percent of plan. The lower score with the better result was the point, and it was said out loud so nobody read the drop as decline.
 
 ### A second scenario, where it goes differently
 
@@ -150,6 +150,16 @@ Where progress is charted, keep it monochrome, distinguish series by marker shap
 - Every cross-team dependency is named in the key result and agreed by the team that owes it.
 - The whole set fits on one page and a new joiner could explain the quarter from it.
 - The mid-quarter check and the scoring date are in calendars before the set is published.
+
+## Adapting this to your context
+
+The counts, the quarterly rhythm and the 0.0 to 1.0 scale come from venture-backed software companies of fifty to five hundred people. A starting point, not a standard.
+
+- **The quarter as the planning unit.** Where the operating cycle is longer than the period, as in hardware, clinical or construction work, put the outcome number on an annual objective and keep quarterly key results as dated milestones.
+- **Two to four company objectives.** That fits one leadership team. A group with genuinely separate divisions can hold two to four per division, provided no individual serves more than one set.
+- **One cascade hop.** Below about fifteen people, drop the cascade. Above five hundred, add a division layer, but keep every person one hop from the objective they can actually move.
+- **A named measurement system.** Where the number lives in a spreadsheet or a manual export, the source is a named person, a named file and a stated refresh day.
+- **What not to change.** Every key result is a number with a baseline, a target, a date, one named owner and a named source, and the previous period is scored and closed before the next one is written.
 
 ## Related skills
 

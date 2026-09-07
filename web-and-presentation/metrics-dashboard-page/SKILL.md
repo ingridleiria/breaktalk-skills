@@ -58,7 +58,7 @@ Target:       38 percent of signups, set at the January planning round
 
 4. **Show the trend beside the level, always.** A number that is good and falling and a number that is bad and rising need opposite responses, and the level alone hides which you have. A sparkline of the last thirteen periods beside the figure is enough.
 
-5. **Order by what matters, and group by question.** The two or three metrics that decide the conversation go at the top, at a size that reads across a room. Group the rest by the question they answer, not by the system the data came from; readers think in questions and never in data sources.
+5. **Order by what matters, and group by question.** The two or three metrics that decide the conversation go at the top, at a size that reads across a room. Group the rest by the question they answer, not by the system the data came from; readers think in questions and never in data sources. Cap it: at most three groups below the top block, and at most four metrics in any group. A page that needs a fourth group is two pages, and a group of five is a directory the reader scans rather than reads. The order inside a group is a rule, not a layout preference: first the metric whose decision would have to be taken soonest if the number went bad, then the rest by how recently their decision was actually taken, with ties broken by putting a metric that has a target above one that does not. Write the rule into the page's documentation, so the next person to rebuild the layout reorders by it rather than by eye.
 
 6. **Show volume beside every rate, and put the definition within reach.** A conversion rate of 40 percent on ten observations belongs on the page differently from one on ten thousand. The definition belongs in a `details` element on the tile, which opens without scripting and keeps the page uncluttered.
 
@@ -85,7 +85,7 @@ Target:       38 percent of signups, set at the January planning round
 </article>
 ```
 
-7. **Generate the page from a data file rather than querying live.** Most numbers refresh on a schedule, not continuously. A page regenerated when the file updates is faster, simpler, survives without maintenance far longer, and can be archived as it stood on any date. Where it genuinely must be live, keep the query layer thin, show the query time, and keep a static fallback.
+7. **Generate the page from a data file rather than querying live.** Most numbers refresh on a schedule, not continuously. A page regenerated when the file updates is faster, simpler, survives without maintenance far longer, and can be archived as it stood on any date. Where it genuinely must be live, keep the query layer thin, show the query time, and keep a static fallback. Where the source of record is a spreadsheet rather than a warehouse, it is still a data file and the method is unchanged: see the edge case below for the plumbing.
 
 8. **Make staleness impossible to miss.** Print the refresh time on the page, and mark the page when the data is older than the expected interval. A stale dashboard that nobody knows is stale is worse than no dashboard.
 
@@ -233,6 +233,8 @@ And the page carries these parts in this order.
 
 **Data that arrives late.** Where a source reports on a lag, state the lag beside the metric and date the last complete period. Otherwise every reader assumes the most recent point is current.
 
+**A team with a spreadsheet and no warehouse.** Most teams that need this page have no warehouse, no scheduler and nobody to write one, and the method survives that intact; only the plumbing changes. Keep one spreadsheet as the source of record, in long form: one row per metric per period, with the volume in its own column and the written definition in the sheet rather than in somebody's head. Export it to `data/metrics.csv` and regenerate the page with one script a person can run in under a minute, which is the whole of the pipeline. Set the expected refresh interval from the human rather than the machine: if the sheet is updated on Monday mornings, the interval is a week and the staleness warning should fire on the Wednesday. Two rules get stricter, not looser. The person who maintains the sheet is the owner named on the page, and no published number is edited in the sheet without a line added to the events file, because a spreadsheet is the easiest place there is to change history without leaving a mark.
+
 **A metric nobody owns.** Do not publish it. An unowned number has no one to explain a movement and no one to notice a break, and it will be the one that is wrong.
 
 **Confidential measures.** Where cash runway or individual performance data cannot go to everyone, split the page rather than the number: a general page and a restricted one, each complete for its audience. A page with a redacted tile invites worse speculation than its absence.
@@ -251,6 +253,17 @@ And the page carries these parts in this order.
 - Definition changes and material events are annotated on the charts, with dates.
 - What the page deliberately excludes is listed, with reasons.
 - The underlying rows are downloadable, the page works at 320 pixels wide, and every chart has a table equivalent in the markup.
+
+## Adapting this to your context
+
+The defaults come from a weekly leadership page at a sixty-person software company with a nightly data job. The plumbing is that company's; the tests are not.
+
+- **The measure count.** Five to nine, sized for one leadership conversation. A three-person team needs three; several business lines need a page each, not a longer page.
+- **The metric set.** Revenue, retention, activation, response time, defects, runway, attrition. A clinic, a school or a production line replaces all seven. What carries over is the test: what decision does a bad number trigger.
+- **The comparison window.** Thirteen or fifty-three periods with a year-on-year comparison. A body reporting annually, or a service with no seasonality, needs a different window; never draw year-on-year from four points.
+- **The refresh model.** A nightly file, staleness flagged at 1.5 times the expected interval. Set that interval from the slowest source, and use the spreadsheet path in the edge cases where nothing is scheduled.
+- **Targets.** Set here at a planning round. Where a target comes from a regulator, a funder or a contract, print its source beside it, because a breach then has a different response.
+- **What not to change.** A named decision behind every metric, a written definition and a named owner, volume beside every rate, every definition change annotated, and the list of what the page does not show.
 
 ## Related skills
 

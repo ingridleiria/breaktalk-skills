@@ -159,6 +159,16 @@ Agreed target:     [number]   Agreed by: [names, in a room, on a date]
 - Metric definitions are settled and written before any reconciliation.
 - Disagreements between leaders were escalated with both positions stated, never adjudicated by this role.
 
+## Adapting this to your context
+
+The defaults come from venture-funded companies of thirty to a hundred people in the year after a round. The round name is a proxy for something far more portable.
+
+- **"Series A" as a label.** It means one layer of functional leads has arrived, headcount sits roughly between thirty and a hundred, the cadence built at twenty has stopped holding, and there is finally somewhere to hand work to. An agency appointing its first department heads, a family business bringing in a general manager, a charity with its first senior team and a bootstrapped firm at that size are all here, whatever they raised.
+- **The ninety-day handover rule.** It assumes a full-time commercial onboarding. Extend it where the receiving leader is part-time, seasonal or inherited from a merger, and shorten it where they have done the same job here before.
+- **Two rebuilds a quarter.** Set for a company absorbing change while growing fast. A team already carrying a system migration, an inspection or a regulatory deadline absorbs one.
+- **The metric definitions.** Active customer and qualified lead assume a sales pipeline. Substitute the two terms your functions count differently: beneficiaries served, billable hours, cases closed, places filled.
+- **What not to change.** Sort every item by the rule rather than by feeling, and never adjudicate between functional leaders.
+
 ## Related skills
 
 `cos-at-seed` built what this stage hands over; its transfer register is the starting inventory here. `cos-at-series-b` is where this leads, once the leadership team owns its numbers and the work becomes synthesis rather than repair.

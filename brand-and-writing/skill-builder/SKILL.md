@@ -194,6 +194,17 @@ Alongside the file, deliver the trigger test so the author can rerun it after an
 - Adjacent skills are named by their exact folder name in both the boundary section and the related section.
 - The skill was run on at least five real tasks, and the difference against running without it is visible in the output.
 
+## Adapting this to your context
+
+The structure here is tuned to one library, where skills load automatically from a description field and one person maintains them. The conventions are that library's; the tests are not.
+
+- **The section list.** Nine headings. A team wiki, a runbook system or a prompt library needs a different set. Keep the sections that carry judgement and drop any your platform already supplies.
+- **The description budget.** 90 to 160 words with at least two vague phrasings, sized for automatic loading. If your platform matches on keywords, a manifest or manual selection, that budget changes and so does the trigger test.
+- **The trigger test.** Five phrasings, with seventeen of nineteen loads treated as good. Set your own pass mark by how often the task recurs and what a miss costs.
+- **The quality bar length.** Four to eight checkable lines. Regulated or safety-critical work needs more, and your existing sign-off list is a better source than this number.
+- **Folder conventions.** `references/`, `scripts/`, `assets/`, lowercase hyphenated names, `name` equal to the folder. These are this repository's rules. Use whatever your platform enforces.
+- **What not to change.** The three-part test before writing anything, a decision rule inside every step, and the with-and-without comparison at the end. A skill that cannot show a difference in output is describing, not enforcing.
+
 ## Related skills
 
 `process-documentation-sop` covers the procedure written for people to follow, with owners and a revision date, which is the adjacent case this deliberately excludes. `human-voice-editor` is the last pass over the finished SKILL.md, because a skill written in generic prose produces generic output. `breaktalk-brand` is the worked example of the identity case named in the edge cases, and is built with this method. `content-quality-gate` applies a comparable pass or fail standard to published material rather than to method files.

@@ -215,6 +215,16 @@ Followed by the verified reference list, built in the same session, in the targe
 - The setting's institutional detail appears in the argument, so the section could not preface a paper on the same topic elsewhere.
 - The section is within the target venue's expected length.
 
+## Adapting this to your context
+
+Built for an economics paper where theory is fifteen to twenty-five percent of the words and the payoff is a predicted sign. The two rules are general; the proportion is not.
+
+- **The word budget.** Management, psychology and education journals commonly give theory and hypothesis development a third or more of the paper, with hypotheses numbered H1a and H1b. Take the proportion from two recent papers in your target.
+- **The sign test.** It assumes a directional quantitative prediction. For an interpretive study, ask instead what observation would disconfirm the account. Where the design specifies mediation or moderation, argue each path separately: a hypothesis about a total effect does not ground a claim about a mediator.
+- **Inductive designs.** A framework fixed before the data contradicts the design. Write the sensitising concepts instead, say what they do and exclude, and keep the requirement that a reader can predict what counts as evidence.
+- **Searching per mechanism.** Query the mechanism as a claim, in your field's controlled vocabulary: PsycINFO thesaurus terms, MeSH, ERIC descriptors. Canonical theories differ by field too, so name the one your reviewers expect.
+- **What not to change.** Write the mechanism in plain words before naming any theory, make every hypothesis the last sentence of the paragraph that argued for it, and engage the study closest to your setting when it disagrees.
+
 ## Related skills
 
 `literature-verification` supplies the citation standard this skill applies without exception, and runs as its own pass when the task is checking references rather than building an argument. `research-question-ideation` and `research-design` fix the question and the identification the framework has to ground; a framework built before them will be rebuilt. `introduction-writer` uses the framework's contribution claim but does a different job, which is selling the question. `systematic-review-protocol` is the right skill when coverage must be reproducible and counted rather than argued. `econometric-model-writer` translates the hypotheses into the estimating equation, and the mapping between them should be one to one. `discussion-and-conclusion` is where a result that contradicts the framework is explained, rather than in the framework itself. `references-and-bibliography` handles style conversion once the sources are verified. `peer-review-simulator` tests the finished section against the referee this skill is written to anticipate.

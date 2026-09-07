@@ -27,7 +27,7 @@ The adjacent case: where the mandate is really a programme that should have a fu
 
 **A baseline of whatever is being changed.** Cycle time, cost, headcount, revenue, error rate, whichever is the point. Missing: measure it for two weeks before changing anything. A programme with no baseline cannot be defended at month nine, when the questions start.
 
-**The statutory and governance calendar.** Board and committee dates, audit, statutory filings in every entity, anything with a legal date attached. Missing: build it from the company secretary or the finance lead in week one, because discovering one of these late is the fastest way to lose the board's confidence.
+**The statutory and governance calendar.** Board and committee dates, audit, statutory filings in every entity, anything with a legal date attached. Missing: build it in week one from whoever holds the corporate calendar. In the United Kingdom and much of the Commonwealth that is a company secretary; elsewhere it is usually the finance lead or general counsel, and in a charity or a public body the governance officer or clerk. Discovering one of these dates late is the fastest way to lose the board's confidence.
 
 **How the executive team currently works.** Its meeting, its agenda, what it actually decides. Missing: attend three of them and take notes on decisions made rather than topics covered. The ratio is the diagnosis.
 
@@ -185,6 +185,16 @@ DECISIONS DELIBERATELY KEPT FAST
 - The governance calendar is published a year ahead and nothing on it was discovered late.
 - The list of deliberately fast decisions exists and has been defended by name at least once.
 - The mandate has a planned ending, with a named permanent owner.
+
+## Adapting this to your context
+
+The defaults come from venture-funded companies of three hundred to a thousand people carrying an integration or a market entry. The label is shorthand for a shape.
+
+- **"Series C" as a label.** It means three or more layers with managers of managers, a leadership team that runs without the chief executive, statutory obligations with real dates, and approvals multiplying faster than anyone chose. A hospital group, a multi-site retailer, a mid-sized professional firm or a family business in its third generation is here whatever it has raised.
+- **The admission test numbers.** A 75,000 threshold and 380 purchases a quarter came from one company. Compute your own from the failure's actual cost against days lost per instance times instances per quarter. The arithmetic is the method; the figures are not.
+- **The twelve-month test.** Fits a mandate inside an annual cycle. Where the cycle is an academic year, an electoral term or a three-year grant, set the test at that horizon and keep it observable.
+- **The governance calendar.** Built from board, audit and filing dates. Substitute regulator inspections, funder reporting, accreditation visits or licence renewals, whichever carry legal dates for you.
+- **What not to change.** A mandate limited to one or two things with a twelve-month test that could fail, and a baseline measured before anything changes.
 
 ## Related skills
 

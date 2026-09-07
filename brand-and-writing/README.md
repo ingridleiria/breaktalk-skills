@@ -1,5 +1,7 @@
 # Brand and writing track
 
+How to run one of these in any assistant, and how to adapt it to your own numbers, tools and field: [USING_THESE_SKILLS.md](../USING_THESE_SKILLS.md). Every skill below carries an **Adapting this to your context** section naming its own assumptions.
+
 Six skills for the writing itself, and for the identity the writing carries. They serve both main tracks, because a board memo and a discussion section fail in the same ways.
 
 ## The skills
@@ -8,7 +10,7 @@ Six skills for the writing itself, and for the identity the writing carries. The
 | --- | --- | --- |
 | 85 | [breaktalk-brand](breaktalk-brand/SKILL.md) | The BreakTalk identity: logo rules, monochrome palette with navy and wine, typography, layout, voice |
 | 86 | [newsletter-post-writer](newsletter-post-writer/SKILL.md) | Long-form posts that open on a scene, argue with evidence, and end on the point |
-| 87 | [linkedin-post-writer](linkedin-post-writer/SKILL.md) | 150 to 300 word posts with one idea and no engagement bait |
+| 87 | [linkedin-post-writer](linkedin-post-writer/SKILL.md) | 120 to 300 word posts with one idea and no engagement bait |
 | 88 | [human-voice-editor](human-voice-editor/SKILL.md) | Removing the punctuation, vocabulary, and rhythm tells of generated prose |
 | 89 | [skill-builder](skill-builder/SKILL.md) | How to write a skill that triggers reliably and enforces a standard |
 | 90 | [weekly-review-and-planning](weekly-review-and-planning/SKILL.md) | A personal operating rhythm for people running two jobs |

@@ -190,6 +190,16 @@ Sentences before the first one about the reader: [should be 0]
 - Zero sentences precede the first one about the reader, and a cold message is under 120 words.
 - The timing check was run and its result is stated.
 
+## Adapting this to your context
+
+The word counts, the three-month signal window and the assumption that a careers page or trade press yields a dated signal come from business-to-business selling into mid-size and large companies in open-press markets.
+
+- **Under 120 words for a cold message.** Calibrated for an executive inbox in English. Some markets expect a fuller opening, and a professional-network message runs closer to sixty words. Keep the ratio, zero sentences about the sender first, rather than the count.
+- **The three-month staleness window.** Right for funding, hiring and product signals. Regulatory changes, tender pipelines and capital programmes stay live for a year or more. Date the signal and judge the window by the kind of fact.
+- **The careers page as the richest signal.** In owner-managed businesses, public bodies and many non-English markets, the equivalents are procurement notices, filed accounts, planning applications and licence registers.
+- **Sending at all.** Several jurisdictions require a lawful basis or an opt-out for unsolicited commercial contact, and procurement rules can bar approaches during a tender window. Check the rule that applies to the reader.
+- **What not to change.** No claim about the reader goes out unverified, and if line five of the research note cannot be written honestly, the output is a recommendation not to send.
+
 ## Related skills
 
 `external-insights` gathers and dates the account signals this method depends on, and is the right skill when the research is substantial enough to stand alone. `competitive-battlecard` supplies the differentiators and proof points where the account is in a competitive situation, and the objections the reader may already have been given. `account-reengagement-plan` owns the multi-month sequence into a dormant account; this skill writes the individual messages inside it. `tailored-client-deck` and `proposal-writer` build the material a successful message leads to. `pipeline-deep-dive` supplies which accounts merit this effort at all, since the method is too expensive to spend on a badly qualified list. `principal-simulator` is useful before an executive-to-executive message, to anticipate how a specific senior reader will react. `human-voice-editor` removes the template register from a draft that has acquired one.

@@ -201,6 +201,16 @@ Delivered together:
 - No slide carries more than one idea, and no slide carries a paragraph.
 - The deck ends on the finding rather than on thanks or future work.
 
+## Adapting this to your context
+
+The slot lengths, deck order and appendix habit come from economics conferences and seminars. Finding first holds everywhere; the format around it varies more than people expect.
+
+- **The interruption assumption.** Economics seminars interrupt from the first slide. Psychology, education and public health conferences usually hold questions to the end, so the talk can rely on reaching its conclusion. Do not spend a fifth of the budget on interruption you will not get.
+- **The slot table.** Health and psychology conferences often run ten minutes plus five for questions, and a symposium slot may be twenty with a discussant. Take the real number from the programme.
+- **The identification evidence slide.** That is a causal inference talk. Elsewhere the full slide goes to measurement, to sampling and recruitment, or for qualitative work to the analytic approach and how the themes were tested. Whatever your room doubts most gets the slide and the minute.
+- **The tooling.** Beamer is the economics default. PowerPoint and Google Slides are what a mixed audience expects; Quarto produces both reveal.js and Beamer from one source, which keeps the numbers tied to the analysis.
+- **What not to change.** The finding is stated in the first minute with its number, slide titles are sentences carrying the argument, and the talk is timed aloud rather than in your head.
+
 ## Related skills
 
 `identification-defense` supplies the identification evidence the talk shows and the attack list the questions sheet is built from. `peer-review-simulator` supplies the referee concerns that will surface as questions from the room. `academic-figures-monochrome` builds the exhibits to the projector standard this skill requires. `abstract-and-title` is the written compression of the same finding and should agree with the talk's opening sentence exactly. `thesis-defense-prep` uses this skill to build the defence talk and adds the committee dynamics and the rehearsal discipline. `analysis-audit` is what guarantees that the number spoken from the slide is the number in the paper, which matters more here than anywhere else because a talk is where a discrepancy gets asked about in public. `thesis-advisor` decides whether a conference is worth the week it will cost. `journal-targeting` often follows a conference, because the questions asked in the room are the referee reports arriving early and free.

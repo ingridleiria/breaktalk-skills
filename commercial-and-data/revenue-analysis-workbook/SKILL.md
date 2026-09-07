@@ -77,17 +77,21 @@ This build inherits the discipline in `spreadsheet-analysis-workbook` and does n
    Active mths =SUMPRODUCT(--(E12:P12<>0))
    ```
 
-6. **Tab 4, channel or category split.** Revenue by channel per period, share of total, and the change in share across periods. Then the judgement that gives the tab its value: is the shift structural or cyclical. Treat it as structural when it persists across three or more consecutive periods, is traceable to a named product, pricing, or programme change, and is not reversing. Otherwise call it cyclical and say what you think is driving it. Size one point of shift at current scale, because that is the only figure on the tab a leader can act on directly.
+6. **Tab 4, channel or category split.** Revenue by channel per period, share of total, and the change in share across periods. Then the judgement that gives the tab its value: is the shift structural or cyclical. This is where that test is defined for the whole set, and the other skills apply it by reference rather than restating it.
+
+   A shift is structural when all three of the following hold. It persists across three or more consecutive periods, not one large move. It traces to a named product, pricing, programme or channel change with a date, rather than to a promotion or a single large order. And it is not reversing in the most recent period. All three, or it is cyclical, and you say what you think is driving it. Where the series is too short to test persistence, the verdict is unavailable rather than cyclical, and the report says which period will settle it. Size one point of shift at current scale, because that is the only figure on the tab a leader can act on directly.
 
 7. **Tab 5, top N.** The largest entities by revenue with share, cumulative share, trend direction, and channel adoption. Mark the row where cumulative share crosses half of revenue and the row where it crosses four fifths. The count of entities needed to reach four fifths is the concentration statistic to state in a sentence; it travels better than any ratio because it is a number of relationships rather than a percentage.
 
 8. **Tab 6, concentration.** Top one, top three, top five, and top ten shares, plus the Herfindahl index as the sum of squared shares multiplied by ten thousand.
 
    ```
-   =SUMPRODUCT(('Entity'!$F$12:$F$486)^2)*10000
+   =SUMPRODUCT(('Entity'!$F$12:$F$323)^2)*10000
    ```
 
-   Read against thresholds: below 1,500 diversified, 1,500 to 2,500 moderate, above 2,500 concentrated, above 5,000 dominated by a few relationships. Report both a distribution measure and a cut-point ratio, never one alone. `revenue-concentration-risk` takes this further into anchoring and failure scenarios; this tab stops at measurement.
+   The entity table for this example runs from row 12 to row 323, which is 312 entities; set the range from your own row count rather than copying it.
+
+   Read the index and the cut points against the bands defined in `revenue-concentration-risk`, which owns them; do not restate the reasoning here, and do not keep a second copy of the numbers, because two copies drift. Report both a distribution measure and a cut-point ratio, never one alone, and name the band in the summary. `revenue-concentration-risk` takes this further into anchoring and failure scenarios; this tab stops at measurement.
 
 9. **Close tab 7 and spot-check.** Every segmentation total against the ground truth, each difference reading zero, plus three named spot-checks with the entity, the expected value, the tab value, and the match. Choose the largest entity, one from the middle, and one with an awkward key. A workbook without this tab has not been checked, whatever anyone says about it.
 
@@ -101,7 +105,7 @@ Never describe a seasonal peak as growth or a seasonal trough as decline. Never 
 
 ## Worked example
 
-**Situation.** Brightfield Laboratory Services, an environmental testing business of about 180 people, had a board meeting in nine days and no agreed revenue picture. Two figures were in circulation: 18.4 million and 17.9 million over three years. The extract was 96,400 invoice lines across thirty-six months, 312 clients, and two channels: contract testing under annual programmes, and ad hoc sample submissions. The chief executive's question was simply whether the business was growing.
+**Situation.** Brightfield Laboratory Services, an environmental testing business of about 180 people, had a board meeting in nine days and no agreed revenue picture. All figures in this example are in US dollars. Two figures were in circulation: 18.4 million and 17.9 million over three years. The extract was 96,400 invoice lines across thirty-six months, 312 clients, and two channels: contract testing under annual programmes, and ad hoc sample submissions. The chief executive's question was simply whether the business was growing.
 
 **Task.** One workbook, seven tabs, a single reconciled total, and a defensible answer on growth. Good meant the finance director and the sales director would both accept the same number.
 
@@ -131,7 +135,7 @@ What changed is the length of the series and the number of entities. The tab lis
 
 A workbook of seven tabs plus an inputs tab, and a covering note of five to eight lines. The summary tab is the deliverable most people will read, and it has this shape.
 
-| Figure | Value | Basis |
+| Figure | Value (USD unless shown) | Basis |
 | Total revenue, 36 months | 17,912,441 | net of credit notes, invoice date |
 | Latest 12 months | 6,704,880 | Sep 2025 to Aug 2026 |
 | Prior 12 months | 6,318,102 | like for like |
@@ -146,7 +150,7 @@ A workbook of seven tabs plus an inputs tab, and a covering note of five to eigh
 
 The verification tab carries the reconciliation and the spot-checks.
 
-| Check | Ground truth | Computed | Difference |
+| Check | Ground truth (USD) | Computed (USD) | Difference |
 | Entity table | 17,912,441 | 17,912,441 | 0 |
 | Monthly trend | 17,912,441 | 17,912,441 | 0 |
 | Channel split | 17,912,441 | 17,912,441 | 0 |
@@ -198,6 +202,17 @@ Where a figure is charted, keep it monochrome first: series separated by marker 
 - Every share and ratio is traceable to a cell in the entity tab, not recomputed on the tab that displays it.
 - The structural against cyclical verdict on any mix shift carries its three pieces of evidence.
 - Three spot-checks are recorded with expected and actual values.
+
+## Adapting this to your context
+
+This build assumes a spreadsheet over a raw line-level extract, a stable entity key, and twenty-four to thirty-six months of history from a services or software company. Change the defaults when that does not describe you.
+
+- **Twenty-four to thirty-six months.** Seasonality separation needs two full cycles. A company under two years old, or one whose billing model changed mid-series, still builds the trend tab but states the absence of separation in the same sentence as every directional claim.
+- **A stable entity key.** A marketplace has two sides and must define the entity as buyer, seller or transaction before tab 3. Usage-based billing needs a usage denominator beside revenue, or a price change reads as a volume change.
+- **Two channels, recurring against one-off.** Grant-funded and public sector bodies split by funder and award instead, and add the award end date, because the mix question there is expiry rather than adoption. An agency splits retainer against project.
+- **The spreadsheet.** Nothing here requires one. The same seven tabs run as SQL views or a notebook, provided the reconciliation and the header note travel with them.
+
+- **What not to change.** Build the verification tab first and make it read zero on every segmentation, and never call a movement growth before seasonality is separated or its absence stated.
 
 ## Related skills
 

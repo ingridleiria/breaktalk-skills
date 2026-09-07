@@ -39,6 +39,16 @@ Do not use it for litigation, a live employment dispute, a regulatory filing, a 
 
 ## The method
 
+**Before step one: fix the governing law, the worker classification and the currency.** None of what follows is portable, and all three are cheaper to settle in a message than to unpick in a redline. Write the three answers at the top of the working file before a clause is drafted.
+
+Governing law and forum decide more than where a dispute is heard. They decide whether a restrictive covenant is enforceable, read down or void; whether the liability cap you want holds; whether an entire-agreement clause displaces what was said before signature; whether an electronic signature is sufficient execution; and which instruments have settled practice at all. Convertible notes and SAFEs are United States early-stage instruments. Elsewhere the equivalents are advance subscription agreements, convertible loan notes with their own tax treatment, or nothing standard, and the note against SAFE decision rule below assumes a jurisdiction where both are ordinary. Where they are not, the rule to apply is the first half of it, a note, and the reason to record is the absence of settled practice rather than a preference.
+
+Worker classification is decided by statute and by a control, integration or economic dependence test, and in some places by a mechanical test with named criteria. Public sector engagements in several jurisdictions carry a deemed-employment rule that puts the tax liability on whoever engages the person. Answer this before drafting an employment or contractor document, because the answer can be that the document you were asked for is the wrong one.
+
+Currency, and where the money moves, belongs in the schedule rather than the covering message. Name the currency on every figure, decide who carries conversion and on whose published rate, and check whether withholding applies to cross-border fees, royalties or interest, since a note's interest clause reads differently once it does.
+
+Where the parties sit in different jurisdictions, name which one each clause was drafted to and put the mismatch in the flag list, so counsel reads the three clauses that need it rather than all of them.
+
 1. **Identify the category, and split the request where it spans two.** A contractor who is also taking equity needs two documents, not one hybrid, because the termination of one should not disturb the other. Rule: where two different relationships can end on different dates, they are two documents.
 
 2. **Read any prior agreement between the parties before drafting.** Note what survives, what is superseded, and any conflicting definitions. This takes twenty minutes and prevents the most expensive category of error.
@@ -74,6 +84,8 @@ Do not use it for litigation, a live employment dispute, a regulatory filing, a 
 ## The party defaults file
 
 Record these once in a `party-defaults.md` beside this skill, and reuse them in every draft. It takes about half an hour to write and it removes the most common source of quiet error, which is a governing law or a payment term that varies between two contracts signed in the same month. Never invent any of these, and never vary one silently.
+
+This file is the canonical record for the firm, and it is the only place these positions are written down. `contractor-msa-and-task-order` keeps a `standing-terms.md` beside it, and that file inherits everything here and records only what differs because the counterparty is an individual placed onto a client engagement: restraints and their jurisdiction position, insurance and background checks, subcontracting, classification, flow-down defaults, and back-to-back payment. Where the two files appear to disagree, this one is right and the other is stale. Do not copy entity details, governing law, payment terms or the liability position into any second file.
 
 ```
 # Party defaults: [entity name]
@@ -129,7 +141,7 @@ Unlimited or uncapped liability. Indemnities that are not mutual where the expos
 
 ## Worked example
 
-**Situation.** Calder Loom Ltd, a fourteen-person analytics company, was raising a 400,000 bridge from three angel investors on convertible notes ahead of a priced round expected within eighteen months. At the same time it was bringing on an advisor, a former operations director in its target sector, who would take 0.25 percent in equity and separately do around eight days of paid work in the first year at 1,200 a day. The founder asked for "the advisor contract and the note" by the end of the week.
+**Situation.** Calder Loom Ltd, a fourteen-person analytics company, was raising a 400,000 bridge from three angel investors on convertible notes ahead of a priced round expected within eighteen months. All figures in this example are in pounds sterling. The three preliminary questions were settled before anything was drafted: the company was incorporated in England and Wales and all three angels were resident there, so governing law was England and Wales, which settled the note against SAFE question on its own, since there is no settled SAFE practice in that jurisdiction and the decision rule points to a note; the advisor's classification was checked against the control and integration tests and came back as genuinely independent; and the currency was sterling throughout, with no cross-border withholding to consider. At the same time it was bringing on an advisor, a former operations director in its target sector, who would take 0.25 percent in equity and separately do around eight days of paid work in the first year at 1,200 a day, in sterling. The founder asked for "the advisor contract and the note" by the end of the week.
 
 **Task.** Deliver drafts counsel could review rather than rebuild, with every term the founder had not thought about surfaced before it reached the investors. Good meant the founder could answer any question the angels asked about the mechanics.
 
@@ -153,7 +165,7 @@ The qualified financing floor was set at 1,000,000. Eleven months later the comp
 
 ### A second scenario, where it goes differently
 
-Six months on the same company was the buyer rather than the seller: a three-year contract for a data platform at 48,000 a year, on the vendor's paper, with signature wanted before quarter end.
+Six months on the same company was the buyer rather than the seller: a three-year contract for a data platform at 48,000 a year in sterling, on the vendor's paper, with signature wanted before quarter end.
 
 The method behaved differently at almost every step. There was no intake for business terms, since they were fixed in the vendor's document, and no drafting in clause order, since the draft existed. Steps three and six were replaced by a term-by-term comparison against the defaults file, ninety minutes of work that produced four deviations.
 
@@ -237,6 +249,17 @@ Prepared:     [date]                 Counsel review: required before execution
 - Any prior agreement between the parties has been read, and the new document says explicitly what it supersedes.
 - Defined terms are used and capitalised consistently throughout, and no clause is present that cannot be explained.
 - The draft notice and the statement that this is not legal advice appear on every review copy.
+
+## Adapting this to your context
+
+The five categories are general; the defaults inside them are not. The equity category assumes United States early-stage venture practice, the covenant guidance assumes a jurisdiction that enforces restraints, and the file assumes a small company with its own paper.
+
+- **The equity instruments.** Convertible notes, SAFEs, caps, discounts and qualified financing floors are United States conventions. Elsewhere the instrument is an advance subscription agreement or a convertible loan note with its own tax treatment, and the decision rule resolves to a note by default.
+- **Restrictive covenants.** Draft the narrowest version you would enforce everywhere. What changes is whether an over-broad clause is read down or struck out whole, whether it must be paid for, and whether it is void regardless. Check where the person works, not where the contract is governed.
+- **Grant, public sector and regulated counterparties.** Their terms usually cannot be redlined, so the deliverable is a ranked position list and an accepted-risk register. Add procurement rules, publication obligations and audit rights to the flags.
+- **Who reviews.** Without standing counsel, decide which two categories always go to a lawyer, typically anything with equity and anything uncapped.
+
+- **What not to change.** No commercial term is invented, every unknown is a visible bracket, and every mechanic is walked through with real numbers.
 
 ## Related skills
 

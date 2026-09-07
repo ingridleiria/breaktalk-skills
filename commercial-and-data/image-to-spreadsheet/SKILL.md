@@ -90,7 +90,7 @@ Not transcribed:      [anything visible in the image and deliberately omitted, a
 
 ## Worked example
 
-**Situation.** A finance manager at a facilities company sent 34 photographs of supplier invoices and receipts, taken on a phone across a table, for a quarterly expense reconciliation. The stated control total from the accounting system was 18,442.60. Roughly two thirds were printed invoices from four suppliers and the rest were till receipts, two of them creased. The deliverable was a spreadsheet the finance manager would reconcile line by line against the ledger the following morning.
+**Situation.** A finance manager at a facilities company sent 34 photographs of supplier invoices and receipts, taken on a phone across a table, for a quarterly expense reconciliation. The stated control total from the accounting system was 18,442.60 in pounds sterling, and every figure in this example is in sterling. Roughly two thirds were printed invoices from four suppliers and the rest were till receipts, two of them creased. The deliverable was a spreadsheet the finance manager would reconcile line by line against the ledger the following morning.
 
 **Task.** One workbook, every line item, by the end of the day, with anything uncertain visible rather than smoothed away. Good meant the finance manager could reconcile without opening the photographs, except for the cells the file told her to check.
 
@@ -181,6 +181,17 @@ Confidence takes A, B, C or X. The notes column carries both candidates for an a
 - The arithmetic check against any total the source contains is recorded with its result, and any difference is located or declared unexplained with its amount.
 - The verification block is in the file, not only in the reply, and the reply gives row and column counts in its first lines.
 - Numbers are stored as numbers, and any value kept as text says why.
+
+## Adapting this to your context
+
+The confidence codes, the precision rules and the arithmetic check are general. What varies is the source material, the conventions in force, and how much precision the downstream use carries.
+
+- **The conventions.** Date order, decimal and thousands separators, currency symbol and whether tax sits inside a line total are all local, and this example uses one set. Transcribe exactly, never normalise silently, and put the convention question in the reply. A date of 03/04 will not announce itself.
+- **What the file is for.** The default assumes figures will be summed and reconciled. Research and archival transcription wants the opposite priority: keep original spelling, spacing and struck-through text in a verbatim column and put the cleaned value beside it, not instead of it.
+- **The control total.** Handwritten notes, registers and forms without totals have none. Say plainly that no independent check was possible, and make the row and column counts the reader verifies the substitute.
+- **Chart extraction.** Reading values off a picture is a fallback. Where the chart is published, half an hour finding the source data beats any estimate; if not, say which comparisons the precision cannot support.
+
+- **What not to change.** Nothing is corrected, reformatted or computed that the source did not contain, and an unreadable cell is left visibly empty with its code.
 
 ## Related skills
 

@@ -168,6 +168,16 @@ The quarterly variant adds a short paragraph on what changed in the company's th
 - The tone is identical in the good months and the bad ones.
 - It went out on the fixed day, under 800 words plus the table.
 
+## Adapting this to your context
+
+The monthly send, the metric set and the 800-word limit come from venture-backed software companies at seed to Series B with ten to thirty shareholders. Defaults, not a standard.
+
+- **Monthly.** A month is meaningful at seed and Series A. Later stage or slow-moving businesses do better quarterly, with a short monthly line on cash. Move to monthly during a raise whatever the normal rhythm is.
+- **The metric table.** Recurring revenue, net retention, gross margin and pipeline is a subscription software set. A services firm reports backlog, utilisation and realised day rate; a hardware business reports units, margin per unit and inventory.
+- **Two to four asks.** This assumes shareholders who can act. Where the register is passive or institutional, one ask or none is honest, and "no asks this month" beats invented filler.
+- **Cash, burn and runway every time.** Written for a company not yet profitable. A profitable one substitutes cash generation and the covenant position, and still reports it every time.
+- **What not to change.** The worst fact of the period appears in the headline or the misses and never later, and the update goes out on the fixed day, including in the months it is difficult.
+
 ## Related skills
 
 `board-deck` reports the same quarter to directors in far more detail, and the two must agree on every shared number. `board-and-investor-management` runs the relationship this update maintains, including the calls that must precede it when the news is bad. `financial-model-builder` and `revenue-forecast` produce the plan column in the metric table. `fundraise-readiness` reuses this series as evidence and will surface any definition that moved, so fix it here first. `pitch-deck` makes the argument for a new commitment, which this document deliberately does not attempt. `crisis-and-incident-comms` handles the notification that must precede an update carrying very bad news.

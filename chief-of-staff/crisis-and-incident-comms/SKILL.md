@@ -197,6 +197,16 @@ NEXT UPDATE            [time]     Owner of this sheet: [name]
 - The communications log was written as messages went, and is complete enough to hand to a regulator.
 - The review happened within two weeks and produced at least one dated change to the preparedness plan.
 
+## Adapting this to your context
+
+The defaults come from a technology company with a status page, an on-call rota and customers on written contracts. The sequencing rule travels everywhere; the channels do not.
+
+- **The notification clocks.** Written around data protection regimes with fixed hour windows and notification clauses in large customer agreements. Health, aviation, financial services, food and education each impose their own, and some are measured in minutes. Get the list from counsel before an incident rather than during one.
+- **The channels.** Status page, in-product banner and support macros assume a software product. A school uses text messaging and the office phone, a manufacturer uses distributors, a clinic uses the reception desk. What matters is knowing today who can publish to each.
+- **The update cadence.** Hourly, then lengthening, fits an outage measured in hours. For a slow-burn incident such as an investigation, a recall or a safeguarding matter, start at daily, say so, and hold it for weeks.
+- **The single spokesperson rule.** Built to stop many people speaking at once. In a firm of twelve the risk inverts, as the second scenario shows: the discipline becomes the deadline rather than the channel.
+- **What not to change.** One timestamped facts sheet separating confirmed from suspected, anyone who can reduce their own harm told first, and every promised update time met.
+
 ## Related skills
 
 `ceo-communications` writes the reflective message from the leader that follows a resolved incident, and handles planned bad news that is not an incident. `decision-memo` is the one-page form for a real choice forced by the incident, such as whether to take a system offline or what remedy to offer. `meeting-to-decisions` captures what the war room actually decided so the facts sheet and the log stay consistent with it. `process-documentation-sop` turns the preparedness plan into a maintained runbook with named owners and deputies. `board-and-investor-management` and `investor-update` carry the incident and its consequences to the board on their own cadence. `executive-briefing` prepares the spokesperson for a hostile interview where one is unavoidable. `program-management` runs the remediation commitments made in the resolution message, which are the promises most often quietly dropped.

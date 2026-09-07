@@ -151,6 +151,16 @@ What changed is that time, not completeness, is the binding constraint, so the m
 - The three or four weaknesses are written down with prepared answers, and are raised by the company first.
 - Two founders, asked separately, give the same answer with the same numbers to each rehearsed question.
 
+## Adapting this to your context
+
+The defaults come from a venture Series A process in a jurisdiction with a share register, statutory accounts and an option plan. The discipline transfers; the document set changes.
+
+- **The eight to twelve week runway.** Set by a competitive equity process. A debt facility or a grant application can be shorter, an acquirer's diligence often is not, and the second scenario covers having none at all.
+- **The corporate hygiene list.** Cap table, share consents and option grants assume a company limited by shares. A partnership checks the partnership deed and admission records, a charity checks trustee minutes, restricted fund accounting and the register of interests, an owner-managed firm what is held personally by the owner.
+- **Intellectual property assignment.** The item most likely to stop a round here. Where the value sits instead in licences, accreditations or a leased site, that is the equivalent item and deserves the same first-week urgency.
+- **The metric definitions.** Recurring revenue, churn and cohorts suit subscription businesses. Substitute the two or three numbers your counterparty will test: backlog and realisation, occupancy, contracted grant income, funded places.
+- **What not to change.** One written definition per metric used in every document and every verbal answer, the headline number reconciled to the accounts, and the three or four weaknesses raised by the company first.
+
 ## Related skills
 
 `pitch-deck` builds the argument, and should be written from the metrics pack this skill produces rather than before it. `financial-model-builder` produces the model that must reconcile to the pack, and `revenue-forecast` the commercial projections inside it. `investor-update` is diligence material: its series of metrics must match the definitions fixed here. `board-deck` supplies the historical packs a thorough investor will ask for, and any inconsistency between them and the pack will be found. `board-and-investor-management` runs the existing investor relationships through the process, including the pre-wiring that precedes a difficult disclosure. `decision-memo` is the format for the decisions the process itself forces, such as which firms to group and whether to accept exclusivity.

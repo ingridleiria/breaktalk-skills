@@ -178,6 +178,17 @@ For a review of an existing draft, return the marked diagnosis before the rewrit
 - Everything in it is cleared to say, and anyone whose work it describes has agreed.
 - The author knows who they will reply to.
 
+## Adapting this to your context
+
+The defaults come from one LinkedIn network, writing about operations and research for a few hundred readers who mostly know the author.
+
+- **The word bands.** 120 to 300 overall, narrower per type. They follow where LinkedIn truncates. Re-derive them from where your own posts get cut, and allow for languages that run longer than English.
+- **Platform mechanics.** The before-the-fold line, the link in the first comment and the two hashtag ceiling are current conventions, not principles. Check what your platform truncates and how it treats outbound links.
+- **The post types.** Five rows: announcement, observation, adaptation, reaction, role change. Add or drop rows for what you publish. A clinician bound by patient confidentiality needs a type this table does not have.
+- **The evidence standard.** The worked example argues from 34 hires against 29 and states the limitation in the same sentence. Where your evidence is qualitative, name the case, the period and how many instances you saw.
+- **The confidentiality pass.** Written for client and employer confidentiality. Add your own gates: a publication embargo, ethics approval, a coauthor's agreement, an employer's social policy.
+- **What not to change.** One idea, one piece of evidence carrying its own limitation, and a first line that is true of what follows. The rest is platform convention.
+
 ## Related skills
 
 `newsletter-post-writer` produces the long-form piece this post points to, and hands over the single strongest claim rather than a summary. `human-voice-editor` is the final pass on every draft here. `literature-verification` applies to any post citing research, before drafting. `breaktalk-brand` supplies the card format, sign-off and image treatment where the post carries that identity. `outreach-email` covers the message to one named person, which this deliberately excludes, and `ceo-communications` covers the organisational voice.

@@ -191,6 +191,16 @@ Evidence
 - Implications are options with trade-offs, carrying the finding's confidence.
 - The next research question is specific enough to recruit against.
 
+## Adapting this to your context
+
+The defaults come from commercial discovery and churn research on corpora of five to thirty sources. The counting discipline holds anywhere; the tooling and the vocabulary do not.
+
+- **The sample bands.** Eight to fifteen sources for themes, fifteen to thirty for segment claims. Academic, clinical and evaluation work applies stricter conventions: a published study wants a documented coding frame, a second coder and a reported agreement statistic, which is `qualitative-coding-and-analysis` rather than this.
+- **The tooling.** Nothing here needs more than a spreadsheet with one row per tag. Where the corpus is large or the coding has to be auditable, NVivo, MAXQDA or ATLAS.ti hold the codes, the verbatims and the audit trail properly and export the counts this method reports.
+- **The segments.** Company size, role and industry suit a business-to-business customer base. Substitute the variable that actually splits your population: ward, cohort, region, referral route, funding stream.
+- **Consent and ethics.** Commercial interviews run on an informal agreement. Research involving patients, students, employees or children usually needs ethics or institutional review approval before the first interview, and that approval sets what you may quote and how.
+- **What not to change.** Every source read in full, every tag keeping its verbatim, and every count reported with its denominator visible.
+
 ## Related skills
 
 `survey-and-instrument-design` designs the research this synthesises, and is where a sample that cannot carry the decision should be fixed. `qualitative-coding-and-analysis` is the formal version with a published coding frame and reliability checks, for findings that must be reproducible. `market-research` places these findings against market and category evidence. `competitive-battlecard` consumes the loss and competitor mentions coded here. `pipeline-deep-dive` supplies the deal records that give interview claims a quantitative counterpart. `decision-memo` is where the implications become a decision with a named decider. `pricing-and-resourcing-model` takes the willingness-to-pay signals, which this method flags but does not size. `sales-call-analysis` handles a single call rather than a corpus.

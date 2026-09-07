@@ -88,7 +88,7 @@ The single most useful cross-stage question: has anything the buyer said changed
 
 ## Worked example
 
-**Situation.** A workforce scheduling vendor, average annual contract around 65,000, carried a deal with a hospitality group at 40 percent probability and a close date eleven days out. The seller, Nadia Rooke, had run four calls over nine weeks. The record described a strong sponsor, an agreed business case worth 310,000 in annual savings, and a signature expected inside the quarter, and the quarter's forecast depended on it.
+**Situation.** A workforce scheduling vendor, average annual contract around 65,000 US dollars, with all figures in this example in US dollars, carried a deal with a hospitality group at 40 percent probability and a close date eleven days out. The seller, Nadia Rooke, had run four calls over nine weeks. The record described a strong sponsor, an agreed business case worth 310,000 in annual savings, and a signature expected inside the quarter, and the quarter's forecast depended on it.
 
 **Task.** Determine before the commitment date whether the deal was real, using the transcript of the most recent call, a fifty-one minute proposal walk-through with the operations director and a regional manager.
 
@@ -197,6 +197,17 @@ Where a source was not supplied, name it as not supplied. Never infer its conten
 - The next step is quoted and tested against all four properties.
 - The verdict is one sentence and carries a falsification test naming a person.
 - Sources that were not supplied are named as missing rather than inferred.
+
+## Adapting this to your context
+
+The four passes and the evidence rule are the method and hold anywhere a buyer speaks. The stage reading, the next-step test and the expected volume of established items assume a deal with a named seller and a multi-call cycle.
+
+- **Reading against the stage.** Nine established items at proposal, and six at first contact, come from a four to six call services cycle. Recalibrate from five of your own won deals: count what was established by which call, and use that.
+- **The next-step test.** In a tender or grant-led process the buyer cannot commit outside the published timetable, so the test becomes whether the next step is one the buyer has confirmed you are in. A warm meeting with no place in the timetable is hollow, however friendly.
+- **What counts as established.** The rule is jurisdiction-free but agreement markers are not. A polite affirmative carries very different weight across languages, so calibrate on real calls in the language, and never score a translated transcript as the original.
+- **Recording and consent.** Where consent covers quality review only, keep the analysis internal and check before any verbatim customer line leaves the deal team.
+
+- **What not to change.** Judge only against the supplied material, and count nothing as established that the buyer did not say or add to.
 
 ## Related skills
 

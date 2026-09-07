@@ -209,6 +209,16 @@ Each severity A finding is written out in full below the table: what the paper s
 - The full pipeline was rerun from a clean session and the regenerated outputs were compared with the audited ones.
 - The silent error checklist was completed rather than abandoned after the first serious finding.
 
+## Adapting this to your context
+
+The audit assumes a code-driven quantitative pipeline: raw files, scripts, stored output, a regression table. The adversarial reconstruction transfers everywhere; what you reconstruct does not.
+
+- **The independent rebuild.** Written for a coefficient rebuilt from raw data. For a survey study with a latent construct, rebuild the scale: recompute the composite from the item file and check the reverse-coded items, the reliability and the missing-response rule. For qualitative work, rebuild the trail from three reported claims back to coded extracts.
+- **The tooling.** `grep` over an output directory, Stata and Python scripts. In R the audit runs over `renv.lock` and `targets` metadata; in SPSS or SAS, over saved syntax. Where the work was done through menus with no syntax file, the finding is that the analysis is not auditable.
+- **The silent error list.** Add what dominates outside economics: reverse-coded items not reversed, listwise deletion changing N between models, a scale scored on a different item set than the codebook states.
+- **Severity ranking.** Carries, supports, describes. In a preregistered or clinical study, add a category above all three: any departure from the registered protocol is a finding regardless of its effect on the number.
+- **What not to change.** Rebuild the headline number by your own route, and record what checked out as well as what did not.
+
 ## Related skills
 
 `stata-do-file-craft` and `python-for-econometrics` describe the pipeline discipline whose absence this audit detects, and `stata-data-management` the merge and sample checks whose omission it finds. `regression-table-production` is where the table-to-code traceability is established in the first place, and following it makes most of step 4 unnecessary. `econometrician` and `identification-defense` handle the questions this skill deliberately excludes, namely whether the estimator and the design were right. `peer-review-simulator` predicts what a referee will object to in the argument, where this checks what a data editor will find in the code. `replication-package` is assembled after the audit passes, not before. `response-to-reviewers` uses audit findings when a query has to be answered with a corrected number.

@@ -191,6 +191,16 @@ OTHER CHANGES NOT REQUESTED
 - The letter contains no sentence about a referee, only sentences about the paper.
 - The decision to revise here rather than elsewhere was made explicitly, in writing, before the work began.
 
+## Adapting this to your context
+
+The example is a health policy journal, three referees, thirty-one comments, ninety days. The ledger and the disposition rule travel; the calendar and the evidence do not.
+
+- **The revision window.** Ninety days is generous. Many psychology and medical journals allow thirty to sixty, some twenty-one for a minor revision. Check the letter before planning reruns: an extension is routine only before the deadline.
+- **What counts as evidence for a decline.** The four kinds hold, but the documents differ. Outside economics the strongest declines cite the preregistration, a reporting guideline item such as a CONSORT or PRISMA requirement, the ethics protocol, or the instrument's published validation. Name the document, not the reasoning.
+- **What referees ask for.** Here, an instrumental variables specification. In psychology, a mediation test, a Bayes factor or a preregistered replication; in health, a sensitivity analysis; in qualitative work, a second coder with an agreement statistic or member checking. Partial compliance works on all of them.
+- **The response format.** Some journals require per-comment boxes with a character limit; open-review venues publish the letter with the paper. Build the ledger first regardless, then render it into what the portal wants.
+- **What not to change.** Never claim a change that was not made, never make one undisclosed, and never decline without one of the four kinds of evidence.
+
 ## Related skills
 
 `peer-review-simulator` anticipates these reports before submission and, run again on the revision, catches what the revision broke. `identification-defense` produces the evidence for methodological complies and declines. `analysis-audit` reruns the numbers a referee has queried and catches the discrepancy that a rerun exposes. `literature-verification` verifies every citation added during the revision, including any the referee suggested. `journal-targeting` takes over when the decision is to go elsewhere, and takes the ledger as its input. `full-manuscript-build` performs a restructuring that goes beyond a section-level change. `replication-package` is updated whenever a revision changes any analysis, and closes the project at acceptance. `thesis-defense-prep` uses this same ledger discipline for a committee's required revisions.

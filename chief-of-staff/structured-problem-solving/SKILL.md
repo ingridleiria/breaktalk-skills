@@ -103,7 +103,7 @@ Triangulate anything important with a second method built from different inputs.
 
 Sanity check everything against something known: a comparable company, last year, a physical constraint, a per-head figure a person in the business would recognise. Numbers that survive no reality check are how a wrong answer travels a long way.
 
-Do not report more precision than the inputs support. A market sized to the nearest million from three assumptions is a claim about the assumptions, and stating it as 47.3 million invites a conversation about the wrong thing.
+Do not report more precision than the inputs support. A market sized to the nearest million from three assumptions is a claim about the assumptions, and stating it as 47.3 million dollars invites a conversation about the wrong thing.
 
 ### 8. Synthesise, do not summarise
 
@@ -113,7 +113,7 @@ Build the answer as a pyramid. One governing statement at the top, which is the 
 
 Group either deductively, where each point leads to the next and the conclusion follows, or inductively, where several findings of the same kind support one statement. Do not mix them inside one group; that is what makes an argument feel slippery without the reader being able to say why.
 
-Apply the so-what test to every finding, repeatedly, until it reaches something actionable. "Churn is 4 percent monthly" becomes "churn is concentrated in accounts under ten thousand, which are also the accounts we onboard without a human", which becomes "the cheapest lever available is onboarding, not the product roadmap". The first version is a fact, the last is a recommendation, and the distance between them is the work.
+Apply the so-what test to every finding, repeatedly, until it reaches something actionable. "Churn is 4 percent monthly" becomes "churn is concentrated in accounts under ten thousand dollars a year, which are also the accounts we onboard without a human", which becomes "the cheapest lever available is onboarding, not the product roadmap". The first version is a fact, the last is a recommendation, and the distance between them is the work.
 
 ### 9. Write answer first
 
@@ -133,7 +133,7 @@ Then check for the failures this way of working is prone to: analysis that could
 
 ## Worked example
 
-**Situation.** Meridian Freight Systems, a 220-person logistics software business, had seen gross margin fall from 71 percent to 63 percent across five quarters while revenue grew from 39 million to 48 million. The chief executive asked the chief of staff to "look into margin" ahead of a board meeting nineteen days away. The finance team had already produced a variance pack that showed cost of goods sold rising faster than revenue, which everybody had read and nobody could act on.
+**Situation.** Meridian Freight Systems, a 220-person logistics software business, had seen gross margin fall from 71 percent to 63 percent across five quarters while revenue grew from 39 million dollars to 48 million dollars. All figures in this example are US dollars. The chief executive asked the chief of staff to "look into margin" ahead of a board meeting nineteen days away. The finance team had already produced a variance pack that showed cost of goods sold rising faster than revenue, which everybody had read and nobody could act on.
 
 **Task.** The board would be asked in that meeting to approve a plan that assumed a return to 70 percent gross margin within four quarters. The real question was whether that assumption held, and if not, what to change. Good meant an answer the chief financial officer would defend under questioning, delivered before the pack went out, which was eleven days away rather than nineteen.
 
@@ -141,13 +141,13 @@ Then check for the failures this way of working is prone to: analysis that could
 
 The problem statement became: does the fall from 71 to 63 percent reflect a permanent change in delivery cost per unit of revenue, or a timing effect that reverses without intervention, and which levers close the gap by the fourth quarter of next year.
 
-Because the question was about a number that moved, the structure was a driver tree. Cost of goods sold, 17.8 million in the trailing twelve months, split four ways: hosting and infrastructure 3.4 million, customer support 4.1 million, implementation and delivery labour 7.9 million, third-party data fees 2.4 million.
+Because the question was about a number that moved, the structure was a driver tree. Cost of goods sold, 17.8 million dollars in the trailing twelve months, split four ways: hosting and infrastructure 3.4 million, customer support 4.1 million, implementation and delivery labour 7.9 million, third-party data fees 2.4 million.
 
 The day-one answer, written before any data was pulled, was that usage-based hosting costs had grown faster than the contracts that generated them, because two large customers had moved to high-volume plans priced before the current infrastructure costs. That hypothesis was plausible, widely held in the leadership team, and wrong.
 
-The wrong turn worth recording: two days went into scoping a per-tenant hosting cost model, which would have taken a further eight or nine working days and required a data engineer who was already committed elsewhere. Ghosting the exhibit killed it. The sketch was a bar chart of hosting cost per tenant against contract value, and the question asked before building it was what would be concluded if the chart came out flat. The answer was uncomfortable: hosting was 3.4 million of 17.8 million, so even a 30 percent overrun on the whole line explained about 1.1 points of margin against a gap of 8 points. The analysis could not have changed the recommendation whichever way it came out. It was abandoned on day three.
+The wrong turn worth recording: two days went into scoping a per-tenant hosting cost model, which would have taken a further eight or nine working days and required a data engineer who was already committed elsewhere. Ghosting the exhibit killed it. The sketch was a bar chart of hosting cost per tenant against contract value, and the question asked before building it was what would be concluded if the chart came out flat. The answer was uncomfortable: hosting was 3.4 million dollars of 17.8 million, so even a 30 percent overrun on the whole line explained about 1.1 points of margin against a gap of 8 points. The analysis could not have changed the recommendation whichever way it came out. It was abandoned on day three.
 
-Attention moved to the branch that was arithmetically capable of carrying the answer. Implementation and delivery labour had gone from 3.1 million to 7.9 million while revenue grew 22 percent. Two analyses settled it, both done in a day and a half. The first was delivery hours per new contract by quarter, which rose from a median of 210 hours to 470. The second was the mix of contract types: the bundled fixed-fee offer introduced eighteen months earlier now carried 61 percent of new bookings, and it included implementation with no hour cap. A third analysis, a comparison of delivery hours by customer segment, was ghosted and skipped because both possible outcomes led to the same recommendation.
+Attention moved to the branch that was arithmetically capable of carrying the answer. Implementation and delivery labour had gone from 3.1 million dollars to 7.9 million dollars while revenue grew 22 percent. Two analyses settled it, both done in a day and a half. The first was delivery hours per new contract by quarter, which rose from a median of 210 hours to 470. The second was the mix of contract types: the bundled fixed-fee offer introduced eighteen months earlier now carried 61 percent of new bookings, and it included implementation with no hour cap. A third analysis, a comparison of delivery hours by customer segment, was ghosted and skipped because both possible outcomes led to the same recommendation.
 
 Triangulation came from outside finance: the head of delivery kept a staffing spreadsheet showing billable utilisation falling from 74 percent to 51 percent over the same period, because the team was absorbing work that had previously been billed. Two independent routes to the same finding.
 
@@ -163,7 +163,7 @@ The work took nine working days including the abandoned hosting model. Without t
 
 The same chief of staff was asked six months later whether the company should open a delivery office in a second country. There is no number that moved, no arithmetic decomposition, and almost no internal data, because the company has never done it.
 
-The structure changes to an issue tree with four branches: is there enough demand in the region to sustain a team, can the delivery skills be hired at a cost that improves the margin picture rather than worsening it, what the entity and compliance overhead costs in the first two years, and what breaks in the operating model when delivery is not co-located. Three of those four cannot be settled with data the company holds. So the method inverts, as step 5 allows. Instead of asking what is true, the work asks what would have to be true: the region needs to produce at least 2.4 million of delivery revenue by year two to cover the fixed overhead, which means roughly fourteen new mid-market contracts, against a current run rate in that region of two a year. That is the finding, and it took four days rather than nine.
+The structure changes to an issue tree with four branches: is there enough demand in the region to sustain a team, can the delivery skills be hired at a cost that improves the margin picture rather than worsening it, what the entity and compliance overhead costs in the first two years, and what breaks in the operating model when delivery is not co-located. Three of those four cannot be settled with data the company holds. So the method inverts, as step 5 allows. Instead of asking what is true, the work asks what would have to be true: the region needs to produce at least 2.4 million dollars of delivery revenue by year two to cover the fixed overhead, which means roughly fourteen new mid-market contracts, against a current run rate in that region of two a year. That is the finding, and it took four days rather than nine.
 
 What changed is not the sequence. It is that the evidence available cannot support a confident recommendation, so the deliverable is a set of conditions and a threshold rather than an answer, and the document says so in its first sentence. Presenting a confident recommendation from that evidence base would have been the failure.
 
@@ -249,6 +249,16 @@ Everything else is an appendix. Where the output is a choice for a named decider
 - Important numbers are triangulated by a second method built from different inputs and sanity checked against something known.
 - The titles alone, read in order, carry the argument.
 - Every claim has a number, a source, or an explicit label saying it is an assumption.
+
+## Adapting this to your context
+
+The worked examples, the vocabulary and the pyramid write-up come from commercial strategy work delivered to a leadership team on a horizon of days to a few weeks. The sequence generalises; the evidence conventions do not.
+
+- **The decision, the decider and the date.** Where the decider is a board, a committee or a regulator, replace the single name with the body, and replace what would change their mind with the published criteria that body applies.
+- **The evidence standard.** In business, a triangulated estimate with labelled assumptions is enough. In clinical, regulatory, legal and academic work it is external and prespecified, so the ghost exhibit becomes a registered analysis plan rather than a sketch.
+- **Order of magnitude before decimal places.** Wrong wherever the decision turns on a threshold, a safety margin or a covenant. There the precision comes first and the range has to be defensible.
+- **The banned vocabulary.** Alignment, synergies and unlock are commercial filler. Every field has its own; find the words that survive deletion without changing the sentence, and ban those instead.
+- **What not to change.** Every analysis would have changed the recommendation had it come out the other way, and every claim carries a number, a source, or a visible label saying it is an assumption.
 
 ## Related skills
 

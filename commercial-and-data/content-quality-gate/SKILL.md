@@ -61,13 +61,21 @@ Adjacent cases belong elsewhere. `human-voice-editor` does the line-level repair
 
 **3. Anchored in a core belief.** Every piece advances one of the two or three positions the organisation actually argues for, and the reader should feel it rather than find it in a closing line. *Pass test:* name the belief and quote the sentence carrying it. *Fail signature:* the piece is true, useful, and could have been published by any competitor. *Fix level:* premise.
 
-**4. Anchored in the named method.** A claim about a stalled deal maps to a named stage. A claim about maturity maps to a named component. Stage and component names are used exactly as the standard defines them, in the defined order. *Pass test:* name the stage or component this piece supports. If the answer is the discipline in general, it fails. *Fix level:* premise.
+**4. Anchored in something the organisation actually does.** The piece has to rest on one specific, repeatable practice rather than on the discipline in general, and a reader has to be able to see which one.
+
+Where the organisation has a named method, the standard file lists its steps or components in their real order and the piece maps to one of them, using those names exactly as defined and in the defined order. A claim about a stalled deal maps to the step that handles a stalled deal; a claim about maturity maps to the component that measures it.
+
+Where there is no named method, which is the ordinary case and not a deficiency, the anchor is the practice itself: the check the team runs before a proposal goes out, the questions asked in a first meeting and in what order, the threshold at which a deal is disqualified, the thing that is done differently here from everywhere else. Write the two or three of those into the standard file as the anchor list, one line each, and gate against that. An organisation that cannot name any is not failing this check yet, it is failing to have a position, and the finding goes to whoever owns positioning rather than to the writer.
+
+*Pass test:* name the step, component or practice this piece supports, and say where it is written down. If the answer is the discipline in general, or a practice nobody in the organisation could state in one sentence, it fails. *Fail signature:* the piece recommends a category of activity, "invest in enablement", rather than a way of doing it. *Fix level:* premise. Where the piece is not selling anything, strike this check and say so, as the edge cases set out.
 
 **5. Shows the shift.** Buyers move when standing still becomes intolerable, not when a solution sounds appealing. The old way is drawn against the new way and, where approved claims allow, the cost of the old way is sized. *Pass test:* point to the before and the after. *Fail signature:* an informative piece with no tension in it, which readers finish and do nothing about. *Fix level:* section.
 
 **6. Terminology and product fidelity.** Proprietary terms carry their exact definition, capitalisation and category. The never-say list is checked word by word, including plurals and hyphenated variants. *Pass test:* scan the never-say list against the draft. One hit is a rewrite of that sentence, not a discussion. *Fix level:* line, unless the wrong term is load-bearing, in which case section.
 
 **7. Proof with integrity.** Only claims on the approved list, attributed where they belong to a named client, with the date the figure was measured. Anything else is marked as needing a source and escalated. *Pass test:* open the source for every number. *Fail signature:* a figure that reads as though it were rounded for rhythm, such as a suspiciously clean forty percent. *Fix level:* line to hold.
+
+Where there is no approved claims register, which is the common case, the absence is not a pass and it is not a reason to skip the check. Build the minimum version in the same session, from the piece in front of you: one row per number the draft uses, carrying the figure as written, the document and the location inside it where the figure comes from, the date it was measured, whether a client is named and whether that client has agreed to be, who approved it, and when it expires. Ten rows takes about twenty minutes and that table is the register from then on. Until a number has a row, it is unsourced, and the three options are the same as always: cut it, replace it with the mechanism rather than the magnitude, or mark it held and route it to whoever can source it. A figure that has appeared in an earlier published piece is not sourced by having been published, and a figure somebody remembers is not sourced by being remembered confidently.
 
 **8. Human voice.** Specific, confident, unpadded, written at professional register. No generic business vocabulary on autopilot, no long dashes standing in for commas and colons, no emoji, correct typeface and palette on any branded asset. *Pass test:* read two paragraphs aloud. Does it sound like a person who has done the work, or like a summary of a category? *Fix level:* line, and hand to `human-voice-editor` when the count of tells exceeds roughly one per hundred words.
 
@@ -96,10 +104,14 @@ Two or three, each one sentence, each contestable. A belief a competitor
 would also sign is not a belief, it is a platitude. Under each, one line on
 what follows if it is true.
 
-## The named method
-The framework the content must reflect. List the stages or components in
-their real order with their exact names, one line each on what that stage
-produces. Note which stages the organisation is known for and which it is not.
+## The named method, or the anchor list where there is none
+The framework the content must reflect. List the steps or components in
+their real order with their exact names, one line each on what that step
+produces. Note which steps the organisation is known for and which it is not.
+Where there is no named method, list instead the two or three specific,
+repeatable practices the content must anchor to, one line each, concrete
+enough that a reader could do one on Monday. Check 4 gates against whichever
+of the two this section contains.
 
 ## Terminology
 | Term | Exact definition | Capitalisation | It is not |
@@ -111,7 +123,9 @@ organisation is not entitled to use.
 ## Approved claims
 | Claim as written | Figure | Source (document, cell, page) | Date measured | Client named? | Approved by | Expires |
 Every number that may appear in external content lives here. Nothing else
-may appear. An expired row is treated as unsourced.
+may appear. An expired row is treated as unsourced. Where this table does
+not yet exist, start it from the numbers in the first piece you gate; ten
+rows is enough to be useful and the table grows one piece at a time.
 
 ## Voice
 Register, sentence length range, person (first plural or first singular),
@@ -170,7 +184,7 @@ Verdict:       SHIP / REWRITE / HOLD
 | 1 Named buyer | pass / fail | persona, segment, trigger, or the category label found | | premise |
 | 2 Problem first | pass / fail | the opening sentence as written | | section |
 | 3 Core belief | pass / fail | the belief, and the sentence carrying it | | premise |
-| 4 Method anchor | pass / fail | the named stage or component | | premise |
+| 4 Method anchor | pass / fail | the named step, component or practice, and where it is written down | | premise |
 | 5 The shift | pass / fail | the before and after, or that there is none | | section |
 | 6 Terminology | pass / fail | any term used wrongly, quoted exactly | | line |
 | 7 Proof | pass / fail | source per number, or the items needing a source | | line or hold |
@@ -221,6 +235,17 @@ Close with the ordered rewrite list, premise fixes first, each one line and each
 - The never-say list was scanned word by word, including plurals and variants.
 - After a rewrite, checks 1, 2 and 8 were re-run and the results recorded.
 - Where the standard file was absent, the header says so and the affected checks are marked outline.
+
+## Adapting this to your context
+
+The nine checks are general. What makes them bite is the standard file, and that file assumes named buyer segments, a position the organisation argues for, and someone who can approve a claim. Several of those are commonly missing.
+
+- **The named method.** Check 4 no longer assumes you have one. If you do, list its steps and use those names exactly. If you do not, write the two or three specific practices you actually anchor to and gate against those. Never invent a framework to satisfy a check.
+- **The approved claims register.** Where none exists, build it from the piece you are gating, ten rows at a time. A grant-funded or public body usually has the opposite problem, published evaluation it may quote under rules, so the register records the permitted form of words alongside the figure.
+- **The nine checks as a set.** Checks 4 and 5 are struck for anything not selling. A solo practice ghostwriting runs check 8 against that person's samples. Regulated claims leave the gate entirely.
+- **The exception authority.** Decide who can release a held item before the first gate runs, or every hold becomes an indefinite pause.
+
+- **What not to change.** Run checks 1 to 5 before any line edit, and never record an outline run as a pass.
 
 ## Related skills
 

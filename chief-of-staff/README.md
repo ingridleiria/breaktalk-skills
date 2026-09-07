@@ -1,5 +1,7 @@
 # Chief of Staff track
 
+How to run one of these in any assistant, and how to adapt it to your own numbers, tools and field: [USING_THESE_SKILLS.md](../USING_THESE_SKILLS.md). Every skill below carries an **Adapting this to your context** section naming its own assumptions.
+
 Forty-four skills for the operating layer of a company: what the role actually is at each stage and how to do it there, then the memo, the model, the board, the plan, the raise, the cadence, and the commercial document. Written for whoever holds the work between the executive and the function, which in a small firm is one person and in a larger one is a team.
 
 The through line is that quality here depends on discipline rather than inspiration. A market analysis is good because every number has a source. A programme status is good because it names one owner and a dated event rather than a percentage. That kind of quality is exactly what written instructions can enforce, so these skills enforce it.

@@ -256,6 +256,16 @@ What they cannot:   [...]
 - The data availability statement was written against the licence document and matches the manuscript exactly.
 - The deposit was downloaded fresh and checked against the manifest.
 
+## Adapting this to your context
+
+This is built around an economics journal with a data editor, quantitative code, and a dataset that can be synthesised. Change the surface where your field differs.
+
+- **Who enforces it.** Economics journals employ data editors who run your package. Elsewhere: ICMJE data sharing statements in medicine, TOP guidelines and open-science badges in psychology, funder mandates in education. Build to the same standard and find out who will actually check.
+- **The repository.** openICPSR and Zenodo are the economics defaults. Use OSF for psychology, ICPSR or Dryad for health and social survey work, a Dataverse instance where your institution runs one, and the Qualitative Data Repository or a national data service for interview material.
+- **Qualitative and interview data.** A synthetic dataset does not substitute for a transcript. Deposit the interview guide, the coding frame, the analytic memos, and the NVivo, MAXQDA or ATLAS.ti project file where consent permits, with redacted transcripts if it does.
+- **What counts as code.** Point-and-click work in SPSS or a spreadsheet is not reproducible; exported SPSS syntax, SAS programs, R scripts with `renv`, and Python with a pinned environment are. Pin the version whatever the language.
+- **What not to change.** The clean-location test with `data/clean` and `output` deleted, and the manifest built from the manuscript before any code is touched.
+
 ## Related skills
 
 `analysis-audit` rebuilds the numbers and takes over whenever the test run produces a discrepancy; the two are complementary and neither substitutes for the other. `stata-project-scaffold` and the equivalent conventions in other languages make this skill cheap by building the structure at the start rather than reconstructing it at the end. `data-section-writer` writes the paper's data section, which must agree with the data availability statement produced here. `research-ethics-and-data-protection` governs what may be shared and is the authority behind the licence reading. `journal-targeting` surfaces the target's data policy in time for the package to be built before submission rather than after acceptance. `response-to-reviewers` requires the package to be updated whenever a revision changes any analysis. `thesis-advisor` should schedule this as load-bearing work before deposit, since many institutions require it. `full-manuscript-build` produces the exhibits this package must regenerate exactly.

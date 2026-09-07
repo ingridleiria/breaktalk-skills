@@ -51,7 +51,8 @@ The boundary in one line: `research-design` decides what variation to use, this 
 | An excluded instrument | Two-stage least squares, limited information maximum likelihood | Relevance plus exclusion | Weak first stage; violated exclusion; heterogeneous compliance changes the estimand |
 | A running variable and a cutoff | Local polynomial regression discontinuity | Continuity of potential outcomes at the cutoff | Manipulation of the running variable; the estimate is local to the cutoff |
 | Non-negative outcome with many zeros | Poisson pseudo-maximum likelihood | Correct conditional mean without distributional assumptions | Nothing much; it is more robust here than logging |
-| Hierarchical data, interest in variance components | Multilevel model | Random effects uncorrelated with regressors at each level | Correlation between the random effect and a regressor, which is the usual case |
+| Hierarchical data, interest in how much variance sits at each level, or in a level-2 predictor | Multilevel or mixed model, random intercepts and where justified random slopes | Partial pooling across groups, estimates for small groups, a decomposition of variance by level, and coefficients on group-level regressors | Correlation between the random effect and a level-1 regressor, which biases the level-1 coefficients unless the model is written to handle it |
+| Hierarchical data where a level-1 causal effect is the target and group-level confounding is suspected | Within-between or Mundlak specification: group means of the time-varying or level-1 regressors added to a random effects model | The within coefficient equals the fixed effects estimate while level-2 regressors remain estimable, and the between and within parts are separated | Nothing that fixed effects would not also break; it costs only the extra parameters |
 
 3. **State, in writing, the assumption each candidate buys and the single most plausible thing that breaks it.** One line each. This is what makes step 2 an argument rather than a lookup, and it is the paragraph that later becomes the threats subsection. Where two candidates rest on assumptions that are not nested, neither is a robustness check on the other and both belong in the paper as separate columns.
 
@@ -59,7 +60,7 @@ The boundary in one line: `research-design` decides what variation to use, this 
 
 Where two levels are both plausible, cluster at the coarser one and report the finer as a footnote. Where the design has two crossed dimensions, such as industry and year, consider two-way clustering, remembering that it requires many units in both dimensions to behave well.
 
-5. **Count the clusters, and treat fewer than about forty as a problem rather than a detail.** With few clusters the conventional cluster-robust variance estimator is downward biased and the t-statistic does not follow the distribution being used. The number that matters most is the number of treated clusters, which can be small even when the total is not. Below roughly forty clusters, or with fewer than about ten treated, do not report the conventional standard error alone.
+5. **Count the clusters, and treat fewer than about forty as a problem rather than a detail.** This is the threshold the library uses throughout, and `identification-defense` states the same number, so a reader is not asked to reconcile two rules. The reason for forty rather than some smaller figure: cluster-robust inference is justified asymptotically in the number of clusters, the variance estimator is downward biased in finite samples, and the bias is already material in the thirties, severe by fifteen, and not reliably fixed by a degrees-of-freedom adjustment. Forty is where the conventional standard error stops being safe to quote on its own, not where it becomes indefensible; the failure is gradual and it always runs in the same direction, towards a p-value that is too small. The number that matters most is the number of treated clusters, which can be small even when the total is not. Below roughly forty clusters, or with fewer than about ten treated, do not report the conventional standard error alone.
 
 The practical options, in the order to try them: the wild cluster bootstrap with the null imposed, which is well behaved down to surprisingly small numbers; randomisation inference, which is the natural choice when treatment was actually randomised at the cluster level; and aggregation to one observation per cluster and period, which throws away information but yields inference that is easy to defend. Report the conventional and the corrected result together, and let the corrected one govern the claim.
 
@@ -71,9 +72,25 @@ reghdfe earnings treat x1 x2, absorb(worker_id year) cluster(province)
 boottest treat, reps(9999) boottype(wild) cluster(province) nograph
 ```
 
-6. **Decide fixed against random effects on what you are willing to assume, and do not let a Hausman test decide it.** Random effects assumes the unit effect is uncorrelated with the regressors. In observational economics that assumption is usually false and usually false in the direction that matters, which is why fixed effects is the default. The Hausman test compares the two coefficient vectors; a rejection tells you they differ, and a failure to reject is weak evidence of anything, particularly in small samples where the test has little power. The classical form is also invalid under clustering or heteroskedasticity, which is the normal case, so the test as usually reported does not test what it is presented as testing.
+6. **Decide fixed against random effects on what you are willing to assume, and do not let a Hausman test decide it.** Random effects, and the multilevel models built on it, assume the unit or group effect is uncorrelated with the regressors. Whether that assumption is tolerable depends on what you are estimating and on how the units came to be what they are, and the disciplines differ for good reasons rather than out of habit.
 
-Use fixed effects when the parameter of interest is identified from within-unit variation and there is enough of it; `xtsum` tells you how much. Use random effects only when you need the coefficient on a time-invariant regressor, and then prefer correlated random effects, which adds the unit means of the time-varying regressors and recovers the fixed effects estimates for those while still permitting a time-invariant term. That specification also gives an honest test of the random effects assumption as a joint test on the added means.
+   In observational economics the units are usually firms, regions or workers that selected into treatment, so the unobserved unit effect is correlated with the regressor of interest almost by construction, and correlated in the direction that inflates the estimate. That is why fixed effects is the economics default: it buys robustness to any time-invariant confounder at the cost of discarding between-unit variation, and in a field whose central worry is selection that trade is usually worth making.
+
+   In education, psychology, public health and organisational research the question is often different. The pupils-in-classrooms-in-schools structure is not a nuisance to be absorbed; the variance at each level is part of the answer, the group-level predictor is often the treatment, and groups are small enough that partial pooling gives better estimates for the small ones than a separate intercept per group would. A multilevel model with random intercepts, and random slopes where the effect is expected to vary across groups, is the right tool there and not a weaker substitute for fixed effects. It also handles unbalanced and incomplete clusters gracefully, which fixed effects does not.
+
+   Choose on these conditions rather than on discipline:
+
+   | Use | When |
+   | --- | --- |
+   | Fixed effects | The target is a within-unit causal effect, selection into treatment is the main worry, there is enough within variation to identify the effect, and no level-2 regressor needs a coefficient |
+   | Multilevel or mixed model | Variance decomposition, group-level predictors, cross-level interactions, small or unbalanced groups needing partial pooling, or growth curves and repeated measures where the random slope is the object of interest |
+   | Within-between or Mundlak | Both: a within estimate you can defend and level-2 coefficients you still need. This is the middle path and it should be the default when the two goals conflict |
+
+   The within-between formulation is worth stating explicitly because it dissolves most of the argument. Add the group means of the level-1 regressors to a random effects or multilevel model. The coefficient on the deviation from the group mean is numerically the fixed effects estimate, the coefficient on the group mean is the between-group relationship, and their difference is exactly what the Hausman test was trying to detect. A joint test that the added means are zero is the honest test of the random effects assumption, it can be made cluster-robust, and unlike the classical Hausman test it tells you which regressors carry the problem. It is called correlated random effects in econometrics and within-between or hybrid in sociology and education; it is the same specification.
+
+   The classical Hausman test is a poor decision rule wherever it is used. It compares the two coefficient vectors; a rejection tells you they differ, and a failure to reject is weak evidence of anything, particularly in small samples where the test has little power. The classical form is also invalid under clustering or heteroskedasticity, which is the normal case, so the test as usually reported does not test what it is presented as testing. Use the Mundlak joint test instead, or argue the choice substantively.
+
+Use fixed effects when the parameter of interest is identified from within-unit variation and there is enough of it; `xtsum` tells you how much, and where the within variation is thin, fixed effects is precise about nothing. Use a random effects or multilevel model when you need the coefficient on a time-invariant or group-level regressor, when the variance at each level is part of the question, or when partial pooling across small groups is what the data calls for, and in the first of those cases prefer the correlated random effects form, which adds the unit means of the time-varying regressors and recovers the fixed effects estimates for those while still permitting a time-invariant term. That specification also gives an honest test of the random effects assumption as a joint test on the added means. In Stata it is `xtreg, re` with the group means added, or `mixed`; in R it is `lme4::lmer` or `nlme`; in Mplus it is a two-level model; the specification is the same object in all of them.
 
 Where the within variation is thin, say so and report the between estimate separately rather than presenting a fixed effects coefficient with a wide interval as though it were informative.
 
@@ -180,7 +197,9 @@ Followed by the diagnostics table with a stated response for each, and one sente
 
 **Two-way fixed effects on staggered treatment with dynamic effects.** Recognise it from a tabulation of adoption dates showing more than two cohorts, combined with an event study whose effect grows. Fix with an estimator that restricts comparisons to clean controls.
 
-**The Hausman test as a decision rule.** Recognise it in a footnote justifying fixed effects by a test statistic. Fix by justifying the choice on substantive grounds and deleting the test.
+**The Hausman test as a decision rule.** Recognise it in a footnote justifying fixed effects by a test statistic. Fix by justifying the choice on substantive grounds, or by running the Mundlak joint test on the added group means, which is valid under clustering and says which regressors carry the correlation, and deleting the classical test.
+
+**Dismissing a multilevel model because the field does not use them.** Recognise it when a hierarchical dataset with a group-level treatment is run as unit fixed effects and the group-level coefficient is then reported as absorbed and unavailable. Fix with the within-between specification, which gives both.
 
 **Adding a control to fix an imbalance.** Recognise it when a covariate that failed a balance test appears as a regressor with no other justification. Fix by reweighting or restricting to common support, and by reporting the imbalance.
 
@@ -214,10 +233,20 @@ Followed by the diagnostics table with a stated response for each, and one sente
 - The clustering level is justified by the level of treatment assignment or sampling, and the number of clusters and treated clusters is reported.
 - Where clusters are few, an inference method valid at that count governs the reported result and the conventional figure is secondary.
 - Every diagnostic reported has a stated consequence, and every diagnostic that failed has a stated response that was decided before it was run.
-- The fixed against random effects choice rests on a substantive argument, not on a test.
+- The fixed against random effects choice rests on a substantive argument about what the parameter of interest is and how the units came to be treated, not on a classical Hausman test, and where both a within estimate and a group-level coefficient are needed the within-between specification is used rather than one of them being abandoned.
 - Weighted and unweighted estimates were compared, and any material difference is reported and explained rather than resolved by preference.
 - The preferred specification was fixed in advance, and the full robustness set is reported including the results that weaken the claim.
 - One sentence states what evidence would change the conclusion.
+
+## Adapting this to your context
+
+These are economics defaults: observational panels, selection into treatment as the central worry, fixed effects as the first move, cluster counts set by administrative geography. The decision logic transfers; the defaults should be reset.
+
+- **Fixed effects as the starting point.** Right when selection into treatment is the main threat and the target is a within-unit effect. In education, psychology and public health, where the hierarchy is part of the question and treatment is often at the group level, start from a multilevel model and use the within-between specification when you need both. Step 6 sets the conditions.
+- **Clustering at the level of assignment.** Same rule, different vocabulary: the randomisation unit in a cluster randomised trial, the primary sampling unit in survey work, the participant in repeated measures.
+- **The forty cluster threshold.** It applies wherever cluster-robust inference is used, trials and multisite studies included. Corrections exist everywhere: `boottest` in Stata, `fwildclusterboot` and `clubSandwich` in R.
+- **Stata commands.** `reghdfe`, `ppmlhdfe`, `xtsum`, `boottest`. The R equivalents are `fixest::feols`, `fixest::fepois`, `lme4::lmer` and `clubSandwich`; SPSS `MIXED` and SAS `PROC MIXED` or `PROC GLIMMIX` cover the multilevel side.
+- **What not to change.** Name the estimand before the estimator, state the assumption each candidate buys and what breaks it, and let the inference procedure that is valid at your cluster count govern the claim.
 
 ## Related skills
 

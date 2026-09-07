@@ -195,6 +195,16 @@ not corrected by then is taken as agreed.
 - The follow-up is ready to send, with a confirmation deadline and a stated default.
 - The decisions are in the log the same day.
 
+## Adapting this to your context
+
+The 24-hour reconstruction window, the same-day circulation and the 300-word ceiling come from leadership meetings in commercial organisations of fifty to five hundred people.
+
+- **Same-day circulation with a confirmation deadline.** This assumes overlapping hours. Across three time zones, set the deadline at the end of the last region's next working day, or the default-agreement clause binds people who were asleep.
+- **The 300-word record.** Regulated settings, clinical governance, safety committees, public bodies, works councils, have a prescribed minute format and a retention rule. Keep the decisions and actions discipline inside their template.
+- **Attributing to a named decider.** In consensus bodies, boards, partnerships and academic committees, attribute to the body and record the motion, and note dissent only where their own rules require it.
+- **Transcripts as the usual input.** Where meetings are not recorded, on legal advice or by agreement, budget for a named note-taker instead and keep the same extraction order.
+- **What not to change.** Decided is separated from discussed, and where nothing was decided the record says so. Every action carries an owner, a description someone else could verify, and a date.
+
 ## Related skills
 
 `decision-memo` prepares a decision before the meeting and receives the topics this record shows are not closing; both feed the same decision log. `operating-cadence-design` decides which meetings must produce this record and where it lands. `weekly-status-update` supplies the written status that should have removed the round-robin from the meeting, and takes the actions from this record into the following week's tracking. `strategic-plan-and-action-plan` and `okr-planning` are where actions belonging to a bet or a key result should be carried rather than living only in a meeting record. `customer-interview-synthesis` handles conversations whose value is in patterns across sessions rather than decisions from one.

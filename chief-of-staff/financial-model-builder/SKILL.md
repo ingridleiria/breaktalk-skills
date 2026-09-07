@@ -59,7 +59,7 @@ Do not use this for analysing a dataset that already exists, which is `spreadshe
 
 ## Workbook discipline
 
-The same standard as `spreadsheet-analysis-workbook`, and not negotiable in a model, where a defect compounds across every period column.
+This is the shared standard for every workbook in this library that projects or analyses money, and this skill owns it. `revenue-forecast`, `pricing-and-resourcing-model` and `pipeline-deep-dive` each restate it in a line or two and defer here for the full version; `spreadsheet-analysis-workbook` applies the same rules to a dataset that already exists rather than to a projection. Where any of them reads differently, this is the version that governs. None of it is negotiable in a model, where a defect compounds across every period column rather than sitting in one cell.
 
 1. **Raw data lives in the workbook.** Actuals, the headcount list, the rate card. No formula references an external file, so an update recalculates rather than requiring a rebuild.
 2. **Every calculated cell is a live formula.** The test is mechanical: change one assumption and every dependent output must move. A pasted value that once came from a formula is the commonest defect in an inherited model, and it is invisible.
@@ -67,6 +67,8 @@ The same standard as `spreadsheet-analysis-workbook`, and not negotiable in a mo
 4. **A visible reconciliation cell reads zero.** Outputs revenue minus the sum of the driver revenue lines; closing cash from the cash sheet minus the same figure from the balance sheet. Non-zero means a gap or a double count, fixed before delivery, never footnoted.
 5. **Assumptions live in labelled input cells,** with label, unit, value, source, and a distinct fill declared on the cover. Nothing hard-coded elsewhere, formulas included.
 6. **Layout is documented on the cover:** which sheet holds what, which column the periods start on, and the sign convention.
+7. **One workbook, one version, with the version and date on the cover.** Scenarios live in the switch cell, never in filenames. Where a copy has to leave the building it is a dated read-only export and the live file stays in one place, because two live copies diverge inside a fortnight and somebody quotes the wrong one at the worst moment.
+8. **Anyone who did not build it can navigate it.** Named ranges rather than bare cell addresses in any formula a reader has to follow, no hidden sheet carrying live calculations, no merged cells inside a calculation block, and the checks block visible on the outputs sheet rather than filed behind it. The test is whether a colleague can find the input behind a headline number without asking you.
 
 Sheets, in order: cover and guide; assumptions with scenario columns and one switch cell; drivers and calculations; outputs; checks; scenario summary with sensitivity.
 
@@ -170,6 +172,16 @@ For an audit, deliver the findings table: finding, cell reference, effect on the
 - The two assumptions that move the answer most are named, with the size of their effect.
 - Actuals and forecast sit on the same rows, so the model reconciles to the management accounts.
 - The summary states the question, the base case, and the range, in that order.
+
+## Adapting this to your context
+
+The defaults come from subscription software and small services businesses, modelled monthly for two years in a spreadsheet. The workbook rules are portable; the driver trees are not.
+
+- **The driver trees.** Subscription, services, marketplace and usage cover most commercial models. A grant-funded organisation models award schedules and restricted funds, a manufacturer capacity, yield and inventory, a clinic sessions, throughput and reimbursement. Build the tree from how money actually arrives.
+- **Twenty-four months monthly, five years annually.** A default, not a rule. Match granularity to evidence: where the business cannot forecast next quarter, monthly columns for two years are precision standing in for accuracy.
+- **The twenty percent sensitivity flex.** Chosen because it is easy to explain. Where an assumption's own history varies by more than that, flex it across its observed range instead and say which you used.
+- **The spreadsheet itself.** Fine to a few hundred thousand rows. Beyond that, or where the model must be reproducible and reviewed, build it in R or Python with the assumptions in a separate configuration file and keep every rule above; the reconciliation cell becomes an assertion that fails the run.
+- **What not to change.** No number exists anywhere except as a labelled input or a live formula, every reconciliation cell reads zero, and one switch moves every headline output.
 
 ## Related skills
 

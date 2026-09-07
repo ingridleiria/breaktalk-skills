@@ -1,5 +1,7 @@
 # Commercial and data track
 
+How to run one of these in any assistant, and how to adapt it to your own numbers, tools and field: [USING_THESE_SKILLS.md](../USING_THESE_SKILLS.md). Every skill below carries an **Adapting this to your context** section naming its own assumptions.
+
 Sixteen skills that sit between the two main tracks: commercial work that needs analytical discipline, and analytical work that has to end in a commercial decision. They extend the [Chief of Staff track](../chief-of-staff/README.md) rather than standing apart from it.
 
 This track came out of an audit rather than a plan. Going back through the skills built privately for client work, the question for each was whether the value sat in the method or in the employer's material. Where it sat in the material, the skill stayed private. Where it sat in the method, the skill was rewritten from scratch with the frameworks, client names, personnel, approved claims, and branded assets removed and replaced by a local file the user supplies. That separation is a useful test to run on any private library before publishing part of it.
@@ -30,9 +32,9 @@ This track came out of an audit rather than a plan. Going back through the skill
 Three of these expect a file you write once and keep beside the skill, because the method is public and the specifics are yours.
 
 - `content-quality-gate/standard.md`: your buyer segments, core beliefs, named method, terminology rules, approved claims, and default call to action.
-- `contractor-msa-and-task-order/standing-terms.md`: governing law and forum, dispute resolution, the non-solicitation period, the intellectual property position, and payment timing.
+- `contractor-msa-and-task-order/standing-terms.md`: only what differs because the counterparty is an individual placed onto a client engagement, being the restraint periods and the jurisdictions in which they hold, insurance limits, background checks, subcontracting, classification and flow-down defaults. Everything else it inherits from `party-defaults.md` below, which is the canonical file.
 - `contractor-msa-and-task-order/`: a blank intake template and one filled example, which teach tone and depth better than any instruction about them.
-- `business-agreements-drafting/party-defaults.md`: entity name and form, registered address, authorised signatory, governing law and forum, and standard payment terms.
+- `business-agreements-drafting/party-defaults.md`: entity name and form, registered address, authorised signatory, governing law and forum, and standard payment terms. This is the canonical record of the firm's standing positions, and none of it is copied into a second file.
 - `sales-team-competency-assessment/framework.json`: the map from instrument questions to competency areas, the crosswalk of names, and the leader text to number mapping.
 
 Without those files the skills still run, but the checks they can apply are structural rather than specific.

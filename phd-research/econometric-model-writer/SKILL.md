@@ -226,6 +226,16 @@ The threats table as it appears in the working file, before being written into p
 - The code block implements the printed equation element by element, verified against the reconciliation list.
 - Every method paper cited was checked against a live record.
 
+## Adapting this to your context
+
+This is the empirical strategy section of an applied economics paper: design in words, estimand, numbered equation, identifying assumption, threats, inference, estimation details. Elsewhere the same content lives under Methods, in a different order.
+
+- **The section itself.** Psychology, education and health use Participants, Measures, Procedure, Analytic strategy, often with reporting standards attached: JARS, CONSORT for trials, STROBE for observational epidemiology. Write the same content and map it onto those headings.
+- **The numbered equation.** An economics habit. Many journals prefer the model in words plus the software syntax, or a path diagram for a structural equation model. Where you do write it, a multilevel model needs its level-1 and level-2 equations, or one combined equation with the random effects written out.
+- **The identifying assumption paragraph.** Presumes a causal design. For descriptive or predictive work, replace it with what the estimates can and cannot support, stated as plainly. Silence there is what invites a reviewer to read causality into a correlation.
+- **The inference paragraph.** Clustering and cluster counts. In multilevel work, name the estimator, the degrees-of-freedom approximation, Satterthwaite or Kenward-Roger, and the convergence check; in a trial, the analysis population and the handling of missing outcomes.
+- **What not to change.** The design is comprehensible with every equation deleted, the estimand is stated before the estimator, and the equation and the code are reconciled line by line.
+
 ## Related skills
 
 `econometrician` decides the estimator, the clustering and the inference that this section reports, and any decision the writing exposes as unmade goes back there rather than being settled in prose. `identification-defense` runs the adversarial questioning that produces the threats and responses written up in step 7. `research-design` establishes the source of variation before either. `preregistration-and-analysis-plan` locks these choices before outcomes are seen, and where it exists this section reports it rather than restating it. `stata-do-file-craft` and `python-for-econometrics` hold the code the section must agree with. `regression-table-production` builds the tables the threats reference, and `academic-tables-booktabs` their typography. `results-writing` reads those tables under the estimand this section fixes, and `data-section-writer` describes the data this section estimates on. `literature-verification` governs the method citations.

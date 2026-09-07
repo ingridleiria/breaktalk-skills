@@ -210,6 +210,16 @@ Do not revisit:  [any killed candidate the person is likely to bring back, and w
 - The recommendation names one cheap check to run first and what happens if it fails.
 - Nothing in the memo is cited from memory.
 
+## Adapting this to your context
+
+Written for a quantitative economics doctorate with administrative data, which is why identification is the first kill. Having a first kill is the method; which one depends on your field.
+
+- **What gets killed first.** In interpretive and qualitative work the binding constraint is access, as the second scenario shows. In psychology and health it is often whether a validated instrument exists: a question needing a measure nobody has built is a measurement project in disguise.
+- **The search vocabulary.** Search the terms your field indexes on: MeSH in PubMed, PsycINFO thesaurus terms, ERIC descriptors. Search the registries too, PROSPERO, ClinicalTrials.gov, OSF, the AEA RCT Registry, since a question already claimed and unpublished is where "nobody has done this" goes wrong.
+- **The feasibility arithmetic.** Minimum detectable effect is the economics phrasing. Elsewhere run a power analysis in G*Power or `simr` against the smallest effect size of interest, remembering that in a multilevel design the binding number is groups, not participants.
+- **The generators.** Policy variation is dead where there are no reforms to see. Add one the list lacks: a direct replication of a widely cited result nobody has replicated, publishable in psychology and increasingly elsewhere.
+- **What not to change.** One sentence per candidate with population, variation and outcome named, the hard constraint scored before interest, and the killed list written down.
+
 ## Related skills
 
 `literature-verification` supplies the citation standard used in the search and novelty steps, and every reference in the memo is verified to it. `research-design` takes the recommended question and turns it into hypotheses, an estimating equation, a sample definition and an exhibit list; this skill deliberately stops short of that. `identification-defense` is where the named threat gets a proper answer once the design exists. `theoretical-framework-review` builds the mechanism argument behind the chosen question. `survey-and-instrument-design` takes over when the data has to be collected rather than found. `research-proposal-and-grant` reuses the memo's survivors and kill list as the core of a proposal's rationale. `thesis-advisor` handles the wider question of whether the chapter portfolio hangs together, which this skill only touches when three questions are needed from one dataset.

@@ -15,6 +15,8 @@ REQUIRED_SIGNALS = {
     "worked example": [r"worked example", r"situation", r"^## .*example"],
     "quality bar": [r"quality bar", r"finished when", r"checklist", r"guardrails",
                     r"anti-patterns", r"failure modes", r"mechanical checks", r"conduct"],
+    "adaptation": [r"adapting this to your context"],
+    "what not to change": [r"what not to change"],
 }
 MIN_BYTES = 8000          # anything shorter is a stub, not a method
 BANNED = ["\u2014", "\u2013"]   # em dash and en dash, house style forbids both

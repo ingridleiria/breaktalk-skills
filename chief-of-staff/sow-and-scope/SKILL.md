@@ -61,7 +61,7 @@ Read it against the structure above and rank findings by the size of the dispute
 
 ## Worked example
 
-**Situation.** Halden Systems, a forty-person data engineering firm, had a signed proposal with Corvid Insurance to migrate eleven years of policy records to a new platform. Fee 142,000 across four milestones, sixteen weeks, five people at peak. Corvid's procurement team required an SOW under a master agreement signed two years earlier.
+**Situation.** Halden Systems, a forty-person data engineering firm, had a signed proposal with Corvid Insurance to migrate eleven years of policy records to a new platform. Fee 142,000 pounds across four milestones, sixteen weeks, five people at peak. All figures in this example are pounds sterling. Corvid's procurement team required an SOW under a master agreement signed two years earlier.
 
 **Task.** A signable SOW within five working days, consistent with the proposal, that the delivery lead could hold to when Corvid asked for more.
 
@@ -71,7 +71,7 @@ The first draft of the deliverables table promised zero data loss, because that 
 
 Exclusions came from one question to the delivery lead, and the load-bearing assumption, a production-like copy of the source by end of week two, carried a day-for-day extension and chargeable standby. Acceptance allowed two review rounds, feedback in ten business days, and deemed acceptance after ten business days of silence.
 
-**Result.** Signed in nine days, four longer than planned, because the sixteen-weeks-from-what question went to Corvid's programme board. Two change orders followed, at 9,000 and 14,000, both signed within a week; the delivery lead's view was that the first was easy only because it was small and early, which is the argument for raising one deliberately.
+**Result.** Signed in nine days, four longer than planned, because the sixteen-weeks-from-what question went to Corvid's programme board. Two change orders followed, at 9,000 pounds and 14,000 pounds, both signed within a week; the delivery lead's view was that the first was easy only because it was small and early, which is the argument for raising one deliberately.
 
 ### A second scenario, where it goes differently
 
@@ -139,6 +139,16 @@ The attached change order template carries: change order number and the SOW it a
 - Exclusions name the things this client would reasonably assume are included.
 - Nothing in the document promises an outcome the team does not control.
 - A reader could settle a scope question from the document alone, without asking either party what was meant.
+
+## Adapting this to your context
+
+The turnarounds, the review caps and the deemed acceptance windows come from mid-size services firms contracting with corporate clients under a master agreement. They are drafting defaults, and several are jurisdiction-sensitive.
+
+- **Ten business days for feedback and for deemed acceptance.** Shorten both to five for fast-moving work, and lengthen them where the approver is a committee that meets monthly. The window should match how often that body meets.
+- **Two or three review rounds.** Software and design work commonly needs more and prices them explicitly. A deliverable that must pass an external review may need that round handled as a separate milestone.
+- **Deemed acceptance itself.** Restricted or unusual in some jurisdictions and often prohibited in public sector and consumer contracts. Confirm with counsel for the governing law, and where it is unavailable, protect the same interest with a milestone payment trigger.
+- **Fixed deliverables with acceptance criteria.** Where the work is genuinely reactive, as in the retainer scenario, the document protects capacity and prioritisation instead. Do not force a deliverable list onto work that has none.
+- **What not to change.** Every assumption states what happens if it fails, nothing promises an outcome the team does not control, and a scope question is answerable from the document alone.
 
 ## Related skills
 
