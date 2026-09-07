@@ -289,4 +289,4 @@ If you improve one, [CONTRIBUTING.md](CONTRIBUTING.md) says how to send it back.
 MIT. Use them, fork them, adapt them to your own standards. If you improve one, I would like to see it.
 
 Ingrid Rafaele Rodrigues Leiria
-[LinkedIn](https://www.linkedin.com/in/ingrid-leiria-25b4767a) | [BreakTalk](https://breaktalk.substack.com) | [GitHub](https://github.com/ingridleiria)
+[LinkedIn](https://www.linkedin.com/in/ingrid-leiria-25b4767a) | [BreakTalk](https://breaktalk.substack.com) | [GitHub](https://github.com/ingridleiria) | [ingrid@leiriaconsulting.com](mailto:ingrid@leiriaconsulting.com)

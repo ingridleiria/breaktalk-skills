@@ -5,6 +5,7 @@ type: software
 authors:
   - family-names: Leiria
     given-names: Ingrid Rafaele Rodrigues
+    email: "ingrid@leiriaconsulting.com"
     orcid: "https://orcid.org/0000-0002-6215-860X"
     affiliation: "Korea University, Sejong"
 repository-code: "https://github.com/ingridleiria/breaktalk-skills"
