@@ -2,6 +2,14 @@
 
 # BreakTalk Skills: an open library of AI working instructions for Chief of Staff work, empirical PhD research, and writing
 
+<p align="center">
+<a href="https://github.com/ingridleiria/breaktalk-skills/actions/workflows/validate.yml"><img src="https://github.com/ingridleiria/breaktalk-skills/actions/workflows/validate.yml/badge.svg" alt="validate"></a>
+<img src="https://img.shields.io/badge/skills-110-1F3864" alt="110 skills">
+<img src="https://img.shields.io/badge/tracks-5-1F3864" alt="5 tracks">
+<a href="https://github.com/ingridleiria/breaktalk-skills/releases/latest"><img src="https://img.shields.io/github/v/release/ingridleiria/breaktalk-skills?color=7B1E28" alt="latest release"></a>
+<a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-7B1E28" alt="MIT"></a>
+</p>
+
 I work two jobs that look unrelated and are not. I am Chief of Staff at a US B2B consulting firm, and I am a PhD candidate in Economics at Korea University. Both jobs are the same discipline applied to different material: take something complicated and messy, structure it, attach evidence to every claim, and hand someone a document they can act on.
 
 Over the past two years I wrote these methods down as instruction files so an AI assistant would hold the standard for me, first for the consulting side, then for the research pipeline. This repository is the public, generalized version of that library: 110 skills across five tracks. They are plain Markdown and they work with Claude, ChatGPT, Gemini, and any other assistant that accepts written instructions. Nothing here contains employer or client material; these are the methods, rebuilt from scratch to be usable by anyone.
@@ -253,6 +261,12 @@ They are the tasks I repeat most, and the tasks where quality depends on discipl
 
 Nothing in the commercial and data track is an employer artefact. Where I had built a private version against a specific firm's frameworks, clients, and approved claims, the public skill is the method rewritten from scratch with the organisation's specifics moved into a local file the user supplies.
 
+## A run from end to end
+
+Every skill carries a worked example inside its own file. [`examples/`](examples/) holds something the skill files cannot: a complete run, starting from the messy brief a person actually receives, through what came back, to the two points where the method refused the request and produced a better document for it.
+
+[A decision that had been deferred three times](examples/decision-memo-end-to-end.md) is the first. The interesting part of it is not the memo at the end. It is that the first thing the skill returned was a question rather than a document.
+
 ## The catalog as data
 
 [`skills.json`](skills.json) and [`skills.csv`](skills.csv) carry every skill with its name, track, path and description, generated from the frontmatter rather than maintained by hand. Use them to build your own index, filter the library down to the tracks you want, or script an install.
@@ -264,6 +278,8 @@ python3 scripts/validate_skills.py
 checked 110 skills across 5 tracks
 all skills pass the house standard
 ```
+
+That same check runs on every push through [GitHub Actions](.github/workflows/validate.yml), so the badge at the top of this page reports the state of the library now rather than the state it had on the day someone last remembered to run the script.
 
 ## Releases and contributions
 

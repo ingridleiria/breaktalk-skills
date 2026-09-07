@@ -1,0 +1,23 @@
+name: validate
+
+# Every skill in this library has to pass the same standard before it ships.
+# The check that gates a release also runs on every push, so the badge in the
+# README reports the real state of the library rather than the state it had
+# on the day someone last remembered to run the script.
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  house-standard:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Check every skill against the house standard
+        run: python3 scripts/validate_skills.py

@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: How to run these in your assistant
+    url: https://github.com/ingridleiria/breaktalk-skills/blob/main/USING_THESE_SKILLS.md
+    about: Setup, adaptation and the first skill to try. Read this before opening a question.
+  - name: Writing about the method
+    url: https://breaktalk.substack.com
+    about: Longer pieces on how the library is built and where it gets used.
